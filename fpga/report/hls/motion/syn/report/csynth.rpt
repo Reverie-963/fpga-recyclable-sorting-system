@@ -1,0 +1,399 @@
+
+
+================================================================
+== Synthesis Summary Report of 'motion_path_accel'
+================================================================
++ General Information: 
+    * Date:           Fri Oct 30 21:40:33 2026
+    * Version:        2026.1 (Build 6493734 on Jun 16 2026)
+    * Project:        motion_path_accel
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
+* Performance & Resource Estimates: 
++------------------------------------------------------+------+---------------+----------+---------+------+----------+---------+-----------+------+--------+----------+-------------+-------------+-----+
+|                        Modules                       | Issue|               | Iteration|         | Trip |          |       Latency       |      |        |          |             |             |     |
+|                        & Loops                       | Type | Violation Type|  Latency | Interval| Count| Pipelined| (cycles)|    (ns)   | Slack|  BRAM  |    DSP   |      FF     |     LUT     | URAM|
++------------------------------------------------------+------+---------------+----------+---------+------+----------+---------+-----------+------+--------+----------+-------------+-------------+-----+
+|+ motion_path_accel*                                  |     -|              -|         -|    19463|     -|  dataflow|    19476|  1.948e+05|  0.00|  5 (1%)|  45 (20%)|  15875 (14%)|  14828 (27%)|    -|
+| + entry_proc                                         |     -|              -|         -|        0|     -|        no|        0|      0.000|  3.67|       -|         -|      3 (~0%)|     38 (~0%)|    -|
+| + load_input                                         |     -|              -|         -|     2441|     -|        no|     2441|  2.441e+04|  0.00|       -|         -|    616 (~0%)|    1374 (2%)|    -|
+|  o VITIS_LOOP_18_1                                   |     -|              -|        38|        -|    64|        no|     2432|  2.432e+04|  7.30|       -|         -|            -|            -|    -|
+|   + load_input_Pipeline_VITIS_LOOP_20_2              |     -|              -|         -|       15|     -|       yes|       15|    150.000|  0.00|       -|         -|     50 (~0%)|     75 (~0%)|    -|
+|    o VITIS_LOOP_20_2                                 |     -|              -|         3|        1|    12|       yes|       13|    130.000|  7.30|       -|         -|            -|            -|    -|
+|   + load_input_Pipeline_VITIS_LOOP_27_3              |     -|              -|         -|        9|     -|       yes|        9|     90.000|  1.45|       -|         -|    161 (~0%)|     549 (1%)|    -|
+|    o VITIS_LOOP_27_3                                 |     -|              -|         3|        1|     6|       yes|        7|     70.000|  7.30|       -|         -|            -|            -|    -|
+|   + load_input_Pipeline_VITIS_LOOP_37_4              |     -|              -|         -|        5|     -|       yes|        5|     50.000|  1.66|       -|         -|     43 (~0%)|    130 (~0%)|    -|
+|    o VITIS_LOOP_37_4                                 |     -|              -|         2|        1|     3|       yes|        3|     30.000|  7.30|       -|         -|            -|            -|    -|
+| + compute                                            |     -|              -|         -|    19462|     -|        no|    19462|  1.946e+05|  0.01|  3 (1%)|  45 (20%)|  12730 (11%)|  10616 (19%)|    -|
+|  + compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2  |     -|              -|         -|    19459|     -|       yes|    19459|  1.946e+05|  0.01|  3 (1%)|  45 (20%)|  12672 (11%)|  10425 (19%)|    -|
+|   o VITIS_LOOP_73_1_VITIS_LOOP_77_2                  |     -|              -|        69|        3|  6464|       yes|    19457|  1.946e+05|  7.30|       -|         -|            -|            -|    -|
+| + store_output                                       |     -|              -|         -|     1096|     -|        no|     1096|  1.096e+04|  0.00|       -|         -|    396 (~0%)|     614 (1%)|    -|
+|  o VITIS_LOOP_102_1                                  |     -|              -|        17|        -|    64|        no|     1088|  1.088e+04|  7.30|       -|         -|            -|            -|    -|
+|   + store_output_Pipeline_VITIS_LOOP_104_2           |     -|              -|         -|       11|     -|       yes|       11|    110.000|  0.00|       -|         -|     41 (~0%)|     75 (~0%)|    -|
+|    o VITIS_LOOP_104_2                                |     -|              -|         3|        1|     8|       yes|        9|     90.000|  7.30|       -|         -|            -|            -|    -|
++------------------------------------------------------+------+---------------+----------+---------+------+----------+---------+-----------+------+--------+----------+-------------+-------------+-----+
+    Name Prefix: '+' for module, 'o' for loop, '*' for dataflow
+
+
+================================================================
+== HW Interfaces
+================================================================
+* M_AXI
++------------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| Interface        | Read/Write | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   | Resource Estimate |
+|                  |            | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |                   |
++------------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| m_axi_input_mem  | READ_ONLY  | 32 -> 32   | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          | BRAM=2            |
+| m_axi_output_mem | WRITE_ONLY | 32 -> 32   | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          |                   |
++------------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 6             | 16     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------+----------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface     | Register       | Offset | Width | Access | Description                      | Bit Fields                                                           |
++---------------+----------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control | CTRL           | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER           | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control | IP_IER         | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control | IP_ISR         | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_control | input_words_1  | 0x10   | 32    | W      | Data signal of input_words       |                                                                      |
+| s_axi_control | input_words_2  | 0x14   | 32    | W      | Data signal of input_words       |                                                                      |
+| s_axi_control | output_words_1 | 0x1c   | 32    | W      | Data signal of output_words      |                                                                      |
+| s_axi_control | output_words_2 | 0x20   | 32    | W      | Data signal of output_words      |                                                                      |
+| s_axi_control | segment_count  | 0x28   | 32    | W      | Data signal of segment_count     |                                                                      |
+| s_axi_control | request_tag    | 0x30   | 32    | W      | Data signal of request_tag       |                                                                      |
++---------------+----------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++---------------+-----------+----------------------+
+| Argument      | Direction | Datatype             |
++---------------+-----------+----------------------+
+| input_words   | in        | unsigned int const * |
+| output_words  | out       | unsigned int*        |
+| segment_count | in        | unsigned int         |
+| request_tag   | in        | unsigned int         |
++---------------+-----------+----------------------+
+
+* SW-to-HW Mapping
++---------------+------------------+-----------+----------+------------------------------------------+
+| Argument      | HW Interface     | HW Type   | HW Usage | HW Info                                  |
++---------------+------------------+-----------+----------+------------------------------------------+
+| input_words   | m_axi_input_mem  | interface |          | channel=0                                |
+| input_words   | s_axi_control    | register  | offset   | name=input_words_1 offset=0x10 range=32  |
+| input_words   | s_axi_control    | register  | offset   | name=input_words_2 offset=0x14 range=32  |
+| output_words  | m_axi_output_mem | interface |          | channel=0                                |
+| output_words  | s_axi_control    | register  | offset   | name=output_words_1 offset=0x1c range=32 |
+| output_words  | s_axi_control    | register  | offset   | name=output_words_2 offset=0x20 range=32 |
+| segment_count | s_axi_control    | register  |          | name=segment_count offset=0x28 range=32  |
+| request_tag   | s_axi_control    | register  |          | name=request_tag offset=0x30 range=32    |
++---------------+------------------+-----------+----------+------------------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+* Inferred Burst Summary
++------------------+-----------+----------+-------+------------------+--------------------------------------+
+| HW Interface     | Direction | Length   | Width | Loop             | Loop Location                        |
++------------------+-----------+----------+-------+------------------+--------------------------------------+
+| m_axi_input_mem  | read      | variable | 32    |                  |                                      |
+| m_axi_output_mem | write     | variable | 32    | VITIS_LOOP_102_1 | sources/motion_path_accel.cpp:102:23 |
++------------------+-----------+----------+-------+------------------+--------------------------------------+
+
+* All M_AXI Variable Accesses
++------------------+----------+--------------------------------------+-----------+--------------+----------+------------------+--------------------------------------+------------+-------------------------------------------------------------------------------------------------------+
+| HW Interface     | Variable | Access Location                      | Direction | Burst Status | Length   | Loop             | Loop Location                        | Resolution | Problem                                                                                               |
++------------------+----------+--------------------------------------+-----------+--------------+----------+------------------+--------------------------------------+------------+-------------------------------------------------------------------------------------------------------+
+| m_axi_input_mem  | input    | sources/motion_path_accel.cpp:22:24  | read      | Widen Fail   |          | VITIS_LOOP_20_2  | sources/motion_path_accel.cpp:20:26  | 214-353    | Could not widen since type i32 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_input_mem  | input    | sources/motion_path_accel.cpp:22:24  | read      | Inferred     | variable | VITIS_LOOP_18_1  | sources/motion_path_accel.cpp:18:22  |            |                                                                                                       |
+| m_axi_output_mem | output   | sources/motion_path_accel.cpp:106:47 | write     | Widen Fail   |          | VITIS_LOOP_104_2 | sources/motion_path_accel.cpp:104:27 | 214-353    | Could not widen since type i32 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_output_mem | output   | sources/motion_path_accel.cpp:106:47 | write     | Inferred     | variable | VITIS_LOOP_102_1 | sources/motion_path_accel.cpp:102:23 |            |                                                                                                       |
++------------------+----------+--------------------------------------+-----------+--------------+----------+------------------+--------------------------------------+------------+-------------------------------------------------------------------------------------------------------+
+
+    * Resolution URL: docs.amd.com/access/sources/dita/topic?Doc_Version=2026.1%20English&url=ug1448-hls-guidance&resourceid=XXX-YYY.html (replace XXX-YYY with column value)
+
+================================================================
+== Bind Op Report
+================================================================
++------------------------------------------------------+-----+--------+---------------+--------+-----------+---------+
+| Name                                                 | DSP | Pragma | Variable      | Op     | Impl      | Latency |
++------------------------------------------------------+-----+--------+---------------+--------+-----------+---------+
+| + motion_path_accel                                  | 45  |        |               |        |           |         |
+|  + load_input                                        | 0   |        |               |        |           |         |
+|    icmp_ln14_fu_238_p2                               |     |        | icmp_ln14     | setne  | auto      | 0       |
+|    icmp_ln14_2_fu_244_p2                             |     |        | icmp_ln14_2   | setlt  | auto      | 0       |
+|    and_ln14_fu_250_p2                                |     |        | and_ln14      | and    | auto      | 0       |
+|    select_ln14_fu_256_p3                             |     |        | select_ln14   | select | auto_sel  | 0       |
+|    icmp_ln18_fu_264_p2                               |     |        | icmp_ln18     | setne  | auto      | 0       |
+|    sub_ln18_fu_294_p2                                |     |        | sub_ln18      | sub    | fabric    | 0       |
+|    empty_46_fu_300_p3                                |     |        | empty_46      | select | auto_sel  | 0       |
+|    icmp_ln18_1_fu_341_p2                             |     |        | icmp_ln18_1   | seteq  | auto      | 0       |
+|    add_ln18_fu_346_p2                                |     |        | add_ln18      | add    | fabric    | 0       |
+|   + load_input_Pipeline_VITIS_LOOP_20_2              | 0   |        |               |        |           |         |
+|     icmp_ln20_fu_90_p2                               |     |        | icmp_ln20     | seteq  | auto      | 0       |
+|     add_ln20_fu_96_p2                                |     |        | add_ln20      | add    | fabric    | 0       |
+|   + load_input_Pipeline_VITIS_LOOP_27_3              | 0   |        |               |        |           |         |
+|     icmp_ln27_fu_119_p2                              |     |        | icmp_ln27     | seteq  | auto      | 0       |
+|     add_ln27_fu_125_p2                               |     |        | add_ln27      | add    | fabric    | 0       |
+|     add_ln28_fu_160_p2                               |     |        | add_ln28      | add    | fabric    | 0       |
+|     icmp_ln28_fu_234_p2                              |     |        | icmp_ln28     | setgt  | auto      | 0       |
+|     add_ln29_fu_140_p2                               |     |        | add_ln29      | add    | fabric    | 0       |
+|     add_ln29_1_fu_166_p2                             |     |        | add_ln29_1    | add    | fabric    | 0       |
+|     icmp_ln29_fu_239_p2                              |     |        | icmp_ln29     | setgt  | auto      | 0       |
+|     or_ln29_fu_244_p2                                |     |        | or_ln29       | or     | auto      | 0       |
+|     s_valid_1_fu_250_p3                              |     |        | s_valid_1     | select | auto_sel  | 0       |
+|     icmp_ln31_fu_172_p2                              |     |        | icmp_ln31     | setgt  | auto      | 0       |
+|     icmp_ln31_1_fu_178_p2                            |     |        | icmp_ln31_1   | setlt  | auto      | 0       |
+|     icmp_ln32_fu_188_p2                              |     |        | icmp_ln32     | setgt  | auto      | 0       |
+|     icmp_ln32_1_fu_194_p2                            |     |        | icmp_ln32_1   | setlt  | auto      | 0       |
+|     delta_fu_200_p2                                  |     |        | delta         | sub    | fabric    | 0       |
+|     sub_ln34_fu_265_p2                               |     |        | sub_ln34      | sub    | fabric    | 0       |
+|     select_ln34_fu_270_p3                            |     |        | select_ln34   | select | auto_sel  | 0       |
+|     and_ln32_fu_210_p2                               |     |        | and_ln32      | and    | auto      | 0       |
+|     and_ln32_1_fu_216_p2                             |     |        | and_ln32_1    | and    | auto      | 0       |
+|     and_ln32_2_fu_222_p2                             |     |        | and_ln32_2    | and    | auto      | 0       |
+|     empty_45_fu_281_p3                               |     |        | empty_45      | select | auto_sel  | 0       |
+|     s_cost_2_fu_288_p2                               |     |        | s_cost_2      | add    | fabric    | 0       |
+|   + load_input_Pipeline_VITIS_LOOP_37_4              | 0   |        |               |        |           |         |
+|     icmp_ln38_fu_120_p2                              |     |        | icmp_ln38     | seteq  | auto      | 0       |
+|     icmp_ln37_fu_134_p2                              |     |        | icmp_ln37     | seteq  | auto      | 0       |
+|     add_ln37_fu_140_p2                               |     |        | add_ln37      | add    | fabric    | 0       |
+|     add_ln39_fu_160_p2                               |     |        | add_ln39      | add    | fabric    | 0       |
+|  + compute                                           | 45  |        |               |        |           |         |
+|    icmp_ln14_fu_80_p2                                |     |        | icmp_ln14     | setne  | auto      | 0       |
+|    icmp_ln14_3_fu_86_p2                              |     |        | icmp_ln14_3   | setlt  | auto      | 0       |
+|    and_ln14_fu_92_p2                                 |     |        | and_ln14      | and    | auto      | 0       |
+|    select_ln14_fu_98_p3                              |     |        | select_ln14   | select | auto_sel  | 0       |
+|    mul_7ns_8ns_13_1_1_U50                            |     |        | bound         | mul    | auto      | 0       |
+|   + compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2 | 45  |        |               |        |           |         |
+|     icmp_ln73_fu_476_p2                              |     |        | icmp_ln73     | seteq  | auto      | 0       |
+|     add_ln73_fu_485_p2                               |     |        | add_ln73      | add    | fabric    | 0       |
+|     icmp_ln77_fu_491_p2                              |     |        | icmp_ln77     | seteq  | auto      | 0       |
+|     select_ln73_fu_497_p3                            |     |        | select_ln73   | select | auto_sel  | 0       |
+|     select_ln73_1_fu_1763_p3                         |     |        | select_ln73_1 | select | auto_sel  | 0       |
+|     select_ln73_2_fu_1770_p3                         |     |        | select_ln73_2 | select | auto_sel  | 0       |
+|     first_iter_0_fu_505_p2                           |     |        | first_iter_0  | seteq  | auto      | 0       |
+|     sub_ln79_1_fu_622_p2                             |     |        | sub_ln79_1    | sub    | fabric    | 0       |
+|     sub_ln79_fu_632_p2                               |     |        | sub_ln79      | sub    | fabric    | 0       |
+|     sub_ln80_1_fu_674_p2                             |     |        | sub_ln80_1    | sub    | fabric    | 0       |
+|     sub_ln80_fu_690_p2                               |     |        | sub_ln80      | sub    | fabric    | 0       |
+|     sub_ln81_1_fu_732_p2                             |     |        | sub_ln81_1    | sub    | fabric    | 0       |
+|     sub_ln81_fu_748_p2                               |     |        | sub_ln81      | sub    | fabric    | 0       |
+|     mul_32s_7ns_32_2_1_U24                           | 2   |        | mul_ln82      | mul    | auto      | 1       |
+|     add_ln82_1_fu_818_p2                             |     |        | add_ln82_1    | add    | fabric    | 0       |
+|     mul_32s_7ns_32_2_1_U25                           | 2   |        | mul_ln82_1    | mul    | auto      | 1       |
+|     add_ln82_5_fu_829_p2                             |     |        | add_ln82_5    | add    | fabric    | 0       |
+|     mul_32s_3s_32_2_1_U31                            |     |        | mul_ln82_2    | mul    | auto      | 1       |
+|     b_1_fu_877_p2                                    |     |        | b_1           | add    | fabric    | 0       |
+|     mul_32s_7ns_32_2_1_U26                           | 2   |        | mul_ln82_3    | mul    | auto      | 1       |
+|     add_ln82_7_fu_840_p2                             |     |        | add_ln82_7    | add    | fabric    | 0       |
+|     srem_32ns_21ns_32_36_1_U32                       |     |        | normalized    | srem   | auto      | 35      |
+|     add_ln58_fu_920_p2                               |     |        | add_ln58      | add    | fabric    | 0       |
+|     select_ln58_fu_926_p3                            |     |        | select_ln58   | select | auto_sel  | 0       |
+|     mul_32ns_34ns_65_2_1_U23                         | 4   |        | mul_ln60      | mul    | auto      | 1       |
+|     mac_muladd_21s_13ns_32ns_33_4_1_U35              | 1   |        | mul_ln61      | mul    | dsp_slice | 3       |
+|     mac_muladd_21s_13ns_32ns_33_4_1_U35              | 1   |        | remainder     | add    | dsp_slice | 3       |
+|     sub_ln49_fu_1038_p2                              |     |        | sub_ln49      | sub    | fabric    | 0       |
+|     select_ln49_fu_1044_p3                           |     |        | select_ln49   | select | auto_sel  | 0       |
+|     sub_ln50_fu_1195_p2                              |     |        | sub_ln50      | sub    | fabric    | 0       |
+|     a_fu_1201_p3                                     |     |        | a             | select | auto_sel  | 0       |
+|     grp_fu_429_p2                                    |     |        | add_ln62      | add    | fabric    | 0       |
+|     sub_ln49_1_fu_1064_p2                            |     |        | sub_ln49_1    | sub    | fabric    | 0       |
+|     select_ln49_1_fu_1070_p3                         |     |        | select_ln49_1 | select | auto_sel  | 0       |
+|     sub_ln50_1_fu_1223_p2                            |     |        | sub_ln50_1    | sub    | fabric    | 0       |
+|     b_2_fu_1229_p3                                   |     |        | b_2           | select | auto_sel  | 0       |
+|     sub_ln63_fu_1241_p2                              |     |        | sub_ln63      | sub    | fabric    | 0       |
+|     mul_33s_27s_58_2_1_U27                           | 4   |        | mul_ln63      | mul    | auto      | 1       |
+|     mul_58s_60ns_117_5_1_U29                         | 12  |        | mul_ln63_3    | mul    | auto      | 4       |
+|     grp_fu_443_p2                                    |     |        | sub_ln63_3    | sub    | fabric    | 0       |
+|     select_ln63_fu_1475_p3                           |     |        | select_ln63   | select | auto_sel  | 0       |
+|     sub_ln63_4_fu_1481_p2                            |     |        | sub_ln63_4    | sub    | fabric    | 0       |
+|     select_ln63_1_fu_1487_p3                         |     |        | select_ln63_1 | select | auto_sel  | 0       |
+|     add_ln63_fu_1493_p2                              |     |        | add_ln63      | add    | fabric    | 0       |
+|     srem_32ns_21ns_32_36_1_U33                       |     |        | normalized_1  | srem   | auto      | 35      |
+|     add_ln58_1_fu_958_p2                             |     |        | add_ln58_1    | add    | fabric    | 0       |
+|     select_ln58_1_fu_964_p3                          |     |        | select_ln58_1 | select | auto_sel  | 0       |
+|     mul_32ns_34ns_65_2_1_U23                         | 4   |        | mul_ln60_1    | mul    | auto      | 1       |
+|     mac_muladd_21s_13ns_32ns_33_4_1_U36              | 1   |        | mul_ln61_1    | mul    | dsp_slice | 3       |
+|     mac_muladd_21s_13ns_32ns_33_4_1_U36              | 1   |        | remainder_1   | add    | dsp_slice | 3       |
+|     sub_ln49_2_fu_1123_p2                            |     |        | sub_ln49_2    | sub    | fabric    | 0       |
+|     select_ln49_2_fu_1129_p3                         |     |        | select_ln49_2 | select | auto_sel  | 0       |
+|     sub_ln50_2_fu_1307_p2                            |     |        | sub_ln50_2    | sub    | fabric    | 0       |
+|     a_2_fu_1313_p3                                   |     |        | a_2           | select | auto_sel  | 0       |
+|     grp_fu_429_p2                                    |     |        | add_ln62_1    | add    | fabric    | 0       |
+|     sub_ln49_3_fu_1149_p2                            |     |        | sub_ln49_3    | sub    | fabric    | 0       |
+|     select_ln49_3_fu_1155_p3                         |     |        | select_ln49_3 | select | auto_sel  | 0       |
+|     sub_ln50_3_fu_1335_p2                            |     |        | sub_ln50_3    | sub    | fabric    | 0       |
+|     b_fu_1341_p3                                     |     |        | b             | select | auto_sel  | 0       |
+|     sub_ln63_1_fu_1353_p2                            |     |        | sub_ln63_1    | sub    | fabric    | 0       |
+|     mul_33s_27s_58_2_1_U27                           | 4   |        | mul_ln63_1    | mul    | auto      | 1       |
+|     mul_58s_60ns_117_5_1_U30                         | 12  |        | mul_ln63_4    | mul    | auto      | 4       |
+|     sub_ln63_5_fu_1509_p2                            |     |        | sub_ln63_5    | sub    | fabric    | 0       |
+|     select_ln63_2_fu_1526_p3                         |     |        | select_ln63_2 | select | auto_sel  | 0       |
+|     sub_ln63_6_fu_1532_p2                            |     |        | sub_ln63_6    | sub    | fabric    | 0       |
+|     select_ln63_3_fu_1538_p3                         |     |        | select_ln63_3 | select | auto_sel  | 0       |
+|     add_ln63_1_fu_1544_p2                            |     |        | add_ln63_1    | add    | fabric    | 0       |
+|     sub_ln84_1_fu_1627_p2                            |     |        | sub_ln84_1    | sub    | fabric    | 0       |
+|     srem_32ns_21ns_32_36_1_U34                       |     |        | normalized_2  | srem   | auto      | 35      |
+|     add_ln58_2_fu_1016_p2                            |     |        | add_ln58_2    | add    | fabric    | 0       |
+|     select_ln58_2_fu_1022_p3                         |     |        | select_ln58_2 | select | auto_sel  | 0       |
+|     mul_32ns_34ns_65_2_1_U23                         | 4   |        | mul_ln60_2    | mul    | auto      | 1       |
+|     mac_muladd_21s_13ns_32ns_33_4_1_U37              | 1   |        | mul_ln61_2    | mul    | dsp_slice | 3       |
+|     mac_muladd_21s_13ns_32ns_33_4_1_U37              | 1   |        | remainder_2   | add    | dsp_slice | 3       |
+|     sub_ln49_4_fu_1255_p2                            |     |        | sub_ln49_4    | sub    | fabric    | 0       |
+|     select_ln49_4_fu_1261_p3                         |     |        | select_ln49_4 | select | auto_sel  | 0       |
+|     sub_ln50_4_fu_1374_p2                            |     |        | sub_ln50_4    | sub    | fabric    | 0       |
+|     a_3_fu_1380_p3                                   |     |        | a_3           | select | auto_sel  | 0       |
+|     grp_fu_429_p2                                    |     |        | add_ln62_2    | add    | fabric    | 0       |
+|     sub_ln49_5_fu_1281_p2                            |     |        | sub_ln49_5    | sub    | fabric    | 0       |
+|     select_ln49_5_fu_1287_p3                         |     |        | select_ln49_5 | select | auto_sel  | 0       |
+|     sub_ln50_5_fu_1402_p2                            |     |        | sub_ln50_5    | sub    | fabric    | 0       |
+|     b_3_fu_1408_p3                                   |     |        | b_3           | select | auto_sel  | 0       |
+|     sub_ln63_2_fu_1420_p2                            |     |        | sub_ln63_2    | sub    | fabric    | 0       |
+|     mul_33s_27s_58_2_1_U28                           | 4   |        | mul_ln63_2    | mul    | auto      | 1       |
+|     mul_58s_60ns_117_5_1_U29                         | 12  |        | mul_ln63_5    | mul    | auto      | 4       |
+|     grp_fu_443_p2                                    |     |        | sub_ln63_7    | sub    | fabric    | 0       |
+|     select_ln63_4_fu_1646_p3                         |     |        | select_ln63_4 | select | auto_sel  | 0       |
+|     sub_ln63_8_fu_1652_p2                            |     |        | sub_ln63_8    | sub    | fabric    | 0       |
+|     select_ln63_5_fu_1658_p3                         |     |        | select_ln63_5 | select | auto_sel  | 0       |
+|     add_ln63_2_fu_1664_p2                            |     |        | add_ln63_2    | add    | fabric    | 0       |
+|     icmp_ln86_fu_1780_p2                             |     |        | icmp_ln86     | setlt  | auto      | 0       |
+|     minimum_1_fu_1786_p3                             |     |        | minimum_1     | select | auto_sel  | 0       |
+|     argmin_1_fu_1794_p3                              |     |        | argmin_1      | select | auto_sel  | 0       |
+|     i_1_fu_754_p2                                    |     |        | i_1           | add    | fabric    | 0       |
+|     icmp_ln77_1_fu_759_p2                            |     |        | icmp_ln77_1   | seteq  | auto      | 0       |
+|     icmp_ln90_fu_765_p2                              |     |        | icmp_ln90     | setne  | auto      | 0       |
+|     add_ln91_fu_1806_p2                              |     |        | add_ln91      | add    | fabric    | 0       |
+|     sub_ln68_fu_1819_p2                              |     |        | sub_ln68      | sub    | fabric    | 0       |
+|     sub_ln68_1_fu_1836_p2                            |     |        | sub_ln68_1    | sub    | fabric    | 0       |
+|     sub_ln68_2_fu_1852_p2                            |     |        | sub_ln68_2    | sub    | fabric    | 0       |
+|     sub_ln92_1_fu_1858_p2                            |     |        | sub_ln92_1    | sub    | fabric    | 0       |
+|     sub_ln68_3_fu_1867_p2                            |     |        | sub_ln68_3    | sub    | fabric    | 0       |
+|     sub_ln68_4_fu_1946_p2                            |     |        | sub_ln68_4    | sub    | fabric    | 0       |
+|     phi_ln92_fu_1951_p3                              |     |        | phi_ln92      | select | auto_sel  | 0       |
+|     sub_ln92_fu_1959_p2                              |     |        | sub_ln92      | sub    | fabric    | 0       |
+|     select_ln95_fu_1972_p3                           |     |        | select_ln95   | select | auto_sel  | 0       |
+|     select_ln68_fu_1903_p3                           |     |        | select_ln68   | select | auto_sel  | 0       |
+|     empty_fu_1911_p3                                 |     |        | empty         | select | auto_sel  | 0       |
+|     empty_48_fu_1919_p3                              |     |        | empty_48      | select | auto_sel  | 0       |
+|     empty_49_fu_1965_p3                              |     |        | empty_49      | select | auto_sel  | 0       |
+|     select_ln93_fu_1978_p3                           |     |        | select_ln93   | select | auto_sel  | 0       |
+|     select_ln97_fu_1984_p3                           |     |        | select_ln97   | select | auto_sel  | 0       |
+|     xor_ln97_fu_1991_p2                              |     |        | xor_ln97      | xor    | auto      | 0       |
+|  + store_output                                      | 0   |        |               |        |           |         |
+|    icmp_ln14_fu_234_p2                               |     |        | icmp_ln14     | setne  | auto      | 0       |
+|    icmp_ln14_1_fu_240_p2                             |     |        | icmp_ln14_1   | setlt  | auto      | 0       |
+|    and_ln14_fu_246_p2                                |     |        | and_ln14      | and    | auto      | 0       |
+|    select_ln14_fu_252_p3                             |     |        | select_ln14   | select | auto_sel  | 0       |
+|    icmp_ln102_fu_275_p2                              |     |        | icmp_ln102    | setne  | auto      | 0       |
+|    empty_36_fu_287_p3                                |     |        | empty_36      | select | auto_sel  | 0       |
+|    icmp_ln102_1_fu_312_p2                            |     |        | icmp_ln102_1  | seteq  | auto      | 0       |
+|    add_ln102_fu_317_p2                               |     |        | add_ln102     | add    | fabric    | 0       |
+|   + store_output_Pipeline_VITIS_LOOP_104_2           | 0   |        |               |        |           |         |
+|     icmp_ln104_fu_95_p2                              |     |        | icmp_ln104    | seteq  | auto      | 0       |
+|     add_ln104_fu_101_p2                              |     |        | add_ln104     | add    | fabric    | 0       |
++------------------------------------------------------+-----+--------+---------------+--------+-----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++------------------------------------------------------+---------------+-------------+------+------+--------+--------+------------------+------+---------+------------------+
+| Name                                                 | Usage         | Type        | BRAM | URAM | CE_REG | Pragma | Variable         | Impl | Latency | Bitwidth, Depth, |
+|                                                      |               |             |      |      |        |        |                  |      |         | Banks            |
++------------------------------------------------------+---------------+-------------+------+------+--------+--------+------------------+------+---------+------------------+
+| + motion_path_accel                                  |               |             | 5    | 0    |        |        |                  |      |         |                  |
+|   control_s_axi_U                                    | interface     | s_axilite   |      |      |        |        |                  |      |         |                  |
+|   input_mem_m_axi_U                                  | interface     | m_axi       | 2    |      |        |        |                  |      |         |                  |
+|   output_mem_m_axi_U                                 | interface     | m_axi       |      |      |        |        |                  |      |         |                  |
+|   output_words_c_U                                   | fifo channel  | scalar prop |      |      | N      |        | output_words_c   | srl  | 0       | 64, 4, 1         |
+|   request_tag_c_U                                    | fifo channel  | scalar prop |      |      | N      |        | request_tag_c    | srl  | 0       | 32, 3, 1         |
+|   segments_U                                         | fifo channel  | stream      |      |      | N      |        | segments         | srl  | 0       | 256, 4, 1        |
+|   segment_count_c1_U                                 | fifo channel  | scalar prop |      |      | N      |        | segment_count_c1 | srl  | 0       | 32, 2, 1         |
+|   results_U                                          | fifo channel  | stream      |      |      | N      |        | results          | srl  | 0       | 256, 4, 1        |
+|   segment_count_c_U                                  | fifo channel  | scalar prop |      |      | N      |        | segment_count_c  | srl  | 0       | 32, 2, 1         |
+|  + load_input                                        |               |             | 0    | 0    |        |        |                  |      |         |                  |
+|    words_U                                           | ram_2p array  |             |      |      | N      |        | words            | auto | 1       | 32, 12, 1        |
+|    s_start_U                                         | ram_t2p array |             |      |      | N      |        | s_start          | auto | 1       | 32, 3, 1         |
+|    s_end_U                                           | ram_2p array  |             |      |      | N      |        | s_end            | auto | 1       | 32, 3, 1         |
+|  + compute                                           |               |             | 3    | 0    |        |        |                  |      |         |                  |
+|   + compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2 |               |             | 3    | 0    |        |        |                  |      |         |                  |
+|     MOTION_SINE_Q24_U                                | rom_2p        |             | 3    |      | N      |        | MOTION_SINE_Q24  | auto | 1       | 25, 1025, 1      |
+|  + store_output                                      |               |             | 0    | 0    |        |        |                  |      |         |                  |
+|    r_U                                               | ram_t2p array |             |      |      | N      |        | r                | auto | 1       | 32, 8, 1         |
++------------------------------------------------------+---------------+-------------+------+------+--------+--------+------------------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Inferred Pragmas
++--------------+---------+------------------------------------------------------------------------------------------------------------------+--------------------------------------------+
+| Type         | Options | Location                                                                                                         | Inferred From                              |
++--------------+---------+------------------------------------------------------------------------------------------------------------------+--------------------------------------------+
+| LOOP_FLATTEN |         | loop VITIS_LOOP_77_2 (sources/motion_path_accel.cpp:77:26) in compute (sources/motion_path_accel.cpp:77)         | pipeline sources/motion_path_accel.cpp:78  |
+| LOOP_FLATTEN | off     | loop VITIS_LOOP_102_1 (sources/motion_path_accel.cpp:102:23) in store_output (sources/motion_path_accel.cpp:102) | pipeline sources/motion_path_accel.cpp:105 |
+| PIPELINE     |         | loop VITIS_LOOP_37_4 (sources/motion_path_accel.cpp:37:26) in load_input (sources/motion_path_accel.cpp:37)      | syn.compile.pipeline_loops=64              |
+| PIPELINE     |         | loop VITIS_LOOP_27_3 (sources/motion_path_accel.cpp:27:26) in load_input (sources/motion_path_accel.cpp:27)      | syn.compile.pipeline_loops=64              |
++--------------+---------+------------------------------------------------------------------------------------------------------------------+--------------------------------------------+
+
+* Implemented Pragmas
++----------+-------------------------------------+----------------------------------------------------------+
+| Type     | Options                             | Location                                                 |
++----------+-------------------------------------+----------------------------------------------------------+
+| INLINE   |                                     | in _zl9sine_nodej (sources/motion_path_accel.cpp:46)     |
+| INLINE   |                                     | in _zl10sine_phasei (sources/motion_path_accel.cpp:56)   |
+| INLINE   |                                     | in _zl9floor_q16x (sources/motion_path_accel.cpp:67)     |
+| DATAFLOW |                                     | in motion_path_accel (sources/motion_path_accel.cpp:121) |
+| STREAM   | variable=segments type=fifo depth=4 | in motion_path_accel (sources/motion_path_accel.cpp:124) |
+| STREAM   | variable=results type=fifo depth=4  | in motion_path_accel (sources/motion_path_accel.cpp:125) |
++----------+-------------------------------------+----------------------------------------------------------+
+
+* Valid Pragma Syntax
++-----------+--------------------------------------------------------------------------------------------+----------------------------------------------------------+
+| Type      | Options                                                                                    | Location                                                 |
++-----------+--------------------------------------------------------------------------------------------+----------------------------------------------------------+
+| PIPELINE  | ii=1                                                                                       | in load_input (sources/motion_path_accel.cpp:21)         |
+| INLINE    |                                                                                            | in sine_node (sources/motion_path_accel.cpp:46)          |
+| INLINE    |                                                                                            | in sine_phase (sources/motion_path_accel.cpp:56)         |
+| INLINE    |                                                                                            | in floor_q16 (sources/motion_path_accel.cpp:67)          |
+| PIPELINE  | ii=3                                                                                       | in compute (sources/motion_path_accel.cpp:78)            |
+| PIPELINE  | ii=1                                                                                       | in store_output (sources/motion_path_accel.cpp:105)      |
+| INTERFACE | m_axi port=input_words offset=slave bundle=input_mem depth=768 max_read_burst_length=16    | in motion_path_accel (sources/motion_path_accel.cpp:114) |
+| INTERFACE | m_axi port=output_words offset=slave bundle=output_mem depth=512 max_write_burst_length=16 | in motion_path_accel (sources/motion_path_accel.cpp:115) |
+| INTERFACE | s_axilite port=input_words bundle=control offset=0x10                                      | in motion_path_accel (sources/motion_path_accel.cpp:116) |
+| INTERFACE | s_axilite port=output_words bundle=control offset=0x1c                                     | in motion_path_accel (sources/motion_path_accel.cpp:117) |
+| INTERFACE | s_axilite port=segment_count bundle=control offset=0x28                                    | in motion_path_accel (sources/motion_path_accel.cpp:118) |
+| INTERFACE | s_axilite port=request_tag bundle=control offset=0x30                                      | in motion_path_accel (sources/motion_path_accel.cpp:119) |
+| INTERFACE | s_axilite port=return bundle=control                                                       | in motion_path_accel (sources/motion_path_accel.cpp:120) |
+| DATAFLOW  |                                                                                            | in motion_path_accel (sources/motion_path_accel.cpp:121) |
+| STREAM    | variable=segments depth=4                                                                  | in motion_path_accel (sources/motion_path_accel.cpp:124) |
+| STREAM    | variable=results depth=4                                                                   | in motion_path_accel (sources/motion_path_accel.cpp:125) |
++-----------+--------------------------------------------------------------------------------------------+----------------------------------------------------------+
+
+

@@ -1,0 +1,53 @@
+{
+  "binding": "/opt/km1/runtime/service-ready-20261101-v3/objects/e18d43c70ce76c49ca8d61747381b278336998f3b08620dbeee7af566e87e2dc.json",
+  "expected_sources": {
+    "board_station_host.py": "2f76f2e7868d3d5ee2454ed7827a09ad02c5108d7be8870ecc43d631f5333dab",
+    "board_voice_host.py": "c3e8fe03269e7ba1606a0cf171efbb9cf3cbbdd10e1dca61c3389d9bbc95843e",
+    "contour_grasp.py": "0c47c19ecf555f0398b7209088e2d807d872a9b33f09487a1c6a3e57cf8f7d39",
+    "empty_reference_warp.py": "48d72020921f3bd7bc065d1491b8ef792634ef221c73eea1eb129e49619fbc99",
+    "jaw_calibration.py": "1c4d9e9d98209474fc10ce9e09c7a3e3477e8f8e0aacd2b9ccd537e3b6e3ec1a",
+    "jaw_measurements.py": "23ccdcbd30f3b25103c5b10f65b9ca7a6a9ef56a98a3f95a2e1d7a3df7a7ad5a",
+    "km1_voice_dashboard.py": "22939af9d68a1e227a09231c2ce5e0067028bbb0c4e9d09af3a2a2b47db8afa3",
+    "mask_geometry_cpu.py": "daaec7e4a60b0f52e8b68994f21828abcf402260c55ffaa7c5d8e2469ec71900",
+    "monitor_operation.py": "04675d5007c788121c1aadd9ec2dc3452e66a25df934a5f78df6c1fafa552f38",
+    "monitor_prompted_operation.py": "fd13c21f8f8e22fab2ce6c7a42439fa96655a6e8999c8ae5a450f3343ea4e88b",
+    "monitor_tasks.py": "db8b153ee9154271e99df02fc729801c25aad6621bffcafd88151b37d2d01869",
+    "motion_path_runtime.py": "05f7676d264c805fa727bb5ec622a91722a5af6571b448e2cd6fd5db06c47490",
+    "operation_progress.py": "3d67f874c28338949af954c5426d66326b5990785de1397341b33fb5d1d49e88",
+    "phase_dataflow.py": "7f838d9944210a490db5c67465dfdc29377bff91d367756b737f4a0f57b9b5b6",
+    "prompted_batch.py": "9f6be511c25edd90c9ca4c5bf00537bf79e388414420dae5370682d8044e80d0",
+    "prompted_grasp_override.py": "4d442eab978af4ec946b7f91b3b9c3a1684144d38b5902186ac7fc3870f59c59",
+    "prompted_motion_policy.py": "f23dce1b355129c75942595c344eb4cbb6189276fd23365c0ef1b82daa4adf54",
+    "prompted_region_geometry.py": "9a91436f52b32255755f0b644681bbbede08a1716b7b96c215a71e4b6b468fb0",
+    "rgb_affine.py": "19385ce57b2d5de0e08b76119285ebced8cd5b2b6fb89e91e5d47ad4a40d6cf1",
+    "sorting_batch_verification.py": "45c150ca12447cccf1b582b296b7d0d2f33da7709b167643f519e8e1f3cf64f5",
+    "sorting_io.py": "5adfe72172bf743dd3d8bd1e3706abc23d188e4ae8116ef82d75a5a91c8cc2b3",
+    "sorting_item_heights.py": "75567858f773c4bc2b61cab7babf219eab4e5b578883ddb9446124696ca57ab6",
+    "sorting_known.py": "037c6d7d2bb76cd1846123b47b190daa78f2b4cb8bf82c284e77e018afe80128",
+    "sorting_loop.py": "55f819403737332a3fc571c36f89ea6b08d32e1e5c0b5ba2d4b70034cda5d444",
+    "sorting_manual_review.py": "1b9b7accff265c6f36b1e526e1ee4b2b24da47d42459be5beb5c7ae3fc731334",
+    "sorting_monitor_server.py": "b85869b3ac2b0f72c6739b81288f798bb8e282b2593d1dd6df363d092652bb52",
+    "sorting_neutral_return.py": "5ebc2c598cc3591fe59b0267efba481008a8f503433aa4a5fe094f65f74e7480",
+    "sorting_prompted_motion.py": "d14f05dcd1905c5d60278819888317193064a46dba4e300c19ed5d921faf3168",
+    "sorting_prompted_preview.py": "520b9507f849fedcf6e321360973dd6a121d20d2a99c163075e5af48a3b8086e",
+    "sorting_relocated_geometry.py": "e6587d906878abf21a74b5b8ef90ddaa70d505b604f91d50f22ef2b958d030d4",
+    "sorting_scene.py": "0520f2d74c1c3df14bc6aa37550a63676c7d76682a5e0ea849e79438189406fe",
+    "sorting_station_io.py": "52d0f69a366034aa6170313d96af06c12d78a452678c790e6098801317287c95",
+    "sorting_unified.py": "694981a0126765dd72d1f8099e55043a6aa973a099c203af61ef1667589e7021",
+    "sorting_unified_plan.py": "b0ff909e8b132664d41f2af5bfd9f1aab82d3f64778edea59733cf8dafced7a0",
+    "sorting_unified_run.py": "fe51ec1aa30a064fa63596192df24fa8c0b70aa80847b7ee7899bd3939531441",
+    "startup_preparation_runtime.py": "73ffd501fce162b0f5d8df2e5884e7e91f55d764c89b6b7dc340d3eb9cbcc543",
+    "static_visual_verification.py": "57908633da66521ae5ea604e2086717e2bd62de25c837dab0a43cebb43400836",
+    "station_geometry.py": "e2f38273f64d9dd7348cecc71b5abdaa30adaeccbd9801d65b438a39aa17f751"
+  },
+  "pc_warp": {
+    "code_sha256": {
+      "background_warp.py": "5d513a434c61c28a3fdd237135b31a66af0e050c464f9eacb576ff51e27d2a1c",
+      "background_warp_service.py": "dc107f73d3e7fc97712522b0b0695321d76dd6be90c8912cd526003261d3df60"
+    },
+    "manifest_sha256": "b537352dc3c35000a24e3f40978248dd1e4f9f4a3b97735916f3e4e7f4edf651",
+    "port": 8846,
+    "token_file": "/opt/km1/runtime/service-ready-20261101-v3/secrets/background-token.txt"
+  },
+  "root": "/opt/km1/runtime/service-ready-20261101-v3"
+}

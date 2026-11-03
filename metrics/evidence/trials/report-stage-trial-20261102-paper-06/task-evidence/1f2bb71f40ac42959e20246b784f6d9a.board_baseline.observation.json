@@ -1,0 +1,71 @@
+{
+  "observation": {
+    "camera_id": "pynq-c270",
+    "source_stream_id": "80546d70a4234054a471c6e0f859b08a",
+    "source_frame_id": "18537",
+    "capture_started_ms": 14191185.128596,
+    "image_sha256": "46d749c6535d06ec35764699ab8d785a13c34d156217aed42b133e9ec2976cb0",
+    "photometry": {
+      "method": "bounded_global_rgb_affine_no_geometric_warp",
+      "gain": [
+        0.9991255843318688,
+        0.998251787691789,
+        1.0010994224280494
+      ],
+      "bias": [
+        0.1198768060777411,
+        0.2482797356141333,
+        -0.016689533658151845
+      ],
+      "motion_geometry": {
+        "kind": "fixed_static_marker_geometry_during_motion",
+        "markers": [
+          {
+            "correlation": 0.9993112087249756,
+            "shift_px": 0.0,
+            "peak_margin": 0.6013790965080261,
+            "corners": 12,
+            "patch_dynamic_range": 162.0,
+            "rgb_mean_difference_diagnostic": 2.124242424242424
+          },
+          {
+            "correlation": 0.9993536472320557,
+            "shift_px": 0.0,
+            "peak_margin": 0.7132385671138763,
+            "corners": 15,
+            "patch_dynamic_range": 163.0,
+            "rgb_mean_difference_diagnostic": 2.1156462585034013
+          }
+        ],
+        "geometric_warp_applied": false,
+        "grasp_or_success_inferred": false
+      },
+      "adjusted_layout": [
+        {
+          "correlation": 0.9992852210998535,
+          "shift_px": 0.0,
+          "mean_abs_difference": 2.2164502164502164,
+          "corners": 12,
+          "corner_support_fraction": 0.49383116883116884,
+          "peak_margin": 0.6014451086521149
+        },
+        {
+          "correlation": 0.999344527721405,
+          "shift_px": 0.0,
+          "mean_abs_difference": 2.2125850340136055,
+          "corners": 15,
+          "corner_support_fraction": 0.49123086734693877,
+          "peak_margin": 0.7130920588970184
+        }
+      ],
+      "physical_alignment_verified": false
+    },
+    "evidence_type": "exact_board_motion_baseline"
+  },
+  "image_path": "1f2bb71f40ac42959e20246b784f6d9a.board_baseline.png",
+  "png_sha256": "46d749c6535d06ec35764699ab8d785a13c34d156217aed42b133e9ec2976cb0",
+  "decoded_bgr_sha256": "4ebefae853448bfacd815547a5db1eaa14a768781e7c7d1e4c55eb9b31f6f7b3",
+  "source_jpeg_sha256": null,
+  "source_encoding": "png",
+  "source_bytes_sha256": "46d749c6535d06ec35764699ab8d785a13c34d156217aed42b133e9ec2976cb0"
+}

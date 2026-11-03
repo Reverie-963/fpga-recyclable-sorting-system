@@ -1,0 +1,67 @@
+{
+  "task_id": "physical-20261029-131343-known-plastic-release-return",
+  "stage": "plastic_release_return",
+  "plan_sha256": "d1b47afe61b9a28e2e95b867bb6f81231b207fa3927346c583eebf3dba183a6d",
+  "started_at": "2026-10-29T17:41:27.434015+08:00",
+  "status": "sent_pending_observation",
+  "wait_policy": "motion_plus_echo_grace",
+  "physical_result": "pending_operator_observation",
+  "retry": false,
+  "serial_opened": true,
+  "steps": [
+    {
+      "step": "release",
+      "command": "{#005P1000T2000!}",
+      "duration_ms": 2000,
+      "extra_settle_s": 1,
+      "attempted": true,
+      "echo_matched": true,
+      "bytes_written": 17,
+      "received_hex": "7b2330303550313030305432303030217d"
+    },
+    {
+      "step": "retreat_200",
+      "command": "{#000P2200T5000!#001P1485T5000!#002P1872T5000!#003P0960T5000!}",
+      "duration_ms": 5000,
+      "nominal_radius_mm": 200,
+      "nominal_model_z_mm": 170,
+      "alpha_deg": -35,
+      "attempted": true,
+      "echo_matched": true,
+      "bytes_written": 62,
+      "received_hex": "7b2330303050323230305435303030212330303150313438355435303030212330303250313837325435303030212330303350303936305435303030217d"
+    },
+    {
+      "step": "retreat_160",
+      "command": "{#000P2200T5000!#001P1632T5000!#002P1987T5000!#003P0928T5000!}",
+      "duration_ms": 5000,
+      "nominal_radius_mm": 160,
+      "nominal_model_z_mm": 170,
+      "alpha_deg": -35,
+      "attempted": true,
+      "echo_matched": true,
+      "bytes_written": 62,
+      "received_hex": "7b2330303050323230305435303030212330303150313633325435303030212330303250313938375435303030212330303350303932385435303030217d"
+    },
+    {
+      "step": "turn_forward_high",
+      "command": "{#000P1500T5000!}",
+      "duration_ms": 5000,
+      "attempted": true,
+      "echo_matched": true,
+      "bytes_written": 17,
+      "received_hex": "7b2330303050313530305435303030217d"
+    },
+    {
+      "step": "neutral",
+      "command": "{#000P1500T5000!#001P1500T5000!#002P1500T5000!#003P1500T5000!}",
+      "duration_ms": 5000,
+      "attempted": true,
+      "echo_matched": true,
+      "bytes_written": 62,
+      "received_hex": "7b2330303050313530305435303030212330303150313530305435303030212330303250313530305435303030212330303350313530305435303030217d"
+    }
+  ],
+  "serial_closed": true,
+  "finished_at": "2026-10-29T17:41:55.033586+08:00"
+}

@@ -1,0 +1,442 @@
+{
+  "kind": "supervised-per-bin-empty-reference-v1",
+  "label": "metal",
+  "bin_id": "bin_metal",
+  "bin_empty_confirmed": true,
+  "review_source": "saved_unmodified_frames_visual_review",
+  "other_bins_empty_claimed": false,
+  "frames": [
+    {
+      "source_frame_id": "13246",
+      "image": {
+        "path": "c622e7529a5feb2c7e2dcd7041fed75e45a634908907cb3bd143dbcc43006c11.png",
+        "sha256": "c622e7529a5feb2c7e2dcd7041fed75e45a634908907cb3bd143dbcc43006c11"
+      },
+      "decoded_bgr_sha256": "c7ca777e9452edffcaf7495ed8679d1860ceed93413b958ccbbe3ced385d592b",
+      "model_input_image_sha256": "c622e7529a5feb2c7e2dcd7041fed75e45a634908907cb3bd143dbcc43006c11",
+      "bin_object_count": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "source_frame_id": "13249",
+      "image": {
+        "path": "e085a4c5b4f41fe74e1022cb444e8aa5124455880e8842ca0c2f398572411bee.png",
+        "sha256": "e085a4c5b4f41fe74e1022cb444e8aa5124455880e8842ca0c2f398572411bee"
+      },
+      "decoded_bgr_sha256": "e0f93834ec7db4a9dc8ff371bd8756913bf4004d2c4fefdd6cb81259d1b9fd93",
+      "model_input_image_sha256": "e085a4c5b4f41fe74e1022cb444e8aa5124455880e8842ca0c2f398572411bee",
+      "bin_object_count": 0,
+      "changed_fraction": 2.785127419579446e-05
+    },
+    {
+      "source_frame_id": "13252",
+      "image": {
+        "path": "a9ad89da3af5180c2b61f0f8a77845b28e60e0707a32a34bcba0e6c9280c1ca2.png",
+        "sha256": "a9ad89da3af5180c2b61f0f8a77845b28e60e0707a32a34bcba0e6c9280c1ca2"
+      },
+      "decoded_bgr_sha256": "c1e801d88bd605385f7df2b04f13f92a2015896c78512bc1323d1fe8ec0b518c",
+      "model_input_image_sha256": "a9ad89da3af5180c2b61f0f8a77845b28e60e0707a32a34bcba0e6c9280c1ca2",
+      "bin_object_count": 0,
+      "changed_fraction": 2.785127419579446e-05
+    }
+  ],
+  "reference_bgr_sha256": "c1e801d88bd605385f7df2b04f13f92a2015896c78512bc1323d1fe8ec0b518c",
+  "reference_pose": {
+    "kind": "station-pose-preview-v1",
+    "rotation_world_to_camera": [
+      [
+        0.9997733524220828,
+        0.009651193770427016,
+        -0.01897625478104873
+      ],
+      [
+        0.010974560453155573,
+        -0.9974217580346306,
+        0.07091823194332118
+      ],
+      [
+        -0.01824288380628561,
+        -0.07111041455309018,
+        -0.9973016124184889
+      ]
+    ],
+    "translation_world_to_camera_mm": [
+      -124.1513796061443,
+      -148.8404758121221,
+      746.558525596705
+    ],
+    "camera_center_world_mm": [
+      139.37608023339067,
+      -94.17043378646753,
+      752.743596517737
+    ],
+    "marker_ids": [
+      10,
+      11,
+      12
+    ],
+    "reprojection_rms_px": 0.6108429278508838,
+    "reprojection_max_px": 0.8866819748545556,
+    "camera_sha256": "d7ec49475e0c45986aa5ca2c9a419ccf81ab9ac1b8cd26e394f85608b3f467d1",
+    "station_sha256": "e77f5545ff43b5e5ac5d99cb60049ccdbbe68e1cebe309af879bc5a802cc2625",
+    "camera_id": "pynq-c270",
+    "lens_profile_id": "c270-fixed-640x480",
+    "image_size": [
+      640,
+      480
+    ],
+    "world_frame_id": "fixed-board-origin-center-v1",
+    "evidence": [
+      {
+        "image_sha256": "c622e7529a5feb2c7e2dcd7041fed75e45a634908907cb3bd143dbcc43006c11",
+        "detections": [
+          {
+            "id": 12,
+            "corners_px": [
+              [
+                114.29208374023438,
+                207.7036895751953
+              ],
+              [
+                154.8946075439453,
+                207.72398376464844
+              ],
+              [
+                153.67996215820312,
+                248.09329223632812
+              ],
+              [
+                112.73440551757812,
+                248.25892639160156
+              ]
+            ]
+          },
+          {
+            "id": 10,
+            "corners_px": [
+              [
+                114.45800018310547,
+                44.43390655517578
+              ],
+              [
+                154.75985717773438,
+                44.48801803588867
+              ],
+              [
+                155.29052734375,
+                84.64180755615234
+              ],
+              [
+                114.74369812011719,
+                84.90596771240234
+              ]
+            ]
+          },
+          {
+            "id": 11,
+            "corners_px": [
+              [
+                228.5064697265625,
+                44.27992630004883
+              ],
+              [
+                268.42059326171875,
+                43.922969818115234
+              ],
+              [
+                268.64263916015625,
+                84.5000991821289
+              ],
+              [
+                228.55349731445312,
+                84.48230743408203
+              ]
+            ]
+          }
+        ],
+        "source_frame_id": 13246,
+        "source_stream_id": "1e8e9aa589464ca982a5d0593a3c589d"
+      },
+      {
+        "image_sha256": "e085a4c5b4f41fe74e1022cb444e8aa5124455880e8842ca0c2f398572411bee",
+        "detections": [
+          {
+            "id": 12,
+            "corners_px": [
+              [
+                114.29566955566406,
+                207.7037353515625
+              ],
+              [
+                154.74899291992188,
+                207.68133544921875
+              ],
+              [
+                153.7752685546875,
+                248.06690979003906
+              ],
+              [
+                112.7039794921875,
+                248.22967529296875
+              ]
+            ]
+          },
+          {
+            "id": 10,
+            "corners_px": [
+              [
+                114.39122009277344,
+                44.49853515625
+              ],
+              [
+                154.7667999267578,
+                44.47053146362305
+              ],
+              [
+                155.21107482910156,
+                84.62809753417969
+              ],
+              [
+                114.71034240722656,
+                84.96136474609375
+              ]
+            ]
+          },
+          {
+            "id": 11,
+            "corners_px": [
+              [
+                228.38031005859375,
+                44.36729049682617
+              ],
+              [
+                268.44964599609375,
+                43.89534378051758
+              ],
+              [
+                268.63128662109375,
+                84.4846420288086
+              ],
+              [
+                228.6272735595703,
+                84.59397888183594
+              ]
+            ]
+          }
+        ],
+        "source_frame_id": 13249,
+        "source_stream_id": "1e8e9aa589464ca982a5d0593a3c589d"
+      },
+      {
+        "image_sha256": "a9ad89da3af5180c2b61f0f8a77845b28e60e0707a32a34bcba0e6c9280c1ca2",
+        "detections": [
+          {
+            "id": 12,
+            "corners_px": [
+              [
+                114.28681182861328,
+                207.71041870117188
+              ],
+              [
+                154.74639892578125,
+                207.6856231689453
+              ],
+              [
+                153.66036987304688,
+                248.1121063232422
+              ],
+              [
+                112.67552947998047,
+                248.22512817382812
+              ]
+            ]
+          },
+          {
+            "id": 10,
+            "corners_px": [
+              [
+                114.42625427246094,
+                44.421077728271484
+              ],
+              [
+                154.77203369140625,
+                44.49400329589844
+              ],
+              [
+                155.1607208251953,
+                84.83401489257812
+              ],
+              [
+                114.77944946289062,
+                84.92186737060547
+              ]
+            ]
+          },
+          {
+            "id": 11,
+            "corners_px": [
+              [
+                228.46395874023438,
+                44.337371826171875
+              ],
+              [
+                268.42657470703125,
+                43.84763717651367
+              ],
+              [
+                268.658203125,
+                84.46914672851562
+              ],
+              [
+                228.64373779296875,
+                84.5526123046875
+              ]
+            ]
+          }
+        ],
+        "source_frame_id": 13252,
+        "source_stream_id": "1e8e9aa589464ca982a5d0593a3c589d"
+      }
+    ],
+    "per_frame_pose": [
+      {
+        "rotation_world_to_camera": [
+          [
+            0.9997732796535882,
+            0.009656624408015952,
+            -0.018977325832410248
+          ],
+          [
+            0.010983751203203081,
+            -0.9974072670742468,
+            0.07112032618730252
+          ],
+          [
+            -0.018241340417115448,
+            -0.07131264398775777,
+            -0.997287200513103
+          ]
+        ],
+        "translation_world_to_camera_mm": [
+          -124.13048308508053,
+          -148.84243984027373,
+          746.5411046203802
+        ],
+        "camera_center_world_mm": [
+          139.35509893138826,
+          -94.02002967699158,
+          752.7459465435327
+        ],
+        "marker_ids": [
+          12,
+          10,
+          11
+        ],
+        "reprojection_rms_px": 0.6203992432208876,
+        "reprojection_max_px": 0.9149502445848674
+      },
+      {
+        "rotation_world_to_camera": [
+          [
+            0.9998064705790823,
+            0.009308192180849358,
+            -0.01733144386726004
+          ],
+          [
+            0.010505674476647004,
+            -0.9974680642553121,
+            0.07033556422288197
+          ],
+          [
+            -0.016632864816090418,
+            -0.07050403072934767,
+            -0.9973728136754705
+          ]
+        ],
+        "translation_world_to_camera_mm": [
+          -124.15550194995184,
+          -148.88093295542623,
+          746.6674711475657
+        ],
+        "camera_center_world_mm": [
+          138.1147879351345,
+          -94.70524639672166,
+          753.0256668869877
+        ],
+        "marker_ids": [
+          12,
+          10,
+          11
+        ],
+        "reprojection_rms_px": 0.5985122859065458,
+        "reprojection_max_px": 0.8471532692481818
+      },
+      {
+        "rotation_world_to_camera": [
+          [
+            0.9997377409694717,
+            0.009985526215707845,
+            -0.02060918599683514
+          ],
+          [
+            0.011431586552000106,
+            -0.997390500857674,
+            0.07128469420417215
+          ],
+          [
+            -0.019843591160897883,
+            -0.07150159484286776,
+            -0.9972430765990634
+          ]
+        ],
+        "translation_world_to_camera_mm": [
+          -124.16776643051462,
+          -148.79796832980506,
+          746.4655937072795
+        ],
+        "camera_center_world_mm": [
+          140.6487572233958,
+          -93.79631922683215,
+          752.4556663214081
+        ],
+        "marker_ids": [
+          12,
+          10,
+          11
+        ],
+        "reprojection_rms_px": 0.6190439289802143,
+        "reprojection_max_px": 0.8997898649547856
+      }
+    ],
+    "stability_quality": {
+      "mode": "fixed_marker_task_space",
+      "max_observed_marker_shift_px": 0.23193402604012608,
+      "max_height_plane_point_spread_mm": 0.923724114001588,
+      "observed_camera_center_spread_mm": 2.751735742904067,
+      "evaluated_height_range_mm": [
+        0,
+        120
+      ],
+      "fit": "mean_common_marker_corners",
+      "evaluated_task_point_count": 38
+    },
+    "recorded_replay_only": true,
+    "automatic_motion_allowed": false,
+    "physical_accuracy_verified": false
+  },
+  "source_stream_id": "1e8e9aa589464ca982a5d0593a3c589d",
+  "camera_sha256": "d7ec49475e0c45986aa5ca2c9a419ccf81ab9ac1b8cd26e394f85608b3f467d1",
+  "station_sha256": "e77f5545ff43b5e5ac5d99cb60049ccdbbe68e1cebe309af879bc5a802cc2625",
+  "registration_sha256": "546bb4901a37fae7aa78a2fed4cb78d570d26b4cec31089c05a2239edc79ba67",
+  "scene_regions_sha256": "b10d00d5da1525a6e7e89e039de6059863449ed22284e2a7c738b1065c65b8d3",
+  "bin_roi": [
+    421,
+    88,
+    636,
+    255
+  ],
+  "mechanical_release_routes_changed": false,
+  "model_version": "9288e697042d14813d7d47abbe2e413f314be59c3069c2302f2dffee5912dd0e",
+  "raw_scene_contains_existing_paper_in_other_bin": true,
+  "visual_review_note": "All three full images show the metal box floor and walls empty; the can is outside the box. Existing carton in the paper box is not an empty reference for paper."
+}

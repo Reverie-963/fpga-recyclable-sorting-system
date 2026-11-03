@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="0 0 1005 1999"
+     preserveAspectRatio="xMidYMid meet"
+     version="1.1"
+     baseProfile="full"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:ev="http://www.w3.org/2001/xml-events"
+     xml:space="preserve">
+<title>design_1_imp</title>
+<desc>Nlview schematic (SVG)</desc>
+<clipPath id="clippingbbox">
+<rect x="0" y="0" width="1999" height="1005" />
+</clipPath>
+<g stroke="#8bc34a"
+   stroke-width="1"
+   stroke-linecap="butt"
+   stroke-linejoin="miter"
+   stroke-miterlimit="4"
+   stroke-dasharray="none"
+   stroke-dashoffset="0"
+   fill="none"
+   font-family="Helvetica"
+   font-style="normal"
+   font-size="12"
+   writing-mode="lr-tb"
+   cursor="crosshair"
+   transform="rotate(-90) translate(-1999)"
+   clip-path="url(#clippingbbox)">
+<path d="M0 0h1998v1006h-1998z" stroke="none" fill="white" />
+<path d="M1890 287v-7h14l7 7l-7 7h-14z" stroke="none" fill="#ddd4d0" />
+<g stroke="#2a5e6f" stroke-width="3">
+<path d="M1890 287v-7h14l7 7l-7 7h-14z" />
+<text x="1915" y="287" fill="#1c1f28" stroke-width="0" dy="4.4">DDR</text>
+<path d="M1890 317v-7h14l7 7l-7 7h-14z" stroke="none" fill="#ddd4d0" />
+<path d="M1890 317v-7h14l7 7l-7 7h-14z" />
+<text x="1915" y="317" fill="#1c1f28" stroke-width="0" dy="4.4">FIXED_IO</text>
+<path d="M1157 29h226l3 1l2 1l1 2l1 3v382l-1 3l-1 2l-2 1l-3 1h-226l-3 -1l-2 -1l-1 -2l-1 -3v-382l1 -3l1 -2l2 -1z" stroke="none" fill="#e5c7ff" />
+<text x="1270" y="27" fill="#1c1f28" stroke-width="0" text-anchor="middle" dy="-1.6">axi_mem_intercon</text>
+<text x="1270" y="427" fill="#575d6c" stroke-width="0" text-anchor="middle" dy="9.6">AXI Interconnect (Discontinued)</text>
+</g>
+<g stroke="#575d6c" stroke-width="3">
+<path d="M1161 34v12" />
+<path d="M1155 40h12" />
+</g>
+<g stroke="#575d6c">
+<path d="M1153 32h16v16h-16z" />
+<path d="M1140 48h10v18h-10z" stroke="none" fill="#e5c7ff" />
+</g>
+<g stroke="#1c1f28" stroke-width="3">
+<path d="M1159 52v10" />
+<path d="M1154 57h10" />
+</g>
+<g stroke="#1c1f28">
+<path d="M1152 50h14v14h-14z" />
+<text x="1167" y="57" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">S00_AXI</text>
+<path d="M1390 208h10v18h-10z" stroke="none" fill="#e5c7ff" />
+</g>
+<g stroke="#1c1f28" stroke-width="3">
+<path d="M1380 212v10" />
+<path d="M1375 217h10" />
+</g>
+<g stroke="#1c1f28">
+<path d="M1373 210h14v14h-14z" />
+<text x="1373" y="217" fill="#1c1f28" stroke-width="0" font-size="10" text-anchor="end" dy="3.66667">M00_AXI</text>
+<path d="M1140 68h10v18h-10z" stroke="none" fill="#e5c7ff" />
+</g>
+<g stroke="#1c1f28" stroke-width="3">
+<path d="M1159 72v10" />
+<path d="M1154 77h10" />
+</g>
+<g stroke="#1c1f28">
+<path d="M1152 70h14v14h-14z" />
+<text x="1167" y="77" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">S01_AXI</text>
+<path d="M1390 228h10v18h-10z" stroke="none" fill="#e5c7ff" />
+</g>
+<g stroke="#1c1f28" stroke-width="3">
+<path d="M1380 232v10" />
+<path d="M1375 237h10" />
+</g>
+<g stroke="#1c1f28">
+<path d="M1373 230h14v14h-14z" />
+<text x="1373" y="237" fill="#1c1f28" stroke-width="0" font-size="10" text-anchor="end" dy="3.66667">M01_AXI</text>
+<path d="M1140 88h10v18h-10z" stroke="none" fill="#e5c7ff" />
+</g>
+<g stroke="#1c1f28" stroke-width="3">
+<path d="M1159 92v10" />
+<path d="M1154 97h10" />
+</g>
+<g stroke="#1c1f28">
+<path d="M1152 90h14v14h-14z" />
+<text x="1167" y="97" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">S02_AXI</text>
+<path d="M1140 108h10v18h-10z" stroke="none" fill="#e5c7ff" />
+</g>
+<g stroke="#1c1f28" stroke-width="3">
+<path d="M1159 112v10" />
+<path d="M1154 117h10" />
+</g>
+<g stroke="#1c1f28">
+<path d="M1152 110h14v14h-14z" />
+<text x="1167" y="117" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">S03_AXI</text>
+</g>
+<g stroke="#1c1f28" stroke-width="3">
+<path d="M1140 137h10" />
+<text x="1152" y="137" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">ACLK</text>
+<path d="M1140 157h10" />
+<text x="1152" y="157" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">ARESETN</text>
+<path d="M1140 177h10" />
+<text x="1152" y="177" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">S00_ACLK</text>
+<path d="M1140 197h10" />
+<text x="1152" y="197" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">S00_ARESETN</text>
+<path d="M1140 217h10" />
+<text x="1152" y="217" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">M00_ACLK</text>
+<path d="M1140 237h10" />
+<text x="1152" y="237" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">M00_ARESETN</text>
+<path d="M1140 257h10" />
+<text x="1152" y="257" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">S01_ACLK</text>
+<path d="M1140 277h10" />
+<text x="1152" y="277" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">S01_ARESETN</text>
+<path d="M1140 297h10" />
+<text x="1152" y="297" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">M01_ACLK</text>
+<path d="M1140 317h10" />
+<text x="1152" y="317" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">M01_ARESETN</text>
+<path d="M1140 337h10" />
+<text x="1152" y="337" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">S02_ACLK</text>
+<path d="M1140 357h10" />
+<text x="1152" y="357" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">S02_ARESETN</text>
+<path d="M1140 377h10" />
+<text x="1152" y="377" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">S03_ACLK</text>
+<path d="M1140 397h10" />
+<text x="1152" y="397" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">S03_ARESETN</text>
+</g>
+<g stroke="#575d6c">
+<path d="M1157 29h226" />
+<path d="M1383,29 A6.83537,6.83537 1.61957 0,1 1390,36" />
+<path d="M1390 36v382" />
+<path d="M1390,418 A6.83537,6.83537 1.61957 0,1 1383,425" />
+<path d="M1383 425h-226" />
+<path d="M1157,425 A6.83537,6.83537 1.61957 0,1 1150,418" />
+<path d="M1150 418v-382" />
+<path d="M1150,36 A6.83537,6.83537 1.61957 0,1 1157,29" />
+<path d="M1157 489h226l3 1l2 1l1 2l1 3v262l-1 3l-1 2l-2 1l-3 1h-226l-3 -1l-2 -1l-1 -2l-1 -3v-262l1 -3l1 -2l2 -1z" stroke="none" fill="#e5c7ff" />
+<text x="1270" y="487" fill="#1c1f28" stroke-width="0" text-anchor="middle" dy="-1.6">axi_mem_intercon_1</text>
+<text x="1270" y="767" fill="#575d6c" stroke-width="0" text-anchor="middle" dy="9.6">AXI Interconnect (Discontinued)</text>
+</g>
+<g stroke="#575d6c" stroke-width="3">
+<path d="M1161 494v12" />
+<path d="M1155 500h12" />
+</g>
+<g stroke="#575d6c">
+<path d="M1153 492h16v16h-16z" />
+<path d="M1140 508h10v18h-10z" stroke="none" fill="#e5c7ff" />
+</g>
+<g stroke="#1c1f28" stroke-width="3">
+<path d="M1159 512v10" />
+<path d="M1154 517h10" />
+</g>
+<g stroke="#1c1f28">
+<path d="M1152 510h14v14h-14z" />
+<text x="1167" y="517" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">S00_AXI</text>
+<path d="M1390 608h10v18h-10z" stroke="none" fill="#e5c7ff" />
+</g>
+<g stroke="#1c1f28" stroke-width="3">
+<path d="M1380 612v10" />
+<path d="M1375 617h10" />
+</g>
+<g stroke="#1c1f28">
+<path d="M1373 610h14v14h-14z" />
+<text x="1373" y="617" fill="#1c1f28" stroke-width="0" font-size="10" text-anchor="end" dy="3.66667">M00_AXI</text>
+<path d="M1140 528h10v18h-10z" stroke="none" fill="#e5c7ff" />
+</g>
+<g stroke="#1c1f28" stroke-width="3">
+<path d="M1159 532v10" />
+<path d="M1154 537h10" />
+</g>
+<g stroke="#1c1f28">
+<path d="M1152 530h14v14h-14z" />
+<text x="1167" y="537" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">S01_AXI</text>
+<path d="M1390 628h10v18h-10z" stroke="none" fill="#e5c7ff" />
+</g>
+<g stroke="#1c1f28" stroke-width="3">
+<path d="M1380 632v10" />
+<path d="M1375 637h10" />
+</g>
+<g stroke="#1c1f28">
+<path d="M1373 630h14v14h-14z" />
+<text x="1373" y="637" fill="#1c1f28" stroke-width="0" font-size="10" text-anchor="end" dy="3.66667">M01_AXI</text>
+</g>
+<g stroke="#1c1f28" stroke-width="3">
+<path d="M1140 557h10" />
+<text x="1152" y="557" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">ACLK</text>
+<path d="M1140 577h10" />
+<text x="1152" y="577" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">ARESETN</text>
+<path d="M1140 597h10" />
+<text x="1152" y="597" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">S00_ACLK</text>
+<path d="M1140 617h10" />
+<text x="1152" y="617" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">S00_ARESETN</text>
+<path d="M1140 637h10" />
+<text x="1152" y="637" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">M00_ACLK</text>
+<path d="M1140 657h10" />
+<text x="1152" y="657" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">M00_ARESETN</text>
+<path d="M1140 677h10" />
+<text x="1152" y="677" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">S01_ACLK</text>
+<path d="M1140 697h10" />
+<text x="1152" y="697" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">S01_ARESETN</text>
+<path d="M1140 717h10" />
+<text x="1152" y="717" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">M01_ACLK</text>
+<path d="M1140 737h10" />
+<text x="1152" y="737" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">M01_ARESETN</text>
+</g>
+<g stroke="#575d6c">
+<path d="M1157 489h226" />
+<path d="M1383,489 A6.83537,6.83537 1.61957 0,1 1390,496" />
+<path d="M1390 496v262" />
+<path d="M1390,758 A6.83537,6.83537 1.61957 0,1 1383,765" />
+<path d="M1383 765h-226" />
+<path d="M1157,765 A6.83537,6.83537 1.61957 0,1 1150,758" />
+<path d="M1150 758v-262" />
+<path d="M1150,496 A6.83537,6.83537 1.61957 0,1 1157,489" />
+<path d="M747 319h306l3 1l2 1l1 2l1 3v82l-1 3l-1 2l-2 1l-3 1h-306l-3 -1l-2 -1l-1 -2l-1 -3v-82l1 -3l1 -2l2 -1z" stroke="none" fill="#e5c7ff" />
+<text x="900" y="317" fill="#1c1f28" stroke-width="0" text-anchor="middle" dy="-1.6">motion_path_0</text>
+<text x="900" y="417" fill="#575d6c" stroke-width="0" text-anchor="middle" dy="9.6">Motion_path_accel (Pre-Production)</text>
+<path d="M730 338h10v18h-10z" stroke="none" fill="#e5c7ff" />
+</g>
+<g stroke="#1c1f28" stroke-width="3">
+<path d="M749 342v10" />
+<path d="M744 347h10" />
+</g>
+<g stroke="#1c1f28">
+<path d="M742 340h14v14h-14z" />
+<text x="757" y="347" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">s_axi_control</text>
+<path d="M1060 338h10v18h-10z" stroke="none" fill="#e5c7ff" />
+</g>
+<g stroke="#1c1f28" stroke-width="3">
+<path d="M1050 342v10" />
+<path d="M1045 347h10" />
+</g>
+<g stroke="#1c1f28">
+<path d="M1043 340h14v14h-14z" />
+<text x="1043" y="347" fill="#1c1f28" stroke-width="0" font-size="10" text-anchor="end" dy="3.66667">m_axi_input_mem</text>
+<path d="M1060 358h10v18h-10z" stroke="none" fill="#e5c7ff" />
+</g>
+<g stroke="#1c1f28" stroke-width="3">
+<path d="M1050 362v10" />
+<path d="M1045 367h10" />
+</g>
+<g stroke="#1c1f28">
+<path d="M1043 360h14v14h-14z" />
+<text x="1043" y="367" fill="#1c1f28" stroke-width="0" font-size="10" text-anchor="end" dy="3.66667">m_axi_output_mem</text>
+</g>
+<g stroke="#1c1f28" stroke-width="3">
+<path d="M730 367h10" />
+<text x="742" y="367" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">ap_clk</text>
+<circle cx="737" cy="387" r="3" />
+<path d="M730 387h4" />
+<text x="742" y="387" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">ap_rst_n</text>
+<path d="M1070 387h-10" />
+<text x="1058" y="387" fill="#1c1f28" stroke-width="0" font-size="10" text-anchor="end" dy="3.66667">interrupt</text>
+</g>
+<g stroke="#575d6c">
+<path d="M747 319h306" />
+<path d="M1053,319 A6.83537,6.83537 1.61957 0,1 1060,326" />
+<path d="M1060 326v82" />
+<path d="M1060,408 A6.83537,6.83537 1.61957 0,1 1053,415" />
+<path d="M1053 415h-306" />
+<path d="M747,415 A6.83537,6.83537 1.61957 0,1 740,408" />
+<path d="M740 408v-82" />
+<path d="M740,326 A6.83537,6.83537 1.61957 0,1 747,319" />
+<path d="M1467 249h346l3 1l2 1l1 2l1 3v162l-1 3l-1 2l-2 1l-3 1h-346l-3 -1l-2 -1l-1 -2l-1 -3v-162l1 -3l1 -2l2 -1z" stroke="none" fill="#e5c7ff" />
+<text x="1640" y="247" fill="#1c1f28" stroke-width="0" text-anchor="middle" dy="-1.6">ps7</text>
+<text x="1640" y="427" fill="#575d6c" stroke-width="0" text-anchor="middle" dy="9.6">ZYNQ7 Processing System</text>
+<path d="M1820 278h10v18h-10z" stroke="none" fill="#e5c7ff" />
+</g>
+<g stroke="#1c1f28" stroke-width="3">
+<path d="M1810 282v10" />
+<path d="M1805 287h10" />
+</g>
+<g stroke="#1c1f28">
+<path d="M1803 280h14v14h-14z" />
+<text x="1803" y="287" fill="#1c1f28" stroke-width="0" font-size="10" text-anchor="end" dy="3.66667">DDR</text>
+<path d="M1820 298h10v18h-10z" stroke="none" fill="#e5c7ff" />
+</g>
+<g stroke="#1c1f28" stroke-width="3">
+<path d="M1810 302v10" />
+<path d="M1805 307h10" />
+</g>
+<g stroke="#1c1f28">
+<path d="M1803 300h14v14h-14z" />
+<text x="1803" y="307" fill="#1c1f28" stroke-width="0" font-size="10" text-anchor="end" dy="3.66667">FIXED_IO</text>
+<path d="M1820 318h10v18h-10z" stroke="none" fill="#e5c7ff" />
+</g>
+<g stroke="#1c1f28" stroke-width="3">
+<path d="M1810 322v10" />
+<path d="M1805 327h10" />
+</g>
+<g stroke="#1c1f28">
+<path d="M1803 320h14v14h-14z" />
+<text x="1803" y="327" fill="#1c1f28" stroke-width="0" font-size="10" text-anchor="end" dy="3.66667">USBIND_0</text>
+<path d="M1450 268h10v18h-10z" stroke="none" fill="#e5c7ff" />
+</g>
+<g stroke="#1c1f28" stroke-width="3">
+<path d="M1469 272v10" />
+<path d="M1464 277h10" />
+</g>
+<g stroke="#1c1f28">
+<path d="M1462 270h14v14h-14z" />
+<text x="1477" y="277" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">S_AXI_HP0_FIFO_CTRL</text>
+<path d="M1450 288h10v18h-10z" stroke="none" fill="#e5c7ff" />
+</g>
+<g stroke="#1c1f28" stroke-width="3">
+<path d="M1469 292v10" />
+<path d="M1464 297h10" />
+</g>
+<g stroke="#1c1f28">
+<path d="M1462 290h14v14h-14z" />
+<text x="1477" y="297" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">S_AXI_HP1_FIFO_CTRL</text>
+<path d="M1820 338h10v18h-10z" stroke="none" fill="#e5c7ff" />
+</g>
+<g stroke="#1c1f28" stroke-width="3">
+<path d="M1810 342v10" />
+<path d="M1805 347h10" />
+</g>
+<g stroke="#1c1f28">
+<path d="M1803 340h14v14h-14z" />
+<text x="1803" y="347" fill="#1c1f28" stroke-width="0" font-size="10" text-anchor="end" dy="3.66667">M_AXI_GP0</text>
+<path d="M1450 308h10v18h-10z" stroke="none" fill="#e5c7ff" />
+</g>
+<g stroke="#1c1f28" stroke-width="3">
+<path d="M1469 312v10" />
+<path d="M1464 317h10" />
+</g>
+<g stroke="#1c1f28">
+<path d="M1462 310h14v14h-14z" />
+<text x="1477" y="317" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">S_AXI_HP0</text>
+<path d="M1450 328h10v18h-10z" stroke="none" fill="#e5c7ff" />
+</g>
+<g stroke="#1c1f28" stroke-width="3">
+<path d="M1469 332v10" />
+<path d="M1464 337h10" />
+</g>
+<g stroke="#1c1f28">
+<path d="M1462 330h14v14h-14z" />
+<text x="1477" y="337" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">S_AXI_HP1</text>
+</g>
+<g stroke="#1c1f28" stroke-width="3">
+<path d="M1450 357h10" />
+<text x="1462" y="357" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">M_AXI_GP0_ACLK</text>
+<path d="M1450 377h10" />
+<text x="1462" y="377" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">S_AXI_HP0_ACLK</text>
+<path d="M1450 397h10" />
+<text x="1462" y="397" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">S_AXI_HP1_ACLK</text>
+<path d="M1830 367h-10" />
+<text x="1818" y="367" fill="#1c1f28" stroke-width="0" font-size="10" text-anchor="end" dy="3.66667">FCLK_CLK0</text>
+<circle cx="1823" cy="387" r="3" />
+<path d="M1830 387h-4" />
+<text x="1818" y="387" fill="#1c1f28" stroke-width="0" font-size="10" text-anchor="end" dy="3.66667">FCLK_RESET0_N</text>
+</g>
+<g stroke="#575d6c">
+<path d="M1467 249h346" />
+<path d="M1813,249 A6.83537,6.83537 1.61957 0,1 1820,256" />
+<path d="M1820 256v162" />
+<path d="M1820,418 A6.83537,6.83537 1.61957 0,1 1813,425" />
+<path d="M1813 425h-346" />
+<path d="M1467,425 A6.83537,6.83537 1.61957 0,1 1460,418" />
+<path d="M1460 418v-162" />
+<path d="M1460,256 A6.83537,6.83537 1.61957 0,1 1467,249" />
+<path d="M417 489h226l3 1l2 1l1 2l1 3v202l-1 3l-1 2l-2 1l-3 1h-226l-3 -1l-2 -1l-1 -2l-1 -3v-202l1 -3l1 -2l2 -1z" stroke="none" fill="#e5c7ff" />
+<text x="530" y="487" fill="#1c1f28" stroke-width="0" text-anchor="middle" dy="-1.6">ps7_axi_periph</text>
+<text x="530" y="707" fill="#575d6c" stroke-width="0" text-anchor="middle" dy="9.6">AXI Interconnect (Discontinued)</text>
+</g>
+<g stroke="#575d6c" stroke-width="3">
+<path d="M421 494v12" />
+<path d="M415 500h12" />
+</g>
+<g stroke="#575d6c">
+<path d="M413 492h16v16h-16z" />
+<path d="M400 508h10v18h-10z" stroke="none" fill="#e5c7ff" />
+</g>
+<g stroke="#1c1f28" stroke-width="3">
+<path d="M419 512v10" />
+<path d="M414 517h10" />
+</g>
+<g stroke="#1c1f28">
+<path d="M412 510h14v14h-14z" />
+<text x="427" y="517" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">S00_AXI</text>
+<path d="M650 578h10v18h-10z" stroke="none" fill="#e5c7ff" />
+</g>
+<g stroke="#1c1f28" stroke-width="3">
+<path d="M640 582v10" />
+<path d="M635 587h10" />
+</g>
+<g stroke="#1c1f28">
+<path d="M633 580h14v14h-14z" />
+<text x="633" y="587" fill="#1c1f28" stroke-width="0" font-size="10" text-anchor="end" dy="3.66667">M00_AXI</text>
+<path d="M650 598h10v18h-10z" stroke="none" fill="#e5c7ff" />
+</g>
+<g stroke="#1c1f28" stroke-width="3">
+<path d="M640 602v10" />
+<path d="M635 607h10" />
+</g>
+<g stroke="#1c1f28">
+<path d="M633 600h14v14h-14z" />
+<text x="633" y="607" fill="#1c1f28" stroke-width="0" font-size="10" text-anchor="end" dy="3.66667">M01_AXI</text>
+</g>
+<g stroke="#1c1f28" stroke-width="3">
+<path d="M400 537h10" />
+<text x="412" y="537" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">ACLK</text>
+<path d="M400 557h10" />
+<text x="412" y="557" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">ARESETN</text>
+<path d="M400 577h10" />
+<text x="412" y="577" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">S00_ACLK</text>
+<path d="M400 597h10" />
+<text x="412" y="597" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">S00_ARESETN</text>
+<path d="M400 617h10" />
+<text x="412" y="617" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">M00_ACLK</text>
+<path d="M400 637h10" />
+<text x="412" y="637" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">M00_ARESETN</text>
+<path d="M400 657h10" />
+<text x="412" y="657" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">M01_ACLK</text>
+<path d="M400 677h10" />
+<text x="412" y="677" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">M01_ARESETN</text>
+</g>
+<g stroke="#575d6c">
+<path d="M417 489h226" />
+<path d="M643,489 A6.83537,6.83537 1.61957 0,1 650,496" />
+<path d="M650 496v202" />
+<path d="M650,698 A6.83537,6.83537 1.61957 0,1 643,705" />
+<path d="M643 705h-226" />
+<path d="M417,705 A6.83537,6.83537 1.61957 0,1 410,698" />
+<path d="M410 698v-202" />
+<path d="M410,496 A6.83537,6.83537 1.61957 0,1 417,489" />
+<path d="M57 839h266l3 1l2 1l1 2l1 3v122l-1 3l-1 2l-2 1l-3 1h-266l-3 -1l-2 -1l-1 -2l-1 -3v-122l1 -3l1 -2l2 -1z" stroke="none" fill="#e5c7ff" />
+<text x="190" y="837" fill="#1c1f28" stroke-width="0" text-anchor="middle" dy="-1.6">rst_ps7_100M</text>
+<text x="190" y="977" fill="#575d6c" stroke-width="0" text-anchor="middle" dy="9.6">Processor System Reset</text>
+</g>
+<g stroke="#1c1f28" stroke-width="3">
+<path d="M40 867h10" />
+<text x="52" y="867" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">slowest_sync_clk</text>
+<circle cx="47" cy="887" r="3" />
+<path d="M40 887h4" />
+<text x="52" y="887" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">ext_reset_in</text>
+<circle cx="47" cy="907" r="3" />
+<path d="M40 907h4" />
+<text x="52" y="907" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">aux_reset_in</text>
+<path d="M40 927h10" />
+<text x="52" y="927" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">mb_debug_sys_rst</text>
+<path d="M40 947h10" />
+<text x="52" y="947" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">dcm_locked</text>
+<path d="M340 867h-10" />
+<text x="328" y="867" fill="#1c1f28" stroke-width="0" font-size="10" text-anchor="end" dy="3.66667">mb_reset</text>
+</g>
+<g stroke="#1c1f28" stroke-width="5">
+<path d="M340 887h-10" />
+<text x="328" y="887" fill="#1c1f28" stroke-width="0" font-size="10" text-anchor="end" dy="3.66667">bus_struct_reset[0:0]</text>
+<path d="M340 907h-10" />
+<text x="328" y="907" fill="#1c1f28" stroke-width="0" font-size="10" text-anchor="end" dy="3.66667">peripheral_reset[0:0]</text>
+<circle cx="333" cy="927" r="3" />
+<path d="M340 927h-4" />
+<text x="328" y="927" fill="#1c1f28" stroke-width="0" font-size="10" text-anchor="end" dy="3.66667">interconnect_aresetn[0:0]</text>
+<circle cx="333" cy="947" r="3" />
+<path d="M340 947h-4" />
+<text x="328" y="947" fill="#1c1f28" stroke-width="0" font-size="10" text-anchor="end" dy="3.66667">peripheral_aresetn[0:0]</text>
+</g>
+<g stroke="#575d6c">
+<path d="M57 839h266" />
+<path d="M323,839 A6.83537,6.83537 1.61957 0,1 330,846" />
+<path d="M330 846v122" />
+<path d="M330,968 A6.83537,6.83537 1.61957 0,1 323,975" />
+<path d="M323 975h-266" />
+<path d="M57,975 A6.83537,6.83537 1.61957 0,1 50,968" />
+<path d="M50 968v-122" />
+<path d="M50,846 A6.83537,6.83537 1.61957 0,1 57,839" />
+<path d="M747 29h306l3 1l2 1l1 2l1 3v122l-1 3l-1 2l-2 1l-3 1h-306l-3 -1l-2 -1l-1 -2l-1 -3v-122l1 -3l1 -2l2 -1z" stroke="none" fill="#e5c7ff" />
+<text x="900" y="27" fill="#1c1f28" stroke-width="0" text-anchor="middle" dy="-1.6">station_vision_0</text>
+<text x="900" y="167" fill="#575d6c" stroke-width="0" text-anchor="middle" dy="9.6">Station_vision_accel (Pre-Production)</text>
+<path d="M730 68h10v18h-10z" stroke="none" fill="#e5c7ff" />
+</g>
+<g stroke="#1c1f28" stroke-width="3">
+<path d="M749 72v10" />
+<path d="M744 77h10" />
+</g>
+<g stroke="#1c1f28">
+<path d="M742 70h14v14h-14z" />
+<text x="757" y="77" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">s_axi_control</text>
+<path d="M1060 48h10v18h-10z" stroke="none" fill="#e5c7ff" />
+</g>
+<g stroke="#1c1f28" stroke-width="3">
+<path d="M1050 52v10" />
+<path d="M1045 57h10" />
+</g>
+<g stroke="#1c1f28">
+<path d="M1043 50h14v14h-14z" />
+<text x="1043" y="57" fill="#1c1f28" stroke-width="0" font-size="10" text-anchor="end" dy="3.66667">m_axi_base_mem</text>
+<path d="M1060 68h10v18h-10z" stroke="none" fill="#e5c7ff" />
+</g>
+<g stroke="#1c1f28" stroke-width="3">
+<path d="M1050 72v10" />
+<path d="M1045 77h10" />
+</g>
+<g stroke="#1c1f28">
+<path d="M1043 70h14v14h-14z" />
+<text x="1043" y="77" fill="#1c1f28" stroke-width="0" font-size="10" text-anchor="end" dy="3.66667">m_axi_frame_mem</text>
+<path d="M1060 88h10v18h-10z" stroke="none" fill="#e5c7ff" />
+</g>
+<g stroke="#1c1f28" stroke-width="3">
+<path d="M1050 92v10" />
+<path d="M1045 97h10" />
+</g>
+<g stroke="#1c1f28">
+<path d="M1043 90h14v14h-14z" />
+<text x="1043" y="97" fill="#1c1f28" stroke-width="0" font-size="10" text-anchor="end" dy="3.66667">m_axi_history_mem</text>
+<path d="M1060 108h10v18h-10z" stroke="none" fill="#e5c7ff" />
+</g>
+<g stroke="#1c1f28" stroke-width="3">
+<path d="M1050 112v10" />
+<path d="M1045 117h10" />
+</g>
+<g stroke="#1c1f28">
+<path d="M1043 110h14v14h-14z" />
+<text x="1043" y="117" fill="#1c1f28" stroke-width="0" font-size="10" text-anchor="end" dy="3.66667">m_axi_config_mem</text>
+</g>
+<g stroke="#1c1f28" stroke-width="3">
+<path d="M730 97h10" />
+<text x="742" y="97" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">ap_clk</text>
+<circle cx="737" cy="117" r="3" />
+<path d="M730 117h4" />
+<text x="742" y="117" fill="#1c1f28" stroke-width="0" font-size="10" dy="3.66667">ap_rst_n</text>
+<path d="M1070 137h-10" />
+<text x="1058" y="137" fill="#1c1f28" stroke-width="0" font-size="10" text-anchor="end" dy="3.66667">interrupt</text>
+</g>
+<g stroke="#575d6c">
+<path d="M747 29h306" />
+<path d="M1053,29 A6.83537,6.83537 1.61957 0,1 1060,36" />
+<path d="M1060 36v122" />
+<path d="M1060,158 A6.83537,6.83537 1.61957 0,1 1053,165" />
+<path d="M1053 165h-306" />
+<path d="M747,165 A6.83537,6.83537 1.61957 0,1 740,158" />
+<path d="M740 158v-122" />
+<path d="M740,36 A6.83537,6.83537 1.61957 0,1 747,29" />
+</g>
+<g stroke="#94979a" stroke-width="4">
+<path d="M1400 217h20v100h30" />
+<path d="M1400 617h20v-280h30" />
+<path d="M1070 347h40v170h30" />
+<path d="M1070 367h20v170h50" />
+<path d="M1830 287h60" />
+</g>
+<g>
+<path d="M40 867h-30v-210h350" />
+<path d="M360 617h40" />
+<path d="M360 577h40" />
+<path d="M360 537h40" />
+<path d="M358 655h5v5h-5z" stroke="none" fill="#8bc34a" />
+<path d="M358 615h5v5h-5z" stroke="none" fill="#8bc34a" />
+<path d="M358 575h5v5h-5z" stroke="none" fill="#8bc34a" />
+<path d="M358 535h5v5h-5z" stroke="none" fill="#8bc34a" />
+<path d="M730 97h-40v270h40" />
+<path d="M690 197h410" />
+<path d="M1100 217h40" />
+<path d="M1100 257h40" />
+<path d="M1100 297h40" />
+<path d="M1100 337h40" />
+<path d="M1100 377h40" />
+<path d="M1100 557h40" />
+<path d="M1100 597h40" />
+<path d="M1100 637h40" />
+<path d="M1100 677h40" />
+<path d="M1100 717h40" />
+<path d="M1098 175h5v5h-5z" stroke="none" fill="#8bc34a" />
+<path d="M1098 195h5v5h-5z" stroke="none" fill="#8bc34a" />
+<path d="M1098 215h5v5h-5z" stroke="none" fill="#8bc34a" />
+<path d="M1098 255h5v5h-5z" stroke="none" fill="#8bc34a" />
+<path d="M1098 295h5v5h-5z" stroke="none" fill="#8bc34a" />
+<path d="M1098 335h5v5h-5z" stroke="none" fill="#8bc34a" />
+<path d="M1098 375h5v5h-5z" stroke="none" fill="#8bc34a" />
+<path d="M1098 555h5v5h-5z" stroke="none" fill="#8bc34a" />
+<path d="M1098 595h5v5h-5z" stroke="none" fill="#8bc34a" />
+<path d="M1098 635h5v5h-5z" stroke="none" fill="#8bc34a" />
+<path d="M1098 675h5v5h-5z" stroke="none" fill="#8bc34a" />
+<path d="M1098 715h5v5h-5z" stroke="none" fill="#8bc34a" />
+<path d="M400 657h-40v-290h330" />
+<path d="M688 195h5v5h-5z" stroke="none" fill="#8bc34a" />
+<path d="M688 365h5v5h-5z" stroke="none" fill="#8bc34a" />
+<path d="M1140 137h-40v660h330v-440h20" />
+<path d="M1430 467h430v-100h-30" />
+<path d="M1100 177h40" />
+<path d="M1430 397h20" />
+<path d="M1430 377h20" />
+<path d="M1428 465h5v5h-5z" stroke="none" fill="#8bc34a" />
+<path d="M1428 395h5v5h-5z" stroke="none" fill="#8bc34a" />
+<path d="M1428 375h5v5h-5z" stroke="none" fill="#8bc34a" />
+<path d="M40 887h-20v-80h1830v-420h-20" />
+</g>
+<g stroke="#94979a" stroke-width="4">
+<path d="M1830 307h40v10h20" />
+<path d="M400 517h-20v-60h1490v-110h-40" />
+<path d="M660 587h20v-510h50" />
+<path d="M660 607h40v-260h30" />
+</g>
+<g stroke-width="3">
+<path d="M340 947h30v-560h340" />
+<path d="M707 204h7v7h-7z" stroke="none" fill="#8bc34a" />
+<path d="M707 384h7v7h-7z" stroke="none" fill="#8bc34a" />
+<path d="M1140 157h-20v580h20" />
+<path d="M1120 197h20" />
+<path d="M370 677h30" />
+<path d="M370 637h30" />
+<path d="M370 597h30" />
+<path d="M370 557h30" />
+<path d="M367 674h7v7h-7z" stroke="none" fill="#8bc34a" />
+<path d="M367 634h7v7h-7z" stroke="none" fill="#8bc34a" />
+<path d="M367 594h7v7h-7z" stroke="none" fill="#8bc34a" />
+<path d="M367 554h7v7h-7z" stroke="none" fill="#8bc34a" />
+<path d="M730 117h-20v270h20" />
+<path d="M710 207h410" />
+<path d="M1120 237h20" />
+<path d="M1120 277h20" />
+<path d="M1120 317h20" />
+<path d="M1120 357h20" />
+<path d="M1120 397h20" />
+<path d="M1120 577h20" />
+<path d="M1120 617h20" />
+<path d="M1120 657h20" />
+<path d="M1120 697h20" />
+<path d="M1117 194h7v7h-7z" stroke="none" fill="#8bc34a" />
+<path d="M1117 204h7v7h-7z" stroke="none" fill="#8bc34a" />
+<path d="M1117 234h7v7h-7z" stroke="none" fill="#8bc34a" />
+<path d="M1117 274h7v7h-7z" stroke="none" fill="#8bc34a" />
+<path d="M1117 314h7v7h-7z" stroke="none" fill="#8bc34a" />
+<path d="M1117 354h7v7h-7z" stroke="none" fill="#8bc34a" />
+<path d="M1117 394h7v7h-7z" stroke="none" fill="#8bc34a" />
+<path d="M1117 574h7v7h-7z" stroke="none" fill="#8bc34a" />
+<path d="M1117 614h7v7h-7z" stroke="none" fill="#8bc34a" />
+<path d="M1117 654h7v7h-7z" stroke="none" fill="#8bc34a" />
+<path d="M1117 694h7v7h-7z" stroke="none" fill="#8bc34a" />
+</g>
+<g stroke="#94979a" stroke-width="4">
+<path d="M1070 57h70" />
+<path d="M1070 117h70" />
+<path d="M1070 77h70" />
+<path d="M1070 97h70" />
+</g>
+</g>
+</svg>

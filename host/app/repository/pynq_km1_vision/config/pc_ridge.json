@@ -1,0 +1,4 @@
+{
+  "kind": "ridge",
+  "model": "data/classifier.npz"
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": "yoloe-materials-v1",
+  "model_name": "yoloe-11m-seg.pt",
+  "asset_dir": "local-only/yoloe-deployment/assets",
+  "device": "cpu",
+  "cpu_threads": 4,
+  "image_size": 640,
+  "confidence": 0.3,
+  "nms_iou": 0.5,
+  "max_detections": 30,
+  "physical_motion_enabled": false,
+  "categories": [
+    {
+      "id": "plastic",
+      "name": "塑料",
+      "color": "#4dc4ff"
+    },
+    {
+      "id": "metal",
+      "name": "金属",
+      "color": "#ffc45c"
+    },
+    {
+      "id": "paper",
+      "name": "纸质",
+      "color": "#77df9b"
+    }
+  ],
+  "prompts": [
+    {
+      "text": "plastic bottle",
+      "category": "plastic"
+    },
+    {
+      "text": "plastic container",
+      "category": "plastic"
+    },
+    {
+      "text": "plastic bag",
+      "category": "plastic"
+    },
+    {
+      "text": "metal can",
+      "category": "metal"
+    },
+    {
+      "text": "cardboard box",
+      "category": "paper"
+    },
+    {
+      "text": "paper",
+      "category": "paper"
+    },
+    {
+      "text": "beverage carton",
+      "category": "paper"
+    }
+  ]
+}

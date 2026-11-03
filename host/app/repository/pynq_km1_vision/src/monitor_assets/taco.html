@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TACO 实时三类识别</title>
+<style>
+body{font:16px/1.6 system-ui,sans-serif;background:#101b28;color:#e6edf5;margin:0;padding:24px;max-width:1280px;margin:auto}
+h1{font-size:28px;margin:0}h2{font-size:19px;margin-top:0}p{color:#aebed0}button,input{font:inherit;padding:9px;border-radius:8px}button{background:#70e0b0;border:0;cursor:pointer}button:disabled{opacity:.5}img{width:100%;border-radius:10px;background:#101b28;min-height:100px}main{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px}section{background:#19283a;padding:20px;border-radius:14px}.wide{grid-column:1/-1}td,th{padding:8px 16px;text-align:left;border-bottom:1px solid #34465c}table{width:100%}.muted{color:#aebed0;font-size:14px}.toolbar{display:flex;align-items:center;gap:14px;flex-wrap:wrap}.badge{color:#70e0b0}.error{color:#ffb27b}#status{min-height:24px;margin:8px 0}@media(max-width:750px){main{grid-template-columns:1fr}body{padding:14px}}
+</style>
+<h1>TACO 实时三类识别</h1><p>瓶子类 · 罐子类 · 其他类</p>
+<div class="toolbar"><button id="live-toggle" disabled>等待相机</button><span id="camera-status" class="badge">正在连接相机…</span></div>
+<p id="status">正在检查模型…</p><div class="muted">左侧画面持续刷新；右侧显示最近一次识别对应的画面。识别每次数秒，轮廓随结果更新。</div>
+<main>
+<section><h2>实时相机</h2><img id="camera" alt="等待 PYNQ 相机画面"><p id="camera-time" class="muted"></p></section>
+<section><h2>最近识别画面</h2><img id="image" alt="等待识别结果"><p id="timing" class="muted"></p></section>
+<section class="wide"><h2>三类识别结果</h2><p id="counts">瓶子类 0 · 罐子类 0 · 其他类 0</p><table><thead><tr><th>分拣类别</th><th>原始识别</th><th>模型得分</th></tr></thead><tbody id="rows"></tbody></table><p class="muted">模型在本机 CPU 运行。模型得分不代表实测准确率。</p><details><summary>三类归并规则</summary><p>瓶子类：Bottle、Bottle cap、Cup、Straw、Lid<br>罐子类：Can、Pop tab<br>其他类：Cigarette、Other、Plastic bag + wrapper</p></details></section>
+<section class="wide"><details><summary>单张图片识别</summary><p class="muted">上传图片时暂停连续识别。支持最大 1920 × 1080 的图片。</p><input id="file" type="file" accept="image/*"><button id="run">识别图片</button></details></section>
+</main>
+<script>
+const $=id=>document.getElementById(id);
+let liveAvailable=false,liveEnabled=false,cameraConnected=false,lastShown=null,uploaded=false;
+function show(data){
+ const identity=data.input_kind+':'+data.frame_id;
+ if(identity!==lastShown){
+  $('image').hidden=false;
+  $('image').src=data.overlay_base64?'data:image/jpeg;base64,'+data.overlay_base64:'/overlay.jpg?frame='+data.frame_id;
+  $('rows').replaceChildren();const counts={bottle:0,can:0,other:0};
+  for(const item of data.instances){
+   counts[item.sorting_bin]++;const tr=document.createElement('tr');
+   for(const text of [item.sorting_label,item.label,(item.confidence*100).toFixed(1)+'%']){const td=document.createElement('td');td.textContent=text;tr.append(td)}
+   $('rows').append(tr);
+  }
+  $('counts').textContent='瓶子类 '+counts.bottle+' · 罐子类 '+counts.can+' · 其他类 '+counts.other;
+  lastShown=identity;
+ }
+ $('timing').textContent='推理用时 '+(data.inference_ms/1000).toFixed(2)+' 秒'+(data.result_age_ms!==undefined?' · 对应 '+(data.result_age_ms/1000).toFixed(1)+' 秒前接收的相机画面':' · 上传图片');
+ $('status').textContent=(data.input_kind==='live_camera'?'连续识别中':'图片识别完成')+'，共 '+data.instances.length+' 个实例';
+}
+async function setLive(enabled){
+ const reply=await fetch('/live',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({enabled})});
+ if(!reply.ok)throw Error('无法切换实时识别');
+ liveEnabled=enabled;uploaded=false;lastShown=null;
+}
+$('live-toggle').onclick=async()=>{try{await setLive(!liveEnabled)}catch(e){$('status').textContent=e.message}};
+async function poll(){
+ try{
+  const response=await fetch('/health');if(!response.ok)throw Error('服务连接失败');
+  const health=await response.json();liveAvailable=health.live_available;liveEnabled=health.live_enabled;cameraConnected=health.camera_connected;
+  $('live-toggle').disabled=!liveAvailable;$('live-toggle').textContent=liveEnabled?'暂停实时识别':'开始实时识别';
+  $('camera-status').className=cameraConnected?'badge':'error';
+  $('camera-status').textContent=cameraConnected?'相机已连接':(health.camera_error||'相机未配置');
+  $('camera-time').textContent=cameraConnected?'实时画面持续更新':'等待相机恢复连接';
+  if(!cameraConnected){$('camera').hidden=true;if(!uploaded){$('image').hidden=true;$('rows').replaceChildren();$('counts').textContent='等待相机';lastShown=null;$('status').textContent='相机未连接，正在重试…'}}
+  else if(liveEnabled){const result=await fetch('/live-result');if(result.ok)show(await result.json());else $('status').textContent=health.inference_error?'识别暂时中断，正在重试…':'相机已连接，正在识别…'}
+  else if(!uploaded){$('status').textContent='实时识别已暂停，相机画面继续更新'}
+ }catch(e){$('camera').hidden=true;$('image').hidden=true;$('status').textContent='服务连接中断，正在重连…'}
+ setTimeout(poll,700);
+}
+function cameraNext(){if(!cameraConnected){setTimeout(cameraNext,500);return}$('camera').src='/camera.jpg?t='+Date.now()}
+$('camera').onload=()=>{$('camera').hidden=false;setTimeout(cameraNext,200)};
+$('camera').onerror=()=>{$('camera').hidden=true;setTimeout(cameraNext,700)};
+$('run').onclick=async()=>{
+ const file=$('file').files[0];if(!file){$('status').textContent='请先选择图片';return}
+ if(file.size>6000000){$('status').textContent='图片文件过大，请缩小后再试';return}
+ $('run').disabled=true;
+ try{
+  if(liveAvailable)await setLive(false);uploaded=true;$('status').textContent='正在识别图片…';
+  const image_base64=await new Promise((resolve,reject)=>{const reader=new FileReader();reader.onload=()=>resolve(reader.result.split(',')[1]);reader.onerror=reject;reader.readAsDataURL(file)});
+  const reply=await fetch('/detect',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({image_base64})});
+  const data=await reply.json();if(!reply.ok)throw Error(data.error);show(data);
+ }catch(e){$('status').textContent='识别失败：'+e.message}
+ finally{$('run').disabled=false}
+};
+poll();cameraNext();
+</script></html>

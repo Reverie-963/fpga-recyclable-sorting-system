@@ -1,0 +1,10 @@
+<!doctype html><meta charset="utf-8"><title>标定像素取点</title>
+<style>body{font:16px system-ui;max-width:1100px;margin:30px auto}canvas{max-width:100%;border:1px solid #aaa}pre{white-space:pre-wrap}button{margin:10px;padding:8px}</style>
+<h1>标定像素取点（离线）</h1><p>选择完整原始图片。按标定点编号依次点击，前 6 个以上用于拟合；另选至少 3 个独立点用于验证。点击坐标按原图像素计算，不受页面缩放影响。刷新或重选图片会清空。</p>
+<input type="file" accept="image/*" id="file"><button id="undo">撤销一点</button><canvas id="canvas"></canvas><pre id="result"></pre>
+<script>
+const canvas=document.getElementById('canvas'),ctx=canvas.getContext('2d');let points=[],img=new Image();
+function draw(){ctx.drawImage(img,0,0);ctx.fillStyle='red';ctx.font='18px sans-serif';points.forEach(([x,y],i)=>{ctx.beginPath();ctx.arc(x,y,4,0,7);ctx.fill();ctx.fillText(String(i+1),x+5,y-5)});document.getElementById('result').textContent=JSON.stringify({image_size:[canvas.width,canvas.height],pixels:points},null,2)}
+document.getElementById('file').onchange=e=>{const f=e.target.files[0];if(!f)return;let url=URL.createObjectURL(f);img.onload=()=>{canvas.width=img.width;canvas.height=img.height;points=[];draw();URL.revokeObjectURL(url)};img.src=url};
+canvas.onclick=e=>{if(!img.complete||!img.width)return;let r=canvas.getBoundingClientRect();points.push([Math.round((e.clientX-r.left)*canvas.width/r.width),Math.round((e.clientY-r.top)*canvas.height/r.height)]);draw()};document.getElementById('undo').onclick=()=>{points.pop();if(img.width)draw()};
+</script>

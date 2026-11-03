@@ -1,0 +1,39 @@
+{
+  "schema_version": "taco-original-v1",
+  "upstream_commit": "70479ad9adc3da971a8ae75ac97eb1026910eec7",
+  "source_dir": "local-only/taco-deployment/TACO",
+  "weights": "local-only/taco-deployment/weights-fold0/taco_10_0/mask_rcnn_taco_0100.h5",
+  "weights_sha256": "d79517accf4e4a0858db5fbe02df3c1f7572def76abf8ecf981398d67a4e73f1",
+  "score_ratio_threshold": 10.0,
+  "cpu_threads": 4,
+  "labels": [
+    "Bottle",
+    "Bottle cap",
+    "Can",
+    "Cigarette",
+    "Cup",
+    "Lid",
+    "Other",
+    "Plastic bag + wrapper",
+    "Pop tab",
+    "Straw"
+  ],
+  "sorting_mapping": {
+    "Bottle": "bottle",
+    "Bottle cap": "bottle",
+    "Can": "can",
+    "Cigarette": "other",
+    "Cup": "bottle",
+    "Lid": "bottle",
+    "Other": "other",
+    "Plastic bag + wrapper": "other",
+    "Pop tab": "can",
+    "Straw": "bottle"
+  },
+  "sorting_classes": {
+    "bottle": "瓶子类",
+    "can": "罐子类",
+    "other": "其他类"
+  },
+  "physical_motion_enabled": false
+}

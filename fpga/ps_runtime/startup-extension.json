@@ -1,0 +1,5 @@
+{
+  "expected_legacy_sha256": "e6587d906878abf21a74b5b8ef90ddaa70d505b604f91d50f22ef2b958d030d4",
+  "native_library": "/opt/km1/runtime/service-ready-20261101-v3/pynq_km1_vision/lib/empty_reference_projector.so",
+  "native_sha256": "affee2f5b63c2c8769a4ad4d38de93daf4f30d7251b3da4b43cac5bada796b2b"
+}

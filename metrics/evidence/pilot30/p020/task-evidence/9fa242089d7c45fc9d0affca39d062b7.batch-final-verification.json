@@ -1,0 +1,21 @@
+{
+  "status": "batch_final_verification_failed",
+  "mode": "bin_occupied",
+  "scope": "visited_bin_occupancy_only",
+  "attempted_count": 1,
+  "frames": [],
+  "bins": [],
+  "evidence": [
+    {
+      "image": "9fa242089d7c45fc9d0affca39d062b7.final-0.png",
+      "observation": "9fa242089d7c45fc9d0affca39d062b7.final-0.observation.json",
+      "png_sha256": "539e4e4c24c6f70b2998c00fc8eb8e152e476d094ff0dc1e44e0dbc6c8510598"
+    }
+  ],
+  "physical_success_verified": false,
+  "class_verified": false,
+  "new_item_verified": false,
+  "source_removal_verified": false,
+  "automatic_motion_retry": false,
+  "reason": "ValueError:unified_target_bin_empty"
+}

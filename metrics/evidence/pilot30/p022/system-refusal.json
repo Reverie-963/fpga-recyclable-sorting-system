@@ -1,0 +1,26 @@
+{
+  "stage": "preview",
+  "original_result": {
+    "task_id": "fd667fb8d8f8494ebc5ec9f334188180",
+    "batch_id": null,
+    "status": "rejected",
+    "reason": "ValueError:instance_count_changed",
+    "physical_motion_attempted": false,
+    "board_port_open_attempted": false,
+    "board_uart_write_attempted": false,
+    "completed_count": null,
+    "motion_completed_count": null,
+    "per_item_visual_failures": null,
+    "slot_checks": [],
+    "jaw_calibration": null,
+    "start_pwm": null,
+    "target_pwm": null,
+    "remaining_count": 0,
+    "material_selection": "PLASTIC",
+    "preview": true,
+    "label": null,
+    "candidate_order": []
+  },
+  "real_start_submitted": false,
+  "automatic_retry": false
+}

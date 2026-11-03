@@ -1,0 +1,9 @@
+{
+  "at": "2026-11-03T00:16:27.696211+08:00",
+  "active_scheme": "电源方案 GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (平衡)",
+  "scheme_guid": "381b4222-f694-41f0-9685-ff5bb260df2e",
+  "command_rc": 0,
+  "current_AC_line_status": 1,
+  "current_battery_percent": 100,
+  "measurement_conditions": "Existing GPU/UI services plus read-only same-board recorder; occasional evidence retrieval/postprocessing recorded. Power mode is observed inventory, not measured electrical power or proof that it held at every earlier instant."
+}

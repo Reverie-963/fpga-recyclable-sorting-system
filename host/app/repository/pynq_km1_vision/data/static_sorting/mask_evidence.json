@@ -1,0 +1,134 @@
+{
+  "config": {
+    "model_version": "mock-seg-v1",
+    "image_size": [
+      8,
+      6
+    ],
+    "max_frame_age_ms": 500,
+    "min_confidence": 0.7,
+    "pick_bounds_mm": [
+      0,
+      80,
+      0,
+      60
+    ],
+    "path_available": true,
+    "calibration": {
+      "camera_id": "mock-camera",
+      "version": "mock-plane-v1",
+      "pixel_to_mm": [
+        [
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0
+        ]
+      ]
+    },
+    "bins": {
+      "can": {
+        "id": "can-bin",
+        "xy_mm": [
+          100,
+          60
+        ]
+      },
+      "plastic_bottle": {
+        "id": "plastic_bottle-bin",
+        "xy_mm": [
+          100,
+          90
+        ]
+      },
+      "cardboard": {
+        "id": "cardboard-bin",
+        "xy_mm": [
+          100,
+          120
+        ]
+      }
+    },
+    "require_mask_evidence": true
+  },
+  "requests": [
+    {
+      "now_ms": 1010,
+      "request": {
+        "schema_version": "static-sim-v1",
+        "request_id": "request-1",
+        "task_id": "task-1",
+        "camera_id": "mock-camera",
+        "frame_id": 1,
+        "model_version": "mock-seg-v1",
+        "image_size": [
+          8,
+          6
+        ],
+        "received_at_ms": 1000,
+        "received_age_ms": 10,
+        "instances": [
+          {
+            "instance_id": "object-1",
+            "label": "can",
+            "confidence": 0.95,
+            "bbox_xyxy": [
+              2,
+              2,
+              4,
+              4
+            ],
+            "mask_rle": [
+              18,
+              2,
+              6,
+              2,
+              20
+            ]
+          }
+        ],
+        "verification_masks": {
+          "task_id": "task-1",
+          "request_id": "request-1",
+          "camera_id": "mock-camera",
+          "model_version": "mock-seg-v1",
+          "image_size": [
+            8,
+            6
+          ],
+          "before_frame_id": 1,
+          "after_frame_id": 2,
+          "bin_id": "can-bin",
+          "source": {
+            "job_id": 11,
+            "before_rle": [
+              18,
+              2,
+              6,
+              2,
+              20
+            ],
+            "after_rle": [
+              48
+            ]
+          },
+          "bin": {
+            "job_id": 12,
+            "before_rle": [
+              48
+            ],
+            "after_rle": [
+              36,
+              2,
+              10
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

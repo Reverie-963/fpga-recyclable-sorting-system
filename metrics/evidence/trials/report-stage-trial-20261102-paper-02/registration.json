@@ -1,0 +1,9 @@
+{
+  "material": "paper",
+  "object_height_mm": 63.0,
+  "official_label": "Drink carton",
+  "operator_confirmation": "Current user reply: 63mm纸盒已调整，现场确认. Same face and height, rotated within tabletop; confirms empty paper box, open empty gripper, stationary arm, hands/tools clear and on-site supervision.",
+  "registered_at": "2026-11-02T03:06:32.145381+08:00",
+  "automatic_retry": false,
+  "source_archive_unchanged": true
+}

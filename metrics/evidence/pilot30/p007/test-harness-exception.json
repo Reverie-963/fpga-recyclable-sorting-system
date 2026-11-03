@@ -1,0 +1,15 @@
+{
+  "at": "2026-11-03T00:25:32.661976+08:00",
+  "kind": "test_harness_pre_submit_selection_error",
+  "trial": "P007",
+  "action_post_submitted": false,
+  "original_frame_saved": false,
+  "diagnostic_frame_is_subsequent": true,
+  "legacy_client_fixed_center_x_upper_exclusive": 405,
+  "new_selector": "existing registered pickup advisory flag plus unchanged PS admission",
+  "production_parameters_changed": false,
+  "source_v1_sha256": "5cdd80ea7d5c202931bc9d9509e4c1e690fb7f40575ac1b3e44ec4e1e872d4be",
+  "source_v2_sha256": "8a0eba361edd95d0cd6fae2325c5a352ac22003e5251dc2d5421b8651810c4df",
+  "treatment": "Retain as instrumentation exception before any actual start request; P007 still pending one real physical attempt. Report this exception and separate harness versions; never claim a failed motion or discard an actual system rejection.",
+  "actual_failed_script_sha256": "8a2cd569c633bfc9d5e7fcb988356d6a8885c7ff1b2c570dd24a15d4dbfe11e1"
+}

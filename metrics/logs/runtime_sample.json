@@ -1,0 +1,28 @@
+{
+  "image_size": [
+    640,
+    480
+  ],
+  "instances": [],
+  "inference_ms": 1224.295699998038,
+  "model_version": "9d5734b34871aa81412b2fa47176d8f926283bb5adfe3a3f80cc58c5b7332534",
+  "model_name": "YOLOE26 · 新版参考图辅助0.10 · ROCm GPU",
+  "runtime_id": "935f8684c2017a829f0142cbce3c8aebac99e18b9115d7ec9a9dadc16ee57726",
+  "execution": {
+    "device": "cuda:0",
+    "device_name": "AMD Radeon(TM) 890M Graphics",
+    "precision": "fp16",
+    "torch": "2.12.0+rocm7.14.0",
+    "hip": "7.14.60850"
+  },
+  "configuration_sha256": "cb288271841ff81c2dcd44ea6fc9742231e658d0a68f44caa0a970aee15b792e",
+  "profile_id": "yoloe26_reference",
+  "confidence_threshold": 0.1,
+  "reference_assistance": true,
+  "source_bgr_sha256": "64ece6bbfff950f88255a00ee2c273ae509406a1ca167eb0d211a27924ab734f",
+  "automatic_motion_allowed": false,
+  "control_only": true,
+  "frame_id": 68,
+  "input_kind": "uploaded_image",
+  "image_sha256": "1e98cc57da77942049fda818c62757351d910485aa1be49997bcff3a384e7cab"
+}

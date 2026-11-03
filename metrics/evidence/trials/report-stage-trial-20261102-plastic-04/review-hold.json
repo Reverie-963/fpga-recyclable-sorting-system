@@ -1,0 +1,12 @@
+{
+  "kind": "manual-evidence-review-hold-v1",
+  "reason": "preview official_label Drink can, subsequent fresh live official_label Disposable plastic cup; fine-class identity inconsistent for the trial harness",
+  "physical_motion_attempted": false,
+  "board_port_open_attempted": false,
+  "board_uart_write_attempted": false,
+  "production_configuration_changed": false,
+  "classification_map_changed": false,
+  "original_preview_status": "preview_only",
+  "coarse_material_route": "plastic",
+  "created_at": "2026-11-02T04:06:54.298268+08:00"
+}

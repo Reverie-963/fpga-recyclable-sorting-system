@@ -1,0 +1,11 @@
+{
+  "assets": {
+    "vision_motion.bit": "054a766d3468282cbfb355dc803b8b9e960749ffde0e80bf0d43e17adebab779",
+    "vision_motion.hwh": "b40312875bb53fadec4563109a8508176c75bcf582ce42150f13692e375a5213"
+  },
+  "expected_model_sha256": "70d5c958aa8e19750a5feb2528306dc62dc2fb7e58438df83d7eeb5a2d5657c9",
+  "expected_plan_sha256": "b0ff909e8b132664d41f2af5bfd9f1aab82d3f64778edea59733cf8dafced7a0",
+  "port": 18840,
+  "startup_fixture": "/home/xilinx/km1-board-control-20261031-native24-model-confidence-v2/motion-startup-fixture.json",
+  "token_file": "/opt/km1/runtime/service-ready-20261101-v3/secrets/motion-token.txt"
+}

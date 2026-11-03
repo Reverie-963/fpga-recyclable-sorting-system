@@ -1,0 +1,352 @@
+{
+  "status": "supervised_trial_visual_evidence_pass",
+  "automatic_retry": false,
+  "quality_gate_passed": false,
+  "independent_physical_success": false,
+  "model_family": "yolov8s",
+  "model_version": "9288e697042d14813d7d47abbe2e413f314be59c3069c2302f2dffee5912dd0e",
+  "runtime_id": "997bb093f49aea2a0196e95767415b024cf5964421a417913965667712772de5",
+  "source_baseline_json_sha256": "949dadf1f429a2fe0aeaa4c3de91cb7f940f0091b3a2ff61dd77aa17fe58f9c6",
+  "source_baseline_lossless_png_sha256": "8973912165df0e4954340f2dcba8c8f0ad45b38d6fd0ebd8a7d23e694416fc55",
+  "baseline_rgb_provenance": "Lossless PNG of actual first-command source recheck. Decoded BGR hash verified against stored observation.",
+  "after_rgb_provenance": "Fresh decoded BGR saved losslessly as PNG",
+  "statistics": {
+    "backend": "pl_http",
+    "assets": {
+      "vision.bit": "0015a6eabf7d8490ffa4873385b39cfb77cee85d88782749d2a59eebf4bf2039",
+      "vision.hwh": "bcfe6c53e1bf3c4c85cebce993ab2831b70cf075503199e719bec12adba043ae"
+    },
+    "session_id": "da573ccc4fa64f86820758cd29e7c903",
+    "each_result_cpu_compared": true
+  },
+  "frames": [
+    {
+      "frame_id": "116811",
+      "source": {
+        "min_row": 85,
+        "max_row": 205,
+        "min_col": 293,
+        "max_col": 345,
+        "job_id": 1,
+        "status": 1,
+        "ctrl": 4,
+        "inter": 0,
+        "erased": 6194,
+        "beyond": 0,
+        "union": 6194
+      },
+      "bin": {
+        "min_row": 316,
+        "max_row": 370,
+        "min_col": 34,
+        "max_col": 166,
+        "job_id": 2,
+        "status": 1,
+        "ctrl": 4,
+        "inter": 0,
+        "erased": 0,
+        "beyond": 2266,
+        "union": 2266
+      },
+      "photometry": {
+        "method": "global_rgb_affine_from_static_patches_no_geometric_warp",
+        "gain": [
+          0.9544186683723077,
+          0.9848185917358603,
+          1.0403271820246662
+        ],
+        "bias": [
+          13.121366246224056,
+          9.748904454771235,
+          4.388117405817042
+        ],
+        "positions": [
+          {
+            "shift_px": [
+              0,
+              0
+            ],
+            "correlation": 0.9974209666252136
+          },
+          {
+            "shift_px": [
+              0,
+              0
+            ],
+            "correlation": 0.9973118901252747
+          }
+        ],
+        "original_layout_checks": [
+          {
+            "correlation": 0.9973804950714111,
+            "shift_px": 0.0,
+            "mean_abs_difference": 3.9750543242068668,
+            "corners": 27,
+            "corner_support_fraction": 0.5817470664928293,
+            "peak_margin": 0.11973768472671509
+          },
+          {
+            "correlation": 0.9978693723678589,
+            "shift_px": 0.0,
+            "mean_abs_difference": 2.9685470085470085,
+            "corners": 17,
+            "corner_support_fraction": 0.507051282051282,
+            "peak_margin": 0.12062537670135498
+          }
+        ],
+        "physical_alignment_verified": false
+      },
+      "instances": [
+        {
+          "label": "metal",
+          "confidence": 0.91943359375,
+          "bbox": [
+            438,
+            101,
+            587,
+            218
+          ]
+        },
+        {
+          "label": "paper",
+          "confidence": 0.91015625,
+          "bbox": [
+            402,
+            307,
+            519,
+            403
+          ]
+        },
+        {
+          "label": "plastic",
+          "confidence": 0.89892578125,
+          "bbox": [
+            34,
+            316,
+            169,
+            371
+          ]
+        }
+      ]
+    },
+    {
+      "frame_id": "116812",
+      "source": {
+        "min_row": 85,
+        "max_row": 205,
+        "min_col": 293,
+        "max_col": 345,
+        "job_id": 3,
+        "status": 1,
+        "ctrl": 4,
+        "inter": 0,
+        "erased": 6194,
+        "beyond": 0,
+        "union": 6194
+      },
+      "bin": {
+        "min_row": 316,
+        "max_row": 370,
+        "min_col": 34,
+        "max_col": 167,
+        "job_id": 4,
+        "status": 1,
+        "ctrl": 4,
+        "inter": 0,
+        "erased": 0,
+        "beyond": 2277,
+        "union": 2277
+      },
+      "photometry": {
+        "method": "global_rgb_affine_from_static_patches_no_geometric_warp",
+        "gain": [
+          0.9544379931440217,
+          0.9854899119107359,
+          1.0408044307857125
+        ],
+        "bias": [
+          13.140182891387127,
+          9.577770204167223,
+          4.459499158264748
+        ],
+        "positions": [
+          {
+            "shift_px": [
+              0,
+              0
+            ],
+            "correlation": 0.9974100589752197
+          },
+          {
+            "shift_px": [
+              0,
+              0
+            ],
+            "correlation": 0.9972664713859558
+          }
+        ],
+        "original_layout_checks": [
+          {
+            "correlation": 0.9973709583282471,
+            "shift_px": 0.0,
+            "mean_abs_difference": 4.030595393307258,
+            "corners": 27,
+            "corner_support_fraction": 0.5817470664928293,
+            "peak_margin": 0.11865675449371338
+          },
+          {
+            "correlation": 0.9978111982345581,
+            "shift_px": 0.0,
+            "mean_abs_difference": 3.012564102564103,
+            "corners": 17,
+            "corner_support_fraction": 0.507051282051282,
+            "peak_margin": 0.12024366855621338
+          }
+        ],
+        "physical_alignment_verified": false
+      },
+      "instances": [
+        {
+          "label": "metal",
+          "confidence": 0.91162109375,
+          "bbox": [
+            438,
+            101,
+            587,
+            218
+          ]
+        },
+        {
+          "label": "paper",
+          "confidence": 0.91064453125,
+          "bbox": [
+            402,
+            308,
+            519,
+            403
+          ]
+        },
+        {
+          "label": "plastic",
+          "confidence": 0.904296875,
+          "bbox": [
+            34,
+            316,
+            169,
+            371
+          ]
+        }
+      ]
+    },
+    {
+      "frame_id": "116813",
+      "source": {
+        "min_row": 85,
+        "max_row": 205,
+        "min_col": 293,
+        "max_col": 345,
+        "job_id": 5,
+        "status": 1,
+        "ctrl": 4,
+        "inter": 0,
+        "erased": 6194,
+        "beyond": 0,
+        "union": 6194
+      },
+      "bin": {
+        "min_row": 315,
+        "max_row": 370,
+        "min_col": 35,
+        "max_col": 167,
+        "job_id": 6,
+        "status": 1,
+        "ctrl": 4,
+        "inter": 0,
+        "erased": 0,
+        "beyond": 2281,
+        "union": 2281
+      },
+      "photometry": {
+        "method": "global_rgb_affine_from_static_patches_no_geometric_warp",
+        "gain": [
+          0.9602192326466624,
+          0.9848805978749126,
+          1.0411350619934525
+        ],
+        "bias": [
+          11.649604924921505,
+          9.781851551613244,
+          4.153690270383464
+        ],
+        "positions": [
+          {
+            "shift_px": [
+              0,
+              0
+            ],
+            "correlation": 0.9975289702415466
+          },
+          {
+            "shift_px": [
+              0,
+              0
+            ],
+            "correlation": 0.9973767399787903
+          }
+        ],
+        "original_layout_checks": [
+          {
+            "correlation": 0.9974808096885681,
+            "shift_px": 0.0,
+            "mean_abs_difference": 3.9986093003042154,
+            "corners": 29,
+            "corner_support_fraction": 0.5817470664928293,
+            "peak_margin": 0.11995905637741089
+          },
+          {
+            "correlation": 0.9978803992271423,
+            "shift_px": 0.0,
+            "mean_abs_difference": 3.027008547008547,
+            "corners": 17,
+            "corner_support_fraction": 0.507051282051282,
+            "peak_margin": 0.12109386920928955
+          }
+        ],
+        "physical_alignment_verified": false
+      },
+      "instances": [
+        {
+          "label": "paper",
+          "confidence": 0.9140625,
+          "bbox": [
+            402,
+            308,
+            519,
+            403
+          ]
+        },
+        {
+          "label": "metal",
+          "confidence": 0.91357421875,
+          "bbox": [
+            438,
+            101,
+            587,
+            218
+          ]
+        },
+        {
+          "label": "plastic",
+          "confidence": 0.9052734375,
+          "bbox": [
+            34,
+            315,
+            169,
+            371
+          ]
+        }
+      ]
+    }
+  ],
+  "persistent_gain_px": 2123
+}

@@ -1,0 +1,15 @@
+{
+  "schema": "add-sort-category-v1",
+  "package_id": "plastic-cup-v1",
+  "mode": "text",
+  "confidence": 0.3,
+  "nms_iou": 0.5,
+  "categories": [
+    {"category_id": "plastic-cup", "name": "塑料杯", "prompts": ["plastic cup"],
+     "bin_id": "plastic", "grasp_profile_id": "existing-cup-profile"}
+  ],
+  "references": [],
+  "routing_catalog": {"bins": ["plastic"], "grasp_profiles": ["existing-cup-profile"]},
+  "evaluation_policy": {"mask_iou": 0.5, "min_precision": 0.9, "min_recall": 0.8,
+                        "min_positive_images": 30, "min_negative_images": 30}
+}

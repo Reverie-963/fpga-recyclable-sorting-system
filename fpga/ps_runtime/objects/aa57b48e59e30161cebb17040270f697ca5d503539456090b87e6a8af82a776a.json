@@ -1,0 +1,98 @@
+{
+  "status": "supervised_trial_visual_evidence_pass",
+  "steps": 17,
+  "echoes": 17,
+  "serial_closed": true,
+  "automatic_retry": false,
+  "quality_gate_passed": false,
+  "independent_physical_success": false,
+  "visual_evidence": [
+    {
+      "source": {
+        "min_row": 103,
+        "max_row": 210,
+        "min_col": 296,
+        "max_col": 336,
+        "job_id": 4,
+        "status": 1,
+        "ctrl": 4,
+        "inter": 0,
+        "erased": 4325,
+        "beyond": 0,
+        "union": 4325
+      },
+      "bin": {
+        "min_row": 311,
+        "max_row": 409,
+        "min_col": 405,
+        "max_col": 518,
+        "job_id": 5,
+        "status": 1,
+        "ctrl": 4,
+        "inter": 0,
+        "erased": 0,
+        "beyond": 6235,
+        "union": 6235
+      },
+      "frame_id": "49721"
+    },
+    {
+      "source": {
+        "min_row": 103,
+        "max_row": 210,
+        "min_col": 296,
+        "max_col": 336,
+        "job_id": 6,
+        "status": 1,
+        "ctrl": 4,
+        "inter": 0,
+        "erased": 4325,
+        "beyond": 0,
+        "union": 4325
+      },
+      "bin": {
+        "min_row": 311,
+        "max_row": 408,
+        "min_col": 405,
+        "max_col": 518,
+        "job_id": 7,
+        "status": 1,
+        "ctrl": 4,
+        "inter": 0,
+        "erased": 0,
+        "beyond": 6237,
+        "union": 6237
+      },
+      "frame_id": "49722"
+    },
+    {
+      "source": {
+        "min_row": 103,
+        "max_row": 210,
+        "min_col": 296,
+        "max_col": 336,
+        "job_id": 8,
+        "status": 1,
+        "ctrl": 4,
+        "inter": 0,
+        "erased": 4325,
+        "beyond": 0,
+        "union": 4325
+      },
+      "bin": {
+        "min_row": 311,
+        "max_row": 409,
+        "min_col": 405,
+        "max_col": 518,
+        "job_id": 9,
+        "status": 1,
+        "ctrl": 4,
+        "inter": 0,
+        "erased": 0,
+        "beyond": 6265,
+        "union": 6265
+      },
+      "frame_id": "49723"
+    }
+  ]
+}

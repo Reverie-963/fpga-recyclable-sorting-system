@@ -1,0 +1,8 @@
+{
+  "image_size": [65, 1],
+  "bytes_per_pixel": 4,
+  "modules": [
+    {"instance": "image_pipeline/stream_dma", "dma": true, "parameters": {"c_include_mm2s": 1, "c_include_s2mm": 1}},
+    {"instance": "image_pipeline/geometry_accel", "registers": {"width": "0x10", "height": "0x18", "job_id": "0x30"}}
+  ]
+}

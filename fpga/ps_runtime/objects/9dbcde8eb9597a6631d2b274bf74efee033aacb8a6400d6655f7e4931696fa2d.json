@@ -1,0 +1,18 @@
+{
+  "kind": "operator_checked_empty_bin_release_pose",
+  "base_pwm": 1088,
+  "nominal_radius_mm": 240,
+  "nominal_model_z_mm": 190,
+  "alpha_deg": -25,
+  "wrist_pwm": 1500,
+  "open_pwm": 1000,
+  "tip_above_rim_mm_approx": 120,
+  "projection_acceptable": true,
+  "payload_length_mm": 150,
+  "payload_diameter_mm": 56,
+  "provisional_extent_plus_allowance_mm": 89.95089957295224,
+  "estimated_gap_margin_mm": 30.04910042704776,
+  "held_payload_verified": false,
+  "whole_path_collision_certified": false,
+  "observation": "metal56-bin-release-high190/journal/metal_bin_release_high.observation.json"
+}

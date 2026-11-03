@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv*/
+.env
+*.pem
+*.key
+*.lic
+*.pt
+*.pth
+*.onnx
+*.bit
+*.dcp
+*.zip
+*.rar

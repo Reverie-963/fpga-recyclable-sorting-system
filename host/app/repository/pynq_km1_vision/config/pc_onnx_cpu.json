@@ -1,0 +1,12 @@
+{
+  "kind": "onnx",
+  "model": "data/classifier_cnn.onnx",
+  "metadata": "data/classifier_cnn.meta.json",
+  "providers": [
+    "CPUExecutionProvider"
+  ],
+  "provider_options": [
+    {}
+  ],
+  "profile": true
+}

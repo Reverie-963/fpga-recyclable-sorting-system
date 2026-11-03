@@ -1,0 +1,340 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Sat Oct 31 09:02:50 2026
+| Host         : Dot running 64-bit major release  (build 9200)
+| Command      : report_drc -file C:/FPGA-pl-motion/local-only/jm2/results/drc_after.rpt
+| Design       : design_1_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: checkpoint_design_1_wrapper_routed
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max checks: <unlimited>
+             Checks found: 57
++-----------+----------+-------------------------+--------+
+| Rule      | Severity | Description             | Checks |
++-----------+----------+-------------------------+--------+
+| DPIP-1    | Warning  | Input pipelining        | 9      |
+| DPOP-1    | Warning  | PREG Output pipelining  | 12     |
+| DPOP-2    | Warning  | MREG Output pipelining  | 24     |
+| PDCN-1569 | Warning  | LUT equation term check | 11     |
+| RTSTAT-10 | Warning  | No routable loads       | 1      |
++-----------+----------+-------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-1#1 Warning
+Input pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_32ns_34ns_65_2_1_U23/tmp_product input design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_32ns_34ns_65_2_1_U23/tmp_product/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_32ns_34ns_65_2_1_U23/tmp_product__0 input design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_32ns_34ns_65_2_1_U23/tmp_product__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_33s_27s_58_2_1_U27/buff0_reg input design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_33s_27s_58_2_1_U27/buff0_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_33s_27s_58_2_1_U27/buff0_reg input design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_33s_27s_58_2_1_U27/buff0_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_33s_27s_58_2_1_U27/buff0_reg__0 input design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_33s_27s_58_2_1_U27/buff0_reg__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_33s_27s_58_2_1_U27/tmp_product input design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_33s_27s_58_2_1_U27/tmp_product/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_33s_27s_58_2_1_U27/tmp_product input design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_33s_27s_58_2_1_U27/tmp_product/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_33s_27s_58_2_1_U27/tmp_product__0 input design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_33s_27s_58_2_1_U27/tmp_product__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#9 Warning
+Input pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_33s_27s_58_2_1_U27/tmp_product__0 input design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_33s_27s_58_2_1_U27/tmp_product__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_32ns_34ns_65_2_1_U23/tmp_product output design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_32ns_34ns_65_2_1_U23/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_32ns_34ns_65_2_1_U23/tmp_product__0 output design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_32ns_34ns_65_2_1_U23/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#3 Warning
+PREG Output pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_32s_7ns_32_2_1_U24/tmp_product output design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_32s_7ns_32_2_1_U24/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#4 Warning
+PREG Output pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_32s_7ns_32_2_1_U25/tmp_product output design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_32s_7ns_32_2_1_U25/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#5 Warning
+PREG Output pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_32s_7ns_32_2_1_U26/tmp_product output design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_32s_7ns_32_2_1_U26/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#6 Warning
+PREG Output pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_33s_27s_58_2_1_U27/tmp_product output design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_33s_27s_58_2_1_U27/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#7 Warning
+PREG Output pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_33s_27s_58_2_1_U27/tmp_product__0 output design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_33s_27s_58_2_1_U27/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#8 Warning
+PREG Output pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_33s_27s_58_2_1_U28/tmp_product output design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_33s_27s_58_2_1_U28/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#9 Warning
+PREG Output pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_33s_27s_58_2_1_U28/tmp_product__0 output design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_33s_27s_58_2_1_U28/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#10 Warning
+PREG Output pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_58s_60ns_117_5_1_U29/tmp_product output design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_58s_60ns_117_5_1_U29/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#11 Warning
+PREG Output pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_58s_60ns_117_5_1_U30/tmp_product output design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_58s_60ns_117_5_1_U30/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#12 Warning
+PREG Output pipelining  
+DSP design_1_i/station_vision_0/inst/grp_station_vision_accel_Pipeline_VITIS_LOOP_36_1_fu_691/mul_32s_32s_32_2_1_U1/tmp_product__0 output design_1_i/station_vision_0/inst/grp_station_vision_accel_Pipeline_VITIS_LOOP_36_1_fu_691/mul_32s_32s_32_2_1_U1/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/bound_reg_125_reg multiplier stage design_1_i/motion_path_0/inst/compute_U0/bound_reg_125_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_32ns_34ns_65_2_1_U23/buff0_reg multiplier stage design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_32ns_34ns_65_2_1_U23/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_32ns_34ns_65_2_1_U23/buff0_reg__0 multiplier stage design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_32ns_34ns_65_2_1_U23/buff0_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_32ns_34ns_65_2_1_U23/tmp_product multiplier stage design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_32ns_34ns_65_2_1_U23/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#5 Warning
+MREG Output pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_32ns_34ns_65_2_1_U23/tmp_product__0 multiplier stage design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_32ns_34ns_65_2_1_U23/tmp_product__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#6 Warning
+MREG Output pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_32s_7ns_32_2_1_U24/buff0_reg multiplier stage design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_32s_7ns_32_2_1_U24/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#7 Warning
+MREG Output pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_32s_7ns_32_2_1_U24/tmp_product multiplier stage design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_32s_7ns_32_2_1_U24/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#8 Warning
+MREG Output pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_32s_7ns_32_2_1_U25/buff0_reg multiplier stage design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_32s_7ns_32_2_1_U25/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#9 Warning
+MREG Output pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_32s_7ns_32_2_1_U25/tmp_product multiplier stage design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_32s_7ns_32_2_1_U25/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#10 Warning
+MREG Output pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_32s_7ns_32_2_1_U26/buff0_reg multiplier stage design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_32s_7ns_32_2_1_U26/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#11 Warning
+MREG Output pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_32s_7ns_32_2_1_U26/tmp_product multiplier stage design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_32s_7ns_32_2_1_U26/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#12 Warning
+MREG Output pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_33s_27s_58_2_1_U27/buff0_reg multiplier stage design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_33s_27s_58_2_1_U27/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#13 Warning
+MREG Output pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_33s_27s_58_2_1_U27/buff0_reg__0 multiplier stage design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_33s_27s_58_2_1_U27/buff0_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#14 Warning
+MREG Output pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_33s_27s_58_2_1_U27/tmp_product multiplier stage design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_33s_27s_58_2_1_U27/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#15 Warning
+MREG Output pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_33s_27s_58_2_1_U27/tmp_product__0 multiplier stage design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_33s_27s_58_2_1_U27/tmp_product__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#16 Warning
+MREG Output pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_33s_27s_58_2_1_U28/buff0_reg multiplier stage design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_33s_27s_58_2_1_U28/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#17 Warning
+MREG Output pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_33s_27s_58_2_1_U28/buff0_reg__0 multiplier stage design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_33s_27s_58_2_1_U28/buff0_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#18 Warning
+MREG Output pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_33s_27s_58_2_1_U28/tmp_product multiplier stage design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_33s_27s_58_2_1_U28/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#19 Warning
+MREG Output pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_33s_27s_58_2_1_U28/tmp_product__0 multiplier stage design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_33s_27s_58_2_1_U28/tmp_product__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#20 Warning
+MREG Output pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_58s_60ns_117_5_1_U29/buff0_reg__2 multiplier stage design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_58s_60ns_117_5_1_U29/buff0_reg__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#21 Warning
+MREG Output pipelining  
+DSP design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_58s_60ns_117_5_1_U30/buff0_reg__2 multiplier stage design_1_i/motion_path_0/inst/compute_U0/grp_compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_fu_64/mul_58s_60ns_117_5_1_U30/buff0_reg__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#22 Warning
+MREG Output pipelining  
+DSP design_1_i/station_vision_0/inst/grp_station_vision_accel_Pipeline_VITIS_LOOP_36_1_fu_691/mul_32s_32s_32_2_1_U1/buff0_reg multiplier stage design_1_i/station_vision_0/inst/grp_station_vision_accel_Pipeline_VITIS_LOOP_36_1_fu_691/mul_32s_32s_32_2_1_U1/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#23 Warning
+MREG Output pipelining  
+DSP design_1_i/station_vision_0/inst/grp_station_vision_accel_Pipeline_VITIS_LOOP_36_1_fu_691/mul_32s_32s_32_2_1_U1/tmp_product multiplier stage design_1_i/station_vision_0/inst/grp_station_vision_accel_Pipeline_VITIS_LOOP_36_1_fu_691/mul_32s_32s_32_2_1_U1/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#24 Warning
+MREG Output pipelining  
+DSP design_1_i/station_vision_0/inst/grp_station_vision_accel_Pipeline_VITIS_LOOP_36_1_fu_691/mul_32s_32s_32_2_1_U1/tmp_product__0 multiplier stage design_1_i/station_vision_0/inst/grp_station_vision_accel_Pipeline_VITIS_LOOP_36_1_fu_691/mul_32s_32s_32_2_1_U1/tmp_product__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+PDCN-1569#1 Warning
+LUT equation term check  
+Used physical LUT pin 'A1' of cell design_1_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin design_1_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) in site SLICE_X4Y15 is not included in the LUT equation: 'O6=(A5)+((~A5)*(~A6)*A4)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#2 Warning
+LUT equation term check  
+Used physical LUT pin 'A1' of cell design_1_i/axi_mem_intercon/s02_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin design_1_i/axi_mem_intercon/s02_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) in site SLICE_X1Y42 is not included in the LUT equation: 'O6=(A5)+((~A5)*(~A3)*A4)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#3 Warning
+LUT equation term check  
+Used physical LUT pin 'A1' of cell design_1_i/axi_mem_intercon/s03_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin design_1_i/axi_mem_intercon/s03_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) in site SLICE_X17Y17 is not included in the LUT equation: 'O6=(A4)+((~A4)*(~A6)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#4 Warning
+LUT equation term check  
+Used physical LUT pin 'A1' of cell design_1_i/axi_mem_intercon_1/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin design_1_i/axi_mem_intercon_1/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) in site SLICE_X57Y78 is not included in the LUT equation: 'O6=(A5)+((~A5)*(~A6)*A4)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#5 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell design_1_i/axi_mem_intercon/s03_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin design_1_i/axi_mem_intercon/s03_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) in site SLICE_X34Y57 is not included in the LUT equation: 'O6=(A5)+((~A5)*(~A6)*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#6 Warning
+LUT equation term check  
+Used physical LUT pin 'A4' of cell design_1_i/axi_mem_intercon/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin design_1_i/axi_mem_intercon/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) in site SLICE_X9Y16 is not included in the LUT equation: 'O6=(A6)+((~A6)*(~A5)*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#7 Warning
+LUT equation term check  
+Used physical LUT pin 'A4' of cell design_1_i/axi_mem_intercon/s03_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin design_1_i/axi_mem_intercon/s03_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) in site SLICE_X3Y40 is not included in the LUT equation: 'O6=(A6)+((~A6)*(~A5)*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#8 Warning
+LUT equation term check  
+Used physical LUT pin 'A4' of cell design_1_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin design_1_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) in site SLICE_X91Y61 is not included in the LUT equation: 'O6=(A2)+((~A2)*(~A6)*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#9 Warning
+LUT equation term check  
+Used physical LUT pin 'A5' of cell design_1_i/axi_mem_intercon/s02_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin design_1_i/axi_mem_intercon/s02_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) in site SLICE_X0Y19 is not included in the LUT equation: 'O6=(A3)+((~A3)*(~A6)*A1)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#10 Warning
+LUT equation term check  
+Used physical LUT pin 'A5' of cell design_1_i/axi_mem_intercon/s02_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin design_1_i/axi_mem_intercon/s02_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) in site SLICE_X35Y66 is not included in the LUT equation: 'O6=(A1)+((~A1)*(~A6)*A2)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#11 Warning
+LUT equation term check  
+Used physical LUT pin 'A5' of cell design_1_i/axi_mem_intercon_1/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin design_1_i/axi_mem_intercon_1/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) in site SLICE_X105Y83 is not included in the LUT equation: 'O6=(A6)+((~A6)*(~A4)*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+121 net(s) have no routable loads. The problem bus(es) and/or net(s) are design_1_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+design_1_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/user_valid,
+design_1_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i,
+design_1_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb,
+design_1_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i,
+design_1_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0],
+design_1_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[2:0],
+design_1_i/axi_mem_intercon/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+design_1_i/axi_mem_intercon/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/user_valid,
+design_1_i/axi_mem_intercon/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i,
+design_1_i/axi_mem_intercon/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb,
+design_1_i/axi_mem_intercon/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i,
+design_1_i/axi_mem_intercon/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0],
+design_1_i/axi_mem_intercon/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[2:0],
+design_1_i/axi_mem_intercon/s02_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i
+ (the first 15 of 77 listed).
+Related violations: <none>
+
+

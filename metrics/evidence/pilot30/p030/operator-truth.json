@@ -1,0 +1,8 @@
+{
+  "operator_reply": "完整入箱",
+  "strict_full_containment": "pass",
+  "task_internal_intervention": false,
+  "automatic_result_kept_separate": true,
+  "reason": "complete_containment_operator_confirmed_in_response_to_no_rim_question",
+  "post_task_open_jaw_stationary_confirmation_not_explicitly_repeated": true
+}

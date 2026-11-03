@@ -1,0 +1,59 @@
+{
+  "kind": "operator-supervised-position-policy-v1",
+  "operator_authorized": true,
+  "operator_statement": "队长要求直接执行并询问可以稍微不同朝向；当前稳定主轴约64.5度，按本轮受监督小角度范围30度预演与试验",
+  "label": "paper",
+  "object_height_mm": 65,
+  "axis_tolerance_deg": 30,
+  "workspace_physically_qualified": false,
+  "unattended_accepted": false,
+  "pick_center_card_polygon_mm": [
+    [
+      -75,
+      0
+    ],
+    [
+      65,
+      0
+    ],
+    [
+      65,
+      45
+    ],
+    [
+      -75,
+      45
+    ]
+  ],
+  "source_card_polygon_mm": [
+    [
+      -110,
+      -65
+    ],
+    [
+      90,
+      -65
+    ],
+    [
+      90,
+      115
+    ],
+    [
+      -110,
+      115
+    ]
+  ],
+  "model": {
+    "kind": "carton-position-model-preview-v1",
+    "base_center_pwm": 1500,
+    "base_pwm_per_degree": 7.66,
+    "radial_bias_mm": 10,
+    "wrist_pwm_per_degree": 6.666666666666667,
+    "validated_for_execution": false,
+    "provenance": "candidate_prior_from_center_and_one_left_trial_not_a_workspace_fit",
+    "right_side_symmetry_is_unverified": true
+  },
+  "camera_and_world_registration_reused": true,
+  "robot_legacy_qualification_rewritten": false,
+  "orientation_scope_note": "existing_known_item_orientation_qualification_not_modified"
+}

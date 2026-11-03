@@ -1,0 +1,1005 @@
+{
+  "task_id": "510c5669ae3d40f284e10d77576e88a6",
+  "station_id": "km1-three-bin-current-20261029",
+  "mode": "known_physical",
+  "operation_scope": "supervised-unified-instance-v1",
+  "status": "motion_completed_awaiting_batch_verification",
+  "steps": [
+    {
+      "step": "home",
+      "status": "sent_and_waited_unverified",
+      "duration_ms": 1000,
+      "guard_and_send_elapsed_s": 0.1285815930004901,
+      "required_wait_s": 1.0,
+      "wait_elapsed_s": 1.2944649829987611,
+      "transport_receipt": {
+        "sent_hex": "7b2330303050313530305431303030212330303150313633325431303030212330303250313938375431303030212330303350303932385431303030212330303450313530305431303030212330303550313030305431303030217d",
+        "received_hex": "7b2330303050313530305431303030212330303150313633325431303030212330303250313938375431303030212330303350303932385431303030212330303450313530305431303030212330303550313030305431303030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 1.1241140100009943,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "step": "source_high",
+      "status": "sent_and_waited_unverified",
+      "duration_ms": 500,
+      "guard_and_send_elapsed_s": 0.28691198699925735,
+      "required_wait_s": 0.5,
+      "wait_elapsed_s": 0.630698510000002,
+      "transport_receipt": {
+        "sent_hex": "7b2330303050313536365430353030212330303150313438395430353030212330303250313938345430353030212330303350303939345430353030217d",
+        "received_hex": "7b2330303050313536365430353030212330303150313438395430353030212330303250313938345430353030212330303350303939345430353030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 0.5723119809990749,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "step": "align_wrist",
+      "status": "sent_and_waited_unverified",
+      "duration_ms": 400,
+      "guard_and_send_elapsed_s": 0.08915657800025656,
+      "required_wait_s": 0.4,
+      "wait_elapsed_s": 0.5875587069986068,
+      "transport_receipt": {
+        "sent_hex": "7b2330303450313432315430343030217d",
+        "received_hex": "7b2330303450313432315430343030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 0.4762489410004491,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "step": "source_hover",
+      "status": "sent_and_waited_unverified",
+      "duration_ms": 500,
+      "guard_and_send_elapsed_s": 0.3069138760001806,
+      "required_wait_s": 0.5,
+      "wait_elapsed_s": 0.580735347000882,
+      "transport_receipt": {
+        "sent_hex": "7b2330303050313536365430353030212330303150313337335430353030212330303250313932335430353030212330303350303933385430353030217d",
+        "received_hex": "7b2330303050313536365430353030212330303150313337335430353030212330303250313932335430353030212330303350303933385430353030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 0.5230492479986424,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "step": "source_mid",
+      "status": "sent_and_waited_unverified",
+      "duration_ms": 500,
+      "guard_and_send_elapsed_s": 0.1786230580000847,
+      "required_wait_s": 0.5,
+      "wait_elapsed_s": 0.6807849459983117,
+      "transport_receipt": {
+        "sent_hex": "7b2330303050313536325430353030212330303150313238335430353030212330303250323030345430353030212330303350313037325430353030217d",
+        "received_hex": "7b2330303050313536325430353030212330303150313238335430353030212330303250323030345430353030212330303350313037325430353030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 0.5909188050009107,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "step": "source_grip",
+      "status": "sent_and_waited_unverified",
+      "duration_ms": 500,
+      "guard_and_send_elapsed_s": 0.11156577200017637,
+      "required_wait_s": 0.5,
+      "wait_elapsed_s": 0.5607159129995125,
+      "transport_receipt": {
+        "sent_hex": "7b2330303050313535395430353030212330303150313230305430353030212330303250323032315430353030212330303350313137335430353030217d",
+        "received_hex": "7b2330303050313535395430353030212330303150313230305430353030212330303250323032315430353030212330303350313137335430353030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 0.5222673970001779,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "step": "close",
+      "status": "sent_and_waited_unverified",
+      "duration_ms": 750,
+      "guard_and_send_elapsed_s": 0.1028079819989216,
+      "required_wait_s": 0.95,
+      "wait_elapsed_s": 1.1508230630006437,
+      "transport_receipt": {
+        "sent_hex": "7b2330303550313334315430373530217d",
+        "received_hex": "7b2330303550313334315430373530217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 1.0414486450008553,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "step": "source_lift_mid",
+      "status": "sent_and_waited_unverified",
+      "duration_ms": 500,
+      "guard_and_send_elapsed_s": 0.17068508900047163,
+      "required_wait_s": 0.5,
+      "wait_elapsed_s": 0.5505176419992495,
+      "transport_receipt": {
+        "sent_hex": "7b2330303050313536325430353030212330303150313238335430353030212330303250323030345430353030212330303350313037325430353030217d",
+        "received_hex": "7b2330303050313536325430353030212330303150313238335430353030212330303250323030345430353030212330303350313037325430353030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 0.502227844999652,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "step": "source_lift_hover",
+      "status": "sent_and_waited_unverified",
+      "duration_ms": 500,
+      "guard_and_send_elapsed_s": 0.17867937200026063,
+      "required_wait_s": 0.5,
+      "wait_elapsed_s": 0.657742662999226,
+      "transport_receipt": {
+        "sent_hex": "7b2330303050313536365430353030212330303150313337335430353030212330303250313932335430353030212330303350303933385430353030217d",
+        "received_hex": "7b2330303050313536365430353030212330303150313337335430353030212330303250313932335430353030212330303350303933385430353030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 0.5564634259990271,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "step": "source_lift_high",
+      "status": "sent_and_waited_unverified",
+      "duration_ms": 500,
+      "guard_and_send_elapsed_s": 0.13038695999966876,
+      "required_wait_s": 0.5,
+      "wait_elapsed_s": 0.5674032110000553,
+      "transport_receipt": {
+        "sent_hex": "7b2330303050313536365430353030212330303150313438395430353030212330303250313938345430353030212330303350303939345430353030217d",
+        "received_hex": "7b2330303050313536365430353030212330303150313438395430353030212330303250313938345430353030212330303350303939345430353030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 0.5262593160005054,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "step": "front_high",
+      "status": "sent_and_waited_unverified",
+      "duration_ms": 400,
+      "guard_and_send_elapsed_s": 0.216081636999661,
+      "required_wait_s": 0.4,
+      "wait_elapsed_s": 0.6014967619994422,
+      "transport_receipt": {
+        "sent_hex": "7b2330303050313530305430343030212330303150313638355430343030212330303250323033315430343030212330303350303939335430343030217d",
+        "received_hex": "7b2330303050313530305430343030212330303150313638355430343030212330303250323033315430343030212330303350303939335430343030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 0.5440898639990337,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "step": "restore_wrist_high",
+      "status": "sent_and_waited_unverified",
+      "duration_ms": 400,
+      "guard_and_send_elapsed_s": 0.1466855199996644,
+      "required_wait_s": 0.4,
+      "wait_elapsed_s": 0.47918218999984674,
+      "transport_receipt": {
+        "sent_hex": "7b2330303450313530305430343030217d",
+        "received_hex": "7b2330303450313530305430343030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 0.45817513699876145,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "step": "transfer_0",
+      "status": "sent_and_waited_unverified",
+      "duration_ms": 400,
+      "guard_and_send_elapsed_s": 0.040755354000793886,
+      "required_wait_s": 0.4,
+      "wait_elapsed_s": 0.4452976299999136,
+      "transport_receipt": {
+        "sent_hex": "7b2330303050313530305430343030212330303150313633325430343030212330303250313938375430343030212330303350303932385430343030217d",
+        "received_hex": "7b2330303050313530305430343030212330303150313633325430343030212330303250313938375430343030212330303350303932385430343030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 0.4168136170010257,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "step": "transfer_1",
+      "status": "sent_and_waited_unverified",
+      "duration_ms": 1000,
+      "guard_and_send_elapsed_s": 0.255694024001059,
+      "required_wait_s": 1.0,
+      "wait_elapsed_s": 1.1026039490006951,
+      "transport_receipt": {
+        "sent_hex": "7b2330303050323230305431303030212330303150313633325431303030212330303250313938375431303030212330303350303932385431303030217d",
+        "received_hex": "7b2330303050323230305431303030212330303150313633325431303030212330303250313938375431303030212330303350303932385431303030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 1.0311158879994764,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "step": "transfer_2",
+      "status": "sent_and_waited_unverified",
+      "duration_ms": 400,
+      "guard_and_send_elapsed_s": 0.4574029100003827,
+      "required_wait_s": 0.4,
+      "wait_elapsed_s": 0.46606720500130905,
+      "transport_receipt": {
+        "sent_hex": "7b2330303050323230305430343030212330303150313438355430343030212330303250313837325430343030212330303350303936305430343030217d",
+        "received_hex": "7b2330303050323230305430343030212330303150313438355430343030212330303250313837325430343030212330303350303936305430343030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 0.4413246150015766,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "step": "transfer_3",
+      "status": "sent_and_waited_unverified",
+      "duration_ms": 400,
+      "guard_and_send_elapsed_s": 0.19226034399980563,
+      "required_wait_s": 0.4,
+      "wait_elapsed_s": 0.5743324909999501,
+      "transport_receipt": {
+        "sent_hex": "7b2330303050323230305430343030212330303150313437375430343030212330303250313931375430343030212330303350303937375430343030217d",
+        "received_hex": "7b2330303050323230305430343030212330303150313437375430343030212330303250313931375430343030212330303350303937375430343030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 0.4411919440008205,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "step": "transfer_4",
+      "status": "sent_and_waited_unverified",
+      "duration_ms": 400,
+      "guard_and_send_elapsed_s": 0.10611390799931542,
+      "required_wait_s": 0.4,
+      "wait_elapsed_s": 0.6621513589998358,
+      "transport_receipt": {
+        "sent_hex": "7b2330303050323230305430343030212330303150313433385430343030212330303250313837335430343030212330303350303933345430343030217d",
+        "received_hex": "7b2330303050323230305430343030212330303150313433385430343030212330303250313837335430343030212330303350303933345430343030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 0.4519611680007074,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "step": "release",
+      "status": "sent_and_waited_unverified",
+      "duration_ms": 650,
+      "guard_and_send_elapsed_s": 0.24927372800084413,
+      "required_wait_s": 0.95,
+      "wait_elapsed_s": 1.1063796779999393,
+      "transport_receipt": {
+        "sent_hex": "7b2330303550313030305430363530217d",
+        "received_hex": "7b2330303550313030305430363530217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 1.0058314140005677,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "step": "retreat_0",
+      "status": "sent_and_waited_unverified",
+      "duration_ms": 400,
+      "guard_and_send_elapsed_s": 0.13793069500025013,
+      "required_wait_s": 0.4,
+      "wait_elapsed_s": 0.5071905530003278,
+      "transport_receipt": {
+        "sent_hex": "7b2330303050323230305430343030212330303150313438355430343030212330303250313837325430343030212330303350303936305430343030217d",
+        "received_hex": "7b2330303050323230305430343030212330303150313438355430343030212330303250313837325430343030212330303350303936305430343030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 0.43166488600036246,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "step": "retreat_1",
+      "status": "sent_and_waited_unverified",
+      "duration_ms": 400,
+      "guard_and_send_elapsed_s": 0.08802380899942364,
+      "required_wait_s": 0.4,
+      "wait_elapsed_s": 0.5325475739991816,
+      "transport_receipt": {
+        "sent_hex": "7b2330303050323230305430343030212330303150313633325430343030212330303250313938375430343030212330303350303932385430343030217d",
+        "received_hex": "7b2330303050323230305430343030212330303150313633325430343030212330303250313938375430343030212330303350303932385430343030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 0.48972729799970693,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "step": "retreat_2",
+      "status": "sent_and_waited_unverified",
+      "duration_ms": 1000,
+      "guard_and_send_elapsed_s": 0.2233906890014623,
+      "required_wait_s": 1.0,
+      "wait_elapsed_s": 1.1268122139990737,
+      "transport_receipt": {
+        "sent_hex": "7b2330303050313530305431303030212330303150313633325431303030212330303250313938375431303030212330303350303932385431303030217d",
+        "received_hex": "7b2330303050313530305431303030212330303150313633325431303030212330303250313938375431303030212330303350303932385431303030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 1.062931253998613,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "step": "retreat_3",
+      "status": "sent_and_waited_unverified",
+      "duration_ms": 636,
+      "guard_and_send_elapsed_s": 0.2654376240006968,
+      "required_wait_s": 0.636,
+      "wait_elapsed_s": 0.7212637530010397,
+      "transport_receipt": {
+        "sent_hex": "7b2330303050313530305430363336212330303150313530305430363336212330303250313530305430363336212330303350313530305430363336217d",
+        "received_hex": "7b2330303050313530305430363336212330303150313530305430363336212330303250313530305430363336212330303350313530305430363336217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 0.6750340550006513,
+        "servo_ack_claimed": false
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "image": "510c5669ae3d40f284e10d77576e88a6.before.png",
+      "observation": "510c5669ae3d40f284e10d77576e88a6.before.observation.json",
+      "png_sha256": "7b1219c5c4c5db8e942ff43190444749b678cb3e8ecb0f25a7b5c48145f0ff8f"
+    },
+    {
+      "image": "510c5669ae3d40f284e10d77576e88a6.precommit.png",
+      "observation": "510c5669ae3d40f284e10d77576e88a6.precommit.observation.json",
+      "png_sha256": "72274b2cb9d8f0aa3847624927730179ca6f0cc0e3317c761f2fd813421b8270"
+    },
+    {
+      "image": "510c5669ae3d40f284e10d77576e88a6.guard_home.png",
+      "observation": "510c5669ae3d40f284e10d77576e88a6.guard_home.observation.json",
+      "png_sha256": "f186c691e899e85f55e2d8f367889ed1e7e3cf33e46e72b351e1fc21d9de2c40"
+    }
+  ],
+  "config_sha256": "cb362d72b648e4884773d307c1a2a8d4ebbac49d2527b3cd9e3549f475f270a6",
+  "unified_policy_sha256": "2a013ed573f601cb995dea275be2d013d3c104798590917981638ca3cbcb6b2f",
+  "production_quality_claimed": false,
+  "workspace_physically_qualified": false,
+  "unattended_accepted": false,
+  "physical_success_verified": false,
+  "automatic_retry": false,
+  "physical_motion_attempted": true,
+  "batch_plan_frozen_before_motion": true,
+  "batch_plan_index": 0,
+  "rejected_candidates": [],
+  "candidate_order": [
+    {
+      "label": "plastic",
+      "bin_id": "bin_plastic",
+      "track_id": 1,
+      "slot_id": "plastic-original",
+      "slot_roi": [
+        39,
+        307,
+        245,
+        441
+      ],
+      "pick_pixel": [
+        312,
+        131
+      ],
+      "pick_card_xy_mm": [
+        -28.82216740292489,
+        55.13579894956101
+      ],
+      "axis_deg": 109.4581043277587,
+      "width_mm": 55.23192039222101,
+      "length_mm": 128.158759053073,
+      "object_profile_id": "same-empty-plastic-20261029",
+      "object_height_mm": 53.0,
+      "geometry": {
+        "m00": 6205,
+        "m10": 1927265,
+        "m01": 812666,
+        "m20": 600648855,
+        "m02": 113282096,
+        "m11": 254391855,
+        "min_col": 271,
+        "min_row": 70,
+        "max_col": 352,
+        "max_row": 196,
+        "job_id": 1,
+        "status": 1
+      },
+      "base_pwm": 1559,
+      "wrist_pwm": 1421,
+      "source_chain_index": 1,
+      "model_sha256": "211a3df54de7b5ea515acaa0d3d3766ea2c61deb5761703e1c8218c33fec66c0",
+      "complete_route_compiled_before_motion": true,
+      "nominal_tool_footprint_clear": true,
+      "nominal_tool_footprint_check_enforced": false,
+      "full_link_collision_check": false,
+      "workspace_physically_qualified": false,
+      "execution_basis": "operator_authorized_prompted_single_item_trial",
+      "source_evidence_roi": [
+        266,
+        65,
+        358,
+        202
+      ],
+      "grasp_cross_section": {
+        "kind": "projected-mask-cross-section-v1",
+        "width_mm": 51.92866806210242,
+        "center_card_xy_mm": [
+          -28.82216740292489,
+          55.13579894956101
+        ],
+        "contact_card_xy_mm": [
+          [
+            -4.3407778857591275,
+            63.784972839870434
+          ],
+          [
+            -53.30355692009066,
+            46.48662505925159
+          ]
+        ],
+        "axis_deg": 109.4581043277587,
+        "cross_section_intervals": 1,
+        "center_shift_mm": 0.5520342000771148,
+        "physical_contact_verified": false
+      },
+      "grasp_width_mm": 51.92866806210242,
+      "jaw_input_width_mm": 51.92866806210242,
+      "jaw_width_source": "visual_contour",
+      "jaw_closure": {
+        "mode": "measured_width_interpolation",
+        "close_pwm": 1341,
+        "observed_width_mm": 51.92866806210242,
+        "target_gap_mm": 41.54293444968194,
+        "width_controls_closure": true,
+        "calibration_sha256": "9ab5654e79a8188170b6d34e1f0d4c9921c9bbad3b7cbfe74529b6e0d229bee6",
+        "measurement_id": "jaw-gap-20261031-reviewed-1000-1600-v1",
+        "physical_contact_verified": false,
+        "width_source": "visual_contour",
+        "visual_contour_width_mm": 51.92866806210242
+      },
+      "motion_timing": {
+        "policy": {
+          "kind": "supervised-distance-timing-v1",
+          "operator_statement": "现在的4个抓取，全动作加速，尽可能压缩到20s；每次完整抓放约20秒",
+          "target_cycle_s": 20,
+          "max_pwm_per_s": [
+            700,
+            900,
+            900,
+            900,
+            900,
+            900
+          ],
+          "min_move_ms": 400,
+          "home_min_ms": 1000,
+          "vertical_min_ms": 500,
+          "close_ms": 750,
+          "release_ms": 650,
+          "close_settle_s": 0.2,
+          "release_settle_s": 0.3,
+          "physical_speed_verified": false
+        },
+        "baseline_motion_wait_s": 115.5,
+        "candidate_motion_wait_s": 12.636000000000001,
+        "all_joint_targets_and_waypoints_preserved": true,
+        "physical_speed_verified": false,
+        "excludes": "serial startup, localization, inference, frame guards, logging and final verification"
+      },
+      "mask_geometry_cleanup": {
+        "raw_area_px": 6205,
+        "geometry_area_px": 6205,
+        "removed_island_px": 0,
+        "minimum_main_fraction": 0.99,
+        "raw_mask_preserved_for_verification": true
+      },
+      "specimen_admission": {
+        "mode": "live_object",
+        "observed_area_px": 6205,
+        "observed_width_mm": 55.23192039222101,
+        "observed_length_mm": 128.158759053073,
+        "principal_axis_used": true,
+        "sample_size_template_required": false,
+        "mechanical_reachability_required": true,
+        "physical_validation_completed": false
+      },
+      "source_bin_overlap_fraction": 0.0,
+      "source_bin_edge_reviews": [],
+      "nominal_neighbor_clearance_mm": null,
+      "height_source": "operator_per_instance",
+      "height_item_id": 1,
+      "grasp_z_mm": 8,
+      "height_changes_grasp_z": false,
+      "official_label": "Disposable plastic cup",
+      "confidence": 0.297607421875,
+      "decision_threshold": 0.1,
+      "automatic_motion_allowed": false,
+      "destination_empty_check_enabled": false,
+      "minimum_silhouette_separation_check_enabled": false,
+      "perception_model_sha256": "9d5734b34871aa81412b2fa47176d8f926283bb5adfe3a3f80cc58c5b7332534",
+      "settings_sha256": "0878d8229aa91d41962eb6b7f0287ca46c882a2aef320436f3f037516b0de3f0",
+      "selection": {
+        "policy": "clearance_then_route_v1",
+        "clearance_preference_mm": 50.0,
+        "complete_route_wait_s": 12.636000000000001,
+        "confidence": 0.297607421875,
+        "stable_track_id": 1,
+        "reason": "verified_route_then_clearance_then_duration_then_confidence",
+        "rank": 1
+      }
+    }
+  ],
+  "scene_tracks": [
+    {
+      "track_id": 1,
+      "label": "plastic"
+    }
+  ],
+  "material_selection": [
+    "plastic"
+  ],
+  "detection_window_px": [
+    0,
+    0,
+    640,
+    480
+  ],
+  "choice": {
+    "label": "plastic",
+    "bin_id": "bin_plastic",
+    "track_id": 1,
+    "slot_id": "plastic-original",
+    "slot_roi": [
+      39,
+      307,
+      245,
+      441
+    ],
+    "pick_pixel": [
+      312,
+      131
+    ],
+    "pick_card_xy_mm": [
+      -28.82216740292489,
+      55.13579894956101
+    ],
+    "axis_deg": 109.4581043277587,
+    "width_mm": 55.23192039222101,
+    "length_mm": 128.158759053073,
+    "object_profile_id": "same-empty-plastic-20261029",
+    "object_height_mm": 53.0,
+    "geometry": {
+      "m00": 6205,
+      "m10": 1927265,
+      "m01": 812666,
+      "m20": 600648855,
+      "m02": 113282096,
+      "m11": 254391855,
+      "min_col": 271,
+      "min_row": 70,
+      "max_col": 352,
+      "max_row": 196,
+      "job_id": 1,
+      "status": 1
+    },
+    "base_pwm": 1559,
+    "wrist_pwm": 1421,
+    "source_chain_index": 1,
+    "model_sha256": "211a3df54de7b5ea515acaa0d3d3766ea2c61deb5761703e1c8218c33fec66c0",
+    "complete_route_compiled_before_motion": true,
+    "nominal_tool_footprint_clear": true,
+    "nominal_tool_footprint_check_enforced": false,
+    "full_link_collision_check": false,
+    "workspace_physically_qualified": false,
+    "execution_basis": "operator_authorized_prompted_single_item_trial",
+    "source_evidence_roi": [
+      266,
+      65,
+      358,
+      202
+    ],
+    "grasp_cross_section": {
+      "kind": "projected-mask-cross-section-v1",
+      "width_mm": 51.92866806210242,
+      "center_card_xy_mm": [
+        -28.82216740292489,
+        55.13579894956101
+      ],
+      "contact_card_xy_mm": [
+        [
+          -4.3407778857591275,
+          63.784972839870434
+        ],
+        [
+          -53.30355692009066,
+          46.48662505925159
+        ]
+      ],
+      "axis_deg": 109.4581043277587,
+      "cross_section_intervals": 1,
+      "center_shift_mm": 0.5520342000771148,
+      "physical_contact_verified": false
+    },
+    "grasp_width_mm": 51.92866806210242,
+    "jaw_input_width_mm": 51.92866806210242,
+    "jaw_width_source": "visual_contour",
+    "jaw_closure": {
+      "mode": "measured_width_interpolation",
+      "close_pwm": 1341,
+      "observed_width_mm": 51.92866806210242,
+      "target_gap_mm": 41.54293444968194,
+      "width_controls_closure": true,
+      "calibration_sha256": "9ab5654e79a8188170b6d34e1f0d4c9921c9bbad3b7cbfe74529b6e0d229bee6",
+      "measurement_id": "jaw-gap-20261031-reviewed-1000-1600-v1",
+      "physical_contact_verified": false,
+      "width_source": "visual_contour",
+      "visual_contour_width_mm": 51.92866806210242
+    },
+    "motion_timing": {
+      "policy": {
+        "kind": "supervised-distance-timing-v1",
+        "operator_statement": "现在的4个抓取，全动作加速，尽可能压缩到20s；每次完整抓放约20秒",
+        "target_cycle_s": 20,
+        "max_pwm_per_s": [
+          700,
+          900,
+          900,
+          900,
+          900,
+          900
+        ],
+        "min_move_ms": 400,
+        "home_min_ms": 1000,
+        "vertical_min_ms": 500,
+        "close_ms": 750,
+        "release_ms": 650,
+        "close_settle_s": 0.2,
+        "release_settle_s": 0.3,
+        "physical_speed_verified": false
+      },
+      "baseline_motion_wait_s": 115.5,
+      "candidate_motion_wait_s": 12.636000000000001,
+      "all_joint_targets_and_waypoints_preserved": true,
+      "physical_speed_verified": false,
+      "excludes": "serial startup, localization, inference, frame guards, logging and final verification"
+    },
+    "mask_geometry_cleanup": {
+      "raw_area_px": 6205,
+      "geometry_area_px": 6205,
+      "removed_island_px": 0,
+      "minimum_main_fraction": 0.99,
+      "raw_mask_preserved_for_verification": true
+    },
+    "specimen_admission": {
+      "mode": "live_object",
+      "observed_area_px": 6205,
+      "observed_width_mm": 55.23192039222101,
+      "observed_length_mm": 128.158759053073,
+      "principal_axis_used": true,
+      "sample_size_template_required": false,
+      "mechanical_reachability_required": true,
+      "physical_validation_completed": false
+    },
+    "source_bin_overlap_fraction": 0.0,
+    "source_bin_edge_reviews": [],
+    "nominal_neighbor_clearance_mm": null,
+    "height_source": "operator_per_instance",
+    "height_item_id": 1,
+    "grasp_z_mm": 8,
+    "height_changes_grasp_z": false,
+    "official_label": "Disposable plastic cup",
+    "confidence": 0.297607421875,
+    "decision_threshold": 0.1,
+    "automatic_motion_allowed": false,
+    "destination_empty_check_enabled": false,
+    "minimum_silhouette_separation_check_enabled": false,
+    "perception_model_sha256": "9d5734b34871aa81412b2fa47176d8f926283bb5adfe3a3f80cc58c5b7332534",
+    "settings_sha256": "0878d8229aa91d41962eb6b7f0287ca46c882a2aef320436f3f037516b0de3f0",
+    "selection": {
+      "policy": "clearance_then_route_v1",
+      "clearance_preference_mm": 50.0,
+      "complete_route_wait_s": 12.636000000000001,
+      "confidence": 0.297607421875,
+      "stable_track_id": 1,
+      "reason": "verified_route_then_clearance_then_duration_then_confidence",
+      "rank": 1
+    }
+  },
+  "plan": [
+    {
+      "step": "home",
+      "command": "{#000P1500T1000!#001P1632T1000!#002P1987T1000!#003P0928T1000!#004P1500T1000!#005P1000T1000!}",
+      "duration_ms": 1000
+    },
+    {
+      "step": "source_high",
+      "command": "{#000P1566T0500!#001P1489T0500!#002P1984T0500!#003P0994T0500!}",
+      "duration_ms": 500
+    },
+    {
+      "step": "align_wrist",
+      "command": "{#004P1421T0400!}",
+      "duration_ms": 400
+    },
+    {
+      "step": "source_hover",
+      "command": "{#000P1566T0500!#001P1373T0500!#002P1923T0500!#003P0938T0500!}",
+      "duration_ms": 500
+    },
+    {
+      "step": "source_mid",
+      "command": "{#000P1562T0500!#001P1283T0500!#002P2004T0500!#003P1072T0500!}",
+      "duration_ms": 500
+    },
+    {
+      "step": "source_grip",
+      "command": "{#000P1559T0500!#001P1200T0500!#002P2021T0500!#003P1173T0500!}",
+      "duration_ms": 500
+    },
+    {
+      "step": "close",
+      "command": "{#005P1341T0750!}",
+      "duration_ms": 750
+    },
+    {
+      "step": "source_lift_mid",
+      "command": "{#000P1562T0500!#001P1283T0500!#002P2004T0500!#003P1072T0500!}",
+      "duration_ms": 500
+    },
+    {
+      "step": "source_lift_hover",
+      "command": "{#000P1566T0500!#001P1373T0500!#002P1923T0500!#003P0938T0500!}",
+      "duration_ms": 500
+    },
+    {
+      "step": "source_lift_high",
+      "command": "{#000P1566T0500!#001P1489T0500!#002P1984T0500!#003P0994T0500!}",
+      "duration_ms": 500
+    },
+    {
+      "step": "front_high",
+      "command": "{#000P1500T0400!#001P1685T0400!#002P2031T0400!#003P0993T0400!}",
+      "duration_ms": 400
+    },
+    {
+      "step": "restore_wrist_high",
+      "command": "{#004P1500T0400!}",
+      "duration_ms": 400
+    },
+    {
+      "step": "transfer_0",
+      "command": "{#000P1500T0400!#001P1632T0400!#002P1987T0400!#003P0928T0400!}",
+      "duration_ms": 400
+    },
+    {
+      "step": "transfer_1",
+      "command": "{#000P2200T1000!#001P1632T1000!#002P1987T1000!#003P0928T1000!}",
+      "duration_ms": 1000
+    },
+    {
+      "step": "transfer_2",
+      "command": "{#000P2200T0400!#001P1485T0400!#002P1872T0400!#003P0960T0400!}",
+      "duration_ms": 400
+    },
+    {
+      "step": "transfer_3",
+      "command": "{#000P2200T0400!#001P1477T0400!#002P1917T0400!#003P0977T0400!}",
+      "duration_ms": 400
+    },
+    {
+      "step": "transfer_4",
+      "command": "{#000P2200T0400!#001P1438T0400!#002P1873T0400!#003P0934T0400!}",
+      "duration_ms": 400
+    },
+    {
+      "step": "release",
+      "command": "{#005P1000T0650!}",
+      "duration_ms": 650
+    },
+    {
+      "step": "retreat_0",
+      "command": "{#000P2200T0400!#001P1485T0400!#002P1872T0400!#003P0960T0400!}",
+      "duration_ms": 400
+    },
+    {
+      "step": "retreat_1",
+      "command": "{#000P2200T0400!#001P1632T0400!#002P1987T0400!#003P0928T0400!}",
+      "duration_ms": 400
+    },
+    {
+      "step": "retreat_2",
+      "command": "{#000P1500T1000!#001P1632T1000!#002P1987T1000!#003P0928T1000!}",
+      "duration_ms": 1000
+    },
+    {
+      "step": "retreat_3",
+      "command": "{#000P1500T0636!#001P1500T0636!#002P1500T0636!#003P1500T0636!}",
+      "duration_ms": 636
+    }
+  ],
+  "statistics": {
+    "backend": "pl_board_local",
+    "assets": {
+      "station_vision.bit": "054a766d3468282cbfb355dc803b8b9e960749ffde0e80bf0d43e17adebab779",
+      "station_vision.hwh": "b40312875bb53fadec4563109a8508176c75bcf582ce42150f13692e375a5213"
+    },
+    "stream_id": "80546d70a4234054a471c6e0f859b08a",
+    "config_sha256": "61bbbd4613c89f1daba9ff149b0d50b7c7f4d8fca4618607eebca1e9ca89a622",
+    "geometry_backend": "pynq_ps_numpy",
+    "semantic_mask_statistics_backend": "pynq_ps_numpy",
+    "rgb_region_statistics_backend": "pl_board_local",
+    "legacy_dual_core_used": false,
+    "silent_cpu_fallback": false,
+    "compute_location": "pynq_ps",
+    "perception_location": "pc"
+  },
+  "region_activation": {
+    "kind": "station-region-binding-v1",
+    "stream_id": "80546d70a4234054a471c6e0f859b08a",
+    "previous_config_sha256": "26c66a31564418fc74b31b440f81a4d0c29cc6e47ba785f5bf2758ab71809def",
+    "config_sha256": "61bbbd4613c89f1daba9ff149b0d50b7c7f4d8fca4618607eebca1e9ca89a622",
+    "regions": {
+      "source": [
+        266,
+        65,
+        358,
+        202
+      ],
+      "static_a": [
+        123,
+        58,
+        179,
+        113
+      ],
+      "static_b": [
+        122,
+        221,
+        178,
+        277
+      ],
+      "bin_metal": [
+        436,
+        107,
+        640,
+        276
+      ],
+      "bin_paper": [
+        422,
+        298,
+        626,
+        435
+      ],
+      "bin_plastic": [
+        39,
+        307,
+        245,
+        441
+      ]
+    },
+    "calibration_sha256": "5b932776d6df7439944ae57e458aa3b93aa638c6800da510c8d4609fa7644bd4",
+    "baseline_invalidated": true,
+    "automatic_motion_allowed": false
+  },
+  "motion_baseline": {
+    "baseline_frame_id": 26768,
+    "baseline_bgr_sha256": "4698df68092e86bf2790389945f61e9b645650aecccbb80a490320b522d49235",
+    "stream_id": "80546d70a4234054a471c6e0f859b08a",
+    "config_sha256": "61bbbd4613c89f1daba9ff149b0d50b7c7f4d8fca4618607eebca1e9ca89a622",
+    "automatic_motion_allowed": false,
+    "evidence": {
+      "image": "510c5669ae3d40f284e10d77576e88a6.board_baseline.png",
+      "observation": "510c5669ae3d40f284e10d77576e88a6.board_baseline.observation.json",
+      "png_sha256": "292654faf1f710b06a330bd4f926151aaafcc9016c576457cc45614984cfed23"
+    }
+  },
+  "serial_open_elapsed_s": 2.5924101439995866,
+  "verification_window": {
+    "total_timeout_s": 12,
+    "max_frame_age_ms": 12000,
+    "motion_max_frame_age_ms": 12000,
+    "stable_frames": 1
+  },
+  "placement_verification": {
+    "mode": "bin_occupied",
+    "rgb_difference_threshold": 45,
+    "min_component_px": 64,
+    "min_detection_confidence": 0.2
+  },
+  "motion_completed": true,
+  "verification": {
+    "status": "deferred_to_batch_end",
+    "frames": [],
+    "physical_success_verified": false
+  },
+  "continuation_basis": "complete_route_echoed_and_waited; frozen_batch_plan",
+  "elapsed_s": 45.63900444899991,
+  "slot_checks": [
+    {
+      "label": "plastic",
+      "slot_id": "plastic-original",
+      "roi": [
+        39,
+        307,
+        245,
+        441
+      ],
+      "destination_empty_check_enabled": false,
+      "semantic_occupancy_checked": false,
+      "rgb_empty_reference_checked": false,
+      "reason": "operator_disabled_destination_empty_check"
+    }
+  ],
+  "verification_attempts": [],
+  "motion_sequence": {
+    "scene_check_mode": "before_sequence",
+    "initial_visual_checks": 1,
+    "per_command_visual_checks": false,
+    "post_placement_verification_required": true,
+    "automatic_retry": false
+  },
+  "prompted_observation_frames": [
+    {
+      "image": "510c5669ae3d40f284e10d77576e88a6.prompted_0.png",
+      "observation": "510c5669ae3d40f284e10d77576e88a6.prompted_0.observation.json",
+      "png_sha256": "7b1219c5c4c5db8e942ff43190444749b678cb3e8ecb0f25a7b5c48145f0ff8f"
+    },
+    {
+      "image": "510c5669ae3d40f284e10d77576e88a6.prompted_1.png",
+      "observation": "510c5669ae3d40f284e10d77576e88a6.prompted_1.observation.json",
+      "png_sha256": "72274b2cb9d8f0aa3847624927730179ca6f0cc0e3317c761f2fd813421b8270"
+    },
+    {
+      "image": "510c5669ae3d40f284e10d77576e88a6.prompted_2.png",
+      "observation": "510c5669ae3d40f284e10d77576e88a6.prompted_2.observation.json",
+      "png_sha256": "f186c691e899e85f55e2d8f367889ed1e7e3cf33e46e72b351e1fc21d9de2c40"
+    }
+  ],
+  "original_labels_by_frame": [
+    [
+      {
+        "label": "Disposable plastic cup",
+        "material": "plastic",
+        "confidence": 0.297607421875,
+        "zone": "source"
+      }
+    ],
+    [
+      {
+        "label": "Disposable plastic cup",
+        "material": "plastic",
+        "confidence": 0.327880859375,
+        "zone": "source"
+      }
+    ],
+    [
+      {
+        "label": "Disposable plastic cup",
+        "material": "plastic",
+        "confidence": 0.3359375,
+        "zone": "source"
+      }
+    ]
+  ],
+  "batch_id": "be8d307fbfc7460d8cd57a5866a1835f",
+  "batch_index": 0
+}

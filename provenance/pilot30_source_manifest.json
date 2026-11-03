@@ -1,0 +1,3719 @@
+{
+  "source_root": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1",
+  "included_files": [
+    {
+      "source": "C:\\Users\\15283\\Downloads\\acceptance_test_plan_20261102_v1\\pilot30_final_statistics.json",
+      "path": "metrics/logs/pilot30/statistics.json",
+      "sha256": "cd05da80ba9d8b9f73f2170d10066b957185172a871723d665cb1a922ad2d5eb",
+      "bytes": 10974,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\Users\\15283\\Downloads\\submission_evidence_supplement_20261103_v1\\任务结果_原严格与允许搭边双口径.csv",
+      "path": "metrics/logs/pilot30/dual_criteria.csv",
+      "sha256": "42b277772cf62efb5b95f62bd80ee03201496eb66dc944f0132174f4c39f6e79",
+      "bytes": 6596,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\Users\\15283\\Downloads\\submission_evidence_supplement_20261103_v1\\任务结果_分类汇总.csv",
+      "path": "metrics/logs/pilot30/by_material.csv",
+      "sha256": "39bf0cc95711d0465e03468ce48e364dc3a1419b7622ef39a0f3923090027ed9",
+      "bytes": 224,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\Users\\15283\\Downloads\\submission_evidence_supplement_20261103_v1\\证据来源与校验.json",
+      "path": "metrics/logs/pilot30/supplement_source_hashes.json",
+      "sha256": "eaa17a0f611fc3c38903f71b7331cf550d422e1d13325ebdcf129dfcbec3adba",
+      "bytes": 6678,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\Users\\15283\\Downloads\\acceptance_test_plan_20261102_v1\\pilot_30_planned.csv",
+      "path": "metrics/logs/pilot30/planned.csv",
+      "sha256": "0d1ed51fec199db86555d080b12ca048ba93bb47713a32e8baa3c8d244f6503f",
+      "bytes": 799,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\Users\\15283\\Downloads\\acceptance_test_plan_20261102_v1\\results.csv",
+      "source_sha256": "22b245192f5ef05801a29b61d3528963ce4e76da9513576e11e94263a8f49aa7",
+      "path": "metrics/logs/pilot30/results.csv",
+      "sha256": "402842e12cbe3e100d935f850162ab842ad2a0ee90f2c748508dee7736696be1",
+      "copy_mode": "only evidence_directory rewritten to package-relative path; other cells preserved"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\pilot-power-mode.json",
+      "path": "metrics/evidence/pilot30/power_mode.json",
+      "sha256": "a6ef3bfafe8c63354ba8112f637964485e4abab7f5adbbb7c751ec5caee18790",
+      "bytes": 542,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\pilot_scene_frozen.json",
+      "path": "metrics/evidence/pilot30/frozen_scene.json",
+      "sha256": "b54fb9b17c7adfef7527a629fb7d6fcaa7275771a5e87f2bb47bb3fa828f6859",
+      "bytes": 1097,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\pilot_identity_audit.json",
+      "path": "metrics/evidence/pilot30/identity_audit.json",
+      "sha256": "2d2bf31358d6e33359faef56f919cef3e0b078e3661971431335b24517291fbb",
+      "bytes": 239,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\harness-method-note.txt",
+      "path": "metrics/evidence/pilot30/harness_method.txt",
+      "sha256": "7095df1751c2c112be6f937a86342daa5981a1381041c83a78cb30352f89b7ea",
+      "bytes": 2113,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\当前30次安排.txt",
+      "path": "metrics/evidence/pilot30/preplanned_scope.txt",
+      "sha256": "1d7d66bf543d61cbab3d43db0a5d48238d5743ebd112779e813a58b29d010a76",
+      "bytes": 620,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P001\\operator-truth.json",
+      "path": "metrics/evidence/pilot30/p001/operator-truth.json",
+      "sha256": "7b07054eff80368d9e7d0010538cf28c2ba61aa3ce74d5d3fd730a78f3fa1276",
+      "bytes": 216,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P001\\operator-scene-confirmation.txt",
+      "path": "metrics/evidence/pilot30/p001/operator-scene-confirmation.txt",
+      "sha256": "d40532a223b1da18b8bd1b7a666fb83bcf7f3a82df44ea0d05d1c6223789e4c5",
+      "bytes": 182,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P001\\measurement-summary.json",
+      "path": "metrics/evidence/pilot30/p001/measurement-summary.json",
+      "sha256": "25632db20b7cc9061ea85cac78194a72c2fa32fb66ce999317bbb7765ec96623",
+      "bytes": 3120,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P001\\motion-diagnostic.json",
+      "path": "metrics/evidence/pilot30/p001/motion-diagnostic.json",
+      "sha256": "5db8252aeb991079806c862de2b810b1c8ecb0982eccab8c00d595633b04e1c5",
+      "bytes": 68146,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P001\\motion-onset-review.jpg",
+      "path": "metrics/evidence/pilot30/p001/motion-onset-review.jpg",
+      "sha256": "b58a3fe9282797960dbd2ec2fa0b51f52f8c8f6d432842992d286a9bd7087f0f",
+      "bytes": 484252,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P001\\start-result.json",
+      "path": "metrics/evidence/pilot30/p001/start-result.json",
+      "sha256": "2ff750202fa8746226d35ae148c09e058bbb331991df588665967cb6a7cdd3bc",
+      "bytes": 14854,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P001\\preview-result.json",
+      "path": "metrics/evidence/pilot30/p001/preview-result.json",
+      "sha256": "253d003bf2e897409c7980d6b96363f13d5ddd711fdb61e3da31474a1ad47cbf",
+      "bytes": 13465,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P001\\trial-evidence-manifest.json",
+      "path": "metrics/evidence/pilot30/p001/trial-evidence-manifest.json",
+      "sha256": "9974cc0051fd13ea55d235cd039877fce2e54d98dd42d229118d9f21b3d21b04",
+      "bytes": 4363,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P001\\recording\\frames.jsonl",
+      "path": "metrics/evidence/pilot30/p001/recording/frames.jsonl",
+      "sha256": "c4bd2438105c49728e003e1853972dea47c4abc5d2f0fea93a2dca132da72d09",
+      "bytes": 1033795,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P001\\recording\\000014574.jpg",
+      "path": "metrics/evidence/pilot30/p001/recording/000014574.jpg",
+      "sha256": "620a2c0947d7606d37fa7e9b7e15b03fb6dca3d90eb3f6bb197f586c8432479d",
+      "bytes": 43424,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P001\\recording\\000014756.jpg",
+      "path": "metrics/evidence/pilot30/p001/recording/000014756.jpg",
+      "sha256": "25b76bf15c90932eccec91fde0238533d79fd114ba07f22f0258822439f1c10d",
+      "bytes": 43385,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P001\\recording\\000014757.jpg",
+      "path": "metrics/evidence/pilot30/p001/recording/000014757.jpg",
+      "sha256": "728edfa7d4376e156379180481e4a255b97183af3e450f2238da6ff99c850caa",
+      "bytes": 41891,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P001\\task-evidence\\a81fae255a434b48b0b0f7cf4f34bdca.before.png",
+      "path": "metrics/evidence/pilot30/p001/task-evidence/a81fae255a434b48b0b0f7cf4f34bdca.before.png",
+      "sha256": "b4f57701411314c8741449c9ef031f014d408c00e7b24368c73fb9699af6951e",
+      "bytes": 377607,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P001\\task-evidence\\a81fae255a434b48b0b0f7cf4f34bdca.before.observation.json",
+      "path": "metrics/evidence/pilot30/p001/task-evidence/a81fae255a434b48b0b0f7cf4f34bdca.before.observation.json",
+      "sha256": "0f5351c95da09506c9c00a59b16f4210dfa74465dccef35aea5b116b24ec69ab",
+      "bytes": 18590,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P001\\task-evidence\\a81fae255a434b48b0b0f7cf4f34bdca.json",
+      "path": "metrics/evidence/pilot30/p001/task-evidence/a81fae255a434b48b0b0f7cf4f34bdca.json",
+      "sha256": "8a1e0ec4a6717ca630b353681ad0329e8740eadab70d2e8f6e94934029aa06d5",
+      "bytes": 36913,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P001\\task-evidence\\88e6f2cbf0a7469dae404e1e92cd461e.final-0.png",
+      "path": "metrics/evidence/pilot30/p001/task-evidence/88e6f2cbf0a7469dae404e1e92cd461e.final-0.png",
+      "sha256": "98e415d0a0fec3096d6e9eb2df8d21e8d697eceabe1a5de1e40d7be5e539cd89",
+      "bytes": 365170,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P001\\task-evidence\\88e6f2cbf0a7469dae404e1e92cd461e.final-0.observation.json",
+      "path": "metrics/evidence/pilot30/p001/task-evidence/88e6f2cbf0a7469dae404e1e92cd461e.final-0.observation.json",
+      "sha256": "b8b697f69cb1ba66961214865dfaadae4f646237bd05dc76bf7fecc7a5f30430",
+      "bytes": 20209,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P001\\task-evidence\\88e6f2cbf0a7469dae404e1e92cd461e.batch-final-verification.json",
+      "path": "metrics/evidence/pilot30/p001/task-evidence/88e6f2cbf0a7469dae404e1e92cd461e.batch-final-verification.json",
+      "sha256": "cbf6ea223f86bced59d6c71a94ffadbfd14d07fc5f67e9dbf869575e4275682e",
+      "bytes": 3422,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P002\\operator-truth.json",
+      "path": "metrics/evidence/pilot30/p002/operator-truth.json",
+      "sha256": "3f4c404c329c7b897e02eaba5405e080a2018536cb5b514eea84d943f182fabd",
+      "bytes": 350,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P002\\operator-scene-confirmation.txt",
+      "path": "metrics/evidence/pilot30/p002/operator-scene-confirmation.txt",
+      "sha256": "be9fce35d2bc68c9e6386fae93d2d0d6ccde2c13443243aa5fc06158263d7b40",
+      "bytes": 239,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P002\\measurement-summary.json",
+      "path": "metrics/evidence/pilot30/p002/measurement-summary.json",
+      "sha256": "83036f9dbb7b7988e4656f6de78a61b696d46f6783b4a60e480b9a3b92c28a9d",
+      "bytes": 3119,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P002\\motion-diagnostic.json",
+      "path": "metrics/evidence/pilot30/p002/motion-diagnostic.json",
+      "sha256": "616e170dd44404895ba99ebdd919826f8b92224682a6bad4545da22c21eb150a",
+      "bytes": 66539,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P002\\motion-onset-review.jpg",
+      "path": "metrics/evidence/pilot30/p002/motion-onset-review.jpg",
+      "sha256": "2f3c5c1aa1881a26b72a07ae3c870087cd090dd9631540796501c0876e02d112",
+      "bytes": 487801,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P002\\start-result.json",
+      "path": "metrics/evidence/pilot30/p002/start-result.json",
+      "sha256": "66af436dbbb25229e3be7f797eb0e27b1803e785816ac84d152c5a2876380fa9",
+      "bytes": 14859,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P002\\preview-result.json",
+      "path": "metrics/evidence/pilot30/p002/preview-result.json",
+      "sha256": "bb781e3d92523a7387fc9749af4698a492121fe2eea1cb4c3442c56f2ceb1530",
+      "bytes": 13447,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P002\\trial-evidence-manifest.json",
+      "path": "metrics/evidence/pilot30/p002/trial-evidence-manifest.json",
+      "sha256": "d6bc56a11eee4afe67225c6fcdbc5687161b6f5d7d969071cd6552f4ed546ce3",
+      "bytes": 4363,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P002\\recording\\frames.jsonl",
+      "path": "metrics/evidence/pilot30/p002/recording/frames.jsonl",
+      "sha256": "aa3881f8c0e538427d48d8fb2f8a321571490966557e6257e7ce17eb174ed3da",
+      "bytes": 1061089,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P002\\recording\\000015998.jpg",
+      "path": "metrics/evidence/pilot30/p002/recording/000015998.jpg",
+      "sha256": "fe03ea94df6c6448e365244f0f97c28ee22bf6478fbc83e0a6b67449b7ea63fe",
+      "bytes": 43544,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P002\\recording\\000016175.jpg",
+      "path": "metrics/evidence/pilot30/p002/recording/000016175.jpg",
+      "sha256": "7372cf367a9485a25cb2fea431171227f8affc45d08a8e7dfa3477f36882ae02",
+      "bytes": 43560,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P002\\recording\\000016176.jpg",
+      "path": "metrics/evidence/pilot30/p002/recording/000016176.jpg",
+      "sha256": "87a18a1217cea16601b5053c809bdd6cdf3a675b47e7c7a1b9a7232cd8f506f4",
+      "bytes": 42016,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P002\\task-evidence\\4df08cdd942947668eac4850f93901a4.before.png",
+      "path": "metrics/evidence/pilot30/p002/task-evidence/4df08cdd942947668eac4850f93901a4.before.png",
+      "sha256": "12f16bb1b718e543283eb8cb263f740398c9c60ac002b3c8b58697055d999fca",
+      "bytes": 378123,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P002\\task-evidence\\4df08cdd942947668eac4850f93901a4.before.observation.json",
+      "path": "metrics/evidence/pilot30/p002/task-evidence/4df08cdd942947668eac4850f93901a4.before.observation.json",
+      "sha256": "d027b3af52c564f2b108a958717f1b9794a787f971e7d8de3ab8b868ff0baa7d",
+      "bytes": 12241,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P002\\task-evidence\\4df08cdd942947668eac4850f93901a4.json",
+      "path": "metrics/evidence/pilot30/p002/task-evidence/4df08cdd942947668eac4850f93901a4.json",
+      "sha256": "db190afd8671ae309a8516b33ad43a33467bab84f0a4cea84b80bf3d6c7cb8b0",
+      "bytes": 36555,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P002\\task-evidence\\fff8f54a9642407bb44532af228d724c.final-0.png",
+      "path": "metrics/evidence/pilot30/p002/task-evidence/fff8f54a9642407bb44532af228d724c.final-0.png",
+      "sha256": "6e2a6310b569689c8c01f0bf3ca6e6d7d538c0acd6400f38c0d5aeb3e21cf020",
+      "bytes": 363952,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P002\\task-evidence\\fff8f54a9642407bb44532af228d724c.final-0.observation.json",
+      "path": "metrics/evidence/pilot30/p002/task-evidence/fff8f54a9642407bb44532af228d724c.final-0.observation.json",
+      "sha256": "3f07c604703da2b9f496cdad2dc326ede74c329f0024b95f16fb892a37351072",
+      "bytes": 18550,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P002\\task-evidence\\fff8f54a9642407bb44532af228d724c.batch-final-verification.json",
+      "path": "metrics/evidence/pilot30/p002/task-evidence/fff8f54a9642407bb44532af228d724c.batch-final-verification.json",
+      "sha256": "7abec47f3aab2d8b535d71bf605f0d54aea81465daf58a67dba759ac1dcb2da8",
+      "bytes": 3343,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P003\\operator-truth.json",
+      "path": "metrics/evidence/pilot30/p003/operator-truth.json",
+      "sha256": "9450f3cbfa7612162f8f3fb53fcd03de5b5bcaee3ea623409d4e1e88398e005e",
+      "bytes": 342,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P003\\operator-scene-confirmation.txt",
+      "path": "metrics/evidence/pilot30/p003/operator-scene-confirmation.txt",
+      "sha256": "a8a790be17afafe3611715250f37d98d1a34d8d66c5fc73371ca4001a43baf3f",
+      "bytes": 227,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P003\\measurement-summary.json",
+      "path": "metrics/evidence/pilot30/p003/measurement-summary.json",
+      "sha256": "8f2dd3a186ec7d185e0a38b9c465a60ad06ecf33c5137a67f088759e5f31d117",
+      "bytes": 3119,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P003\\motion-diagnostic.json",
+      "path": "metrics/evidence/pilot30/p003/motion-diagnostic.json",
+      "sha256": "c531922efd7a7a7196797d5b1c94237401a8d072ad178009bb852a487708b8c1",
+      "bytes": 60026,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P003\\motion-onset-review.jpg",
+      "path": "metrics/evidence/pilot30/p003/motion-onset-review.jpg",
+      "sha256": "a54be6c227a1883b7129fa997a729437b6af58a2a9913a50d2374275e2502577",
+      "bytes": 487808,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P003\\start-result.json",
+      "path": "metrics/evidence/pilot30/p003/start-result.json",
+      "sha256": "e16772df66729e25795e9f8742c4a430b6e792c419f4497d44506f270e4efb43",
+      "bytes": 14792,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P003\\preview-result.json",
+      "path": "metrics/evidence/pilot30/p003/preview-result.json",
+      "sha256": "456d0cc79d23ba3bc57d94091c93caf4456f3b11737a5636645608b7233cb573",
+      "bytes": 13442,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P003\\trial-evidence-manifest.json",
+      "path": "metrics/evidence/pilot30/p003/trial-evidence-manifest.json",
+      "sha256": "a91d65efe5fc6e3835aafa0029fe693e06809aabd977812f703378a829703207",
+      "bytes": 4363,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P003\\recording\\frames.jsonl",
+      "path": "metrics/evidence/pilot30/p003/recording/frames.jsonl",
+      "sha256": "b1a49fcc169cf9ac161bd6245f88fc7d22d83655fe80f2749c8d5ed79fc69b42",
+      "bytes": 975562,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P003\\recording\\000017690.jpg",
+      "path": "metrics/evidence/pilot30/p003/recording/000017690.jpg",
+      "sha256": "c20768449d1d4ad619504bc1e556a7223920273244df2ab1049661c5912e45b5",
+      "bytes": 44147,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P003\\recording\\000017831.jpg",
+      "path": "metrics/evidence/pilot30/p003/recording/000017831.jpg",
+      "sha256": "0135bc27087c50ba2bcc62516fffc53e5dcc87299aa247a435dc0299be9cb470",
+      "bytes": 44192,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P003\\recording\\000017832.jpg",
+      "path": "metrics/evidence/pilot30/p003/recording/000017832.jpg",
+      "sha256": "a0ed5c074ff52f95885531ec5fee5f0b592cf59061e2dbd10bc360c520dc431f",
+      "bytes": 43015,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P003\\task-evidence\\179f729e1f754f12a0b5a48a9f93c875.before.png",
+      "path": "metrics/evidence/pilot30/p003/task-evidence/179f729e1f754f12a0b5a48a9f93c875.before.png",
+      "sha256": "1827ee0b75df24bc3d47cc916a4b0a7f7cf633e245056b605a8d0364f0338f3c",
+      "bytes": 383506,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P003\\task-evidence\\179f729e1f754f12a0b5a48a9f93c875.before.observation.json",
+      "path": "metrics/evidence/pilot30/p003/task-evidence/179f729e1f754f12a0b5a48a9f93c875.before.observation.json",
+      "sha256": "9da726d49d80a368338644a0db103c71ecffb58b4d755da792e7b3d9e6d73edc",
+      "bytes": 12297,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P003\\task-evidence\\179f729e1f754f12a0b5a48a9f93c875.json",
+      "path": "metrics/evidence/pilot30/p003/task-evidence/179f729e1f754f12a0b5a48a9f93c875.json",
+      "sha256": "e62ed014111ec81413434341eddbd3545bb45156d6548401d02390f242371d86",
+      "bytes": 36393,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P003\\task-evidence\\36503bf54732495297ce8c5927cf01a4.final-0.png",
+      "path": "metrics/evidence/pilot30/p003/task-evidence/36503bf54732495297ce8c5927cf01a4.final-0.png",
+      "sha256": "9e9b0d331331e5ee0162d3e1bdc15bb6e6c3ecfc7a268dbc105f7164c66011c1",
+      "bytes": 363490,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P003\\task-evidence\\36503bf54732495297ce8c5927cf01a4.final-0.observation.json",
+      "path": "metrics/evidence/pilot30/p003/task-evidence/36503bf54732495297ce8c5927cf01a4.final-0.observation.json",
+      "sha256": "a7b2c11ddcb4cd14b9c69f6e7e33edafd8bcbbe03dcbdff839c7f3e97b588212",
+      "bytes": 20399,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P003\\task-evidence\\36503bf54732495297ce8c5927cf01a4.batch-final-verification.json",
+      "path": "metrics/evidence/pilot30/p003/task-evidence/36503bf54732495297ce8c5927cf01a4.batch-final-verification.json",
+      "sha256": "0d63b96289a46752bdfbe8d6aaf5a151c621f9be9a7c647f32824a974c066ed1",
+      "bytes": 3416,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P004\\operator-truth.json",
+      "path": "metrics/evidence/pilot30/p004/operator-truth.json",
+      "sha256": "2b36be4f5e2337c2983f1d17c0c090a9569d543cd54a4c0a6d0c5df0557f88af",
+      "bytes": 197,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P004\\operator-scene-confirmation.txt",
+      "path": "metrics/evidence/pilot30/p004/operator-scene-confirmation.txt",
+      "sha256": "6413de5ec847cba33127293d28e5ed1f4937c079b9aefc77e0d459de555846e7",
+      "bytes": 221,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P004\\measurement-summary.json",
+      "path": "metrics/evidence/pilot30/p004/measurement-summary.json",
+      "sha256": "1f5532edd3c3164ab582432ef998c270c86af5b6fcf9ad88864b13852a061253",
+      "bytes": 3120,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P004\\motion-diagnostic.json",
+      "path": "metrics/evidence/pilot30/p004/motion-diagnostic.json",
+      "sha256": "42c9b776b86c33d39d96589658bb0deac3afa0d733069a8f2808020effbe39d5",
+      "bytes": 60660,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P004\\motion-onset-review.jpg",
+      "path": "metrics/evidence/pilot30/p004/motion-onset-review.jpg",
+      "sha256": "0ee2c1dc4de836fed72b01b4c3957758609f2089491af92510ace53dbd51e87c",
+      "bytes": 483429,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P004\\start-result.json",
+      "path": "metrics/evidence/pilot30/p004/start-result.json",
+      "sha256": "cabf18290f0fd14fa0dfca0060565482296ca45751088f64bd8bd4fc254fde1c",
+      "bytes": 14803,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P004\\preview-result.json",
+      "path": "metrics/evidence/pilot30/p004/preview-result.json",
+      "sha256": "480d59826051257d6ee6c185e2c69b88ce7816c244501cf2ab4f59ef1423fa40",
+      "bytes": 13431,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P004\\trial-evidence-manifest.json",
+      "path": "metrics/evidence/pilot30/p004/trial-evidence-manifest.json",
+      "sha256": "2b191f341a027d894b5eff83c560b419d4e40dd0a868399db72eeca804768a7a",
+      "bytes": 4363,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P004\\recording\\frames.jsonl",
+      "path": "metrics/evidence/pilot30/p004/recording/frames.jsonl",
+      "sha256": "26c0195a704528a398f5d1af218af60cee3b9194d255fbee1997c584cf6a6b72",
+      "bytes": 969008,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P004\\recording\\000018872.jpg",
+      "path": "metrics/evidence/pilot30/p004/recording/000018872.jpg",
+      "sha256": "36038487dc049b2d8d5033e358656fd32790bdef37f6b70e470f4f06eb59c24d",
+      "bytes": 44035,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P004\\recording\\000019018.jpg",
+      "path": "metrics/evidence/pilot30/p004/recording/000019018.jpg",
+      "sha256": "2a0c417a6e6104c7771a78366eaff20261d50799bc496a2ae87a40140695319f",
+      "bytes": 44032,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P004\\recording\\000019019.jpg",
+      "path": "metrics/evidence/pilot30/p004/recording/000019019.jpg",
+      "sha256": "83f708629156aa02998d43d978c52824dbe961b346ce914c06e48e38c28e7242",
+      "bytes": 43257,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P004\\task-evidence\\4fa86d93d09c44c0a0a3dada0273f705.before.png",
+      "path": "metrics/evidence/pilot30/p004/task-evidence/4fa86d93d09c44c0a0a3dada0273f705.before.png",
+      "sha256": "cffbe762157ab7b4def3b6bcdad02f823f54739c377c5b7687ec4ec2590c89be",
+      "bytes": 382132,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P004\\task-evidence\\4fa86d93d09c44c0a0a3dada0273f705.before.observation.json",
+      "path": "metrics/evidence/pilot30/p004/task-evidence/4fa86d93d09c44c0a0a3dada0273f705.before.observation.json",
+      "sha256": "2fb37d85975f82fd6a91afa5fca487c24260fb783b9f0fed2d005e8921e40998",
+      "bytes": 20962,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P004\\task-evidence\\4fa86d93d09c44c0a0a3dada0273f705.json",
+      "path": "metrics/evidence/pilot30/p004/task-evidence/4fa86d93d09c44c0a0a3dada0273f705.json",
+      "sha256": "f6d2d2ec37bc14f18a66b7d223374c9f1dc646b1f9c0e10d68147a155eec5bca",
+      "bytes": 36723,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P004\\task-evidence\\aa3b568ff5584803936c1dafe94b32f2.final-0.png",
+      "path": "metrics/evidence/pilot30/p004/task-evidence/aa3b568ff5584803936c1dafe94b32f2.final-0.png",
+      "sha256": "ebc10491ec31901e99f4b60b274dae54fdde8f84cf5302f43407f313e5e98ce6",
+      "bytes": 365320,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P004\\task-evidence\\aa3b568ff5584803936c1dafe94b32f2.final-0.observation.json",
+      "path": "metrics/evidence/pilot30/p004/task-evidence/aa3b568ff5584803936c1dafe94b32f2.final-0.observation.json",
+      "sha256": "28226607b60a0e7de20c92b42e48ca8d8a1f297491a46b59a47f806e82eea9af",
+      "bytes": 26684,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P004\\task-evidence\\aa3b568ff5584803936c1dafe94b32f2.batch-final-verification.json",
+      "path": "metrics/evidence/pilot30/p004/task-evidence/aa3b568ff5584803936c1dafe94b32f2.batch-final-verification.json",
+      "sha256": "b66a279fceb4ec4c6937d185b3fc9dd6c65c12f44801363d2ee9c9a070b28268",
+      "bytes": 3432,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P005\\operator-truth.json",
+      "path": "metrics/evidence/pilot30/p005/operator-truth.json",
+      "sha256": "2b9c8a229f2f0b976300b9fffa50949d5da50cb4d51656dc6bc7ee0d48c859b7",
+      "bytes": 272,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P005\\operator-scene-confirmation.txt",
+      "path": "metrics/evidence/pilot30/p005/operator-scene-confirmation.txt",
+      "sha256": "416f5dbb4fde0735ed8398a79dfb3281d4e08db54bb50ca7485e1a75484efd38",
+      "bytes": 199,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P005\\measurement-summary.json",
+      "path": "metrics/evidence/pilot30/p005/measurement-summary.json",
+      "sha256": "776e6bd472dd02d88209a69ccc1f3f5326b0a0439ad2d7c8ba8a1a5c58ed023a",
+      "bytes": 3120,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P005\\motion-diagnostic.json",
+      "path": "metrics/evidence/pilot30/p005/motion-diagnostic.json",
+      "sha256": "ae2c0afc4a008df1ca1133a9dbfa251323e6488170a71d6e400db32929db2d42",
+      "bytes": 63454,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P005\\motion-onset-review.jpg",
+      "path": "metrics/evidence/pilot30/p005/motion-onset-review.jpg",
+      "sha256": "7d5adce8463733c794fc39c07b2a444ae1b1588221cf4ace529708d635a39bf9",
+      "bytes": 483508,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P005\\start-result.json",
+      "path": "metrics/evidence/pilot30/p005/start-result.json",
+      "sha256": "8a787abfcc5539bc3eeaf6617fe1f766cf248b0b87f4b2c82a362f8064afc712",
+      "bytes": 14853,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P005\\preview-result.json",
+      "path": "metrics/evidence/pilot30/p005/preview-result.json",
+      "sha256": "ec209af8efd4a6f905affd13900fd454ecec0b12bca9cf1915fcb467a155eab5",
+      "bytes": 13414,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P005\\trial-evidence-manifest.json",
+      "path": "metrics/evidence/pilot30/p005/trial-evidence-manifest.json",
+      "sha256": "f2c4944949018e4486efc02033da5495dab2cda4a0b0eb66409ad37fab48dfe9",
+      "bytes": 4363,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P005\\recording\\frames.jsonl",
+      "path": "metrics/evidence/pilot30/p005/recording/frames.jsonl",
+      "sha256": "593fcc3e5d30254e2bc8740a80d47ab1300847ef7def74e2d5e7c99e9cfe035f",
+      "bytes": 1025285,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P005\\recording\\000020363.jpg",
+      "path": "metrics/evidence/pilot30/p005/recording/000020363.jpg",
+      "sha256": "54796f97144ad86f9c9c7154ddbfe3335a6f0edf0615377452330316f6e9ae67",
+      "bytes": 44025,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P005\\recording\\000020518.jpg",
+      "path": "metrics/evidence/pilot30/p005/recording/000020518.jpg",
+      "sha256": "48de43cb7d5198b1ebcc19a32a5032cb8dd2010d04be8c00bd5b5db613d387c6",
+      "bytes": 44065,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P005\\recording\\000020519.jpg",
+      "path": "metrics/evidence/pilot30/p005/recording/000020519.jpg",
+      "sha256": "7426d20a8fdfbde3d0598045031feb17d73133cf63b71e1d6293f760893f0c2e",
+      "bytes": 42327,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P005\\task-evidence\\a190776fbd184edca57fc576c333cd7d.before.png",
+      "path": "metrics/evidence/pilot30/p005/task-evidence/a190776fbd184edca57fc576c333cd7d.before.png",
+      "sha256": "4cb3e88913356121eab1ce5f734d680a2250720cde5f23534707a4cecaf1e1e9",
+      "bytes": 382501,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P005\\task-evidence\\a190776fbd184edca57fc576c333cd7d.before.observation.json",
+      "path": "metrics/evidence/pilot30/p005/task-evidence/a190776fbd184edca57fc576c333cd7d.before.observation.json",
+      "sha256": "ebcd0a29c0db1b0cf23fd20ce4bb22c5bd51b3b17fa3355f99611003d26291f4",
+      "bytes": 21068,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P005\\task-evidence\\a190776fbd184edca57fc576c333cd7d.json",
+      "path": "metrics/evidence/pilot30/p005/task-evidence/a190776fbd184edca57fc576c333cd7d.json",
+      "sha256": "56adbe28487bff9ea2cf4250fd7387af9f1409676bed39ed07bdaa12ab47c5cd",
+      "bytes": 36706,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P005\\task-evidence\\abc2a843a06543d79f5621608598834e.final-0.png",
+      "path": "metrics/evidence/pilot30/p005/task-evidence/abc2a843a06543d79f5621608598834e.final-0.png",
+      "sha256": "cdcf6291816b7ad47ba31d63c604a92089c3c979ef838dcfd74c82ee6d5fcf0f",
+      "bytes": 366650,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P005\\task-evidence\\abc2a843a06543d79f5621608598834e.final-0.observation.json",
+      "path": "metrics/evidence/pilot30/p005/task-evidence/abc2a843a06543d79f5621608598834e.final-0.observation.json",
+      "sha256": "86d9e73384b7670e2cfed471fbad2d8a4bebcc6ec79b4b93042b38cbb79a5792",
+      "bytes": 28792,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P005\\task-evidence\\abc2a843a06543d79f5621608598834e.batch-final-verification.json",
+      "path": "metrics/evidence/pilot30/p005/task-evidence/abc2a843a06543d79f5621608598834e.batch-final-verification.json",
+      "sha256": "d95ddc530583ec966bcf4507f3795284a55c64503480823013aa9b1ac72e3c57",
+      "bytes": 3418,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P006\\operator-truth.json",
+      "path": "metrics/evidence/pilot30/p006/operator-truth.json",
+      "sha256": "2b9c8a229f2f0b976300b9fffa50949d5da50cb4d51656dc6bc7ee0d48c859b7",
+      "bytes": 272,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P006\\operator-scene-confirmation.txt",
+      "path": "metrics/evidence/pilot30/p006/operator-scene-confirmation.txt",
+      "sha256": "c15837d7692fc2eb0fe4400764ee43dfc5a824c9f1bd511d62249015460c758a",
+      "bytes": 230,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P006\\measurement-summary.json",
+      "path": "metrics/evidence/pilot30/p006/measurement-summary.json",
+      "sha256": "4c00f1c81d85ca22c452bbb745ff06fb1f1d9b0ea82f4e91dd674d1a6b8e3086",
+      "bytes": 3121,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P006\\motion-diagnostic.json",
+      "path": "metrics/evidence/pilot30/p006/motion-diagnostic.json",
+      "sha256": "b61111f46d1d285f5d4659624a9745263908af5a285e87bb50b13e7f12d85385",
+      "bytes": 68837,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P006\\motion-onset-review.jpg",
+      "path": "metrics/evidence/pilot30/p006/motion-onset-review.jpg",
+      "sha256": "1b23e1e633a2e237581c06c31ef45410d1c883fdb6788972fddb73bab2510cd5",
+      "bytes": 486574,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P006\\start-result.json",
+      "path": "metrics/evidence/pilot30/p006/start-result.json",
+      "sha256": "0e042399a21edc2c4652a06cb17cc895124aea85993b313cabe2d5112c2cc130",
+      "bytes": 14850,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P006\\preview-result.json",
+      "path": "metrics/evidence/pilot30/p006/preview-result.json",
+      "sha256": "6b0991bca7e7e15ca2e794ebeb83fa602f8434a841c4d72601510f3237ae7659",
+      "bytes": 13467,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P006\\trial-evidence-manifest.json",
+      "path": "metrics/evidence/pilot30/p006/trial-evidence-manifest.json",
+      "sha256": "00ce4f113fc651b0bdcc8ae9288b87ad3bebc576ba6b7edd6382d630ad6c28ec",
+      "bytes": 4363,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P006\\recording\\frames.jsonl",
+      "path": "metrics/evidence/pilot30/p006/recording/frames.jsonl",
+      "sha256": "2e28423e99fd01de58a951762890aa4d8b06ce6c539848ed15831882f1a1a500",
+      "bytes": 1098064,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P006\\recording\\000021401.jpg",
+      "path": "metrics/evidence/pilot30/p006/recording/000021401.jpg",
+      "sha256": "a7f355ddb376e213965f3b03429e9413d69e6991067206d5bd85b20bb8111e64",
+      "bytes": 43793,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P006\\recording\\000021577.jpg",
+      "path": "metrics/evidence/pilot30/p006/recording/000021577.jpg",
+      "sha256": "0abe0bcac1333864aeeca8facaab004b2bb92fd07ddf87c3949d2bc9a464272a",
+      "bytes": 43867,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P006\\recording\\000021578.jpg",
+      "path": "metrics/evidence/pilot30/p006/recording/000021578.jpg",
+      "sha256": "e82116ea58ccb0c60dfd7d547deeb34cbd62c74aa39e2d2fd8f6ab7bf460650b",
+      "bytes": 43381,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P006\\task-evidence\\056bef6abf744305bd94a82036e82eb7.before.png",
+      "path": "metrics/evidence/pilot30/p006/task-evidence/056bef6abf744305bd94a82036e82eb7.before.png",
+      "sha256": "078a2e8e3b27ccc56ac73f91066faf8ef03e2e41c0926de01ae3af549d475517",
+      "bytes": 382183,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P006\\task-evidence\\056bef6abf744305bd94a82036e82eb7.before.observation.json",
+      "path": "metrics/evidence/pilot30/p006/task-evidence/056bef6abf744305bd94a82036e82eb7.before.observation.json",
+      "sha256": "9eb6dba4a616e5acf6e07e6d2c1be083bc74bcc29f68530d29391b45cb05768b",
+      "bytes": 21173,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P006\\task-evidence\\056bef6abf744305bd94a82036e82eb7.json",
+      "path": "metrics/evidence/pilot30/p006/task-evidence/056bef6abf744305bd94a82036e82eb7.json",
+      "sha256": "45864d35f105ed9f3c630538f7e5f1326d9d8fb6f547200dc82de43abb9173dd",
+      "bytes": 36620,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P006\\task-evidence\\84babe5666b54c32839b645243a9b840.final-0.png",
+      "path": "metrics/evidence/pilot30/p006/task-evidence/84babe5666b54c32839b645243a9b840.final-0.png",
+      "sha256": "6d7757d6dc461f1e9132e3ce081d71a80d846f4c08b2c34c6016967ca21a61be",
+      "bytes": 359789,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P006\\task-evidence\\84babe5666b54c32839b645243a9b840.final-0.observation.json",
+      "path": "metrics/evidence/pilot30/p006/task-evidence/84babe5666b54c32839b645243a9b840.final-0.observation.json",
+      "sha256": "29c3ee26c272df85f17f08fe4d4d903f65e164c5f82a143e2d6f3cef586774e5",
+      "bytes": 28902,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P006\\task-evidence\\84babe5666b54c32839b645243a9b840.batch-final-verification.json",
+      "path": "metrics/evidence/pilot30/p006/task-evidence/84babe5666b54c32839b645243a9b840.batch-final-verification.json",
+      "sha256": "d5ab9bd8bc843bbc6b9f3faa949c5047096178808f862d9d0e39a538b6b0641f",
+      "bytes": 3415,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P007\\operator-truth.json",
+      "path": "metrics/evidence/pilot30/p007/operator-truth.json",
+      "sha256": "2b9c8a229f2f0b976300b9fffa50949d5da50cb4d51656dc6bc7ee0d48c859b7",
+      "bytes": 272,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P007\\operator-scene-confirmation.txt",
+      "path": "metrics/evidence/pilot30/p007/operator-scene-confirmation.txt",
+      "sha256": "c15837d7692fc2eb0fe4400764ee43dfc5a824c9f1bd511d62249015460c758a",
+      "bytes": 230,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P007\\measurement-summary.json",
+      "path": "metrics/evidence/pilot30/p007/measurement-summary.json",
+      "sha256": "1e995f194f532d2b15e8332eb5cce1a4254a2123b618908c3d496ddcdb3e4395",
+      "bytes": 3108,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P007\\motion-diagnostic.json",
+      "path": "metrics/evidence/pilot30/p007/motion-diagnostic.json",
+      "sha256": "2d2b4cd2338415a615799bae9ccad4c05dbefb7f868a2a7e3db2019c1a33ba1c",
+      "bytes": 61355,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P007\\motion-onset-review.jpg",
+      "path": "metrics/evidence/pilot30/p007/motion-onset-review.jpg",
+      "sha256": "b9f1460c787b299e103e5c8bfa166198791c3b74d7c55e43841da993a70fe9e8",
+      "bytes": 490205,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P007\\start-result.json",
+      "path": "metrics/evidence/pilot30/p007/start-result.json",
+      "sha256": "5412e13d62c82dff195a914d0dc770c014c0be4d27115efb780466566f4525eb",
+      "bytes": 14849,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P007\\preview-result.json",
+      "path": "metrics/evidence/pilot30/p007/preview-result.json",
+      "sha256": "997e2162807648ecc3d51fd4ea42c2a5f0968b7361be1a116de8b15da808e6b6",
+      "bytes": 13420,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P007\\trial-evidence-manifest.json",
+      "path": "metrics/evidence/pilot30/p007/trial-evidence-manifest.json",
+      "sha256": "32ed95a7b01db177fed02e3ff5f6406421e84925d138d62a28b7f5aa265f00f6",
+      "bytes": 4363,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P007\\test-harness-exception.json",
+      "path": "metrics/evidence/pilot30/p007/test-harness-exception.json",
+      "sha256": "bb9c5766cfa749305e860795be9685946293ba12b08989dcdf93e404878c0e0c",
+      "bytes": 962,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P007\\recording\\frames.jsonl",
+      "path": "metrics/evidence/pilot30/p007/recording/frames.jsonl",
+      "sha256": "b0094bd3e8f2f10828e660c07fde3d80039c0f5b24cb00a4269e19a13956dede",
+      "bytes": 995733,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P007\\recording\\000023485.jpg",
+      "path": "metrics/evidence/pilot30/p007/recording/000023485.jpg",
+      "sha256": "92d04df7d72faf96e36c7c643bbf043b994e473c64d40eaadbc6e704faccdee7",
+      "bytes": 43819,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P007\\recording\\000023638.jpg",
+      "path": "metrics/evidence/pilot30/p007/recording/000023638.jpg",
+      "sha256": "af144c3a343cbadab267b8a859eeef00503d4dfcf01ec0354f6690f7da13ef81",
+      "bytes": 43889,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P007\\recording\\000023639.jpg",
+      "path": "metrics/evidence/pilot30/p007/recording/000023639.jpg",
+      "sha256": "d46f3392baf0e55f2d62ed438d01b5177acd8ffc8f7e30f2c2e4c6b69558f053",
+      "bytes": 43238,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P007\\task-evidence\\c23dfc722e2e47828c0230094fc69e97.before.png",
+      "path": "metrics/evidence/pilot30/p007/task-evidence/c23dfc722e2e47828c0230094fc69e97.before.png",
+      "sha256": "ff9739dcead755b0c15e36822cd41c7bb1edea11994cb7870771338326d5eda3",
+      "bytes": 379906,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P007\\task-evidence\\c23dfc722e2e47828c0230094fc69e97.before.observation.json",
+      "path": "metrics/evidence/pilot30/p007/task-evidence/c23dfc722e2e47828c0230094fc69e97.before.observation.json",
+      "sha256": "8d20471f8da9e875daebe58002d66eada42ebff53223fe64734f25d3cf623223",
+      "bytes": 20968,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P007\\task-evidence\\c23dfc722e2e47828c0230094fc69e97.json",
+      "path": "metrics/evidence/pilot30/p007/task-evidence/c23dfc722e2e47828c0230094fc69e97.json",
+      "sha256": "bb98e862a86df4d98d286abf0fe0e70fefc9f44761413a21a6eca208a115970e",
+      "bytes": 36928,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P007\\task-evidence\\d41de3479d5f436c84c97b1bfadc878c.final-0.png",
+      "path": "metrics/evidence/pilot30/p007/task-evidence/d41de3479d5f436c84c97b1bfadc878c.final-0.png",
+      "sha256": "e51a56d3113e926b90776b2ca585d5cd74b9e2bef3f8c34288caeb431a7870cd",
+      "bytes": 363330,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P007\\task-evidence\\d41de3479d5f436c84c97b1bfadc878c.final-0.observation.json",
+      "path": "metrics/evidence/pilot30/p007/task-evidence/d41de3479d5f436c84c97b1bfadc878c.final-0.observation.json",
+      "sha256": "e6da8eec3eccab8d578c3c5f5222995d8901b0a9ce969137cc9a67388e4956fa",
+      "bytes": 28073,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P007\\task-evidence\\d41de3479d5f436c84c97b1bfadc878c.batch-final-verification.json",
+      "path": "metrics/evidence/pilot30/p007/task-evidence/d41de3479d5f436c84c97b1bfadc878c.batch-final-verification.json",
+      "sha256": "72f6cba0ef969486639dc85bad3e84a0a709ce199280b5232a2068b0497c6cf5",
+      "bytes": 3412,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P008\\operator-truth.json",
+      "path": "metrics/evidence/pilot30/p008/operator-truth.json",
+      "sha256": "2b9c8a229f2f0b976300b9fffa50949d5da50cb4d51656dc6bc7ee0d48c859b7",
+      "bytes": 272,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P008\\operator-scene-confirmation.txt",
+      "path": "metrics/evidence/pilot30/p008/operator-scene-confirmation.txt",
+      "sha256": "c15837d7692fc2eb0fe4400764ee43dfc5a824c9f1bd511d62249015460c758a",
+      "bytes": 230,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P008\\measurement-summary.json",
+      "path": "metrics/evidence/pilot30/p008/measurement-summary.json",
+      "sha256": "b6d8be6e484f77bcc179b602b5ecfcf79686424d3b05369ccb50c43ff63cb86b",
+      "bytes": 3121,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P008\\motion-diagnostic.json",
+      "path": "metrics/evidence/pilot30/p008/motion-diagnostic.json",
+      "sha256": "ce856100981ecd597b0e17a5a12b44929540acd8106f6fddc6e142827559bda1",
+      "bytes": 68782,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P008\\motion-onset-review.jpg",
+      "path": "metrics/evidence/pilot30/p008/motion-onset-review.jpg",
+      "sha256": "cb51863176b95d050f85445be6fabc900a8514d357693997dbb209c0f6a89cc3",
+      "bytes": 489228,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P008\\start-result.json",
+      "path": "metrics/evidence/pilot30/p008/start-result.json",
+      "sha256": "4a7f4f939d2c59e78fdfb77fb67da22b5e5e6edfbad264cf1e15fb8589fbc56d",
+      "bytes": 14835,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P008\\preview-result.json",
+      "path": "metrics/evidence/pilot30/p008/preview-result.json",
+      "sha256": "5086b7be04d1b441927e504e6ffee1b03c4a21f86f664f393be0793f3fd5efdd",
+      "bytes": 13442,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P008\\trial-evidence-manifest.json",
+      "path": "metrics/evidence/pilot30/p008/trial-evidence-manifest.json",
+      "sha256": "3c83f90e39e0a013ccfe5b1335105f2f685701c4daf0932bda00eb1c37132101",
+      "bytes": 4363,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P008\\recording\\frames.jsonl",
+      "path": "metrics/evidence/pilot30/p008/recording/frames.jsonl",
+      "sha256": "4565c216a545ee000cc67726c4731deef097309a8a41a5463baa7f777ef66bb6",
+      "bytes": 1085835,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P008\\recording\\000024550.jpg",
+      "path": "metrics/evidence/pilot30/p008/recording/000024550.jpg",
+      "sha256": "960e13a25a60d0dd44815db6e6e615157333249e4c0dec8052836898928c482f",
+      "bytes": 44397,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P008\\recording\\000024723.jpg",
+      "path": "metrics/evidence/pilot30/p008/recording/000024723.jpg",
+      "sha256": "bf24ea2383d3c7103e2850ea383ca2e98e3193579b148e2ef5af28365d7b95d6",
+      "bytes": 44362,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P008\\recording\\000024724.jpg",
+      "path": "metrics/evidence/pilot30/p008/recording/000024724.jpg",
+      "sha256": "cd3b755dd3077b40a7f9ab6375f0d08c03fa05625b6431d836468a239e6ad0da",
+      "bytes": 43696,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P008\\task-evidence\\64b6d3fef5964034a68bdd87b7248856.before.png",
+      "path": "metrics/evidence/pilot30/p008/task-evidence/64b6d3fef5964034a68bdd87b7248856.before.png",
+      "sha256": "d16349ca93263c00194206045ba0876c619293ec27b81575aa69d67eb7964699",
+      "bytes": 384340,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P008\\task-evidence\\64b6d3fef5964034a68bdd87b7248856.before.observation.json",
+      "path": "metrics/evidence/pilot30/p008/task-evidence/64b6d3fef5964034a68bdd87b7248856.before.observation.json",
+      "sha256": "8a5d02b4d6b62100d69f28dac2bc21c1aea3a0894fe1a0961b38bd398a8e4e87",
+      "bytes": 21072,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P008\\task-evidence\\64b6d3fef5964034a68bdd87b7248856.json",
+      "path": "metrics/evidence/pilot30/p008/task-evidence/64b6d3fef5964034a68bdd87b7248856.json",
+      "sha256": "2015f346f62e0049ea9449ec0b7a28d7b42ad1202604048e4bf7f9d9e4e5160d",
+      "bytes": 36614,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P008\\task-evidence\\18680692e1f547f083b96e7b1075ac60.final-0.png",
+      "path": "metrics/evidence/pilot30/p008/task-evidence/18680692e1f547f083b96e7b1075ac60.final-0.png",
+      "sha256": "720dc2d3b2aa8809efda23457f199b36b87da5ed5b4b901609fa355702bb8c5a",
+      "bytes": 365592,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P008\\task-evidence\\18680692e1f547f083b96e7b1075ac60.final-0.observation.json",
+      "path": "metrics/evidence/pilot30/p008/task-evidence/18680692e1f547f083b96e7b1075ac60.final-0.observation.json",
+      "sha256": "5c222df0c3801372020116cf2451f16ac11fa9a464651ca66ddb7c0254440023",
+      "bytes": 21555,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P008\\task-evidence\\18680692e1f547f083b96e7b1075ac60.batch-final-verification.json",
+      "path": "metrics/evidence/pilot30/p008/task-evidence/18680692e1f547f083b96e7b1075ac60.batch-final-verification.json",
+      "sha256": "3411f353760aaa097f37bbc58bd2e6f70285240f95ad0681396f30ba40df0d99",
+      "bytes": 3416,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P009\\operator-truth.json",
+      "path": "metrics/evidence/pilot30/p009/operator-truth.json",
+      "sha256": "2b9c8a229f2f0b976300b9fffa50949d5da50cb4d51656dc6bc7ee0d48c859b7",
+      "bytes": 272,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P009\\operator-scene-confirmation.txt",
+      "path": "metrics/evidence/pilot30/p009/operator-scene-confirmation.txt",
+      "sha256": "c15837d7692fc2eb0fe4400764ee43dfc5a824c9f1bd511d62249015460c758a",
+      "bytes": 230,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P009\\measurement-summary.json",
+      "path": "metrics/evidence/pilot30/p009/measurement-summary.json",
+      "sha256": "eb89f937d3ede16e2b7383dd4d89f7311b67d8a3c62fe8f38efa5b74465bd686",
+      "bytes": 3120,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P009\\motion-diagnostic.json",
+      "path": "metrics/evidence/pilot30/p009/motion-diagnostic.json",
+      "sha256": "9355262935427aede37a72748f425d06faa065437a8aa62868894c1999c65823",
+      "bytes": 62652,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P009\\motion-onset-review.jpg",
+      "path": "metrics/evidence/pilot30/p009/motion-onset-review.jpg",
+      "sha256": "0488283cb10aa90937baf039ef75d2d2189fc9aef30ccd4d195217e39ca3990c",
+      "bytes": 489188,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P009\\start-result.json",
+      "path": "metrics/evidence/pilot30/p009/start-result.json",
+      "sha256": "5bef63db7cd8cc13881b20dfdf2fad5f74aae6d9c9befa2206bfb6b5428377f5",
+      "bytes": 14798,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P009\\preview-result.json",
+      "path": "metrics/evidence/pilot30/p009/preview-result.json",
+      "sha256": "370441e294626b4cc598b1483921fb4df885628506173b0a87bd9c35adb25285",
+      "bytes": 13462,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P009\\trial-evidence-manifest.json",
+      "path": "metrics/evidence/pilot30/p009/trial-evidence-manifest.json",
+      "sha256": "b5be72b71d6e3d7ac71edecb156a9ed6a91704c6f39a24ba8d3d679ada3772db",
+      "bytes": 4363,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P009\\recording\\frames.jsonl",
+      "path": "metrics/evidence/pilot30/p009/recording/frames.jsonl",
+      "sha256": "5b74e9e8ee80d0ad00c9c0d8fe2890a5067c2c5add180c998421b299a203a2a0",
+      "bytes": 1011732,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P009\\recording\\000025671.jpg",
+      "path": "metrics/evidence/pilot30/p009/recording/000025671.jpg",
+      "sha256": "c4ecc8319bc2ee8cb81627a7f5cebe78c4d5bf9f68c51afb116b4981a73b3593",
+      "bytes": 43958,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P009\\recording\\000025831.jpg",
+      "path": "metrics/evidence/pilot30/p009/recording/000025831.jpg",
+      "sha256": "3c58f95aa0034ab45edd7751a5e04cd9f9b731528652994324027bd1daabae57",
+      "bytes": 43871,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P009\\recording\\000025832.jpg",
+      "path": "metrics/evidence/pilot30/p009/recording/000025832.jpg",
+      "sha256": "71692c9a402cac0b88d8f8cbf7bf256321a1d5409b2e30b13455705bcbbaf69b",
+      "bytes": 42689,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P009\\task-evidence\\b008f23b5cb445cbba4459f221beb5a1.before.png",
+      "path": "metrics/evidence/pilot30/p009/task-evidence/b008f23b5cb445cbba4459f221beb5a1.before.png",
+      "sha256": "9ffa5d79c01dbc240f570be6a0d7bbe4b4c33b82be03c7fcca5a015fe272ee71",
+      "bytes": 383236,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P009\\task-evidence\\b008f23b5cb445cbba4459f221beb5a1.before.observation.json",
+      "path": "metrics/evidence/pilot30/p009/task-evidence/b008f23b5cb445cbba4459f221beb5a1.before.observation.json",
+      "sha256": "cb896d631ab38181ba1e0b59a0b1aa5e6f25a18025a0399f88bb9b5dbc86ae67",
+      "bytes": 12323,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P009\\task-evidence\\b008f23b5cb445cbba4459f221beb5a1.json",
+      "path": "metrics/evidence/pilot30/p009/task-evidence/b008f23b5cb445cbba4459f221beb5a1.json",
+      "sha256": "4aea1a0ee481383fd298044be0bc213f7578ec2323a19800116bfe8f658db585",
+      "bytes": 36414,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P009\\task-evidence\\cbd92c600a8949bbbfe6bf6a2768691b.final-0.png",
+      "path": "metrics/evidence/pilot30/p009/task-evidence/cbd92c600a8949bbbfe6bf6a2768691b.final-0.png",
+      "sha256": "ea80e5c7210306dbccf05e297b9f0c76d315ce15bec18b14646930ca77deffbf",
+      "bytes": 360345,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P009\\task-evidence\\cbd92c600a8949bbbfe6bf6a2768691b.final-0.observation.json",
+      "path": "metrics/evidence/pilot30/p009/task-evidence/cbd92c600a8949bbbfe6bf6a2768691b.final-0.observation.json",
+      "sha256": "1bdef3248899fa9a2ba624cfd495e2be131961a1080bf9065a1e00258f331526",
+      "bytes": 19220,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P009\\task-evidence\\cbd92c600a8949bbbfe6bf6a2768691b.batch-final-verification.json",
+      "path": "metrics/evidence/pilot30/p009/task-evidence/cbd92c600a8949bbbfe6bf6a2768691b.batch-final-verification.json",
+      "sha256": "f5a7b7f57282af0a0fa441cb73af500e5e00b6a10d75dd520c7115754cdfc3a8",
+      "bytes": 3509,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P010\\operator-truth.json",
+      "path": "metrics/evidence/pilot30/p010/operator-truth.json",
+      "sha256": "92a3db04e6b8b0dc3b8887323e1f73b01aa73c7dbb0b0179f9dcff96afe7d609",
+      "bytes": 273,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P010\\operator-scene-confirmation.txt",
+      "path": "metrics/evidence/pilot30/p010/operator-scene-confirmation.txt",
+      "sha256": "c15837d7692fc2eb0fe4400764ee43dfc5a824c9f1bd511d62249015460c758a",
+      "bytes": 230,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P010\\measurement-summary.json",
+      "path": "metrics/evidence/pilot30/p010/measurement-summary.json",
+      "sha256": "5a2d507c2114344002efec5502af88d7ea7f35eb8f9bceeee4ce77b57bcc793b",
+      "bytes": 3119,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P010\\motion-diagnostic.json",
+      "path": "metrics/evidence/pilot30/p010/motion-diagnostic.json",
+      "sha256": "b84ab742c80c5cf1fc9feb4bc46168a248520ae0dc3e626d485515bc9f3520c6",
+      "bytes": 65346,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P010\\motion-onset-review.jpg",
+      "path": "metrics/evidence/pilot30/p010/motion-onset-review.jpg",
+      "sha256": "0b310dcfb8ee8f42904517286f28a67d3ca446e589ed4620fe0ae9150672f010",
+      "bytes": 489591,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P010\\start-result.json",
+      "path": "metrics/evidence/pilot30/p010/start-result.json",
+      "sha256": "39dfc7ff8d6007e83280530b71c79880d226a530771674f73eefaabd89d18954",
+      "bytes": 14825,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P010\\preview-result.json",
+      "path": "metrics/evidence/pilot30/p010/preview-result.json",
+      "sha256": "260100bfbd5f6ea22b913ec5745b88071e290a66691b09025bb5ae7787675e81",
+      "bytes": 13457,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P010\\trial-evidence-manifest.json",
+      "path": "metrics/evidence/pilot30/p010/trial-evidence-manifest.json",
+      "sha256": "e409aac2de6a280b9b208c87a28d09ed507c3ad5bfabc51ce329367433ae9b59",
+      "bytes": 4363,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P010\\recording\\frames.jsonl",
+      "path": "metrics/evidence/pilot30/p010/recording/frames.jsonl",
+      "sha256": "565ead6b8ce106df1ae2e0394c523cc622135228672931e54980ac6ead7f8a5d",
+      "bytes": 1029346,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P010\\recording\\000026796.jpg",
+      "path": "metrics/evidence/pilot30/p010/recording/000026796.jpg",
+      "sha256": "f4b64f762a48ae55a876c6833972767ceb373c0f471cb2793c5bdafa2a128fbc",
+      "bytes": 44020,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P010\\recording\\000026970.jpg",
+      "path": "metrics/evidence/pilot30/p010/recording/000026970.jpg",
+      "sha256": "d4559377ec477a604b0e44146ded4bfdaddb1508bc44ae94906ba1b97c059233",
+      "bytes": 44022,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P010\\recording\\000026971.jpg",
+      "path": "metrics/evidence/pilot30/p010/recording/000026971.jpg",
+      "sha256": "3e8a65aef51ac0fd86d11c4edb5f56602e15643c08497ca08c08a2add329aa4c",
+      "bytes": 42380,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P010\\task-evidence\\db8092a28c854907b6650e2bc7c8e43d.before.png",
+      "path": "metrics/evidence/pilot30/p010/task-evidence/db8092a28c854907b6650e2bc7c8e43d.before.png",
+      "sha256": "89ffaa4ad3cb28d3ddff9f4a3bb5e36718050734a74fe96d9a5f00fbd28fae0a",
+      "bytes": 380751,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P010\\task-evidence\\db8092a28c854907b6650e2bc7c8e43d.before.observation.json",
+      "path": "metrics/evidence/pilot30/p010/task-evidence/db8092a28c854907b6650e2bc7c8e43d.before.observation.json",
+      "sha256": "2f57d06449ed062c0264b039176671221ff30c6cc1fd3b5f9007e8b958749b24",
+      "bytes": 21046,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P010\\task-evidence\\db8092a28c854907b6650e2bc7c8e43d.json",
+      "path": "metrics/evidence/pilot30/p010/task-evidence/db8092a28c854907b6650e2bc7c8e43d.json",
+      "sha256": "9a9c4c3e14c03567ae71298071bcb55c97fa505073617ad931c4091438b774b8",
+      "bytes": 36903,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P010\\task-evidence\\43e4f823a1e64383b1c1305a19ddad46.final-0.png",
+      "path": "metrics/evidence/pilot30/p010/task-evidence/43e4f823a1e64383b1c1305a19ddad46.final-0.png",
+      "sha256": "6544b7bdaec463ab902d5afe6bf0b7d336c638d899353264aceb9908e6487f1c",
+      "bytes": 362526,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P010\\task-evidence\\43e4f823a1e64383b1c1305a19ddad46.final-0.observation.json",
+      "path": "metrics/evidence/pilot30/p010/task-evidence/43e4f823a1e64383b1c1305a19ddad46.final-0.observation.json",
+      "sha256": "6b18af3157c80a02be9db395d574be7fa243fd685b3609a7183446219f7eed17",
+      "bytes": 12995,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P010\\task-evidence\\43e4f823a1e64383b1c1305a19ddad46.batch-final-verification.json",
+      "path": "metrics/evidence/pilot30/p010/task-evidence/43e4f823a1e64383b1c1305a19ddad46.batch-final-verification.json",
+      "sha256": "84aafd9273e74a9d2bb6e39288a4025bab16da1ece55d678ef3821a860269c7e",
+      "bytes": 3422,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P011\\operator-truth.json",
+      "path": "metrics/evidence/pilot30/p011/operator-truth.json",
+      "sha256": "06bb9b85844d751fc20a6f6c961900a3e3e4f33b98273ca5db94cfc42dab6162",
+      "bytes": 207,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P011\\operator-scene-confirmation.txt",
+      "path": "metrics/evidence/pilot30/p011/operator-scene-confirmation.txt",
+      "sha256": "40241c8a45e31b67565b6c60147f48b04a901f3113821ca2e1f85b2e42ede2e9",
+      "bytes": 234,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P011\\measurement-summary.json",
+      "path": "metrics/evidence/pilot30/p011/measurement-summary.json",
+      "sha256": "ec0864ed74184e3afae6f25e6d244c76f87d93c4a5a97474ff2519713c71bd9a",
+      "bytes": 3117,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P011\\motion-diagnostic.json",
+      "path": "metrics/evidence/pilot30/p011/motion-diagnostic.json",
+      "sha256": "fd57a5893547b8100c2e5b7c010c0dea4e75f342c2a7ee2fb0501ce291ff3b7c",
+      "bytes": 61143,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P011\\motion-onset-review.jpg",
+      "path": "metrics/evidence/pilot30/p011/motion-onset-review.jpg",
+      "sha256": "38dffb608c3ba71a5f9896cd0a5032625198552d34e12494e009330815cd903a",
+      "bytes": 478878,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P011\\start-result.json",
+      "path": "metrics/evidence/pilot30/p011/start-result.json",
+      "sha256": "a3e9254c910ce2177594e65908953f48e34cf3a47388e07b794e56e8a95fbda0",
+      "bytes": 14802,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P011\\preview-result.json",
+      "path": "metrics/evidence/pilot30/p011/preview-result.json",
+      "sha256": "fd1a5893b6204895e01f2b788867003048a43785d31320c06a3b33f02857d31c",
+      "bytes": 13419,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P011\\trial-evidence-manifest.json",
+      "path": "metrics/evidence/pilot30/p011/trial-evidence-manifest.json",
+      "sha256": "b0f0e11c1d6357f7aa0ab33610af0b40a567ed24aa52418e1ba8e395594e7010",
+      "bytes": 4363,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P011\\recording\\frames.jsonl",
+      "path": "metrics/evidence/pilot30/p011/recording/frames.jsonl",
+      "sha256": "51cdac7394f41e694510d9775dd80cefb64b22403242b3ef348e17f7cba8f2c6",
+      "bytes": 959198,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P011\\recording\\000028193.jpg",
+      "path": "metrics/evidence/pilot30/p011/recording/000028193.jpg",
+      "sha256": "b83e79d772bc6e4294cc23a7793064e9f2f26dcbde5d7c74c49b8c261c78d651",
+      "bytes": 42622,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P011\\recording\\000028354.jpg",
+      "path": "metrics/evidence/pilot30/p011/recording/000028354.jpg",
+      "sha256": "940b3aa7a40adb8a940c7b63d744881182faf28942b7fc052c42436a4f951fe3",
+      "bytes": 42604,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P011\\recording\\000028355.jpg",
+      "path": "metrics/evidence/pilot30/p011/recording/000028355.jpg",
+      "sha256": "4686cbc315deb0fd6f8d3a142d33391155e59b406dffa894a74c547ccd0b9717",
+      "bytes": 40924,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P011\\task-evidence\\d03b4c6b2a584322b8f7a377866c27a0.before.png",
+      "path": "metrics/evidence/pilot30/p011/task-evidence/d03b4c6b2a584322b8f7a377866c27a0.before.png",
+      "sha256": "535fe7e054b0c10d261b250d4c706f52364582bc1d39c06425de3671837aae1c",
+      "bytes": 372654,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P011\\task-evidence\\d03b4c6b2a584322b8f7a377866c27a0.before.observation.json",
+      "path": "metrics/evidence/pilot30/p011/task-evidence/d03b4c6b2a584322b8f7a377866c27a0.before.observation.json",
+      "sha256": "3dd8a95ff624346e4cb766dc302670b55b944b4ad1a10af8418853ab061820b5",
+      "bytes": 11437,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P011\\task-evidence\\d03b4c6b2a584322b8f7a377866c27a0.json",
+      "path": "metrics/evidence/pilot30/p011/task-evidence/d03b4c6b2a584322b8f7a377866c27a0.json",
+      "sha256": "1d342dde88508d4444ab350ac5f4dfabb04a2fefe5fb95f085c61f2a62b19a35",
+      "bytes": 34700,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P011\\task-evidence\\45581d3d75a249a3939ba582764a0ba8.final-0.png",
+      "path": "metrics/evidence/pilot30/p011/task-evidence/45581d3d75a249a3939ba582764a0ba8.final-0.png",
+      "sha256": "a83c9071156286fc8c7b34b0dd6e131733330ce5eabdbb2d4123cb822e177e11",
+      "bytes": 364063,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P011\\task-evidence\\45581d3d75a249a3939ba582764a0ba8.final-0.observation.json",
+      "path": "metrics/evidence/pilot30/p011/task-evidence/45581d3d75a249a3939ba582764a0ba8.final-0.observation.json",
+      "sha256": "6ed229f71c3e4d658a19843b65db45163f6ca4c6776bc08ae7a43864e3065a6a",
+      "bytes": 10408,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P011\\task-evidence\\45581d3d75a249a3939ba582764a0ba8.batch-final-verification.json",
+      "path": "metrics/evidence/pilot30/p011/task-evidence/45581d3d75a249a3939ba582764a0ba8.batch-final-verification.json",
+      "sha256": "de6fa9f6fd69621d5bed32e7b6f297a3ecc50de6117fd3f26d77554649e5ea3f",
+      "bytes": 3413,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P012\\operator-truth.json",
+      "path": "metrics/evidence/pilot30/p012/operator-truth.json",
+      "sha256": "06bb9b85844d751fc20a6f6c961900a3e3e4f33b98273ca5db94cfc42dab6162",
+      "bytes": 207,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P012\\operator-scene-confirmation.txt",
+      "path": "metrics/evidence/pilot30/p012/operator-scene-confirmation.txt",
+      "sha256": "1e928534ea2e8e74fcd6dcaf57011c192be628c0632879bc37d26095a6d76700",
+      "bytes": 212,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P012\\measurement-summary.json",
+      "path": "metrics/evidence/pilot30/p012/measurement-summary.json",
+      "sha256": "5988a28c47c936045c2af6b33877038c428f51ac3fe752dfe5021a66709d3cfd",
+      "bytes": 3117,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P012\\motion-diagnostic.json",
+      "path": "metrics/evidence/pilot30/p012/motion-diagnostic.json",
+      "sha256": "12eb6fcc3d3dee092a4f7c266a220bd65de85d6626460eefca473f1a44b84dc8",
+      "bytes": 63477,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P012\\motion-onset-review.jpg",
+      "path": "metrics/evidence/pilot30/p012/motion-onset-review.jpg",
+      "sha256": "87cf4f55757785db1f2a3558800c2ef16456044552ef94957156f63eacf4bde3",
+      "bytes": 478496,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P012\\start-result.json",
+      "path": "metrics/evidence/pilot30/p012/start-result.json",
+      "sha256": "b36c806fde20eecd3f6adc7bf19bb6937945a7ff1b8c6b50d775f78dc582c296",
+      "bytes": 14801,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P012\\preview-result.json",
+      "path": "metrics/evidence/pilot30/p012/preview-result.json",
+      "sha256": "e1230abd6da4b479edc07fa75a5048d90df2d777255d5ff69a09ccb0d8ef0e30",
+      "bytes": 13404,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P012\\trial-evidence-manifest.json",
+      "path": "metrics/evidence/pilot30/p012/trial-evidence-manifest.json",
+      "sha256": "288e2175dec94b276ae5d121caa31951956ce824d217c1598ce948b38a19fda8",
+      "bytes": 4363,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P012\\recording\\frames.jsonl",
+      "path": "metrics/evidence/pilot30/p012/recording/frames.jsonl",
+      "sha256": "5e4534339fdd3a412a9d2ef3ee92959bf56278248f08b1610a45adb10ebe8962",
+      "bytes": 1013983,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P012\\recording\\000030264.jpg",
+      "path": "metrics/evidence/pilot30/p012/recording/000030264.jpg",
+      "sha256": "618834db344d72df708d13a50a33ab069ba11e3ed3e359074af93ac6c26bdb08",
+      "bytes": 42763,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P012\\recording\\000030428.jpg",
+      "path": "metrics/evidence/pilot30/p012/recording/000030428.jpg",
+      "sha256": "c1d0a6e68e536b5f8349f587105d8712f6f2f862b138a74bcaa113f4e05b4ecf",
+      "bytes": 42771,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P012\\recording\\000030429.jpg",
+      "path": "metrics/evidence/pilot30/p012/recording/000030429.jpg",
+      "sha256": "b44ac23b8f42b902208dca0498a0904b955098dac04209bf01896610b1c88c1c",
+      "bytes": 41536,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P012\\task-evidence\\a86813235bf34f0da924385b2525ffdc.before.png",
+      "path": "metrics/evidence/pilot30/p012/task-evidence/a86813235bf34f0da924385b2525ffdc.before.png",
+      "sha256": "387f37ee95622e8e2302bf18014e1c2c4186100f4c639c0ec215155b0f5c6fa2",
+      "bytes": 374495,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P012\\task-evidence\\a86813235bf34f0da924385b2525ffdc.before.observation.json",
+      "path": "metrics/evidence/pilot30/p012/task-evidence/a86813235bf34f0da924385b2525ffdc.before.observation.json",
+      "sha256": "25c9642be8498526abb71d3d1fd0679a01d07ec0ac3ba9a303f4f8dc5556ffaa",
+      "bytes": 11466,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P012\\task-evidence\\a86813235bf34f0da924385b2525ffdc.json",
+      "path": "metrics/evidence/pilot30/p012/task-evidence/a86813235bf34f0da924385b2525ffdc.json",
+      "sha256": "9eac66af0816b886eedc3a79b23fadc281b3dcfa9897a5167ff4aeb481a83664",
+      "bytes": 34686,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P012\\task-evidence\\d9fbcdff85a747a1affc26014b2b2e26.final-0.png",
+      "path": "metrics/evidence/pilot30/p012/task-evidence/d9fbcdff85a747a1affc26014b2b2e26.final-0.png",
+      "sha256": "5c5871aa32ee6bdeb5c86c4286beeda49fdf587f0089bf0774024a41c4f75efe",
+      "bytes": 360251,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P012\\task-evidence\\d9fbcdff85a747a1affc26014b2b2e26.final-0.observation.json",
+      "path": "metrics/evidence/pilot30/p012/task-evidence/d9fbcdff85a747a1affc26014b2b2e26.final-0.observation.json",
+      "sha256": "4d79c48af5ede9449b7eccfb7aa1d5639bf141d804f4e0f7324785f6524db088",
+      "bytes": 6946,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P012\\task-evidence\\d9fbcdff85a747a1affc26014b2b2e26.batch-final-verification.json",
+      "path": "metrics/evidence/pilot30/p012/task-evidence/d9fbcdff85a747a1affc26014b2b2e26.batch-final-verification.json",
+      "sha256": "fb5f4e572cf35ebd60bb1b455aaad3f25870cf1145a7b689ded24e2ed18590be",
+      "bytes": 3345,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P013\\operator-truth.json",
+      "path": "metrics/evidence/pilot30/p013/operator-truth.json",
+      "sha256": "3e530e789e7a649302203acb34ee24ca0ae2864818bee22a0a9deedf5ab961b7",
+      "bytes": 254,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P013\\operator-scene-confirmation.txt",
+      "path": "metrics/evidence/pilot30/p013/operator-scene-confirmation.txt",
+      "sha256": "1e928534ea2e8e74fcd6dcaf57011c192be628c0632879bc37d26095a6d76700",
+      "bytes": 212,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P013\\measurement-summary.json",
+      "path": "metrics/evidence/pilot30/p013/measurement-summary.json",
+      "sha256": "d75a2e4cd90aa4e9d666d45e25abc39e5593e14b24375fc8dc162fd2a1a13d1b",
+      "bytes": 3103,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P013\\motion-diagnostic.json",
+      "path": "metrics/evidence/pilot30/p013/motion-diagnostic.json",
+      "sha256": "418a070055d888efc22cf7c6eda7c6bd552a6285521c3a6dde2e5df522c6246c",
+      "bytes": 60307,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P013\\motion-onset-review.jpg",
+      "path": "metrics/evidence/pilot30/p013/motion-onset-review.jpg",
+      "sha256": "924633aee91ec1923ba668989082e17045e4a46b812282c9fd5c2efec31201cb",
+      "bytes": 477078,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P013\\start-result.json",
+      "path": "metrics/evidence/pilot30/p013/start-result.json",
+      "sha256": "48c65d806df51dbad44ee951ed526edc2df3f8cccb80cfdb95cbaccc85fe4825",
+      "bytes": 14986,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P013\\preview-result.json",
+      "path": "metrics/evidence/pilot30/p013/preview-result.json",
+      "sha256": "9b1b9d5d34e0c0a0fcac110ad4ee6fdc04a44d4e82c8c6c914b6c37b90dbd4e7",
+      "bytes": 13427,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P013\\trial-evidence-manifest.json",
+      "path": "metrics/evidence/pilot30/p013/trial-evidence-manifest.json",
+      "sha256": "61b65c2f8554e2cc0ceb75fcbdc3686acb6ed169b85f71ef49f4086bce0ba27f",
+      "bytes": 4378,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P013\\recording\\frames.jsonl",
+      "path": "metrics/evidence/pilot30/p013/recording/frames.jsonl",
+      "sha256": "15fe952d63320108518561d17be214f9179bc28bf4542dbc0d9b8ba1f435dc07",
+      "bytes": 980523,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P013\\recording\\000031056.jpg",
+      "path": "metrics/evidence/pilot30/p013/recording/000031056.jpg",
+      "sha256": "b9a0acf8fc5627570cffc996a8974528d99951addddd90c69dbb7d62107c5bf3",
+      "bytes": 42485,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P013\\recording\\000031200.jpg",
+      "path": "metrics/evidence/pilot30/p013/recording/000031200.jpg",
+      "sha256": "b1acb54e5224cb380c5a34df53bc93194f871804ce17e5cca60939953d2d1148",
+      "bytes": 42611,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P013\\recording\\000031201.jpg",
+      "path": "metrics/evidence/pilot30/p013/recording/000031201.jpg",
+      "sha256": "f74b7c3fe4f5bbee0c9776d57bcbc44049502acd8fb2f78d2295ba7ac44f7af2",
+      "bytes": 41029,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P013\\task-evidence\\25822a2f00b64475b7923dcae036833e.before.png",
+      "path": "metrics/evidence/pilot30/p013/task-evidence/25822a2f00b64475b7923dcae036833e.before.png",
+      "sha256": "2dc937852a46f26fd5b2a5ada9c49a0336c5994d2ff2dd69795b01331492b2f9",
+      "bytes": 372327,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P013\\task-evidence\\25822a2f00b64475b7923dcae036833e.before.observation.json",
+      "path": "metrics/evidence/pilot30/p013/task-evidence/25822a2f00b64475b7923dcae036833e.before.observation.json",
+      "sha256": "390528525df97cf3ff70037703a6575f2e2b2eb23cb95b51cff6409a19f67e89",
+      "bytes": 11251,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P013\\task-evidence\\25822a2f00b64475b7923dcae036833e.json",
+      "path": "metrics/evidence/pilot30/p013/task-evidence/25822a2f00b64475b7923dcae036833e.json",
+      "sha256": "07999eaf9a6f68aa93adcbd99a86360ce66fdcb72bb2472d2f29ac83c8ef1500",
+      "bytes": 34675,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P013\\task-evidence\\d63cc345aa9643c38add59bd0bcb7426.final-0.png",
+      "path": "metrics/evidence/pilot30/p013/task-evidence/d63cc345aa9643c38add59bd0bcb7426.final-0.png",
+      "sha256": "9780a7ff4adde5047e1908c8b917dfb8f2de3577ea3458785b76fc6b1578cb60",
+      "bytes": 378244,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P013\\task-evidence\\d63cc345aa9643c38add59bd0bcb7426.final-0.observation.json",
+      "path": "metrics/evidence/pilot30/p013/task-evidence/d63cc345aa9643c38add59bd0bcb7426.final-0.observation.json",
+      "sha256": "3bd4e54650b2a77d309015c48d568ab66e616820896f0f6f68c20d5be70ba93d",
+      "bytes": 11158,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P013\\task-evidence\\d63cc345aa9643c38add59bd0bcb7426.batch-final-verification.json",
+      "path": "metrics/evidence/pilot30/p013/task-evidence/d63cc345aa9643c38add59bd0bcb7426.batch-final-verification.json",
+      "sha256": "281942ed6a454789c7b3dcd0cf825be1ee396ec466efa295e9b8e9799963a292",
+      "bytes": 652,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P014\\operator-truth.json",
+      "path": "metrics/evidence/pilot30/p014/operator-truth.json",
+      "sha256": "06bb9b85844d751fc20a6f6c961900a3e3e4f33b98273ca5db94cfc42dab6162",
+      "bytes": 207,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P014\\operator-scene-confirmation.txt",
+      "path": "metrics/evidence/pilot30/p014/operator-scene-confirmation.txt",
+      "sha256": "a59234bcd1b198b5e89569a712a7db4a8603585bca8f298480a210d9a3031ea6",
+      "bytes": 210,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P014\\measurement-summary.json",
+      "path": "metrics/evidence/pilot30/p014/measurement-summary.json",
+      "sha256": "5722ca20e7c1808dbcd89ec9f88219b06fa27736a39b106578f4c166a14de403",
+      "bytes": 3117,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P014\\motion-diagnostic.json",
+      "path": "metrics/evidence/pilot30/p014/motion-diagnostic.json",
+      "sha256": "5bed0df7d380f9b234da671f60cb833b2e2dd9d2956d48062da5c5c562a71490",
+      "bytes": 56615,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P014\\motion-onset-review.jpg",
+      "path": "metrics/evidence/pilot30/p014/motion-onset-review.jpg",
+      "sha256": "07a7d27ba4433a71ddf577d051e2eea2fb66be244f221aabd636ba67f50980dc",
+      "bytes": 479051,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P014\\start-result.json",
+      "path": "metrics/evidence/pilot30/p014/start-result.json",
+      "sha256": "0d4c303a5bdd2ee1b6d1ef840de772adf3e6e22db82a40a538cf78e83efb74cf",
+      "bytes": 14774,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P014\\preview-result.json",
+      "path": "metrics/evidence/pilot30/p014/preview-result.json",
+      "sha256": "3cc9753a70460426b18feb2b034f5c392d20de93907071488340d69e007f3516",
+      "bytes": 13433,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P014\\trial-evidence-manifest.json",
+      "path": "metrics/evidence/pilot30/p014/trial-evidence-manifest.json",
+      "sha256": "61bde705cb39f1d68a5094ebb91b462cee1dfe605a08bb82ccd5b96cca6d38fe",
+      "bytes": 4363,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P014\\recording\\frames.jsonl",
+      "path": "metrics/evidence/pilot30/p014/recording/frames.jsonl",
+      "sha256": "0e589404bf84ccc55a0efcba0de4c3e3c5794c533514f5e33651556118e6616e",
+      "bytes": 921729,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P014\\recording\\000032455.jpg",
+      "path": "metrics/evidence/pilot30/p014/recording/000032455.jpg",
+      "sha256": "cfa47ab82eed665af0808baff61cc34305bac03aee9a91373c6c2e01190795e6",
+      "bytes": 42826,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P014\\recording\\000032585.jpg",
+      "path": "metrics/evidence/pilot30/p014/recording/000032585.jpg",
+      "sha256": "57cd4c44de1216f168d2f02ae5c700bca99c84f4f27d4d372c2627289cf0e04e",
+      "bytes": 42817,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P014\\recording\\000032586.jpg",
+      "path": "metrics/evidence/pilot30/p014/recording/000032586.jpg",
+      "sha256": "0e2eef62e906bf9fa6784ea1d23a4d29a3e77d98ef088b6d2947b03eb6c07f5f",
+      "bytes": 41408,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P014\\task-evidence\\a27888f23d944d4c84d015b0266ed28f.before.png",
+      "path": "metrics/evidence/pilot30/p014/task-evidence/a27888f23d944d4c84d015b0266ed28f.before.png",
+      "sha256": "c63b804261484760b97fdc61c4b995690cb740b3e38fcd87059fe222c87d03d4",
+      "bytes": 372873,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P014\\task-evidence\\a27888f23d944d4c84d015b0266ed28f.before.observation.json",
+      "path": "metrics/evidence/pilot30/p014/task-evidence/a27888f23d944d4c84d015b0266ed28f.before.observation.json",
+      "sha256": "1776bd05e7742f41d263226964bea7913e214c95e143a41153ef7c75db246135",
+      "bytes": 11432,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P014\\task-evidence\\a27888f23d944d4c84d015b0266ed28f.json",
+      "path": "metrics/evidence/pilot30/p014/task-evidence/a27888f23d944d4c84d015b0266ed28f.json",
+      "sha256": "99d206e734b787204f929e9d15754dbc499be686a4ca8686b2ce58b48b59dd66",
+      "bytes": 34695,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P014\\task-evidence\\49f8c9bef92d4ef9aaa44859ead292af.final-0.png",
+      "path": "metrics/evidence/pilot30/p014/task-evidence/49f8c9bef92d4ef9aaa44859ead292af.final-0.png",
+      "sha256": "940b3ce01a8504a8716b1c16f3379f08d4883e1b74ae2851b37d0a2d632b7ae3",
+      "bytes": 363427,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P014\\task-evidence\\49f8c9bef92d4ef9aaa44859ead292af.final-0.observation.json",
+      "path": "metrics/evidence/pilot30/p014/task-evidence/49f8c9bef92d4ef9aaa44859ead292af.final-0.observation.json",
+      "sha256": "ba2fd2a8f5902acecef760f5634d70f68b32da87334afb6f7a17b6accc7d2b89",
+      "bytes": 10121,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P014\\task-evidence\\49f8c9bef92d4ef9aaa44859ead292af.batch-final-verification.json",
+      "path": "metrics/evidence/pilot30/p014/task-evidence/49f8c9bef92d4ef9aaa44859ead292af.batch-final-verification.json",
+      "sha256": "f9fb331f39df8f7796c62d3bdf8c9d9421eac93f6b004e7d5c48da3685147329",
+      "bytes": 3348,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P015\\operator-truth.json",
+      "path": "metrics/evidence/pilot30/p015/operator-truth.json",
+      "sha256": "06bb9b85844d751fc20a6f6c961900a3e3e4f33b98273ca5db94cfc42dab6162",
+      "bytes": 207,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P015\\operator-scene-confirmation.txt",
+      "path": "metrics/evidence/pilot30/p015/operator-scene-confirmation.txt",
+      "sha256": "1e928534ea2e8e74fcd6dcaf57011c192be628c0632879bc37d26095a6d76700",
+      "bytes": 212,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P015\\measurement-summary.json",
+      "path": "metrics/evidence/pilot30/p015/measurement-summary.json",
+      "sha256": "b29ce9ce802c40d220610df82e0b62c979fbdb36bd6f48dc656d0e7179911b68",
+      "bytes": 3115,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P015\\motion-diagnostic.json",
+      "path": "metrics/evidence/pilot30/p015/motion-diagnostic.json",
+      "sha256": "826f20a22552630d91345721abcf97b7a37c9c0a2a9768956ea73da89ecf7854",
+      "bytes": 61788,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P015\\motion-onset-review.jpg",
+      "path": "metrics/evidence/pilot30/p015/motion-onset-review.jpg",
+      "sha256": "868d31db2b97e1ae1effa9eead648593f58ea55a9bfa868b1a2cc271ebe14503",
+      "bytes": 481384,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P015\\start-result.json",
+      "path": "metrics/evidence/pilot30/p015/start-result.json",
+      "sha256": "e95b565c52d068205e48ef87f3992882df9e8026e4a0b54c1ed35aabfa98154c",
+      "bytes": 14791,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P015\\preview-result.json",
+      "path": "metrics/evidence/pilot30/p015/preview-result.json",
+      "sha256": "d5180c1e260fedf8a9080e8f9ce55058fb114664c13d74e270d97946fbd014e4",
+      "bytes": 13401,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P015\\trial-evidence-manifest.json",
+      "path": "metrics/evidence/pilot30/p015/trial-evidence-manifest.json",
+      "sha256": "8c74942d83ed04e5fe6f7016f263d0e89feb8665f735d82c0cdebf71269db14b",
+      "bytes": 4363,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P015\\recording\\frames.jsonl",
+      "path": "metrics/evidence/pilot30/p015/recording/frames.jsonl",
+      "sha256": "7c72d5669fb181fad29a7559c25ee200d257a0a55dababbb56537dc7ac46dcad",
+      "bytes": 972883,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P015\\recording\\000033382.jpg",
+      "path": "metrics/evidence/pilot30/p015/recording/000033382.jpg",
+      "sha256": "13b53d17478e7680b6421fb5adca8719cda277affd594a2d6682d6d90212e74d",
+      "bytes": 42740,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P015\\recording\\000033537.jpg",
+      "path": "metrics/evidence/pilot30/p015/recording/000033537.jpg",
+      "sha256": "d7355940b7c3baa9786d1aa85482f8cbb467dd5e1e5b535db76c762fe4006544",
+      "bytes": 42761,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P015\\recording\\000033538.jpg",
+      "path": "metrics/evidence/pilot30/p015/recording/000033538.jpg",
+      "sha256": "c906009daf53709cd7aa8a99c307a01227e7ae16d5a97f13817ab6111ea1fa70",
+      "bytes": 41165,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P015\\task-evidence\\0faedff87cce442cb87ea0f2033b8785.before.png",
+      "path": "metrics/evidence/pilot30/p015/task-evidence/0faedff87cce442cb87ea0f2033b8785.before.png",
+      "sha256": "29f09f3ca5d8fa6710c8f762791af44406b06fd43f49ad38ab75df0ee02e4f6e",
+      "bytes": 373627,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P015\\task-evidence\\0faedff87cce442cb87ea0f2033b8785.before.observation.json",
+      "path": "metrics/evidence/pilot30/p015/task-evidence/0faedff87cce442cb87ea0f2033b8785.before.observation.json",
+      "sha256": "30fe48d93da27a21a04c9427a7cafd6b2f88f3a02cfefce380c627c61b8116f1",
+      "bytes": 11422,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P015\\task-evidence\\0faedff87cce442cb87ea0f2033b8785.json",
+      "path": "metrics/evidence/pilot30/p015/task-evidence/0faedff87cce442cb87ea0f2033b8785.json",
+      "sha256": "abdc009bc7a78bc65ce4f2254a58028f0d525d7dab18aedca4a96fe1e40baf3e",
+      "bytes": 34699,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P015\\task-evidence\\fea8a58c7b5843139221c9f3e1639565.final-0.png",
+      "path": "metrics/evidence/pilot30/p015/task-evidence/fea8a58c7b5843139221c9f3e1639565.final-0.png",
+      "sha256": "799175e1bf7cba886efe8f73701bbd1a694cd6576596b9680076f785d634e8bc",
+      "bytes": 363264,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P015\\task-evidence\\fea8a58c7b5843139221c9f3e1639565.final-0.observation.json",
+      "path": "metrics/evidence/pilot30/p015/task-evidence/fea8a58c7b5843139221c9f3e1639565.final-0.observation.json",
+      "sha256": "f7f5197f977500f116119f64773981b5542461982dd021f373d0333ffe389349",
+      "bytes": 9796,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P015\\task-evidence\\fea8a58c7b5843139221c9f3e1639565.batch-final-verification.json",
+      "path": "metrics/evidence/pilot30/p015/task-evidence/fea8a58c7b5843139221c9f3e1639565.batch-final-verification.json",
+      "sha256": "4c90bd20d6580c7c6c7ae23e596fdee65e89905fe2e07d4d5c65b454cec88efd",
+      "bytes": 3348,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P016\\operator-truth.json",
+      "path": "metrics/evidence/pilot30/p016/operator-truth.json",
+      "sha256": "06bb9b85844d751fc20a6f6c961900a3e3e4f33b98273ca5db94cfc42dab6162",
+      "bytes": 207,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P016\\operator-scene-confirmation.txt",
+      "path": "metrics/evidence/pilot30/p016/operator-scene-confirmation.txt",
+      "sha256": "1e928534ea2e8e74fcd6dcaf57011c192be628c0632879bc37d26095a6d76700",
+      "bytes": 212,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P016\\measurement-summary.json",
+      "path": "metrics/evidence/pilot30/p016/measurement-summary.json",
+      "sha256": "0607acf822dab84cd7056ec2ae164950554cfa738101aad50a08a1fcc31907e0",
+      "bytes": 3117,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P016\\motion-diagnostic.json",
+      "path": "metrics/evidence/pilot30/p016/motion-diagnostic.json",
+      "sha256": "83aac6ff7c1dc817a0970a715ef903b376e8064a5f56626d2d30224be6e28959",
+      "bytes": 57091,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P016\\motion-onset-review.jpg",
+      "path": "metrics/evidence/pilot30/p016/motion-onset-review.jpg",
+      "sha256": "2f541786c86e68b8096a5149403cf826dc1cb530e2b02943ce12702858fe0c9d",
+      "bytes": 480567,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P016\\start-result.json",
+      "path": "metrics/evidence/pilot30/p016/start-result.json",
+      "sha256": "5b3a35d1ad8108110e2ebe637485bef391ea34be8b763f797d606aaa1010cb6a",
+      "bytes": 14806,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P016\\preview-result.json",
+      "path": "metrics/evidence/pilot30/p016/preview-result.json",
+      "sha256": "28859ae7e0475ff21de92ca1cc000e55c2919c5701b776c42966db9175a56f0a",
+      "bytes": 13432,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P016\\trial-evidence-manifest.json",
+      "path": "metrics/evidence/pilot30/p016/trial-evidence-manifest.json",
+      "sha256": "2f23bca58519070e646d246f0fedfb71f636f0622cd00d25a3ccc396030546a3",
+      "bytes": 4363,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P016\\recording\\frames.jsonl",
+      "path": "metrics/evidence/pilot30/p016/recording/frames.jsonl",
+      "sha256": "97684b3bba16ea9998bf503bdcd542aef911c7d26e31be662e04f7f9662b8909",
+      "bytes": 917610,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P016\\recording\\000034334.jpg",
+      "path": "metrics/evidence/pilot30/p016/recording/000034334.jpg",
+      "sha256": "7b31814d1df2c84596989bf5131c74d0358c07de23adc6800082cfef0b198c9c",
+      "bytes": 42641,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P016\\recording\\000034477.jpg",
+      "path": "metrics/evidence/pilot30/p016/recording/000034477.jpg",
+      "sha256": "fbf35fa426ba22faf0a65994dee6b0a29e0f3c20e52e6bbdf3839fc08caa1e31",
+      "bytes": 42609,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P016\\recording\\000034478.jpg",
+      "path": "metrics/evidence/pilot30/p016/recording/000034478.jpg",
+      "sha256": "5c16d147ef73b25d84738aeb557e7d205adcc2b93f7c5447f725f1ab90017f80",
+      "bytes": 42466,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P016\\task-evidence\\9387b2c169de4713bb87c0193b7cd7d4.before.png",
+      "path": "metrics/evidence/pilot30/p016/task-evidence/9387b2c169de4713bb87c0193b7cd7d4.before.png",
+      "sha256": "78c2f401001a17ed0bc34de2b7453ac77951e9a2b9be558bad32ba67205f4e9c",
+      "bytes": 372977,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P016\\task-evidence\\9387b2c169de4713bb87c0193b7cd7d4.before.observation.json",
+      "path": "metrics/evidence/pilot30/p016/task-evidence/9387b2c169de4713bb87c0193b7cd7d4.before.observation.json",
+      "sha256": "cc51e9741d0765ceb51955f242f15152bdf5c1687455a27eb049b622b69c2a02",
+      "bytes": 11396,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P016\\task-evidence\\9387b2c169de4713bb87c0193b7cd7d4.json",
+      "path": "metrics/evidence/pilot30/p016/task-evidence/9387b2c169de4713bb87c0193b7cd7d4.json",
+      "sha256": "3c9cf0d5a24a8e56ae20d6ac06b19fc01830024ff837c327a4543b41bdca3108",
+      "bytes": 34684,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P016\\task-evidence\\624eeab672b24a869150e88719465547.final-0.png",
+      "path": "metrics/evidence/pilot30/p016/task-evidence/624eeab672b24a869150e88719465547.final-0.png",
+      "sha256": "5a386bf52b4a64adac15906b329dfbf8f3beb7dd1b93948e5a40e793baad0521",
+      "bytes": 362558,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P016\\task-evidence\\624eeab672b24a869150e88719465547.final-0.observation.json",
+      "path": "metrics/evidence/pilot30/p016/task-evidence/624eeab672b24a869150e88719465547.final-0.observation.json",
+      "sha256": "1c92228d1770592aff5551811c31556f42fccc512dec4a0a1caee167ab8508b2",
+      "bytes": 9532,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P016\\task-evidence\\624eeab672b24a869150e88719465547.batch-final-verification.json",
+      "path": "metrics/evidence/pilot30/p016/task-evidence/624eeab672b24a869150e88719465547.batch-final-verification.json",
+      "sha256": "328c40f9fc5a1c3b88a0f666bbc2f2ccd0820fb03614b81972751e7974424494",
+      "bytes": 3349,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P017\\operator-truth.json",
+      "path": "metrics/evidence/pilot30/p017/operator-truth.json",
+      "sha256": "06bb9b85844d751fc20a6f6c961900a3e3e4f33b98273ca5db94cfc42dab6162",
+      "bytes": 207,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P017\\operator-scene-confirmation.txt",
+      "path": "metrics/evidence/pilot30/p017/operator-scene-confirmation.txt",
+      "sha256": "1e928534ea2e8e74fcd6dcaf57011c192be628c0632879bc37d26095a6d76700",
+      "bytes": 212,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P017\\measurement-summary.json",
+      "path": "metrics/evidence/pilot30/p017/measurement-summary.json",
+      "sha256": "004888d4e59cef087debe225bbc4bb034e16117475bf764b0d6b53daa95d50e7",
+      "bytes": 3119,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P017\\motion-diagnostic.json",
+      "path": "metrics/evidence/pilot30/p017/motion-diagnostic.json",
+      "sha256": "e174828f0dc1a9c822455d3836cf80f8614331a99731e7e8520876c0fd5d01f9",
+      "bytes": 58687,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P017\\motion-onset-review.jpg",
+      "path": "metrics/evidence/pilot30/p017/motion-onset-review.jpg",
+      "sha256": "827a8814d29972099b4c0a45d8734466761eb726afb8894784cf575473d58340",
+      "bytes": 478538,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P017\\start-result.json",
+      "path": "metrics/evidence/pilot30/p017/start-result.json",
+      "sha256": "31061cec5f628e534eed28f2ed915315c1873e147dd44e8f8daa604b0de6bf40",
+      "bytes": 14813,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P017\\preview-result.json",
+      "path": "metrics/evidence/pilot30/p017/preview-result.json",
+      "sha256": "50d965a3a6c1eb876609e0d952495a79f3711ca0c6063d04f0d6be17094e0283",
+      "bytes": 13417,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P017\\trial-evidence-manifest.json",
+      "path": "metrics/evidence/pilot30/p017/trial-evidence-manifest.json",
+      "sha256": "2c52084db5d4cc79d14cfe241abddbe32740040b5e609c46f2e29c45663fc4ee",
+      "bytes": 4363,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P017\\recording\\frames.jsonl",
+      "path": "metrics/evidence/pilot30/p017/recording/frames.jsonl",
+      "sha256": "783c8451a69f7b20a809bcd826c47e5482295b95f9f8ac5368461a50e11b19c0",
+      "bytes": 951836,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P017\\recording\\000035086.jpg",
+      "path": "metrics/evidence/pilot30/p017/recording/000035086.jpg",
+      "sha256": "20057474bfee25646ed89ac245ccc151ddd0df1e625b82472bb88c624a2dadf0",
+      "bytes": 42667,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P017\\recording\\000035231.jpg",
+      "path": "metrics/evidence/pilot30/p017/recording/000035231.jpg",
+      "sha256": "e058db07a40b80897e2b37b3920b62d94d213ce930c7d464b7d96a9162e8183a",
+      "bytes": 42753,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P017\\recording\\000035232.jpg",
+      "path": "metrics/evidence/pilot30/p017/recording/000035232.jpg",
+      "sha256": "5efba1252c71965063558c287fa7630297b6b43014b29f964f4accc4315bb7e2",
+      "bytes": 41688,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P017\\task-evidence\\5b49fea1e42c45768e1e0bec664456bb.before.png",
+      "path": "metrics/evidence/pilot30/p017/task-evidence/5b49fea1e42c45768e1e0bec664456bb.before.png",
+      "sha256": "330c0b139f8304a492a51dcfc7dad392b47520ba38c6d66a59feb5294f469ad3",
+      "bytes": 372772,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P017\\task-evidence\\5b49fea1e42c45768e1e0bec664456bb.before.observation.json",
+      "path": "metrics/evidence/pilot30/p017/task-evidence/5b49fea1e42c45768e1e0bec664456bb.before.observation.json",
+      "sha256": "df6ab11dd93c788e883713f88b552c066bc9a9a453cc18de935ae59a34e3f9dc",
+      "bytes": 10967,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P017\\task-evidence\\5b49fea1e42c45768e1e0bec664456bb.json",
+      "path": "metrics/evidence/pilot30/p017/task-evidence/5b49fea1e42c45768e1e0bec664456bb.json",
+      "sha256": "8538ce7c382b6fba6196a59f206fa8b89e9ca8a6801a5832b5288beef7e25f45",
+      "bytes": 34708,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P017\\task-evidence\\d887b39ba2d14310a1272fda609f68c6.final-0.png",
+      "path": "metrics/evidence/pilot30/p017/task-evidence/d887b39ba2d14310a1272fda609f68c6.final-0.png",
+      "sha256": "84044706233c855be84a9bc604cd269d6d3e93a1da847270ea9eae7a8063b3ce",
+      "bytes": 361799,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P017\\task-evidence\\d887b39ba2d14310a1272fda609f68c6.final-0.observation.json",
+      "path": "metrics/evidence/pilot30/p017/task-evidence/d887b39ba2d14310a1272fda609f68c6.final-0.observation.json",
+      "sha256": "6caa86f25ad7c8ac30eba63d1f946de95beb63f6829ee3ecd41e54da05adc1a0",
+      "bytes": 6947,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P017\\task-evidence\\d887b39ba2d14310a1272fda609f68c6.batch-final-verification.json",
+      "path": "metrics/evidence/pilot30/p017/task-evidence/d887b39ba2d14310a1272fda609f68c6.batch-final-verification.json",
+      "sha256": "c85fa3909c81b6d5260b71d2ebfc03150842af29c6a13037146a06d9d6b33dd0",
+      "bytes": 3349,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P018\\operator-truth.json",
+      "path": "metrics/evidence/pilot30/p018/operator-truth.json",
+      "sha256": "06bb9b85844d751fc20a6f6c961900a3e3e4f33b98273ca5db94cfc42dab6162",
+      "bytes": 207,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P018\\operator-scene-confirmation.txt",
+      "path": "metrics/evidence/pilot30/p018/operator-scene-confirmation.txt",
+      "sha256": "1e928534ea2e8e74fcd6dcaf57011c192be628c0632879bc37d26095a6d76700",
+      "bytes": 212,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P018\\measurement-summary.json",
+      "path": "metrics/evidence/pilot30/p018/measurement-summary.json",
+      "sha256": "7caa137963fa9ded190e98baec84cef87f8d564691ecd0a5ca04927a83b47b93",
+      "bytes": 3115,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P018\\motion-diagnostic.json",
+      "path": "metrics/evidence/pilot30/p018/motion-diagnostic.json",
+      "sha256": "bda2ab99b69d48cbd443822ceb79f12cb417cdc075cbeccb022705fab48313b1",
+      "bytes": 64471,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P018\\motion-onset-review.jpg",
+      "path": "metrics/evidence/pilot30/p018/motion-onset-review.jpg",
+      "sha256": "0881d6718bf42d6b37bb8e978c1bc8f240bbc03fc1fc9bfc6169f93788d6553a",
+      "bytes": 478781,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P018\\start-result.json",
+      "path": "metrics/evidence/pilot30/p018/start-result.json",
+      "sha256": "79612692b3f2da2dd327e294bf91a5ab91c6c50a842e041024c205bff5a380ea",
+      "bytes": 14795,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P018\\preview-result.json",
+      "path": "metrics/evidence/pilot30/p018/preview-result.json",
+      "sha256": "887e385664105a4541201e355712f2d6c55e74f6ed5f0b58ded6ee485129f6ec",
+      "bytes": 13418,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P018\\trial-evidence-manifest.json",
+      "path": "metrics/evidence/pilot30/p018/trial-evidence-manifest.json",
+      "sha256": "af75af8928a08cc7d55b9d8891ff39b8a547942cc8ab02cd2647ecfabd5b237b",
+      "bytes": 4363,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P018\\recording\\frames.jsonl",
+      "path": "metrics/evidence/pilot30/p018/recording/frames.jsonl",
+      "sha256": "36433830fc08470a1d249fe2f15f4dae35c98109f67bc8dbca8f998477b2a9b1",
+      "bytes": 1024104,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P018\\recording\\000036033.jpg",
+      "path": "metrics/evidence/pilot30/p018/recording/000036033.jpg",
+      "sha256": "41c3c80fc9e0e2fed8f0e42b1cec9c88e9a5ac0a8a38ec0a20e67d4125ab87ec",
+      "bytes": 42663,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P018\\recording\\000036205.jpg",
+      "path": "metrics/evidence/pilot30/p018/recording/000036205.jpg",
+      "sha256": "240dfc4e53b5dfd66cb0dc00bcec0e0e44aa45fc7cc1fb065800791a94eb5ad8",
+      "bytes": 42655,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P018\\recording\\000036206.jpg",
+      "path": "metrics/evidence/pilot30/p018/recording/000036206.jpg",
+      "sha256": "87c8406b694130b913be3ae69628bfc9e6c0538084ff7fe9fe9ea60d3cc4e3ef",
+      "bytes": 41053,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P018\\task-evidence\\76276921d1d9445db221223ceb164e87.before.png",
+      "path": "metrics/evidence/pilot30/p018/task-evidence/76276921d1d9445db221223ceb164e87.before.png",
+      "sha256": "d84e0a802222288faca103a76785e8a74a26f8740eaaa9d41a0e8cfdbec3d8b3",
+      "bytes": 373865,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P018\\task-evidence\\76276921d1d9445db221223ceb164e87.before.observation.json",
+      "path": "metrics/evidence/pilot30/p018/task-evidence/76276921d1d9445db221223ceb164e87.before.observation.json",
+      "sha256": "dadb7be843043ba604f57ffc01e4ddc8adf001ead85c19f79629ff55bd59a852",
+      "bytes": 11362,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P018\\task-evidence\\76276921d1d9445db221223ceb164e87.json",
+      "path": "metrics/evidence/pilot30/p018/task-evidence/76276921d1d9445db221223ceb164e87.json",
+      "sha256": "07a04c88579c65e2fcc6382396af20a12081c2b7f668195320dd41af33a22b56",
+      "bytes": 34680,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P018\\task-evidence\\cd1fc44f89cf4fb8927bd1dfd393aff6.final-0.png",
+      "path": "metrics/evidence/pilot30/p018/task-evidence/cd1fc44f89cf4fb8927bd1dfd393aff6.final-0.png",
+      "sha256": "28a403f64e48919b4303fc18e5a07073e1888504270fd3e85f5c657245faaca3",
+      "bytes": 363574,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P018\\task-evidence\\cd1fc44f89cf4fb8927bd1dfd393aff6.final-0.observation.json",
+      "path": "metrics/evidence/pilot30/p018/task-evidence/cd1fc44f89cf4fb8927bd1dfd393aff6.final-0.observation.json",
+      "sha256": "a97f46795d068746c30467183b728cae68d77bc5e56b255a81c342a449d9abf4",
+      "bytes": 10004,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P018\\task-evidence\\cd1fc44f89cf4fb8927bd1dfd393aff6.batch-final-verification.json",
+      "path": "metrics/evidence/pilot30/p018/task-evidence/cd1fc44f89cf4fb8927bd1dfd393aff6.batch-final-verification.json",
+      "sha256": "84dd3b12c4f5a59fbe4c7fb4b552e9dd02c22180a2b6ba269386c527818cdbb3",
+      "bytes": 3346,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P019\\operator-truth.json",
+      "path": "metrics/evidence/pilot30/p019/operator-truth.json",
+      "sha256": "fd5b27d645bdfa019a321bba362224614406cb3e71b15af8af103e2d234a1477",
+      "bytes": 262,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P019\\operator-scene-confirmation.txt",
+      "path": "metrics/evidence/pilot30/p019/operator-scene-confirmation.txt",
+      "sha256": "1e928534ea2e8e74fcd6dcaf57011c192be628c0632879bc37d26095a6d76700",
+      "bytes": 212,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P019\\measurement-summary.json",
+      "path": "metrics/evidence/pilot30/p019/measurement-summary.json",
+      "sha256": "b0713a7537f6698051adf634e5559e732eb471f40dc75d05602570b7c60a6b3c",
+      "bytes": 3101,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P019\\motion-diagnostic.json",
+      "path": "metrics/evidence/pilot30/p019/motion-diagnostic.json",
+      "sha256": "4f627d2edda9e494e7025afc29aed0a73abc7dcf8d8a35d3b07729d587f814a1",
+      "bytes": 64268,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P019\\motion-onset-review.jpg",
+      "path": "metrics/evidence/pilot30/p019/motion-onset-review.jpg",
+      "sha256": "01ae1ae4e3bb18038c8e7de69212166f79fdf8a90ffee36d2bafd1e198366b95",
+      "bytes": 480891,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P019\\start-result.json",
+      "path": "metrics/evidence/pilot30/p019/start-result.json",
+      "sha256": "45e1a6534f43089c762f0949107b4179644a3387e4bfc278c947ce8219c70b9d",
+      "bytes": 14972,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P019\\preview-result.json",
+      "path": "metrics/evidence/pilot30/p019/preview-result.json",
+      "sha256": "73c733c8f918fdfc82854c3de68f7af58dfe61713400c095c0f51a7fada37996",
+      "bytes": 13413,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P019\\trial-evidence-manifest.json",
+      "path": "metrics/evidence/pilot30/p019/trial-evidence-manifest.json",
+      "sha256": "dfd7188f9c8f3789e5bc553ccb915e6225929448fc9f1c07644d33775c3e0fd0",
+      "bytes": 4378,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P019\\recording\\frames.jsonl",
+      "path": "metrics/evidence/pilot30/p019/recording/frames.jsonl",
+      "sha256": "f912935cf6021bef3e797b038aac05010267c26c55ba9316654451388f7d83cd",
+      "bytes": 1010215,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P019\\recording\\000036901.jpg",
+      "path": "metrics/evidence/pilot30/p019/recording/000036901.jpg",
+      "sha256": "a2d7a09c6f59ca5a4c842be6c1f3f90f8da143cc8e527b3a8fa1a30ab3d9d2af",
+      "bytes": 43607,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P019\\recording\\000037067.jpg",
+      "path": "metrics/evidence/pilot30/p019/recording/000037067.jpg",
+      "sha256": "dede83674a83c9886607d97694ea2ccbc6382d89d49a1386b0bc6f3e9b5ccc6f",
+      "bytes": 43505,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P019\\recording\\000037068.jpg",
+      "path": "metrics/evidence/pilot30/p019/recording/000037068.jpg",
+      "sha256": "63756e6497b4ce25e5e82700e835977544db4507dda5e2ddd4920463b7e95204",
+      "bytes": 42091,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P019\\task-evidence\\14cf04d5dae945ea8fe9df3875a4c8d7.before.png",
+      "path": "metrics/evidence/pilot30/p019/task-evidence/14cf04d5dae945ea8fe9df3875a4c8d7.before.png",
+      "sha256": "35cb7bca45b1c4f27b61d86445b9cca35aff62d018a715ac2d171f35e44a1ff3",
+      "bytes": 374901,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P019\\task-evidence\\14cf04d5dae945ea8fe9df3875a4c8d7.before.observation.json",
+      "path": "metrics/evidence/pilot30/p019/task-evidence/14cf04d5dae945ea8fe9df3875a4c8d7.before.observation.json",
+      "sha256": "b6525f694dbca45ea2d74debce0105f2b3a261d9d97d2e8fc0c75a5e0e76f600",
+      "bytes": 10231,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P019\\task-evidence\\14cf04d5dae945ea8fe9df3875a4c8d7.json",
+      "path": "metrics/evidence/pilot30/p019/task-evidence/14cf04d5dae945ea8fe9df3875a4c8d7.json",
+      "sha256": "33db3636644cc3024e3ea1a780cdb321c67d15d4f8046705ba77145927df83f6",
+      "bytes": 34699,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P019\\task-evidence\\f12836877c48476e86bbb15f2e397137.final-0.png",
+      "path": "metrics/evidence/pilot30/p019/task-evidence/f12836877c48476e86bbb15f2e397137.final-0.png",
+      "sha256": "82a956beb5beca0f526713b0573fbb4b9bb12ed69a5eefead758cb9f8829e5ff",
+      "bytes": 371543,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P019\\task-evidence\\f12836877c48476e86bbb15f2e397137.final-0.observation.json",
+      "path": "metrics/evidence/pilot30/p019/task-evidence/f12836877c48476e86bbb15f2e397137.final-0.observation.json",
+      "sha256": "d60d1ee3d36e00691ac30e4c041816456b05089c559518f48d8abb87aa54b6de",
+      "bytes": 10195,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P019\\task-evidence\\f12836877c48476e86bbb15f2e397137.batch-final-verification.json",
+      "path": "metrics/evidence/pilot30/p019/task-evidence/f12836877c48476e86bbb15f2e397137.batch-final-verification.json",
+      "sha256": "47483abbf5667729ff6957c1ec70d819b3352f57cb8384a2f2c02af5c03ca36c",
+      "bytes": 652,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P020\\operator-truth.json",
+      "path": "metrics/evidence/pilot30/p020/operator-truth.json",
+      "sha256": "cee634a2c696184a8977549f1107a229fabc1547680a653863004ee340716480",
+      "bytes": 223,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P020\\operator-scene-confirmation.txt",
+      "path": "metrics/evidence/pilot30/p020/operator-scene-confirmation.txt",
+      "sha256": "2d6b71db3089e4c66b05371e71ddbd99cb6ee0e84c0f2ff85877b0708e6d2cbe",
+      "bytes": 218,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P020\\measurement-summary.json",
+      "path": "metrics/evidence/pilot30/p020/measurement-summary.json",
+      "sha256": "5af8c04b0c1ad00e0371f2da0cd38122de02cfd244ff46e5eaf41693eafd73f7",
+      "bytes": 3103,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P020\\motion-diagnostic.json",
+      "path": "metrics/evidence/pilot30/p020/motion-diagnostic.json",
+      "sha256": "529e3d217ccceae9d5839f39853c9e55e19e7f44c1112efb15ae91f7202b8f08",
+      "bytes": 58639,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P020\\motion-onset-review.jpg",
+      "path": "metrics/evidence/pilot30/p020/motion-onset-review.jpg",
+      "sha256": "f115b62df5654317cd89f11eb1f27ea29952733d9cf9e4871977a34da7b43b8d",
+      "bytes": 480794,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P020\\start-result.json",
+      "path": "metrics/evidence/pilot30/p020/start-result.json",
+      "sha256": "6585e1f3122fb8050693e96915a9c4557dab8594053af3ef89148f8185182a60",
+      "bytes": 15017,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P020\\preview-result.json",
+      "path": "metrics/evidence/pilot30/p020/preview-result.json",
+      "sha256": "0ae5fc8010ceca96ced8420bbc23fc6b4bea77e75f55880b3cd0731055690ff7",
+      "bytes": 13400,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P020\\trial-evidence-manifest.json",
+      "path": "metrics/evidence/pilot30/p020/trial-evidence-manifest.json",
+      "sha256": "adc3e037b00c15f09db3085fa2ef85a43ad9110cf63f8789ecee23f3919b6d3b",
+      "bytes": 4378,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P020\\recording\\frames.jsonl",
+      "path": "metrics/evidence/pilot30/p020/recording/frames.jsonl",
+      "sha256": "cc42e7257185d0deca4ca6ad7e5bfa20a296ac4583f099ce908d41f8fbdc3b29",
+      "bytes": 953473,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P020\\recording\\000038004.jpg",
+      "path": "metrics/evidence/pilot30/p020/recording/000038004.jpg",
+      "sha256": "c5285d7ef396e5831ab2894040125af776047186d5c0fe276086d890f91b12d4",
+      "bytes": 43288,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P020\\recording\\000038151.jpg",
+      "path": "metrics/evidence/pilot30/p020/recording/000038151.jpg",
+      "sha256": "2857f4e471ea4b8ce525b137519fde7e25e252f2b7bbe6f404d010bb91370509",
+      "bytes": 43176,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P020\\recording\\000038152.jpg",
+      "path": "metrics/evidence/pilot30/p020/recording/000038152.jpg",
+      "sha256": "119e30f800ca5c8b0f9c393f3d99646fb1595b4d431e992b47ef739e451e30fd",
+      "bytes": 43102,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P020\\task-evidence\\fa67dbc0aa45436e94e90694fe36d98b.before.png",
+      "path": "metrics/evidence/pilot30/p020/task-evidence/fa67dbc0aa45436e94e90694fe36d98b.before.png",
+      "sha256": "d0a72ee8894233080baa266e3073d4f38475fbff8c0d684983a2f9aa4365f643",
+      "bytes": 375124,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P020\\task-evidence\\fa67dbc0aa45436e94e90694fe36d98b.before.observation.json",
+      "path": "metrics/evidence/pilot30/p020/task-evidence/fa67dbc0aa45436e94e90694fe36d98b.before.observation.json",
+      "sha256": "314eff623869ea6d62b269fc90c952c8c3c44218608e7b56832e6954b8ac0a6d",
+      "bytes": 10973,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P020\\task-evidence\\fa67dbc0aa45436e94e90694fe36d98b.json",
+      "path": "metrics/evidence/pilot30/p020/task-evidence/fa67dbc0aa45436e94e90694fe36d98b.json",
+      "sha256": "9ccb9bb9e8edc559a682708ecf60ed853497df877e310b27189db03609d90fed",
+      "bytes": 34674,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P020\\task-evidence\\9fa242089d7c45fc9d0affca39d062b7.final-0.png",
+      "path": "metrics/evidence/pilot30/p020/task-evidence/9fa242089d7c45fc9d0affca39d062b7.final-0.png",
+      "sha256": "539e4e4c24c6f70b2998c00fc8eb8e152e476d094ff0dc1e44e0dbc6c8510598",
+      "bytes": 374253,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P020\\task-evidence\\9fa242089d7c45fc9d0affca39d062b7.final-0.observation.json",
+      "path": "metrics/evidence/pilot30/p020/task-evidence/9fa242089d7c45fc9d0affca39d062b7.final-0.observation.json",
+      "sha256": "dc9258206a868a9748756d952233e3801627b8a642d07cf6ab4a330c9452620d",
+      "bytes": 10949,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P020\\task-evidence\\9fa242089d7c45fc9d0affca39d062b7.batch-final-verification.json",
+      "path": "metrics/evidence/pilot30/p020/task-evidence/9fa242089d7c45fc9d0affca39d062b7.batch-final-verification.json",
+      "sha256": "5e98f30089b3cc4588a3ab65804267f80a9b3abcf43492e1e6b2294a77071c25",
+      "bytes": 652,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P021\\operator-truth.json",
+      "path": "metrics/evidence/pilot30/p021/operator-truth.json",
+      "sha256": "19104afe62ebac2967b37d2d255f680fdf6601b0c5c3a030ce19303bb778b1fa",
+      "bytes": 210,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P021\\operator-scene-confirmation.txt",
+      "path": "metrics/evidence/pilot30/p021/operator-scene-confirmation.txt",
+      "sha256": "3056943ba500acb237ef3ebe6d7ddcab5aaad5d50a4041de2a7d6c02d54e936f",
+      "bytes": 197,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P021\\measurement-summary.json",
+      "path": "metrics/evidence/pilot30/p021/measurement-summary.json",
+      "sha256": "b6c84e80f3e26133d2b33f5731606cdf29ee019fa1672aa0d898b53a1d0584ed",
+      "bytes": 3135,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P021\\motion-diagnostic.json",
+      "path": "metrics/evidence/pilot30/p021/motion-diagnostic.json",
+      "sha256": "ac6ccd95121ba1a09f1cd7dc825d62fc27866326e116e8a3a23375d50f1ed119",
+      "bytes": 59100,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P021\\motion-onset-review.jpg",
+      "path": "metrics/evidence/pilot30/p021/motion-onset-review.jpg",
+      "sha256": "6bc37535fe6a9fdf48904401a27b47a059771d2ccfa0b95e55917306b0618e74",
+      "bytes": 475203,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P021\\start-result.json",
+      "path": "metrics/evidence/pilot30/p021/start-result.json",
+      "sha256": "933b8513f66006f42af4e96de32452275fa3ce65e947689b3d3e88952abd034c",
+      "bytes": 14831,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P021\\preview-result.json",
+      "path": "metrics/evidence/pilot30/p021/preview-result.json",
+      "sha256": "67998b80b7a9c0916815eed82a7633d12d1ba2e2242bda6ca5e53a3e84c84ebb",
+      "bytes": 13420,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P021\\trial-evidence-manifest.json",
+      "path": "metrics/evidence/pilot30/p021/trial-evidence-manifest.json",
+      "sha256": "50371ec7d385162a2f4dabd68691e3d212f84a0facb86bc6a113f80dda996f2d",
+      "bytes": 4363,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P021\\recording\\frames.jsonl",
+      "path": "metrics/evidence/pilot30/p021/recording/frames.jsonl",
+      "sha256": "614827b38a8d780777ad749675b505300c99b00ae713f95d45a9d2516f24d98c",
+      "bytes": 952823,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P021\\recording\\000039299.jpg",
+      "path": "metrics/evidence/pilot30/p021/recording/000039299.jpg",
+      "sha256": "d6c0c05abb60ae58c16270d6a32014df193210f5ab2bafd741123a1c47bd46c7",
+      "bytes": 42853,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P021\\recording\\000039448.jpg",
+      "path": "metrics/evidence/pilot30/p021/recording/000039448.jpg",
+      "sha256": "fcc7136fa23871e0a27606ce50a56dd5cd30965ffcb02167268b4793605180eb",
+      "bytes": 42880,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P021\\recording\\000039449.jpg",
+      "path": "metrics/evidence/pilot30/p021/recording/000039449.jpg",
+      "sha256": "03d81f27f33236071e69144346a25743a81c7fe2b2695de4d322913c5c68367c",
+      "bytes": 41881,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P021\\task-evidence\\a9ec551138b3452e94760a953f2e5ae1.before.png",
+      "path": "metrics/evidence/pilot30/p021/task-evidence/a9ec551138b3452e94760a953f2e5ae1.before.png",
+      "sha256": "00c3cd91b39c66ee6523a77a6e2cf67b49a854447e1054011336e346cdc55bcf",
+      "bytes": 373073,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P021\\task-evidence\\a9ec551138b3452e94760a953f2e5ae1.before.observation.json",
+      "path": "metrics/evidence/pilot30/p021/task-evidence/a9ec551138b3452e94760a953f2e5ae1.before.observation.json",
+      "sha256": "9886685fa39c33a863848df53c12fa8139e8778c58aa03da3c92a24e96c0e404",
+      "bytes": 11671,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P021\\task-evidence\\a9ec551138b3452e94760a953f2e5ae1.json",
+      "path": "metrics/evidence/pilot30/p021/task-evidence/a9ec551138b3452e94760a953f2e5ae1.json",
+      "sha256": "403ab3f8adb4206aaf7907097f3a2b8fc655dd63819ed38c38ea2cbe00c88fc1",
+      "bytes": 35593,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P021\\task-evidence\\b6a834d7e3254f87823e99fe6e59e37b.final-0.png",
+      "path": "metrics/evidence/pilot30/p021/task-evidence/b6a834d7e3254f87823e99fe6e59e37b.final-0.png",
+      "sha256": "e067ec2eed81c895b8a8f4bb15e7afe873b195a8a5de159a4dd62710a04d1a6e",
+      "bytes": 359112,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P021\\task-evidence\\b6a834d7e3254f87823e99fe6e59e37b.final-0.observation.json",
+      "path": "metrics/evidence/pilot30/p021/task-evidence/b6a834d7e3254f87823e99fe6e59e37b.final-0.observation.json",
+      "sha256": "23ac505f3b9cd1ed98d0f3192b5fe8ef7f0b8f2d4b8761f8174bc8cc693172ef",
+      "bytes": 6926,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P021\\task-evidence\\b6a834d7e3254f87823e99fe6e59e37b.batch-final-verification.json",
+      "path": "metrics/evidence/pilot30/p021/task-evidence/b6a834d7e3254f87823e99fe6e59e37b.batch-final-verification.json",
+      "sha256": "991801fe89419f6d1093e941efbfa90236db876ae2514979eea017ff46fdff9a",
+      "bytes": 3348,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P022\\operator-truth.json",
+      "path": "metrics/evidence/pilot30/p022/operator-truth.json",
+      "sha256": "8d50b7ebb78cfe24948d048f12a5742221db4ffa3b4f6da94291ef6037f6f0da",
+      "bytes": 262,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P022\\operator-scene-confirmation.txt",
+      "path": "metrics/evidence/pilot30/p022/operator-scene-confirmation.txt",
+      "sha256": "b225f1374adeab68a2a6f25ef39a1e96f5b8eeab6a30a7da57a45e61cc571650",
+      "bytes": 215,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P022\\preview-result.json",
+      "path": "metrics/evidence/pilot30/p022/preview-result.json",
+      "sha256": "f06b1b8f2de09c403d16397fc82d5eca6f9e4e626181938622d1a691c3e30490",
+      "bytes": 12480,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P022\\system-refusal.json",
+      "path": "metrics/evidence/pilot30/p022/system-refusal.json",
+      "sha256": "665cc8b774dd26fac48ec9e55df1e3d8c8e7c9589b17a1c1487aa935837a6299",
+      "bytes": 740,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P022\\preview-evidence-manifest.json",
+      "path": "metrics/evidence/pilot30/p022/preview-evidence-manifest.json",
+      "sha256": "bc359dc17b5e440b15ebb1d3f5864bcbf7e1e3da59d85c067ac6c777aa84332e",
+      "bytes": 930,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P022\\after-preview.png",
+      "path": "metrics/evidence/pilot30/p022/after-preview.png",
+      "sha256": "89d85111c7b86cffec9e0862f3bc8a3ff41abfa45b1d5f124be90ac410b3ac30",
+      "bytes": 372849,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P023\\operator-truth.json",
+      "path": "metrics/evidence/pilot30/p023/operator-truth.json",
+      "sha256": "19104afe62ebac2967b37d2d255f680fdf6601b0c5c3a030ce19303bb778b1fa",
+      "bytes": 210,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P023\\operator-scene-confirmation.txt",
+      "path": "metrics/evidence/pilot30/p023/operator-scene-confirmation.txt",
+      "sha256": "bdaf6deb264c5911e3f18a14e1cdc9ba9d7326a30ebb44a7fc4e73fb631fe192",
+      "bytes": 194,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P023\\measurement-summary.json",
+      "path": "metrics/evidence/pilot30/p023/measurement-summary.json",
+      "sha256": "34a658afb1c233e0f02f736b1118d0b77c02ddac8f91c43c066a81cfc517c136",
+      "bytes": 3134,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P023\\motion-diagnostic.json",
+      "path": "metrics/evidence/pilot30/p023/motion-diagnostic.json",
+      "sha256": "f9fe559f21dbbc6ef0eed619ae987f220ae6063d52f18125270e65eb06abc327",
+      "bytes": 57818,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P023\\motion-onset-review.jpg",
+      "path": "metrics/evidence/pilot30/p023/motion-onset-review.jpg",
+      "sha256": "14218f86a93273afdb2da17576387d4c8404f00ff38016cdf9e073d569591f91",
+      "bytes": 469619,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P023\\start-result.json",
+      "path": "metrics/evidence/pilot30/p023/start-result.json",
+      "sha256": "1e5af1876402aee343b9d12207e7f4e937acea6e020d5ca9fef8702dd4debf8e",
+      "bytes": 14813,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P023\\preview-result.json",
+      "path": "metrics/evidence/pilot30/p023/preview-result.json",
+      "sha256": "59a5d02c3c1e2df5bb6d9618dba864b56a6fd6fec7919886d42a7f74970be685",
+      "bytes": 13444,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P023\\trial-evidence-manifest.json",
+      "path": "metrics/evidence/pilot30/p023/trial-evidence-manifest.json",
+      "sha256": "48c6ce5627dd2a0f7beb4fa8340c2c99b313d5b974f294035192fb6296b1d3ff",
+      "bytes": 4363,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P023\\recording\\frames.jsonl",
+      "path": "metrics/evidence/pilot30/p023/recording/frames.jsonl",
+      "sha256": "aa69104499a9b4e90e77659490d29a720fc7ba9da90c92dc44444d07d95869ae",
+      "bytes": 934936,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P023\\recording\\000041240.jpg",
+      "path": "metrics/evidence/pilot30/p023/recording/000041240.jpg",
+      "sha256": "ad9d252310306c1cfb64d1b4806b4901ed198604ac97704bc3317533987abc56",
+      "bytes": 41878,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P023\\recording\\000041379.jpg",
+      "path": "metrics/evidence/pilot30/p023/recording/000041379.jpg",
+      "sha256": "97c951e8f079c23154dbfd9d1bd262e98d815c4258a6124d1c8f60a77e92f5b9",
+      "bytes": 41903,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P023\\recording\\000041380.jpg",
+      "path": "metrics/evidence/pilot30/p023/recording/000041380.jpg",
+      "sha256": "6d54591301bbb2fd7b250cd23f967fcc87e4c9cdce3a2f0efdda1d712e3c18b8",
+      "bytes": 41209,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P023\\task-evidence\\90d3cef4ca2d42839ad44caf385268b2.before.png",
+      "path": "metrics/evidence/pilot30/p023/task-evidence/90d3cef4ca2d42839ad44caf385268b2.before.png",
+      "sha256": "93f86cf507d594d1648b532a57c162c8b50052c33e93e4efa5c59ad563dcfb4f",
+      "bytes": 366424,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P023\\task-evidence\\90d3cef4ca2d42839ad44caf385268b2.before.observation.json",
+      "path": "metrics/evidence/pilot30/p023/task-evidence/90d3cef4ca2d42839ad44caf385268b2.before.observation.json",
+      "sha256": "e744e16f8c5b00ec8f1978824a3002d8fbf495fa5468b376f6149ac77e5c594e",
+      "bytes": 11913,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P023\\task-evidence\\90d3cef4ca2d42839ad44caf385268b2.json",
+      "path": "metrics/evidence/pilot30/p023/task-evidence/90d3cef4ca2d42839ad44caf385268b2.json",
+      "sha256": "409937eaa86e84d99d23b0fba3965f80eb19473b5f0fca69fb10d7d9f26d74d0",
+      "bytes": 35604,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P023\\task-evidence\\65658569dc944189a99e73e27b9b85a4.final-0.png",
+      "path": "metrics/evidence/pilot30/p023/task-evidence/65658569dc944189a99e73e27b9b85a4.final-0.png",
+      "sha256": "4bc2bf16157d5e3114d3a9616fb58eaa710f546cc7597ef1b0d2eacae1920c3d",
+      "bytes": 358553,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P023\\task-evidence\\65658569dc944189a99e73e27b9b85a4.final-0.observation.json",
+      "path": "metrics/evidence/pilot30/p023/task-evidence/65658569dc944189a99e73e27b9b85a4.final-0.observation.json",
+      "sha256": "15bede5e885007b734e27d529d33159c8cef95c94a479fb105f16140b8f604eb",
+      "bytes": 6945,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P023\\task-evidence\\65658569dc944189a99e73e27b9b85a4.batch-final-verification.json",
+      "path": "metrics/evidence/pilot30/p023/task-evidence/65658569dc944189a99e73e27b9b85a4.batch-final-verification.json",
+      "sha256": "53bbe6ca64685dff44db665d4e5a31fc38cf486d6456e69e0f5bccb4a00065a3",
+      "bytes": 3348,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P024\\operator-truth.json",
+      "path": "metrics/evidence/pilot30/p024/operator-truth.json",
+      "sha256": "19104afe62ebac2967b37d2d255f680fdf6601b0c5c3a030ce19303bb778b1fa",
+      "bytes": 210,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P024\\operator-scene-confirmation.txt",
+      "path": "metrics/evidence/pilot30/p024/operator-scene-confirmation.txt",
+      "sha256": "b225f1374adeab68a2a6f25ef39a1e96f5b8eeab6a30a7da57a45e61cc571650",
+      "bytes": 215,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P024\\measurement-summary.json",
+      "path": "metrics/evidence/pilot30/p024/measurement-summary.json",
+      "sha256": "181fffdc04bdade95eff10a62974b370ec2f48f71fd89cef7cf1b76bfeea3189",
+      "bytes": 3134,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P024\\motion-diagnostic.json",
+      "path": "metrics/evidence/pilot30/p024/motion-diagnostic.json",
+      "sha256": "5f611a8e6575851d3fc9e6b95205e21baf2c8357c36ef0d9744467e9c0c698fa",
+      "bytes": 60303,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P024\\motion-onset-review.jpg",
+      "path": "metrics/evidence/pilot30/p024/motion-onset-review.jpg",
+      "sha256": "a137599805c8bcdeb63244a858536bee7ba549ab42c9a3c5bbaf79204e5788a4",
+      "bytes": 474723,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P024\\start-result.json",
+      "path": "metrics/evidence/pilot30/p024/start-result.json",
+      "sha256": "5a1867d0310a93a44280ad860de76dcbd58c95698180873425577da6ffe1132c",
+      "bytes": 14821,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P024\\preview-result.json",
+      "path": "metrics/evidence/pilot30/p024/preview-result.json",
+      "sha256": "34fbebe7af74e1e69124885b6a6e47db03eeffd9300ad271412b6d501d52c292",
+      "bytes": 13439,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P024\\trial-evidence-manifest.json",
+      "path": "metrics/evidence/pilot30/p024/trial-evidence-manifest.json",
+      "sha256": "8c2c3c946dab52b8f067f3d3a7feaffe57d3f6927a748469d9fffe9873a6a83c",
+      "bytes": 4363,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P024\\recording\\frames.jsonl",
+      "path": "metrics/evidence/pilot30/p024/recording/frames.jsonl",
+      "sha256": "f0d690d5f1762a091088b189ce2259f6f8060c2455783ccc6c69903e264d9eeb",
+      "bytes": 957447,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P024\\recording\\000042173.jpg",
+      "path": "metrics/evidence/pilot30/p024/recording/000042173.jpg",
+      "sha256": "080da924aecdbaa896d2465162dad146809560e50add6899cae84b3caba2c998",
+      "bytes": 42859,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P024\\recording\\000042327.jpg",
+      "path": "metrics/evidence/pilot30/p024/recording/000042327.jpg",
+      "sha256": "5ab2b14fd3695363b4eb6c5b4094c1ca6d346bb169f0b9488c3cf34456f0adbc",
+      "bytes": 42855,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P024\\recording\\000042328.jpg",
+      "path": "metrics/evidence/pilot30/p024/recording/000042328.jpg",
+      "sha256": "25f0d8743d419982cbf875d6ca37a6c1ddbec33e5d694fab8428e76cff7c0cfc",
+      "bytes": 42448,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P024\\task-evidence\\1e9e8ad46584465bb95b9cb88d8ec067.before.png",
+      "path": "metrics/evidence/pilot30/p024/task-evidence/1e9e8ad46584465bb95b9cb88d8ec067.before.png",
+      "sha256": "fca83ec0303455926beaabc85f0d935cde94f2c275225acb16b55e920c26630e",
+      "bytes": 374318,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P024\\task-evidence\\1e9e8ad46584465bb95b9cb88d8ec067.before.observation.json",
+      "path": "metrics/evidence/pilot30/p024/task-evidence/1e9e8ad46584465bb95b9cb88d8ec067.before.observation.json",
+      "sha256": "842e8cfef29f5659295fe5754780877705efec5443efe2d5948ed35388c7333d",
+      "bytes": 11637,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P024\\task-evidence\\1e9e8ad46584465bb95b9cb88d8ec067.json",
+      "path": "metrics/evidence/pilot30/p024/task-evidence/1e9e8ad46584465bb95b9cb88d8ec067.json",
+      "sha256": "c77c5af471922ccd24d4c2e199c174ee29ca46492ad843eab02bb0642fafb489",
+      "bytes": 35600,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P024\\task-evidence\\535348b1a26049638e613f24736c99c4.final-0.png",
+      "path": "metrics/evidence/pilot30/p024/task-evidence/535348b1a26049638e613f24736c99c4.final-0.png",
+      "sha256": "f7e761d5c21b926f1f6c81a3597fb79a3a584a165c00845be2fc52f1284c0849",
+      "bytes": 362892,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P024\\task-evidence\\535348b1a26049638e613f24736c99c4.final-0.observation.json",
+      "path": "metrics/evidence/pilot30/p024/task-evidence/535348b1a26049638e613f24736c99c4.final-0.observation.json",
+      "sha256": "cb17821e75c2bcd5f90fc2cc40a02a61611ba3a0358c1cd06074ef654f323e05",
+      "bytes": 6933,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P024\\task-evidence\\535348b1a26049638e613f24736c99c4.batch-final-verification.json",
+      "path": "metrics/evidence/pilot30/p024/task-evidence/535348b1a26049638e613f24736c99c4.batch-final-verification.json",
+      "sha256": "d6ac37f2ad9fe187f0bac72b41676de0f242baadeeaa0156248a2c07b22b4571",
+      "bytes": 3349,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P025\\operator-truth.json",
+      "path": "metrics/evidence/pilot30/p025/operator-truth.json",
+      "sha256": "19104afe62ebac2967b37d2d255f680fdf6601b0c5c3a030ce19303bb778b1fa",
+      "bytes": 210,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P025\\operator-scene-confirmation.txt",
+      "path": "metrics/evidence/pilot30/p025/operator-scene-confirmation.txt",
+      "sha256": "b225f1374adeab68a2a6f25ef39a1e96f5b8eeab6a30a7da57a45e61cc571650",
+      "bytes": 215,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P025\\measurement-summary.json",
+      "path": "metrics/evidence/pilot30/p025/measurement-summary.json",
+      "sha256": "2ceaa1c578d1b718d18450f620b3160c94047e9f04f93e5dae5dadb600cc7fc7",
+      "bytes": 3134,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P025\\motion-diagnostic.json",
+      "path": "metrics/evidence/pilot30/p025/motion-diagnostic.json",
+      "sha256": "418a6b9b2ca7053620bfb2b4bc4cd73232a2631b407652eb276bb1cc7aae1afa",
+      "bytes": 57766,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P025\\motion-onset-review.jpg",
+      "path": "metrics/evidence/pilot30/p025/motion-onset-review.jpg",
+      "sha256": "1cc52cd9457f5489d02a07b15bb87a6ce05044c0c924e917134ddc1cbe82e198",
+      "bytes": 473078,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P025\\start-result.json",
+      "path": "metrics/evidence/pilot30/p025/start-result.json",
+      "sha256": "fc8ec84cf75bc51515966058499d4b37b4f0d6bb99f05d77c1086d98519dbaa6",
+      "bytes": 14860,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P025\\preview-result.json",
+      "path": "metrics/evidence/pilot30/p025/preview-result.json",
+      "sha256": "73ba5f4a10e4f37d5646e73f78a230a45d6f5b5f108316a0d1b174681f03a6fa",
+      "bytes": 13429,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P025\\trial-evidence-manifest.json",
+      "path": "metrics/evidence/pilot30/p025/trial-evidence-manifest.json",
+      "sha256": "047f8c0b9f17bb39a8723958f9e1455c7d9d93b143fb882e5b455de995219435",
+      "bytes": 4363,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P025\\recording\\frames.jsonl",
+      "path": "metrics/evidence/pilot30/p025/recording/frames.jsonl",
+      "sha256": "213966ac67f13d238c40213e5cd533f235abbfd1352ff1825f2140912593e8a7",
+      "bytes": 942559,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P025\\recording\\000042973.jpg",
+      "path": "metrics/evidence/pilot30/p025/recording/000042973.jpg",
+      "sha256": "bba8b0ed21e582200e0baa2b01514377b142a3eb110527d543b67cdb889c020f",
+      "bytes": 42645,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P025\\recording\\000043104.jpg",
+      "path": "metrics/evidence/pilot30/p025/recording/000043104.jpg",
+      "sha256": "ef5e794f47a955ac90320ddee72d16a393cb7940729a586eb9b94e284785aadc",
+      "bytes": 42604,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P025\\recording\\000043105.jpg",
+      "path": "metrics/evidence/pilot30/p025/recording/000043105.jpg",
+      "sha256": "d24a2bbc8bcda285e6f2a697d27221f15c48f6035ed017d581b5db3b20f44e5a",
+      "bytes": 41205,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P025\\task-evidence\\5a41f75986f2488f930174bca8d68353.before.png",
+      "path": "metrics/evidence/pilot30/p025/task-evidence/5a41f75986f2488f930174bca8d68353.before.png",
+      "sha256": "a5b0f26c22bc1b3d73d396337b236849ab72f6f89cd7f70978538a36db7edb68",
+      "bytes": 370564,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P025\\task-evidence\\5a41f75986f2488f930174bca8d68353.before.observation.json",
+      "path": "metrics/evidence/pilot30/p025/task-evidence/5a41f75986f2488f930174bca8d68353.before.observation.json",
+      "sha256": "f8d20b39499deb3f4b584f9630c527f7005f647a2ede959d1b988d044bc1a5db",
+      "bytes": 11649,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P025\\task-evidence\\5a41f75986f2488f930174bca8d68353.json",
+      "path": "metrics/evidence/pilot30/p025/task-evidence/5a41f75986f2488f930174bca8d68353.json",
+      "sha256": "9c1aba4770d3d10478aca1a8c0427cd5bc5d4fc34b0eb875908162b7272613f0",
+      "bytes": 35639,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P025\\task-evidence\\118edf74fd2c4ae3bb71d0b0e1eaec59.final-0.png",
+      "path": "metrics/evidence/pilot30/p025/task-evidence/118edf74fd2c4ae3bb71d0b0e1eaec59.final-0.png",
+      "sha256": "0ff9808b7e70776f36523114e2d6aea21c8eef766ab2ddad4774a6b99368811c",
+      "bytes": 357242,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P025\\task-evidence\\118edf74fd2c4ae3bb71d0b0e1eaec59.final-0.observation.json",
+      "path": "metrics/evidence/pilot30/p025/task-evidence/118edf74fd2c4ae3bb71d0b0e1eaec59.final-0.observation.json",
+      "sha256": "95499b21fc231f376b17417567d99b506655636f19720974879cd6e1e76de9ac",
+      "bytes": 6937,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P025\\task-evidence\\118edf74fd2c4ae3bb71d0b0e1eaec59.batch-final-verification.json",
+      "path": "metrics/evidence/pilot30/p025/task-evidence/118edf74fd2c4ae3bb71d0b0e1eaec59.batch-final-verification.json",
+      "sha256": "fd962708bbfc37fa30cd6e71c810469327875206c7cfed77bb81bbbf13315f45",
+      "bytes": 3350,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P026\\operator-truth.json",
+      "path": "metrics/evidence/pilot30/p026/operator-truth.json",
+      "sha256": "19104afe62ebac2967b37d2d255f680fdf6601b0c5c3a030ce19303bb778b1fa",
+      "bytes": 210,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P026\\operator-scene-confirmation.txt",
+      "path": "metrics/evidence/pilot30/p026/operator-scene-confirmation.txt",
+      "sha256": "b225f1374adeab68a2a6f25ef39a1e96f5b8eeab6a30a7da57a45e61cc571650",
+      "bytes": 215,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P026\\measurement-summary.json",
+      "path": "metrics/evidence/pilot30/p026/measurement-summary.json",
+      "sha256": "58825ce2f01ee5fbb5d27881939c545ba030ebbc8fe2751799138c1c2784a1ba",
+      "bytes": 3132,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P026\\motion-diagnostic.json",
+      "path": "metrics/evidence/pilot30/p026/motion-diagnostic.json",
+      "sha256": "1889a4c22656b387dc2af9c4eea32f1daa45b201837d4c68f7254cdfe88fd0a2",
+      "bytes": 60318,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P026\\motion-onset-review.jpg",
+      "path": "metrics/evidence/pilot30/p026/motion-onset-review.jpg",
+      "sha256": "26058c3cd3c59f894767e3c93bba99d9f07e278b86db7192fbf8ebdf2b47a25f",
+      "bytes": 473171,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P026\\start-result.json",
+      "path": "metrics/evidence/pilot30/p026/start-result.json",
+      "sha256": "f2de419996dcf955c905bee3f7699bb8c452450cf1df8a6a35af35551c067091",
+      "bytes": 14809,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P026\\preview-result.json",
+      "path": "metrics/evidence/pilot30/p026/preview-result.json",
+      "sha256": "290f343f77c24d9735cde37f6db9ae33c1bd133590cf20b71ff0ba78656f1935",
+      "bytes": 13440,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P026\\trial-evidence-manifest.json",
+      "path": "metrics/evidence/pilot30/p026/trial-evidence-manifest.json",
+      "sha256": "2662c30e67ff904c21261163b5dd1af7b8dd9d0dab6e8005ff1d64389b78816f",
+      "bytes": 4363,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P026\\recording\\frames.jsonl",
+      "path": "metrics/evidence/pilot30/p026/recording/frames.jsonl",
+      "sha256": "19e33a12d71484298b017526e8c3329c11dd3e23d4b467c28392201dd9aa658e",
+      "bytes": 963539,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P026\\recording\\000043906.jpg",
+      "path": "metrics/evidence/pilot30/p026/recording/000043906.jpg",
+      "sha256": "3c5815c0d709ecbfd2218f7b0cb4ad158253f44979576423a1fe1be855dae1d4",
+      "bytes": 42119,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P026\\recording\\000044053.jpg",
+      "path": "metrics/evidence/pilot30/p026/recording/000044053.jpg",
+      "sha256": "1a412ff3845bde551dde4b04d90e5ad6893d2e26801a6cbb65d1897a9c391c06",
+      "bytes": 42050,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P026\\recording\\000044054.jpg",
+      "path": "metrics/evidence/pilot30/p026/recording/000044054.jpg",
+      "sha256": "2d0026bb748ead9a7b8af793e0bd0b7970dbc75e69e4515ba66e7019bd6a9aa3",
+      "bytes": 41692,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P026\\task-evidence\\ea8cd336188e402bb2d2f334115748a4.before.png",
+      "path": "metrics/evidence/pilot30/p026/task-evidence/ea8cd336188e402bb2d2f334115748a4.before.png",
+      "sha256": "7ea298082d4813291c56a0de7c4a61933ac77631ad5400f3b25d1f59d2897630",
+      "bytes": 367887,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P026\\task-evidence\\ea8cd336188e402bb2d2f334115748a4.before.observation.json",
+      "path": "metrics/evidence/pilot30/p026/task-evidence/ea8cd336188e402bb2d2f334115748a4.before.observation.json",
+      "sha256": "94c67ceec92d49531b1fd8d663ad1dfda3356393fef8d0c0bceb1ef57358d400",
+      "bytes": 11970,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P026\\task-evidence\\ea8cd336188e402bb2d2f334115748a4.json",
+      "path": "metrics/evidence/pilot30/p026/task-evidence/ea8cd336188e402bb2d2f334115748a4.json",
+      "sha256": "59d4836f28f6c839152ae4a719598047a46eafb60484d225c3da921b6402f491",
+      "bytes": 35590,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P026\\task-evidence\\a4120bd4fc5c4963b13191e195e25704.final-0.png",
+      "path": "metrics/evidence/pilot30/p026/task-evidence/a4120bd4fc5c4963b13191e195e25704.final-0.png",
+      "sha256": "29d738ed286001010a8fd4896531a74b238b2fd3facef95a7eee720dfe11f824",
+      "bytes": 357909,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P026\\task-evidence\\a4120bd4fc5c4963b13191e195e25704.final-0.observation.json",
+      "path": "metrics/evidence/pilot30/p026/task-evidence/a4120bd4fc5c4963b13191e195e25704.final-0.observation.json",
+      "sha256": "8992c3a33d98b88a5fb74dfd9c2925e178117b0f22f9e434d659acd53108abb5",
+      "bytes": 6927,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P026\\task-evidence\\a4120bd4fc5c4963b13191e195e25704.batch-final-verification.json",
+      "path": "metrics/evidence/pilot30/p026/task-evidence/a4120bd4fc5c4963b13191e195e25704.batch-final-verification.json",
+      "sha256": "9f9846d1d99cfb797d59453c2366fe32b05e87c60b5cd0918e452b564166b118",
+      "bytes": 3360,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P027\\operator-truth.json",
+      "path": "metrics/evidence/pilot30/p027/operator-truth.json",
+      "sha256": "5ea3f967c86c845b7bceaed7c87cbbfdf968148e3cd4577fb640c1c7c6505da6",
+      "bytes": 262,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P027\\operator-scene-confirmation.txt",
+      "path": "metrics/evidence/pilot30/p027/operator-scene-confirmation.txt",
+      "sha256": "b225f1374adeab68a2a6f25ef39a1e96f5b8eeab6a30a7da57a45e61cc571650",
+      "bytes": 215,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P027\\preview-result.json",
+      "path": "metrics/evidence/pilot30/p027/preview-result.json",
+      "sha256": "d8214077592898d7f7cc9e37ae6ffdbbb13170b2d73f6cd68fb3f755aae1e9c2",
+      "bytes": 12088,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P027\\system-refusal.json",
+      "path": "metrics/evidence/pilot30/p027/system-refusal.json",
+      "sha256": "d65762206412b394bc409930c19711073d829de9e3f7cc66611f49e1a99a9f25",
+      "bytes": 369,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P027\\preview-evidence-manifest.json",
+      "path": "metrics/evidence/pilot30/p027/preview-evidence-manifest.json",
+      "sha256": "055dc64fd1c1d2004b3ce2db3a05d3a28754aed53d243b7dcd530739f5e175c1",
+      "bytes": 679,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P028\\operator-truth.json",
+      "path": "metrics/evidence/pilot30/p028/operator-truth.json",
+      "sha256": "19104afe62ebac2967b37d2d255f680fdf6601b0c5c3a030ce19303bb778b1fa",
+      "bytes": 210,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P028\\operator-scene-confirmation.txt",
+      "path": "metrics/evidence/pilot30/p028/operator-scene-confirmation.txt",
+      "sha256": "95bc994b7e542efc3e4633ca9ab1bc86698a0030f779a7708a23b0c4f08d895d",
+      "bytes": 200,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P028\\measurement-summary.json",
+      "path": "metrics/evidence/pilot30/p028/measurement-summary.json",
+      "sha256": "d4a29ffe0c5b395632a1d3155e0255f91e52e47b7e8e38a92f982ab72b91558d",
+      "bytes": 4379,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P028\\measurement-summary-automatic-candidate.json",
+      "path": "metrics/evidence/pilot30/p028/measurement-summary-automatic-candidate.json",
+      "sha256": "4527b566642eacf2b4938865e01424a640e29a5012345ff191049757945076ef",
+      "bytes": 3133,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P028\\manual-motion-review.json",
+      "path": "metrics/evidence/pilot30/p028/manual-motion-review.json",
+      "sha256": "46df264c132104c5e8d76454edc0debce37bc675e25008ae7ff8a5f3265877b8",
+      "bytes": 984,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P028\\motion-diagnostic.json",
+      "path": "metrics/evidence/pilot30/p028/motion-diagnostic.json",
+      "sha256": "a24e8b4ce846e0d3d98a90cd7e01e0a5145d117fa4d39796b6aa755cfc177afc",
+      "bytes": 66683,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P028\\motion-onset-review.jpg",
+      "path": "metrics/evidence/pilot30/p028/motion-onset-review.jpg",
+      "sha256": "556feb5b93dbdd8c819277f314f006c2061aa4158526c681ffd3ecbb15c08566",
+      "bytes": 471034,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P028\\start-result.json",
+      "path": "metrics/evidence/pilot30/p028/start-result.json",
+      "sha256": "77915cdc4a00e53fb5feb2355976bf8451651771808ee96ac31c89b36076ae71",
+      "bytes": 14795,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P028\\preview-result.json",
+      "path": "metrics/evidence/pilot30/p028/preview-result.json",
+      "sha256": "6d93f8b7e167af9eb6830452679d26e78615cd836e8ee14c518fb66bd7bd2255",
+      "bytes": 13445,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P028\\trial-evidence-manifest.json",
+      "path": "metrics/evidence/pilot30/p028/trial-evidence-manifest.json",
+      "sha256": "8ad61fde3a6d192f1b6533ddde47d91a0e349169b924aae4f6c5a12a68753310",
+      "bytes": 4363,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P028\\recording\\frames.jsonl",
+      "path": "metrics/evidence/pilot30/p028/recording/frames.jsonl",
+      "sha256": "b71e35744d7d81119fef3005b507bfe7d9698adc83a059c13e5ddc91ca19b8bb",
+      "bytes": 1058452,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P028\\recording\\000045287.jpg",
+      "path": "metrics/evidence/pilot30/p028/recording/000045287.jpg",
+      "sha256": "c312dd0ce64d21641448cd1e68e6075ff7de73f87b83c3d708254f4821ab3aaf",
+      "bytes": 41909,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P028\\recording\\000045461.jpg",
+      "path": "metrics/evidence/pilot30/p028/recording/000045461.jpg",
+      "sha256": "a3a494cc1e9828ee01f21fd15b4af6aa723277a51840c03e89cb8d4a97cea8f7",
+      "bytes": 41891,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P028\\recording\\000045462.jpg",
+      "path": "metrics/evidence/pilot30/p028/recording/000045462.jpg",
+      "sha256": "e7df79b3e9a80b75d650603c1f0f0b011361d59cf66a39257f781d5e5e186e3f",
+      "bytes": 41917,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P028\\recording\\000045463.jpg",
+      "path": "metrics/evidence/pilot30/p028/recording/000045463.jpg",
+      "sha256": "9e4441ddde15c4489fd32ed5c9d64c5ac4156eba4416449bc9b5a49415e53460",
+      "bytes": 40350,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P028\\task-evidence\\04c78b15fa6f4dde953fc721af6df4c1.before.png",
+      "path": "metrics/evidence/pilot30/p028/task-evidence/04c78b15fa6f4dde953fc721af6df4c1.before.png",
+      "sha256": "b0c768a0281f71c1f62cfb332d5f0ce6bafc8b5126106869bf4c51c79350ff1e",
+      "bytes": 366779,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P028\\task-evidence\\04c78b15fa6f4dde953fc721af6df4c1.before.observation.json",
+      "path": "metrics/evidence/pilot30/p028/task-evidence/04c78b15fa6f4dde953fc721af6df4c1.before.observation.json",
+      "sha256": "7fa86664ffc4da6900bae7002f3844a195b6cce462125560f5f840f9b36a8901",
+      "bytes": 11956,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P028\\task-evidence\\04c78b15fa6f4dde953fc721af6df4c1.json",
+      "path": "metrics/evidence/pilot30/p028/task-evidence/04c78b15fa6f4dde953fc721af6df4c1.json",
+      "sha256": "a8913f5a89cdd129733c0eb67c0c48249a1a7a2504e185ea9f494c26fdaa8993",
+      "bytes": 35637,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P028\\task-evidence\\56f510af1c5749938dfcf0d0733364ad.final-0.png",
+      "path": "metrics/evidence/pilot30/p028/task-evidence/56f510af1c5749938dfcf0d0733364ad.final-0.png",
+      "sha256": "92c5dc0e4a1c807442bc7468a0361d21aa9a6328b81b57f64deac7591d8df467",
+      "bytes": 359240,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P028\\task-evidence\\56f510af1c5749938dfcf0d0733364ad.final-0.observation.json",
+      "path": "metrics/evidence/pilot30/p028/task-evidence/56f510af1c5749938dfcf0d0733364ad.final-0.observation.json",
+      "sha256": "7e755b2d0b5fe0c6de36fbf6afb617f0decfbb5fcd946d78b10a7b975b9e60c9",
+      "bytes": 6933,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P028\\task-evidence\\56f510af1c5749938dfcf0d0733364ad.batch-final-verification.json",
+      "path": "metrics/evidence/pilot30/p028/task-evidence/56f510af1c5749938dfcf0d0733364ad.batch-final-verification.json",
+      "sha256": "e2847c43c28d92afcc3ed9bd81810923c8be4fe8031a03d8c58aaa5cb2385473",
+      "bytes": 3338,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P029\\operator-truth.json",
+      "path": "metrics/evidence/pilot30/p029/operator-truth.json",
+      "sha256": "19104afe62ebac2967b37d2d255f680fdf6601b0c5c3a030ce19303bb778b1fa",
+      "bytes": 210,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P029\\operator-scene-confirmation.txt",
+      "path": "metrics/evidence/pilot30/p029/operator-scene-confirmation.txt",
+      "sha256": "b225f1374adeab68a2a6f25ef39a1e96f5b8eeab6a30a7da57a45e61cc571650",
+      "bytes": 215,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P029\\measurement-summary.json",
+      "path": "metrics/evidence/pilot30/p029/measurement-summary.json",
+      "sha256": "36a9597de1afffbd20c7a050482b78f090aa05f9d85c5e33a52f003dcdac65f0",
+      "bytes": 3134,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P029\\motion-diagnostic.json",
+      "path": "metrics/evidence/pilot30/p029/motion-diagnostic.json",
+      "sha256": "b87975d9fe10dd5d59e1fd63b49e164bf874c58150c2db493d5f8b76b662cd31",
+      "bytes": 65719,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P029\\motion-onset-review.jpg",
+      "path": "metrics/evidence/pilot30/p029/motion-onset-review.jpg",
+      "sha256": "54fe8940d7c7070c429e8b1583db6a1da4a76ee149db77f7bb2062092c58f5dd",
+      "bytes": 474733,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P029\\start-result.json",
+      "path": "metrics/evidence/pilot30/p029/start-result.json",
+      "sha256": "6309ea5de90099fcfcb84947a21c5600e77a95efad8eae98646736ee5565b9ae",
+      "bytes": 14845,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P029\\preview-result.json",
+      "path": "metrics/evidence/pilot30/p029/preview-result.json",
+      "sha256": "51ee9ea30309badd4d5ee8988a4873e6e4b54a27b59c96a58776a8c688caeab1",
+      "bytes": 13441,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P029\\trial-evidence-manifest.json",
+      "path": "metrics/evidence/pilot30/p029/trial-evidence-manifest.json",
+      "sha256": "dbdd3d0d86630729c44015520cb76c7b9d0f8707696e778fc8831afa9296b603",
+      "bytes": 4363,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P029\\recording\\frames.jsonl",
+      "path": "metrics/evidence/pilot30/p029/recording/frames.jsonl",
+      "sha256": "2d86367e278accbfd927f7e30e97a952e4b4cfa74242fc6b9ce427c2d78d73a3",
+      "bytes": 1069850,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P029\\recording\\000046310.jpg",
+      "path": "metrics/evidence/pilot30/p029/recording/000046310.jpg",
+      "sha256": "b7599f65360a03a944ff873daf629f857e8a6313c27809651466b1740e95e7b5",
+      "bytes": 42906,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P029\\recording\\000046471.jpg",
+      "path": "metrics/evidence/pilot30/p029/recording/000046471.jpg",
+      "sha256": "b0b378497709efa78df1878d38eb5fab9ac754ce5c01083f85ce8b7d0c781873",
+      "bytes": 42874,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P029\\recording\\000046472.jpg",
+      "path": "metrics/evidence/pilot30/p029/recording/000046472.jpg",
+      "sha256": "28127a33b92bd1da10941e001f0b440ce4cdbf946150b9c65d17de76c94a74c2",
+      "bytes": 42503,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P029\\task-evidence\\8d0afee6c27e4c3583b6243142f64bc0.before.png",
+      "path": "metrics/evidence/pilot30/p029/task-evidence/8d0afee6c27e4c3583b6243142f64bc0.before.png",
+      "sha256": "c288176e0bad43503f3e3f4390f815e4278fc7f009d028d64dd3cda19dba8e98",
+      "bytes": 372727,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P029\\task-evidence\\8d0afee6c27e4c3583b6243142f64bc0.before.observation.json",
+      "path": "metrics/evidence/pilot30/p029/task-evidence/8d0afee6c27e4c3583b6243142f64bc0.before.observation.json",
+      "sha256": "4874459e7c3f75e441243a84718402e5c409f82a3b3c5a31355869a43e3bcffa",
+      "bytes": 11672,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P029\\task-evidence\\8d0afee6c27e4c3583b6243142f64bc0.json",
+      "path": "metrics/evidence/pilot30/p029/task-evidence/8d0afee6c27e4c3583b6243142f64bc0.json",
+      "sha256": "b5b8a544d310090fda39ea3c8f5a6deea1b20c7f4562be371909e61223455290",
+      "bytes": 35620,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P029\\task-evidence\\5e09e8efa7bf4cbb866f747f3c76216d.final-0.png",
+      "path": "metrics/evidence/pilot30/p029/task-evidence/5e09e8efa7bf4cbb866f747f3c76216d.final-0.png",
+      "sha256": "879fbcee0fe6a2941b53776fcc0ecaf1180911e15883f7aeaeca5153fb669f5b",
+      "bytes": 359384,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P029\\task-evidence\\5e09e8efa7bf4cbb866f747f3c76216d.final-0.observation.json",
+      "path": "metrics/evidence/pilot30/p029/task-evidence/5e09e8efa7bf4cbb866f747f3c76216d.final-0.observation.json",
+      "sha256": "437359f2fbe85c1d2d6704977f5108af1c66abe057edd4a832607bb83645b3bc",
+      "bytes": 6920,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P029\\task-evidence\\5e09e8efa7bf4cbb866f747f3c76216d.batch-final-verification.json",
+      "path": "metrics/evidence/pilot30/p029/task-evidence/5e09e8efa7bf4cbb866f747f3c76216d.batch-final-verification.json",
+      "sha256": "77f3185138864a81d602d9608c4d92dc3b8ca13f9c09be68bd5ef2b4a9a35d6d",
+      "bytes": 3350,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P030\\operator-truth.json",
+      "path": "metrics/evidence/pilot30/p030/operator-truth.json",
+      "sha256": "eeaa97e74af3eeda86ced60857eec0194794c79cfbda8883358d997c7f5d9165",
+      "bytes": 327,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P030\\operator-scene-confirmation.txt",
+      "path": "metrics/evidence/pilot30/p030/operator-scene-confirmation.txt",
+      "sha256": "b225f1374adeab68a2a6f25ef39a1e96f5b8eeab6a30a7da57a45e61cc571650",
+      "bytes": 215,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P030\\measurement-summary.json",
+      "path": "metrics/evidence/pilot30/p030/measurement-summary.json",
+      "sha256": "72c3bf632def2644ac9fe86c0ccdae703f52196261d40b0587b13d864e49a164",
+      "bytes": 3133,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P030\\motion-diagnostic.json",
+      "path": "metrics/evidence/pilot30/p030/motion-diagnostic.json",
+      "sha256": "a4cbb7beb596e43f489deb692d87eff9009abb668688798b05cf8bae6d442120",
+      "bytes": 59031,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P030\\motion-onset-review.jpg",
+      "path": "metrics/evidence/pilot30/p030/motion-onset-review.jpg",
+      "sha256": "e88a96119500f1052203b2688d6409bcde658ff942869d4fc7df5b7a6e0e19a9",
+      "bytes": 477177,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P030\\start-result.json",
+      "path": "metrics/evidence/pilot30/p030/start-result.json",
+      "sha256": "5b02f1c3ef3d52ebfdcee6282b928423c52b05079a219b6d42cdd5780adc9db1",
+      "bytes": 14830,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P030\\preview-result.json",
+      "path": "metrics/evidence/pilot30/p030/preview-result.json",
+      "sha256": "40bfb6d6a9e5d3e269cdd1e92432c4a1e7c4eab79e881d45a9c36b1660936c89",
+      "bytes": 13462,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P030\\trial-evidence-manifest.json",
+      "path": "metrics/evidence/pilot30/p030/trial-evidence-manifest.json",
+      "sha256": "a00acbc4ef43ddf1379ccae9e1fe3a6f34d5b2963747bc769c35fea7f87192b7",
+      "bytes": 4363,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P030\\recording\\frames.jsonl",
+      "path": "metrics/evidence/pilot30/p030/recording/frames.jsonl",
+      "sha256": "d2b1861040aed2d38052f124b52bba232fab586732219fbcfd9fe08dcd2395fa",
+      "bytes": 952874,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P030\\recording\\000047445.jpg",
+      "path": "metrics/evidence/pilot30/p030/recording/000047445.jpg",
+      "sha256": "6f7655dd08b7616d6e1627d4c37549e54d3145fbcbcdcee1f6db2303750cd181",
+      "bytes": 42976,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P030\\recording\\000047581.jpg",
+      "path": "metrics/evidence/pilot30/p030/recording/000047581.jpg",
+      "sha256": "cf34c3493270c5a38e7e90ae94173fe1c2c76283768b0bc967db5a608df1b07d",
+      "bytes": 42942,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P030\\recording\\000047582.jpg",
+      "path": "metrics/evidence/pilot30/p030/recording/000047582.jpg",
+      "sha256": "b8c7da7fba6bf60fc0f322578d6d5b909073cedbf438f90c57c591964a00e09f",
+      "bytes": 41658,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P030\\task-evidence\\065f89b26731464baa40a543ec751971.before.png",
+      "path": "metrics/evidence/pilot30/p030/task-evidence/065f89b26731464baa40a543ec751971.before.png",
+      "sha256": "e79d4a5b4ecdb64bfd50c9d573a228be80205c8163a5a10f7c302ad6a8710ac2",
+      "bytes": 373458,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P030\\task-evidence\\065f89b26731464baa40a543ec751971.before.observation.json",
+      "path": "metrics/evidence/pilot30/p030/task-evidence/065f89b26731464baa40a543ec751971.before.observation.json",
+      "sha256": "ccf4e7919fa2435160f70f7bef9f6ac130a2a8fea3dc462bc76032a2f6527bfd",
+      "bytes": 11722,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P030\\task-evidence\\065f89b26731464baa40a543ec751971.json",
+      "path": "metrics/evidence/pilot30/p030/task-evidence/065f89b26731464baa40a543ec751971.json",
+      "sha256": "826bd7f7e2abe855003db34863bf78ec99d93c5697f64879897b79e624407c7b",
+      "bytes": 35663,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P030\\task-evidence\\00dc6b997c204234af520257228bbbe6.final-0.png",
+      "path": "metrics/evidence/pilot30/p030/task-evidence/00dc6b997c204234af520257228bbbe6.final-0.png",
+      "sha256": "f9aa33a9029adc87dec805f275637b70d33710dc7308e38a2777edc1eb86d316",
+      "bytes": 362608,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P030\\task-evidence\\00dc6b997c204234af520257228bbbe6.final-0.observation.json",
+      "path": "metrics/evidence/pilot30/p030/task-evidence/00dc6b997c204234af520257228bbbe6.final-0.observation.json",
+      "sha256": "0a5d18b7d8a42b66ea17e392514d9489e3f981065c686ab6577f02c45d5b37e3",
+      "bytes": 6932,
+      "copy_mode": "byte_identical"
+    },
+    {
+      "source": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\P030\\task-evidence\\00dc6b997c204234af520257228bbbe6.batch-final-verification.json",
+      "path": "metrics/evidence/pilot30/p030/task-evidence/00dc6b997c204234af520257228bbbe6.batch-final-verification.json",
+      "sha256": "0041e886e5c98212239dd2cd8813868793a1820a56cab198457666cc23d89b24",
+      "bytes": 3344,
+      "copy_mode": "byte_identical"
+    }
+  ],
+  "full_recordings_included": false,
+  "full_recordings_location": "C:\\FPGA\\local-only\\acceptance-one-day-20261102-v1\\Pxxx\\recording",
+  "omitted": "Full JPEG sequences, full task-evidence directories, live runtime/protection state and action-submitting test clients are not delivered. Original complete evidence remains local.",
+  "source_hashes_verified": 789
+}

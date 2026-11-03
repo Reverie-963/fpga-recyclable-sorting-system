@@ -1,0 +1,7 @@
+{
+  "operator_reply": "未抓起，55mm，已放好已确认环境",
+  "strict_full_containment": "fail",
+  "task_internal_intervention": false,
+  "automatic_result_kept_separate": true,
+  "reason": "failed_to_lift"
+}

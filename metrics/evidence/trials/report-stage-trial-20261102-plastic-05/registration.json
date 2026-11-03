@@ -1,0 +1,9 @@
+{
+  "material": "plastic",
+  "object_height_mm": 53.0,
+  "official_label": "Disposable plastic cup",
+  "operator_confirmation": "Current user reply: 53mm塑料瓶已斜放，现场确认. Known bottle returned to previously successful oblique tabletop pose at 53mm height; confirms empty plastic bin, open empty gripper, stationary arm, hands/tools clear and onsite supervision. Prior plastic-04 preview was held by manual identity review, no start or motion.",
+  "registered_at": "2026-11-02T04:08:56.996271+08:00",
+  "automatic_retry": false,
+  "source_archive_unchanged": true
+}

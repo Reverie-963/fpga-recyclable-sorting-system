@@ -1,0 +1,39 @@
+{
+  "best_state_tensors": 779,
+  "changed_tensors": [
+    "model.23.cv3.0.2.weight",
+    "model.23.cv3.0.2.bias",
+    "model.23.cv3.1.2.weight",
+    "model.23.cv3.1.2.bias",
+    "model.23.cv3.2.2.weight",
+    "model.23.cv3.2.2.bias"
+  ],
+  "unchanged_tensors": 773,
+  "source_exposures": {
+    "community": 10210,
+    "official": 2500,
+    "reviewed-public-foreground-augmentation": 2604,
+    "Wikimedia Commons reviewed isolation": 46
+  },
+  "total_exposures": 15360,
+  "new_public_parent_exposures": {
+    "58597325": 147,
+    "132055472": 164,
+    "33029374": 181,
+    "138186210": 141,
+    "193109032": 176,
+    "138654893": 153,
+    "19200492": 161,
+    "7529475": 160,
+    "25284048": 158,
+    "35716833": 150,
+    "7882811": 136,
+    "7883002": 169,
+    "115193922": 160,
+    "200793953": 166,
+    "152826192": 147,
+    "115607601": 148
+  },
+  "new_public_parent_count": 16,
+  "local_training_exposures": 0
+}

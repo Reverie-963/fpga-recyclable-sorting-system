@@ -1,0 +1,6 @@
+{
+  "reply": "搭边在箱内，已重新放好，现场确认",
+  "strict_full_containment": "not_passed",
+  "automatic_bin_occupancy": "passed",
+  "adjudication": "Edge-supported placement is not counted as a strict full-containment pass; original operator wording retained."
+}

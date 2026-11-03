@@ -1,0 +1,21 @@
+﻿来源条款,要求,状态,定位,说明
+3.2.3.1,AMD Ryzen AI PC及型号/内存/驱动,已盘点,host/deploy/environment.json,当前元数据与历史测量范围分开
+3.2.3.1,ROCm >=7.14.0,已有记录,metrics/logs/runtime_sample.json,torch2.12+rocm7.14；实际导入库8.4.193
+3.2.2.3,AI PC端侧AI实装,已有证据,host/model/model.md,当前权重、参考库和首轮输出
+3.2.2.3,FPGA/Zynq实际硬件功能,已有证据,fpga/build/paired/manifest.json,六区视觉统计+路径高度核，非普通转接
+3.2.2.3,通信/数据流/时间与异常,已整理,docs/interface.md,RTT与物理响应严格分开
+3.2.5.1,架构/数据流/关键模块,已整理,docs/architecture.md,含可编辑SVG图
+3.2.5.1,源码/BD/构建与配对产物,已归档,fpga/build/paired/vision_motion.bit,原IP、源码、最终DCP、可移植封装；未重跑综合
+3.2.5.1,综合实现/板级或仿真结果,已有证据,fpga/report/verified_timing.rpt,包含历史警告；新增33项离线专项通过
+3.2.5.1,模型来源/配置/依赖/启动,已整理但复现待验,host/deploy/prepare_runtime.py,当前权重已在包内；机器绑定仍须重建
+3.2.5.1,器材/供电/接线/BOM,已整理含待确认,docs/hardware_setup.md,铭牌电压电流/极性由队伍补图核实
+3.2.4.3,任务闭环成功率,限定30次已补；总体仍待验收,docs/pilot30_update.md,双口径25/30与17/30；旧11次分列
+3.2.4.3,实际物理响应P50/P95/P99/max,28次动作条件样本已补,metrics/logs/pilot30/statistics.json,同板同钟；2拒绝另列；非稳定总体尾部
+3.2.4.3,AI效果/纯推理/总感知/持续性能,已有证据,metrics/logs/ai_batch1.json,131图质量复算，162性能样本分开
+3.2.4.3,FPGA量化贡献,已有局部证据,metrics/logs/route_summary.json,同输入ARM与PS/PL，不外推整机
+3.2.4.3,AI PC-FPGA通信性能,已有证据,metrics/logs/online_raw.jsonl,各200次，共800；无动作
+3.2.4.4,至少两项专项,已选2类,metrics/metrics.csv,FPGA数据处理+FPGA资源
+3.2.4.5,原始日志/条件/证据,已归档但有缺口,metrics/readme.md,历史功耗模式未逐轮记；无新增示波器/逻辑分析仪波形
+3.2.5.3,Skill（加分项）,已归档,skill/README.md,保留复用范围，未称跨板或干净实机部署通过
+3.2.5.4,最终设计报告,队伍准备中,report/readme.md,与metrics一致，尚未用旧稿替代
+门户,签署授权书,队伍待填签,../../../pending_team/06_signed_authorization/authorization_template_unsigned.pdf,用户提供，年份空白，需全员签字扫描

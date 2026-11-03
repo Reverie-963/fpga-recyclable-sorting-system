@@ -1,0 +1,15 @@
+{
+  "original_filename": "基于FPGA的可回收物分拣系统_AMD_具身智能赛道.docx",
+  "package_path": "report/engineering_report.docx",
+  "sha256": "2a23fc81275cd487daeefb6b5029ef81a86e97a5f5a64beebda13f872b7179e7",
+  "bytes": 4037943,
+  "copy_mode": "citation_only_revision_of_original_attachment",
+  "content_edited": true,
+  "pdf_created": false,
+  "content_review_performed": "references_and_citation_numbers_only",
+  "original_attachment_sha256": "766f242705fbf8cfdca13133a9f39a14ef779ece0c78cca449df5f92c7b220e8",
+  "revision": "IEEE reference formatting; remove original references 6, 8, 9, 11, 14; renumber retained 15 references in first-citation order; heading colors set explicitly to black; all text unchanged",
+  "render_qa": "Microsoft Word native PDF export, 20 pages rendered to PNG and inspected; bundled LibreOffice unavailable",
+  "heading_color": "000000",
+  "heading_text_preserved": true
+}

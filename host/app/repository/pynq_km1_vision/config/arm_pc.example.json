@@ -1,0 +1,32 @@
+{
+  "arm": {
+    "commissioned": false,
+    "port": "COM_REPLACE_ME",
+    "move_ms": 1500,
+    "settle_s": 0.3,
+    "alpha": null,
+    "home": [
+      0,
+      100,
+      120
+    ],
+    "pick_bounds_mm": [
+      -70,
+      70,
+      100,
+      210
+    ],
+    "grab_z": 30,
+    "lift_z": 120,
+    "open_pwm": 1000,
+    "close_pwm": 1600,
+    "wrist_pwm": 1500,
+    "bins": {
+      "cap_deformed": [
+        -100,
+        60,
+        35
+      ]
+    }
+  }
+}

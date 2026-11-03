@@ -1,0 +1,134 @@
+{
+  "camera": {
+    "index": 0,
+    "width": 640,
+    "height": 480
+  },
+  "vision": {
+    "backend": "pl",
+    "background_bgr": [
+      240,
+      240,
+      240
+    ],
+    "threshold": 100,
+    "min_area": 300,
+    "max_area": 50000,
+    "stable_frames": 5,
+    "stable_px": 4,
+    "min_margin": 0.5,
+    "pl_kernel": "open"
+  },
+  "model": "data/classifier.npz",
+  "calibration": "data/calibration.json",
+  "bitfile": "board/vision.bit",
+  "arm": {
+    "commissioned": false,
+    "port": "/dev/ttyUSB0",
+    "move_ms": 1500,
+    "settle_s": 0.3,
+    "alpha": null,
+    "home": [
+      0,
+      100,
+      120
+    ],
+    "pick_bounds_mm": [
+      -70,
+      70,
+      100,
+      210
+    ],
+    "grab_z": 30,
+    "lift_z": 120,
+    "open_pwm": 1000,
+    "close_pwm": 1600,
+    "wrist_pwm": 1500,
+    "bins": {
+      "cap_notch": [
+        -100,
+        60,
+        35
+      ],
+      "cap_deformed": [
+        -100,
+        60,
+        35
+      ],
+      "plate_corner_missing": [
+        100,
+        60,
+        35
+      ],
+      "plate_hole_missing": [
+        100,
+        60,
+        35
+      ]
+    }
+  },
+  "inference": {
+    "mode": "remote",
+    "url": "http://192.168.2.1:8765",
+    "token_env": "KM1_TOKEN",
+    "timeout_s": 1.0,
+    "max_result_age_s": 1.5,
+    "score_kind": "detection_confidence",
+    "expected_model_id": "",
+    "expected_runtime_id": ""
+  },
+  "telemetry": {
+    "preview_interval_s": 2,
+    "flush_interval_s": 1
+  },
+  "verification": {
+    "bin_rois": {},
+    "min_bin_gain_px": 100
+  },
+  "grasp": {
+    "confidence": 0.5,
+    "min_box_coverage": 0.8,
+    "min_interior_px": 3,
+    "clearance_px": 12
+  },
+  "encoder": {
+    "mm_per_count": 0.05,
+    "direction": 1,
+    "clock_hz": 100000000,
+    "snapshot_max_s": 0.01,
+    "velocity_window_s": 0.5,
+    "min_velocity_span_s": 0.15
+  },
+  "dynamic": {
+    "mode": "continuous_intercept",
+    "commissioned": false,
+    "axis_xy": [
+      0,
+      1
+    ],
+    "pick_window_mm": [
+      -55,
+      55,
+      135,
+      195
+    ],
+    "min_track_frames": 3,
+    "track_max_gap_s": 0.25,
+    "association_mm": 4,
+    "semantic_coverage": 0.8,
+    "max_track_age_s": 0.2,
+    "semantic_max_age_s": 1.5,
+    "min_speed_mm_s": 1,
+    "max_speed_mm_s": 8,
+    "max_accel_mm_s2": 0.05,
+    "position_uncertainty_mm": 0.5,
+    "max_error_mm": 4,
+    "capture_delay_s": 0.08,
+    "capture_uncertainty_s": 0.03,
+    "max_frame_age_s": 0.25,
+    "actuation_uncertainty_s": 0.05,
+    "grip_ms": 500,
+    "grip_contact_s": 0.3,
+    "schedule_slack_s": 0.03
+  }
+}

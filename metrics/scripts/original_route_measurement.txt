@@ -1,0 +1,53 @@
+from itertools import permutations
+captured=[]
+def capture_compile(*values,**kwargs):
+ result=pl(*values,**kwargs)
+ captured.append((copy.deepcopy(values),copy.deepcopy(kwargs),copy.deepcopy(result)))
+ return result
+aliases(plan.compile_route,capture_compile)
+with models.context():
+ settings,receipt=sm.calibrated_settings();bundle,checked_policy=sm.load_unified(binding_path);b,c,base_path,camera,station,registration,scene,files=bundle
+ authority=ReadOnlyAuthority();visual=host.VisualInputs(args['vision-url'],Path(args['vision-token-file']).read_text().strip(),sm.read_policy()['model'],None,hashlib.sha256(files['camera'].read_bytes()).hexdigest(),authority)
+ host.install_board_adapters(authority,visual,Path(args['station-token-file']).read_text().strip(),camera,'http://127.0.0.1:8783',c['board_transport']);visual.freeze(settings)
+ start=time.monotonic();preview=sm.run('PLASTIC',False,object_height_mm=10);preview_ms=(time.monotonic()-start)*1000
+ assert preview['status']=='preview_only',preview.get('reason',preview['status'])
+ choice=preview['choice']
+ matches=[r for r in captured if r[0][1]==choice['label'] and r[0][5]['slot_id']==choice['slot_id'] and np.allclose(r[0][2],choice['pick_card_xy_mm'],rtol=0,atol=1e-9) and abs(r[0][3]-choice['axis_deg'])<1e-9]
+ assert len(matches)==1,'selected_route_capture_not_unique'
+ values,kwargs,selected=matches[0]
+ expected_steps=[dict(step=s['name'],command=s['command'],duration_ms=s['duration_ms']) for s in selected['steps']]
+ assert expected_steps==preview['plan'],'selected_compiler_does_not_match_preview_commands'
+ frozen_input=dict(config=values[0],label=values[1],card_xy_mm=values[2],axis_deg=values[3],policy=values[4],slot=values[5],kwargs=kwargs)
+ input_bytes=json.dumps(frozen_input,sort_keys=True,allow_nan=False).encode();input_hash=hashlib.sha256(input_bytes).hexdigest()
+ (F/'frozen-route-input.json').write_bytes(input_bytes)
+ functions=dict(scalar=cpu_scalar,numpy=cpu_vector,pl=pl)
+ warmups=[]
+ for warm in range(2):
+  check_idle()
+  for name,fn in functions.items():
+   start=time.perf_counter_ns();fn(*values,**kwargs);warmups.append(dict(round=warm,backend=name,ms=(time.perf_counter_ns()-start)/1e6))
+ rows=[];failures=[];started=time.monotonic()
+ for trial in range(30):
+  if time.monotonic()-started>150:failures.append(dict(trial=trial,error='bounded_benchmark_time_budget'));break
+  try:
+   check_idle();outputs={};times={};order=list(permutations(('scalar','numpy','pl')))[trial%6]
+   for kind in order:
+    start=time.perf_counter_ns();outputs[kind]=functions[kind](*values,**kwargs);times[kind]=(time.perf_counter_ns()-start)/1e6
+   for kind in ('scalar','numpy'):motion.equivalent_route(outputs[kind],outputs['pl'])
+   a,b=copy.deepcopy(outputs['scalar']),copy.deepcopy(outputs['numpy'])
+   max_error=max(abs(x['nominal_z_min_mm']-y['nominal_z_min_mm']) for x,y in zip(a['nominal_interpolation'],b['nominal_interpolation']))
+   for x,y in zip(a['nominal_interpolation'],b['nominal_interpolation']):y['nominal_z_min_mm']=x['nominal_z_min_mm']
+   assert a==b and max_error<1e-9,'optimized_cpu_changed_route'
+   actual=outputs['pl'];details=actual['motion_path_last_candidate']
+   assert actual['steps']==selected['steps'],'frozen_command_sequence_changed'
+   row=dict(trial=trial,order=order,input_sha256=input_hash,times_ms=times,max_cpu_height_error_mm=max_error,pl_last_candidate=details,selected_route_boundary_cpu_segments=sum(s.get('nominal_z_min_kind')=='cpu_exact_101_points' for s in actual['nominal_interpolation']),command_sha256=hashlib.sha256(json.dumps(actual['steps'],sort_keys=True).encode()).hexdigest())
+   rows.append(row);(F/'measurement-partial.json').write_text(json.dumps(dict(rows=rows,failures=failures),indent=2))
+   if trial%5==0:print(json.dumps(dict(trial=trial,times_ms=times)),flush=True)
+  except Exception as exc:
+   failures.append(dict(trial=trial,error=type(exc).__name__+':'+str(exc)));break
+ summary={k:dict(samples=len(rows),median_ms=float(np.median([r['times_ms'][k] for r in rows])),p95_ms=float(np.percentile([r['times_ms'][k] for r in rows],95)),max_ms=max(r['times_ms'][k] for r in rows)) for k in functions} if rows else {}
+ after=get('/operation');model_after=get('/execution-model');check_sources()
+ state_unchanged=all(before.get(k)==after.get(k) for k in ('state','reason','operation_id','owner','result','active_action','busy','object_height_mm','material_selection','board_ownership','voice_height_registration'))
+ result=dict(kind='frozen-live-straw-route-speedup-20261031-v2',root=str(root),scope='complete_selected_route_compile_on_board_cpu_vs_resident_PS_PL_not_full_recognition_or_robot',input_sha256=input_hash,model={k:model_before[k] for k in ('model_sha256','configuration_sha256')},choice={k:choice[k] for k in ('label','official_label','object_height_mm','grasp_z_mm','pick_card_xy_mm','axis_deg','grasp_width_mm','slot_id')},preview=dict(status=preview['status'],elapsed_ms=preview_ms,diagnostic_height_mm=10,register_height_changed=False),warmups_excluded=warmups,rows=rows,failures=failures,summary=summary,commands_all_equal=bool(rows),source_unchanged=True,production_state_unchanged=state_unchanged,model_unchanged=all(model_after[k]==model_before[k] for k in ('model_sha256','configuration_sha256')),busy=after['busy'],blockers=after['blockers'],physical_motion=False,overlay_loaded=False,production_configuration_changed=False,global_optimal_cpu_claimed=False,excludes=['camera','neural_inference','geometry_localization','precommit','UART','motion','post_motion_verification'],background_camera_and_UI_left_running=True)
+ (F/'measurement.json').write_text(json.dumps(result,indent=2));print(json.dumps(dict(summary=summary,failures=failures,production_state_unchanged=state_unchanged)),flush=True)
+ assert state_unchanged and result['model_unchanged'] and not failures

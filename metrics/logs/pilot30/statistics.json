@@ -1,0 +1,295 @@
+{
+  "schema": "supervised-fixed-specimen-pilot30-v1",
+  "generated_at": "2026-11-03T01:51:57.016100+08:00",
+  "scope": "fixed station; one designated specimen per material; permitted poses; supervised single-item tasks; metal then paper then plastic",
+  "strict_success_definition": "correct bin; removed from source; wholly contained with no rim resting or overhang; no within-task intervention; original task completed normally",
+  "overall": {
+    "tasks": 30,
+    "strict_successes": 17,
+    "strict_failures": 13,
+    "sample_success_rate": 0.5666666666666667,
+    "wilson_95_descriptive_only": [
+      0.3919730700081361,
+      0.7262251442353347
+    ],
+    "response": {
+      "n": 28,
+      "all_task_latencies_available": false,
+      "method": "nearest_rank_ceil_p_times_n",
+      "failed_tasks_with_valid_response_included": true,
+      "conditional_on_valid_recording": true,
+      "P50": {
+        "mid_s": 26.900155956500384,
+        "mid_rank_trial": "P019",
+        "sampling_lower_s": 26.57330265499968,
+        "sampling_upper_s": 27.24704419200043
+      },
+      "P95": {
+        "mid_s": 29.952174189500283,
+        "mid_rank_trial": "P006",
+        "sampling_lower_s": 29.725760534000074,
+        "sampling_upper_s": 30.178587845000493
+      },
+      "P99": {
+        "mid_s": 29.987053921499637,
+        "mid_rank_trial": "P002",
+        "sampling_lower_s": 29.72983777099944,
+        "sampling_upper_s": 30.244270071999836
+      },
+      "max": {
+        "mid_s": 29.987053921499637,
+        "mid_rank_trial": "P002",
+        "sampling_lower_s": 29.72983777099944,
+        "sampling_upper_s": 30.244270071999836
+      }
+    },
+    "explicit_no_response": 2,
+    "missing_or_invalid_response_recording": 0,
+    "all_task_physical_response_p99_s": null
+  },
+  "by_material": {
+    "metal": {
+      "tasks": 10,
+      "strict_successes": 2,
+      "strict_failures": 8,
+      "sample_success_rate": 0.2,
+      "wilson_95_descriptive_only": [
+        0.05668215145437519,
+        0.5098375284633583
+      ],
+      "response": {
+        "n": 10,
+        "all_task_latencies_available": true,
+        "method": "nearest_rank_ceil_p_times_n",
+        "failed_tasks_with_valid_response_included": true,
+        "conditional_on_valid_recording": false,
+        "P50": {
+          "mid_s": 28.088479796,
+          "mid_rank_trial": "P007",
+          "sampling_lower_s": 27.854954077000002,
+          "sampling_upper_s": 28.322005515
+        },
+        "P95": {
+          "mid_s": 29.987053921499637,
+          "mid_rank_trial": "P002",
+          "sampling_lower_s": 29.72983777099944,
+          "sampling_upper_s": 30.244270071999836
+        },
+        "P99": {
+          "mid_s": 29.987053921499637,
+          "mid_rank_trial": "P002",
+          "sampling_lower_s": 29.72983777099944,
+          "sampling_upper_s": 30.244270071999836
+        },
+        "max": {
+          "mid_s": 29.987053921499637,
+          "mid_rank_trial": "P002",
+          "sampling_lower_s": 29.72983777099944,
+          "sampling_upper_s": 30.244270071999836
+        }
+      },
+      "explicit_no_response": 0,
+      "missing_or_invalid_response_recording": 0,
+      "all_task_physical_response_p99_s": 29.987053921499637
+    },
+    "paper": {
+      "tasks": 10,
+      "strict_successes": 7,
+      "strict_failures": 3,
+      "sample_success_rate": 0.7,
+      "wilson_95_descriptive_only": [
+        0.39677814746114537,
+        0.8922087325936989
+      ],
+      "response": {
+        "n": 10,
+        "all_task_latencies_available": true,
+        "method": "nearest_rank_ceil_p_times_n",
+        "failed_tasks_with_valid_response_included": true,
+        "conditional_on_valid_recording": false,
+        "P50": {
+          "mid_s": 26.799123882999538,
+          "mid_rank_trial": "P017",
+          "sampling_lower_s": 26.55326772100034,
+          "sampling_upper_s": 27.024945110999397
+        },
+        "P95": {
+          "mid_s": 28.935871560000123,
+          "mid_rank_trial": "P012",
+          "sampling_lower_s": 28.6790775569998,
+          "sampling_upper_s": 29.192665563000446
+        },
+        "P99": {
+          "mid_s": 28.935871560000123,
+          "mid_rank_trial": "P012",
+          "sampling_lower_s": 28.6790775569998,
+          "sampling_upper_s": 29.192665563000446
+        },
+        "max": {
+          "mid_s": 28.935871560000123,
+          "mid_rank_trial": "P012",
+          "sampling_lower_s": 28.6790775569998,
+          "sampling_upper_s": 29.192665563000446
+        }
+      },
+      "explicit_no_response": 0,
+      "missing_or_invalid_response_recording": 0,
+      "all_task_physical_response_p99_s": 28.935871560000123
+    },
+    "plastic": {
+      "tasks": 10,
+      "strict_successes": 8,
+      "strict_failures": 2,
+      "sample_success_rate": 0.8,
+      "wilson_95_descriptive_only": [
+        0.49016247153664183,
+        0.9433178485456247
+      ],
+      "response": {
+        "n": 8,
+        "all_task_latencies_available": false,
+        "method": "nearest_rank_ceil_p_times_n",
+        "failed_tasks_with_valid_response_included": true,
+        "conditional_on_valid_recording": true,
+        "P50": {
+          "mid_s": 25.33649459549906,
+          "mid_rank_trial": "P026",
+          "sampling_lower_s": 25.09518394299903,
+          "sampling_upper_s": 25.577805247999095
+        },
+        "P95": {
+          "mid_s": 29.203959762500745,
+          "mid_rank_trial": "P028",
+          "sampling_lower_s": 28.855220585000097,
+          "sampling_upper_s": 29.55269894000139
+        },
+        "P99": {
+          "mid_s": 29.203959762500745,
+          "mid_rank_trial": "P028",
+          "sampling_lower_s": 28.855220585000097,
+          "sampling_upper_s": 29.55269894000139
+        },
+        "max": {
+          "mid_s": 29.203959762500745,
+          "mid_rank_trial": "P028",
+          "sampling_lower_s": 28.855220585000097,
+          "sampling_upper_s": 29.55269894000139
+        }
+      },
+      "explicit_no_response": 2,
+      "missing_or_invalid_response_recording": 0,
+      "all_task_physical_response_p99_s": null
+    }
+  },
+  "by_harness": {
+    "v1_fixed_client_roi": {
+      "tasks": 6,
+      "strict_successes": 2,
+      "strict_failures": 4,
+      "sample_success_rate": 0.3333333333333333,
+      "wilson_95_descriptive_only": [
+        0.09677141110578041,
+        0.700006684861608
+      ],
+      "response": {
+        "n": 6,
+        "all_task_latencies_available": true,
+        "method": "nearest_rank_ceil_p_times_n",
+        "failed_tasks_with_valid_response_included": true,
+        "conditional_on_valid_recording": false,
+        "P50": {
+          "mid_s": 27.199962888500067,
+          "mid_rank_trial": "P005",
+          "sampling_lower_s": 26.928786407999723,
+          "sampling_upper_s": 27.47113936900041
+        },
+        "P95": {
+          "mid_s": 29.987053921499637,
+          "mid_rank_trial": "P002",
+          "sampling_lower_s": 29.72983777099944,
+          "sampling_upper_s": 30.244270071999836
+        },
+        "P99": {
+          "mid_s": 29.987053921499637,
+          "mid_rank_trial": "P002",
+          "sampling_lower_s": 29.72983777099944,
+          "sampling_upper_s": 30.244270071999836
+        },
+        "max": {
+          "mid_s": 29.987053921499637,
+          "mid_rank_trial": "P002",
+          "sampling_lower_s": 29.72983777099944,
+          "sampling_upper_s": 30.244270071999836
+        }
+      },
+      "explicit_no_response": 0,
+      "missing_or_invalid_response_recording": 0,
+      "all_task_physical_response_p99_s": 29.987053921499637
+    },
+    "v2_registered_source": {
+      "tasks": 24,
+      "strict_successes": 15,
+      "strict_failures": 9,
+      "sample_success_rate": 0.625,
+      "wilson_95_descriptive_only": [
+        0.42709962442674276,
+        0.7884063244045122
+      ],
+      "response": {
+        "n": 22,
+        "all_task_latencies_available": false,
+        "method": "nearest_rank_ceil_p_times_n",
+        "failed_tasks_with_valid_response_included": true,
+        "conditional_on_valid_recording": true,
+        "P50": {
+          "mid_s": 26.799123882999538,
+          "mid_rank_trial": "P017",
+          "sampling_lower_s": 26.55326772100034,
+          "sampling_upper_s": 27.024945110999397
+        },
+        "P95": {
+          "mid_s": 29.050800347499944,
+          "mid_rank_trial": "P008",
+          "sampling_lower_s": 28.855220585000097,
+          "sampling_upper_s": 29.240347568999823
+        },
+        "P99": {
+          "mid_s": 29.203959762500745,
+          "mid_rank_trial": "P028",
+          "sampling_lower_s": 28.861253126000065,
+          "sampling_upper_s": 29.55269894000139
+        },
+        "max": {
+          "mid_s": 29.203959762500745,
+          "mid_rank_trial": "P028",
+          "sampling_lower_s": 28.861253126000065,
+          "sampling_upper_s": 29.55269894000139
+        }
+      },
+      "explicit_no_response": 2,
+      "missing_or_invalid_response_recording": 0,
+      "all_task_physical_response_p99_s": null
+    }
+  },
+  "instrumentation_exceptions": 1,
+  "historical_exploratory_11_pooled": false,
+  "automatic_retries": false,
+  "manual_timing_interval_review_trials": [
+    "P028"
+  ],
+  "limits": [
+    "n=30 empirical P99 equals maximum; not a stable population tail estimate",
+    "reused specimens and sequential material blocks limit independence and generalization; Wilson interval is descriptive under binomial assumptions",
+    "visual motion sampling bounds exclude uncalibrated exposure/UVC buffering/subthreshold motion uncertainty",
+    "sensor origin is first frozen decision input frame capture completion; endpoint is first visible arm movement, not first UART or task completion",
+    "P007 pre-submit harness exception retained; v1 fixed client ROI versus v2 registered source advisory selection disclosed; production guards unchanged",
+    "P028 elevated baseline/subtle candidate: automatic result retained, conservative manual interval spans last clear still45461 to clear movement45463 including ambiguous45462; no production threshold changed",
+    "does not establish arbitrary objects/poses, uninterrupted multi-item batches, voice control or unattended acceptance",
+    "preview rejection produces no motion by design; no_response includes these protocol refusals and must not be called actuator nonresponse; no finite all-task motion P99 is asserted when such a task exists"
+  ],
+  "sources_sha256": {
+    "results.csv": "22b245192f5ef05801a29b61d3528963ce4e76da9513576e11e94263a8f49aa7",
+    "pilot_30_planned.csv": "0d1ed51fec199db86555d080b12ca048ba93bb47713a32e8baa3c8d244f6503f",
+    "harness-method-note.txt": "7095df1751c2c112be6f937a86342daa5981a1381041c83a78cb30352f89b7ea"
+  }
+}

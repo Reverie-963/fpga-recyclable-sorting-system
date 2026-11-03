@@ -1,0 +1,63 @@
+{
+  "kind": "sorting-commissioning-observation-v1",
+  "material": "plastic",
+  "dimensions_mm": {
+    "diameter": 53,
+    "length": 120
+  },
+  "model_family": "yolov8s",
+  "model_version": "9288e697042d14813d7d47abbe2e413f314be59c3069c2302f2dffee5912dd0e",
+  "runtime_id": "997bb093f49aea2a0196e95767415b024cf5964421a417913965667712772de5",
+  "open_pwm": 1000,
+  "close_pwm": 1300,
+  "grip_nominal_z_mm": 10,
+  "grip_actual_tip_tabletop_mm_approx": 35,
+  "bin_id": "bin_plastic",
+  "bin_release_empty_pose_file": "plastic53/bin-release-empty-checked.json",
+  "supervised_known_item_cycle_completed": true,
+  "operator_confirmed_no_problem": true,
+  "phase_executions": [
+    {
+      "folder": "known-plastic-approach",
+      "plan_sha256": "e8a4ec78288b292a9ebcf489ca52b32c24535661f75e7745086aa6591b12fe8d",
+      "execution_sha256": "4dbe7febedf6785ed70e04b403be000fa672e8a70675ca4b30809027ae71bd8b",
+      "sent": 5
+    },
+    {
+      "folder": "known-plastic-close1300",
+      "plan_sha256": "925ca95bd21b8fceed45a9535b11cbba97b34bc52db712773107927a4f161319",
+      "execution_sha256": "611b2fa83f691979d00f9210a17a3ba0430850a29954a52802f652656e3cfd65",
+      "sent": 1
+    },
+    {
+      "folder": "known-plastic-lift30",
+      "plan_sha256": "a2e47dd4127475bd45b2dfb78ec22230a5467aeb65f8b57c692666fc4ec3ac83",
+      "execution_sha256": "29797b5437018247d6f14111b9973d396e54261235a2ba06ad6ad047c6d3005f",
+      "sent": 1
+    },
+    {
+      "folder": "known-plastic-front-high",
+      "plan_sha256": "14269bfafd1a4822decb174f81dabe59e0cad6e91fa4679e32b5e103d71d32f2",
+      "execution_sha256": "9603ec40bcfc3fc67c494bcf1de29370097ac2cc22d673a5dcbe3aabafa3af22",
+      "sent": 3
+    },
+    {
+      "folder": "known-plastic-over-bin",
+      "plan_sha256": "3eb6bad4e2fcafe12a060043a8ee9b02983c20330e7077657442d226951cddf2",
+      "execution_sha256": "7aafe663dbb05817cab6c00dbb9978761aa8c1d55076082b4e7c6a9e5b5dafd1",
+      "sent": 4
+    },
+    {
+      "folder": "known-plastic-release-return",
+      "plan_sha256": "d1b47afe61b9a28e2e95b867bb6f81231b207fa3927346c583eebf3dba183a6d",
+      "execution_sha256": "7e50e90b6f9032ecc9242d74684a343c5138549cf7f22d7cdf4b60ee83a57b9a",
+      "sent": 5
+    }
+  ],
+  "total_cycle_commands": 19,
+  "final_review_sha256": "66aa527a2393b09587993055519e5fb361ca857fca41de0bbe181d0af990ef63",
+  "operator_feedback_sha256": "ca347a6d35bec7036957ebaee6be3d171ae51647138cd5c105a6d562bd2541fe",
+  "quality_gate_passed": false,
+  "unattended_accepted": false,
+  "qualified_scope": "This same empty plastic object at fixed station under supervision; not three-class production acceptance"
+}

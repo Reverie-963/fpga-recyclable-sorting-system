@@ -1,0 +1,77 @@
+{
+  "camera": {
+    "index": 0,
+    "width": 640,
+    "height": 480
+  },
+  "vision": {
+    "backend": "cpu",
+    "background_bgr": [
+      240,
+      240,
+      240
+    ],
+    "threshold": 100,
+    "min_area": 300,
+    "max_area": 50000,
+    "stable_frames": 5,
+    "stable_px": 4,
+    "min_margin": 0.5,
+    "pl_kernel": "threshold"
+  },
+  "model": "data/classifier.npz",
+  "calibration": "data/calibration.json",
+  "bitfile": "board/vision.bit",
+  "arm": {
+    "commissioned": false,
+    "port": "/dev/ttyUSB0",
+    "move_ms": 1500,
+    "settle_s": 0.3,
+    "alpha": null,
+    "home": [
+      0,
+      100,
+      120
+    ],
+    "pick_bounds_mm": [
+      -70,
+      70,
+      100,
+      210
+    ],
+    "grab_z": 30,
+    "lift_z": 120,
+    "open_pwm": 1000,
+    "close_pwm": 1600,
+    "wrist_pwm": 1500,
+    "bins": {
+      "block": [
+        -100,
+        60,
+        35
+      ],
+      "washer": [
+        100,
+        60,
+        35
+      ]
+    }
+  },
+  "inference": {
+    "mode": "remote",
+    "url": "http://192.168.2.1:8765",
+    "token_env": "KM1_TOKEN",
+    "timeout_s": 1.0,
+    "max_result_age_s": 1.5,
+    "score_kind": "ridge_margin",
+    "expected_model_id": ""
+  },
+  "telemetry": {
+    "preview_interval_s": 2,
+    "flush_interval_s": 1
+  },
+  "verification": {
+    "bin_rois": {},
+    "min_bin_gain_px": 100
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "toolchain": "2026.1",
+  "board_programmed": false,
+  "assets": {
+    "station_vision.bit": "b03281dbd650465402cf711d230605a72712318915129814b0dc808dc261d2af",
+    "station_vision.hwh": "e7adf114088f17fe4af130d394190e75ff3cca19f95bcf81124ad85c6469de5b"
+  },
+  "mechanical_motion": false
+}

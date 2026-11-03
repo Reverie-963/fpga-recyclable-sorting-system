@@ -1,0 +1,12 @@
+{
+  "image_size": [640, 480],
+  "bytes_per_pixel": 4,
+  "rpc_contract": "sorting-statistics-v1",
+  "modules": [
+    {"instance": "dma_mask", "dma": true, "parameters": {"c_include_mm2s": 1, "c_include_s2mm": 1, "c_include_sg": 0, "c_m_axis_mm2s_tdata_width": 32, "c_s_axis_s2mm_tdata_width": 32}},
+    {"instance": "dma_vis_a", "dma": true, "parameters": {"c_include_mm2s": 1, "c_include_s2mm": 1, "c_include_sg": 0, "c_m_axis_mm2s_tdata_width": 32, "c_s_axis_s2mm_tdata_width": 32}},
+    {"instance": "dma_vis_b", "dma": true, "parameters": {"c_include_mm2s": 1, "c_include_s2mm": 0, "c_include_sg": 0, "c_m_axis_mm2s_tdata_width": 32}},
+    {"instance": "mask_0", "registers": {"width": "0x10", "height": "0x18", "erode_enable": "0x20", "dilate_enable": "0x28", "job_id": "0x30", "status": "0xb8"}},
+    {"instance": "visual_0", "registers": {"width": "0x10", "height": "0x18", "threshold": "0x20", "mode": "0x28", "job_id": "0x30", "status": "0x98"}}
+  ]
+}

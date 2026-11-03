@@ -1,0 +1,12 @@
+{
+  "kind": "station-camera-v1",
+  "camera_id": "pynq-c270",
+  "lens_profile_id": "c270-640x480-fixed-focus-v1",
+  "image_size": [
+    640,
+    480
+  ],
+  "camera_matrix": null,
+  "dist_coeffs": null,
+  "status": "missing_measured_intrinsics_do_not_guess"
+}

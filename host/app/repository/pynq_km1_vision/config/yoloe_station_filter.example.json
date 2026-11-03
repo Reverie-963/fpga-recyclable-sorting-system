@@ -1,0 +1,109 @@
+{
+  "schema_version": "yoloe-station-observation-filter-v1",
+  "workcell_id": "fixed16-20261028",
+  "reference_image_sha256": "dd782278a5df1cd7c5b764d94240e5b208bf843998095d7421acd82e5ec1c8be",
+  "image_size": [
+    640,
+    480
+  ],
+  "coordinate_units": "original image pixels; rectangles use exclusive right/bottom, polygons use inclusive vertex pixels",
+  "regions": {
+    "source": [
+      [
+        90,
+        0
+      ],
+      [
+        565,
+        0
+      ],
+      [
+        565,
+        265
+      ],
+      [
+        90,
+        265
+      ]
+    ],
+    "can": [
+      [
+        408,
+        189
+      ],
+      [
+        447,
+        145
+      ],
+      [
+        547,
+        93
+      ],
+      [
+        607,
+        87
+      ],
+      [
+        638,
+        148
+      ],
+      [
+        595,
+        181
+      ],
+      [
+        465,
+        241
+      ],
+      [
+        434,
+        224
+      ]
+    ],
+    "plastic": [
+      [
+        7,
+        275
+      ],
+      [
+        217,
+        275
+      ],
+      [
+        237,
+        317
+      ],
+      [
+        221,
+        421
+      ],
+      [
+        3,
+        418
+      ]
+    ],
+    "cardboard": [
+      [
+        401,
+        273
+      ],
+      [
+        630,
+        273
+      ],
+      [
+        616,
+        425
+      ],
+      [
+        391,
+        425
+      ]
+    ]
+  },
+  "inside_fraction": 0.8,
+  "changed_fraction": 0.02,
+  "pixel_difference": 24,
+  "basis": "Drawn from the registered empty photograph, not inferred from target labels. Semantic observation regions; no mechanical reach qualification.",
+  "automatic_motion_allowed": false
+}

@@ -1,0 +1,496 @@
+{
+  "observation": {
+    "image_size": [
+      640,
+      480
+    ],
+    "instances": [
+      {
+        "instance_id": 0,
+        "label": "paper",
+        "category_name": "paper",
+        "official_label": "Drink carton",
+        "prompt_key": "Drink carton",
+        "confidence": 0.33984375,
+        "model_material": "paper",
+        "reference_assisted": true,
+        "reference_material": "paper",
+        "reference_object_id": "cardboard-new-02",
+        "reference_image": "images/test/fixed16-test-20261028-0077-1793201450699843600.jpg",
+        "reference_distance": 0.18253135775957063,
+        "reference_distance_is_probability": false,
+        "class_id": 2,
+        "bbox_xyxy": [
+          285,
+          95,
+          347,
+          207
+        ],
+        "mask_rle": [
+          61102,
+          21,
+          614,
+          27,
+          610,
+          30,
+          609,
+          31,
+          606,
+          35,
+          602,
+          38,
+          600,
+          40,
+          600,
+          41,
+          599,
+          41,
+          599,
+          41,
+          599,
+          42,
+          598,
+          42,
+          598,
+          42,
+          598,
+          42,
+          598,
+          43,
+          597,
+          43,
+          597,
+          43,
+          597,
+          43,
+          597,
+          44,
+          596,
+          44,
+          596,
+          44,
+          596,
+          44,
+          597,
+          44,
+          596,
+          44,
+          596,
+          44,
+          597,
+          44,
+          596,
+          44,
+          596,
+          44,
+          597,
+          43,
+          597,
+          44,
+          596,
+          44,
+          596,
+          44,
+          596,
+          44,
+          597,
+          44,
+          596,
+          44,
+          596,
+          44,
+          596,
+          44,
+          597,
+          44,
+          596,
+          44,
+          596,
+          44,
+          596,
+          44,
+          597,
+          44,
+          596,
+          44,
+          596,
+          44,
+          596,
+          44,
+          597,
+          44,
+          596,
+          44,
+          596,
+          44,
+          596,
+          44,
+          597,
+          44,
+          596,
+          44,
+          596,
+          44,
+          596,
+          44,
+          597,
+          43,
+          597,
+          44,
+          596,
+          44,
+          596,
+          44,
+          597,
+          44,
+          596,
+          44,
+          596,
+          44,
+          596,
+          44,
+          596,
+          45,
+          596,
+          44,
+          596,
+          44,
+          596,
+          44,
+          596,
+          45,
+          595,
+          45,
+          596,
+          44,
+          596,
+          44,
+          596,
+          45,
+          595,
+          45,
+          596,
+          44,
+          596,
+          44,
+          596,
+          45,
+          595,
+          45,
+          596,
+          44,
+          596,
+          44,
+          596,
+          45,
+          595,
+          45,
+          596,
+          44,
+          596,
+          44,
+          596,
+          45,
+          595,
+          45,
+          595,
+          45,
+          596,
+          44,
+          596,
+          44,
+          596,
+          45,
+          595,
+          45,
+          596,
+          44,
+          596,
+          44,
+          596,
+          44,
+          596,
+          45,
+          595,
+          45,
+          595,
+          45,
+          595,
+          45,
+          596,
+          44,
+          596,
+          44,
+          596,
+          44,
+          596,
+          44,
+          596,
+          44,
+          596,
+          44,
+          597,
+          42,
+          598,
+          41,
+          599,
+          40,
+          600,
+          39,
+          602,
+          35,
+          605,
+          33,
+          607,
+          30,
+          611,
+          24,
+          618,
+          18,
+          623,
+          13,
+          628,
+          10,
+          175040
+        ],
+        "area_px": 4678,
+        "sorting_bin": "bin_paper",
+        "material": "paper",
+        "visible": true,
+        "zone": "source",
+        "obstacle": true,
+        "automatic_motion_allowed": false,
+        "decision_threshold": 0.1,
+        "semantic_gate_passed": true,
+        "decision_reasons": [],
+        "physical_gate": "待此类别与高度的实物验证"
+      }
+    ],
+    "inference_ms": 121.51190001168288,
+    "model_version": "9d5734b34871aa81412b2fa47176d8f926283bb5adfe3a3f80cc58c5b7332534",
+    "model_name": "YOLOE26 · 新版参考图辅助0.10 · ROCm GPU",
+    "runtime_id": "0878d8229aa91d41962eb6b7f0287ca46c882a2aef320436f3f037516b0de3f0",
+    "execution": {
+      "device": "cuda:0",
+      "device_name": "AMD Radeon(TM) 890M Graphics",
+      "precision": "fp16",
+      "torch": "2.12.0+rocm7.14.0",
+      "hip": "7.14.60850"
+    },
+    "configuration_sha256": "cb288271841ff81c2dcd44ea6fc9742231e658d0a68f44caa0a970aee15b792e",
+    "profile_id": "yoloe26_reference",
+    "confidence_threshold": 0.1,
+    "reference_assistance": true,
+    "source_bgr_sha256": "6d03d915fc12f11b6f77a3f405d883c8031ea4662a1525f2b5d7b69e10e188d1",
+    "automatic_motion_allowed": false,
+    "control_only": true,
+    "frame_id": 3,
+    "input_kind": "uploaded_image",
+    "image_sha256": "0780f6282d9f4468814d7b58e3734f721917e81b09ab3e068331f8a5d9a43f59",
+    "model_sha256": "9d5734b34871aa81412b2fa47176d8f926283bb5adfe3a3f80cc58c5b7332534",
+    "settings_sha256": "0878d8229aa91d41962eb6b7f0287ca46c882a2aef320436f3f037516b0de3f0",
+    "policy_sha256": "8fd92b76781b2fda6f8604a1636ad2c375898ff15c2cfd2dcaf6e70e2da31470",
+    "generation": "90c374572a7b17d2dbe89897997df1ab48c635b35cd8155f38e7a61a922c2ea6",
+    "execution_profile": {
+      "id": "yoloe26_reference",
+      "profile_sha256": "d88bdec849189d68ffa5e9b69796419f0ac340380e805a6056e0f955b418ec5d",
+      "configuration_sha256": "cb288271841ff81c2dcd44ea6fc9742231e658d0a68f44caa0a970aee15b792e"
+    },
+    "fixed_marker_observation": {
+      "location": "pc_vision",
+      "camera_sha256": "e27bbabaea9286ddcaaef49f07592fe6fb6c0dbea14650a511f15117a8300ee0",
+      "source_bgr_sha256": "6d03d915fc12f11b6f77a3f405d883c8031ea4662a1525f2b5d7b69e10e188d1",
+      "detections": [
+        {
+          "id": 12,
+          "corners_px": [
+            [
+              129.51966857910156,
+              228.42613220214844
+            ],
+            [
+              170.27915954589844,
+              228.3885498046875
+            ],
+            [
+              169.0282440185547,
+              268.5534362792969
+            ],
+            [
+              128.0043487548828,
+              268.58441162109375
+            ]
+          ]
+        },
+        {
+          "id": 10,
+          "corners_px": [
+            [
+              130.32887268066406,
+              64.56743621826172
+            ],
+            [
+              170.45774841308594,
+              64.71818542480469
+            ],
+            [
+              170.55348205566406,
+              105.18212890625
+            ],
+            [
+              130.54525756835938,
+              105.20158386230469
+            ]
+          ]
+        },
+        {
+          "id": 13,
+          "corners_px": [
+            [
+              244.17774963378906,
+              227.82395935058594
+            ],
+            [
+              284.44415283203125,
+              227.80157470703125
+            ],
+            [
+              284.3782653808594,
+              268.4609375
+            ],
+            [
+              243.7913055419922,
+              268.466796875
+            ]
+          ]
+        },
+        {
+          "id": 11,
+          "corners_px": [
+            [
+              244.4646453857422,
+              64.41635131835938
+            ],
+            [
+              284.44122314453125,
+              64.22891235351562
+            ],
+            [
+              282.51690673828125,
+              104.6653060913086
+            ],
+            [
+              244.4376983642578,
+              104.6246337890625
+            ]
+          ]
+        }
+      ]
+    },
+    "model_input_png_sha256": "0780f6282d9f4468814d7b58e3734f721917e81b09ab3e068331f8a5d9a43f59",
+    "prompt_mode": "text",
+    "model_input_image_sha256": "0780f6282d9f4468814d7b58e3734f721917e81b09ab3e068331f8a5d9a43f59",
+    "camera_id": "pynq-c270",
+    "capture_started_ms": 14571762.064373,
+    "source_stream_id": "80546d70a4234054a471c6e0f859b08a",
+    "source_frame_id": "20386",
+    "source_encoding": "png",
+    "station_vision": {
+      "schema_version": "station-vision-v1",
+      "backend": "pl_board_local",
+      "frame_id": 20386,
+      "baseline_frame_id": 20361,
+      "baseline_bgr_sha256": "28efaff22d4fb1f47a697c0310187e466d48eb0624ff29920550afb0955b6b0f",
+      "frame_bgr_sha256": "6d03d915fc12f11b6f77a3f405d883c8031ea4662a1525f2b5d7b69e10e188d1",
+      "config_sha256": "0f2b1a46d040a3c3f52f77123e547147f5f49f143919deb14757409ee8cce50b",
+      "consecutive_frames": 3,
+      "total_frames": 24,
+      "window_complete": true,
+      "processing_ms": 79.495366,
+      "regions": {
+        "source": {
+          "changed_px": 12,
+          "persistent_px": 0,
+          "delta_sum": 60297,
+          "bbox_inclusive_px": [
+            296,
+            106,
+            341,
+            202
+          ],
+          "area_px": 8784
+        },
+        "bin_plastic": {
+          "changed_px": 6,
+          "persistent_px": 0,
+          "delta_sum": 112335,
+          "bbox_inclusive_px": [
+            40,
+            309,
+            164,
+            433
+          ],
+          "area_px": 27470
+        },
+        "bin_metal": {
+          "changed_px": 44,
+          "persistent_px": 1,
+          "delta_sum": 182010,
+          "bbox_inclusive_px": [
+            452,
+            113,
+            614,
+            274
+          ],
+          "area_px": 34138
+        },
+        "bin_paper": {
+          "changed_px": 15,
+          "persistent_px": 3,
+          "delta_sum": 129246,
+          "bbox_inclusive_px": [
+            422,
+            297,
+            531,
+            419
+          ],
+          "area_px": 28428
+        },
+        "static_a": {
+          "changed_px": 2,
+          "persistent_px": 0,
+          "delta_sum": 19358,
+          "bbox_inclusive_px": [
+            155,
+            96,
+            156,
+            97
+          ],
+          "area_px": 3025
+        },
+        "static_b": {
+          "changed_px": 1,
+          "persistent_px": 0,
+          "delta_sum": 18564,
+          "bbox_inclusive_px": [
+            149,
+            249,
+            149,
+            249
+          ],
+          "area_px": 3136
+        }
+      },
+      "semantic_verified": false,
+      "automatic_motion_allowed": false,
+      "physical_success_verified": false
+    },
+    "marker_guard_only": false
+  },
+  "image_path": "2512f69f3f70434eb9218edd62da2b61.prompted_2.png",
+  "png_sha256": "0780f6282d9f4468814d7b58e3734f721917e81b09ab3e068331f8a5d9a43f59",
+  "decoded_bgr_sha256": "6d03d915fc12f11b6f77a3f405d883c8031ea4662a1525f2b5d7b69e10e188d1",
+  "source_jpeg_sha256": null,
+  "source_encoding": "png",
+  "source_bytes_sha256": "0780f6282d9f4468814d7b58e3734f721917e81b09ab3e068331f8a5d9a43f59"
+}

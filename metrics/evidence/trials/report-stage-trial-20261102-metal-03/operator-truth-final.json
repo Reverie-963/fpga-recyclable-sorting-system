@@ -1,0 +1,8 @@
+{
+  "operator_reply": "罐体全部在箱内，只是罐头倾斜搭边微微出箱。纸盒已放好，高度63mm，环境已确认",
+  "strict_full_containment": "not_passed_edge_supported_with_partial_head_overhang",
+  "body_in_bin": true,
+  "head_overhang": true,
+  "automatic_bin_occupancy": "passed",
+  "no_original_ledger_rewrite": true
+}

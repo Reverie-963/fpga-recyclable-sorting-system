@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>可回收物分拣 · 工位监视器</title><link rel="stylesheet" href="/monitor.css"><script src="/monitor.js" defer></script></head>
+<body><main>
+<header class="app-header"><div class="brand"><span class="brand-mark" aria-hidden="true">◈</span><div><p class="eyebrow">RECYCLABLE SORTING / 工位 01</p><h1>可回收物智能分拣</h1></div></div><div class="status-list"><span id="camera-state" class="badge">相机连接中</span><span id="gpu-state" class="badge">识别连接中</span><span id="pl-state" class="badge">FPGA 连接中</span></div></header>
+<nav class="view-tabs" aria-label="监视器视图" role="tablist"><button role="tab" id="tab-live" aria-selected="true" aria-controls="view-live">实时监视</button><button role="tab" id="tab-tasks" aria-selected="false" aria-controls="view-tasks">任务记录</button><button role="tab" id="tab-performance" aria-selected="false" aria-controls="view-performance">性能实测</button><button role="tab" id="tab-upload" aria-selected="false" aria-controls="view-upload">图片识别</button><span id="nav-note" class="nav-note">固定工位 · 单件分拣</span></nav>
+
+<section id="activity-banner" class="activity-banner" data-tone="waiting" aria-label="当前工位状态">
+ <span class="activity-indicator" aria-hidden="true"></span>
+ <div class="activity-main" role="status" aria-live="polite" aria-atomic="true"><p class="activity-label">现在正在做什么</p><h2 id="activity-title">正在读取工位状态…</h2><p id="activity-detail">等待控制服务回应。</p></div>
+ <div class="activity-meta"><strong id="activity-material">当前入口 · 全部分类</strong><span id="activity-clock">等待状态更新</span><span id="activity-updated">尚未收到控制状态</span><button id="activity-records" class="text-button">查看任务记录 →</button></div>
+</section>
+
+<section id="view-live" role="tabpanel" aria-labelledby="tab-live">
+ <div class="metrics-strip"><div><span>当前模型</span><strong id="model-name">—</strong><small id="model-device">—</small></div><div><span>识别刷新</span><strong id="fps">—</strong><small>帧 / 秒</small></div><div><span>GPU 识别整段</span><strong id="inference-ms">—</strong><small id="inference-reference">毫秒 · 等待对照</small></div><div><span>CPU 图像候选点</span><strong id="live-grasp-ms">—</strong><small>毫秒 · 含掩码解码</small></div><div><span>FPGA 新视觉本帧</span><strong id="pl-ms">—</strong><small id="pl-reference-hint">毫秒 · 含整理与读回</small></div></div>
+ <div class="live-grid">
+  <div class="live-primary"><section class="panel stage" aria-label="中央监视画面"><div class="panel-toolbar"><div class="segmented" aria-label="画面显示方式"><button data-focus="result" aria-pressed="true">识别画面</button><button data-focus="camera" aria-pressed="false">原始画面</button><button data-focus="compare" aria-pressed="false">双画面对照</button></div><button id="toggle" class="quiet">暂停识别</button></div>
+   <div id="frames" class="frames" data-focus="result"><figure id="result-frame"><div class="image-box"><img id="result-image" alt="实时对应帧的三类分割画面" hidden><svg id="candidate-overlay" class="point-overlay" aria-label="当前图像的CPU候选点"></svg><p id="result-empty" class="image-empty">正在接收识别结果…</p></div><figcaption>识别结果 · 对应图像</figcaption></figure><figure id="camera-frame"><div class="image-box"><img id="camera-image" alt="原始相机画面" hidden><p id="camera-empty" class="image-empty">正在接收相机画面…</p></div><figcaption id="camera-caption">独立原始帧</figcaption></figure></div>
+   <div class="frame-tools"><label><input type="checkbox" id="show-points" checked> 显示 CPU 图像候选点</label><span>候选点未经机械标定</span><button id="download-live" class="text-button" disabled>保存结果</button></div><p id="frame-caption" class="caption" role="status">等待新鲜帧</p>
+  </section>
+   <section class="panel runtime-panel" aria-labelledby="runtime-title">
+    <div class="section-heading"><div><p class="eyebrow">COMPUTE / LIVE</p><h2 id="runtime-title">识别与抓点耗时</h2></div><span id="runtime-frame" class="subtle">等待新鲜帧</span></div>
+    <div class="runtime-grid">
+     <div class="runtime-step"><span class="runtime-label">识别 · 类别 · 分割掩码 <small>GPU + CPU 收尾</small></span><strong id="runtime-inference">—</strong><p id="runtime-window" class="caption">等待识别计时</p></div>
+     <div class="runtime-step"><span class="runtime-label">轮廓提取与画面绘制 <small>电脑 CPU</small></span><strong class="runtime-unmeasured">未单独计时</strong><p class="caption">GPU 生成掩码；CPU 提取并绘制轮廓。</p></div>
+     <div class="runtime-step"><span class="runtime-label">图像候选抓点 <small>电脑 CPU</small></span><strong id="runtime-grasp">—</strong><p id="runtime-grasp-detail" class="caption">等待本帧候选点计时</p></div>
+    </div>
+    <div class="runtime-baseline"><span class="baseline-tag">已保存同模型实测</span><strong id="runtime-speedup">—</strong><span id="runtime-reference">正在核对 CPU / GPU 对照</span><button id="runtime-open-performance" class="text-button">测量详情 →</button></div>
+    <p id="runtime-baseline-scope" class="caption">加速比来自同模型离线对照；本帧耗时实时更新，两者分别展示。</p>
+    <p class="caption">识别计时含预处理、分割及 CPU 掩码转换，不含采图、网络或轮廓绘制。候选点计时含掩码解码，不代表正式抓取规划。</p>
+   </section>
+   <section class="panel fpga-runtime-panel" aria-labelledby="fpga-runtime-title">
+    <div class="section-heading"><div><p class="eyebrow">PYNQ-Z2 / FPGA VISION</p><h2 id="fpga-runtime-title">FPGA 新视觉耗时与加速</h2></div><span id="fpga-live-state" class="badge">等待板端统计</span></div>
+    <p class="caption">原图 RGB 差分 · 六区统计 · 三帧持续变化</p>
+    <div class="fpga-live-grid"><div class="fpga-live-value"><span>本帧实际处理</span><strong id="fpga-live-ms">—</strong><p id="fpga-live-frame" class="caption">等待新鲜统计帧</p></div><div class="fpga-live-summary"><span>最近网页采样帧</span><strong id="fpga-live-window">—</strong><p class="caption">处理耗时包含输入整理、缓存同步和结果读回；不含采图、JPEG、网络。FPGA 统计帧独立于 GPU 识别帧。</p></div></div>
+    <div class="runtime-baseline"><span class="baseline-tag">板端 ARM CPU 对照 · 已保存实测</span><strong id="fpga-live-speedup">—</strong><span id="fpga-live-reference">正在核对配对位流与实测记录</span><button id="fpga-open-performance" class="text-button">测量详情 →</button></div>
+    <p id="fpga-live-scope" class="caption">本帧处理耗时实时更新；加速比来自已保存对照，不是每帧同时重跑 CPU。</p>
+    <p id="fpga-live-pc" class="caption">电脑 CPU 是另一对照对象，不能与板端 ARM 混用。</p>
+   </section>
+   <section class="panel board-panel"><div class="section-heading"><h2>FPGA 六区变化</h2><span id="board-state" class="subtle">连接中</span></div><div id="board-unavailable" class="empty-small">等待板端统计</div><div id="board-content" hidden><table class="region-table"><thead><tr><th>区域</th><th>变化 / px</th><th>持续 / px</th></tr></thead><tbody id="region-rows"></tbody></table><p id="board-frame" class="caption"></p><p class="caption">RGB 差分与三帧像素交集；统计帧独立于识别帧。</p></div></section>
+  </div>
+  <aside class="live-side">
+ <section class="panel operation-panel" aria-labelledby="operation-title">
+  <div class="section-heading"><div><p class="eyebrow">SORTING CONTROL</p><h2 id="operation-title">分拣操控</h2></div><span id="operation-state" class="badge">连接中</span></div>
+  <p class="control-step"><span>01</span> 选择分拣类别</p>
+  <div class="segmented operation-materials" role="group" aria-label="分拣入口"><button data-operation-material="AUTO" aria-pressed="true">全部分类</button><button data-operation-material="PAPER" aria-pressed="false">仅纸类</button><button data-operation-material="METAL" aria-pressed="false">仅金属</button><button data-operation-material="PLASTIC" aria-pressed="false">仅塑料</button></div>
+  <select id="operation-material" aria-label="当前分拣入口" hidden><option value="AUTO">全部分类</option><option value="PAPER">仅纸类</option><option value="METAL">仅金属</option><option value="PLASTIC">仅塑料</option></select>
+
+  <p class="control-step"><span>02</span> 确认现场就绪</p>
+  <label class="operation-ready"><input type="checkbox" id="operation-ready"> 已核对现场：已测样件、目标箱为空、机械臂中位张爪，人员在场；放物后立即撤手。</label>
+  <p class="control-step"><span>03</span> 预演或开始分拣</p>
+  <div class="operation-controls"><button id="operation-preview">预演检查</button><button id="operation-start" class="primary" disabled>开始全部分类</button><button id="operation-arm" disabled>开启待命</button><button id="operation-cancel" disabled>退出待命</button><button id="operation-stop" class="danger" disabled>停止分拣</button><button id="operation-home" disabled>回中位</button><button id="operation-reset" disabled>重置状态（不回位）</button></div>
+  <p class="caption">重置不移动机械臂，也不要求它已经回到中位。存在停止或待复核记录时，请确认已停稳、张爪无夹物、人员退出；历史失败保留。运行中或设备仍被占用时不能重置。</p>
+  <p class="caption">识别和预演不要求先回位。“回中位”会实际运动；“重置状态（不回位）”只清理记录。</p>
+  <div id="voice-controls" class="voice-controls" hidden><div class="section-heading"><strong>常驻语音</strong><span id="voice-state" class="badge">连接中</span></div><button id="operation-voice-arm" disabled>语音待命 · 仅本批</button><p id="voice-instructions" class="caption">确认现场后开启，再说“小爱同学”和分拣口令。每批结束需重新确认，服务继续在线；120秒未使用或页面失联将取消本批资格。</p></div>
+  <p class="control-stop-note">停止分拣为软件请求，不是硬件急停。</p>
+  <p id="operation-message" class="caption" role="status" aria-live="polite">正在读取控制入口…</p>
+  <details class="operation-help"><summary>待命规则与执行范围</summary><p id="operation-scope" class="caption">待命最长 120 秒：先确认取物区为空，再放物；通过检查后执行一次并退出。刷新或关闭页面会退出待命；执行中失联请求停止。停止按钮不是硬件急停。</p></details>
+ </section>
+<section class="panel detection-panel"><div class="section-heading"><h2>全画面检出</h2><span id="display-threshold" class="subtle">—</span></div><div class="counts"><div class="plastic"><span>塑料</span><strong id="plastic-count">—</strong></div><div class="metal"><span>金属</span><strong id="metal-count">—</strong></div><div class="paper"><span>纸质</span><strong id="paper-count">—</strong></div></div><div id="detection-list" class="detection-list">等待识别</div></section>
+
+  </aside>
+ </div>
+ <button id="latest-task" class="task-strip" aria-label="查看最新任务记录"><span class="task-strip-label">最新任务记录</span><strong id="latest-task-title">正在读取</strong><span id="latest-task-detail"></span><span class="task-strip-arrow">查看记录 →</span></button>
+</section>
+
+<section id="view-tasks" role="tabpanel" aria-labelledby="tab-tasks" hidden>
+ <div class="view-heading"><div><h2>抓放任务记录</h2><p>现役新视觉链路 · 保存的任务帧、命令回显与结果</p></div><label class="task-selector">选择任务<select id="task-select" aria-label="选择任务"><option value="">自动跟随最新任务</option></select></label></div>
+ <p id="task-empty" class="panel empty-small">正在读取任务记录…</p>
+ <div id="task-content" hidden><div class="task-summary"><div><span id="task-kind" class="badge">任务记录</span><h3 id="task-title">—</h3><p id="task-meta" class="caption"></p></div><div class="task-totals"><span><strong id="task-time">—</strong> 秒 / 整轮</span><span><strong id="task-echoes">—</strong> 完整回显</span><span><strong id="task-waits">—</strong> 等待完成</span></div></div>
+ <div class="task-grid"><section class="panel task-image-panel"><div class="section-heading"><h3>任务原图与计划抓点</h3><span class="subtle">保存帧</span></div><div class="image-box record-image-box"><img id="record-image" alt="所选任务哈希核对后的原图" hidden><svg id="record-point" class="point-overlay" aria-label="该任务的计划抓点"></svg><p id="record-empty" class="image-empty">选择任务后读取原图</p></div><p id="record-caption" class="caption">计划点只叠加在同一任务的原始图像上。</p></section>
+ <div class="task-detail-column"><section class="panel"><div class="section-heading"><h3>计划与计算来源</h3><span id="geometry-source" class="subtle">—</span></div><dl class="facts"><div><dt>材质 / 目标箱</dt><dd id="task-destination">—</dd></div><div><dt>计划抓点 / px</dt><dd id="task-pick">—</dd></div><div><dt>抓取平面 / mm</dt><dd id="task-grip">—</dd></div><div><dt>掩码面积 / px²</dt><dd id="task-area">—</dd></div><div><dt>质心 / px</dt><dd id="task-centroid">—</dd></div><div><dt>图像主轴角</dt><dd id="task-axis">—</dd></div></dl><p id="task-compute" class="caption"></p></section>
+ <section class="panel outcome-panel"><h3>结果与复核</h3><div class="outcome-line"><span>原始自动结果</span><strong id="task-outcome">—</strong></div><p id="task-reason" class="caption"></p><p id="task-board-result" class="caption" hidden></p><div id="task-review" class="review-note" hidden><strong>人工反馈 / 复核</strong><p id="task-review-text"></p></div><div id="task-supplement" class="supplement-note" hidden></div></section></div></div>
+ <section class="panel commands-panel"><div class="section-heading"><h3>计划与实际通信</h3><span class="subtle">回显不等同于关节到位或抓牢</span></div><div class="command-scroll"><table class="command-table"><thead><tr><th>步骤</th><th>计划指令</th><th>实际发送 / 回显</th><th>动作 / 等待</th></tr></thead><tbody id="command-rows"></tbody></table></div></section>
+ </div>
+</section>
+
+<section id="view-performance" role="tabpanel" aria-labelledby="tab-performance" hidden>
+ <div class="view-heading"><div><h2>已保存性能实测</h2><p>模型推理与板端图像统计分别比较；下列倍数不是实时测速。</p></div><span class="badge">资产匹配后展示</span></div>
+ <div class="performance-grid"><section id="gpu-benchmark" class="panel benchmark" hidden><p class="eyebrow">AI PC / ROCm GPU</p><h3>三类分割推理</h3><div class="benchmark-value"><strong id="gpu-ratio">—</strong><span>典型单帧速度比</span></div><div class="time-comparison"><div><span>本机 CPU · FP32</span><strong id="gpu-cpu-time">—</strong></div><span>→</span><div><span>ROCm GPU · FP16</span><strong id="gpu-gpu-time">—</strong></div></div><p id="gpu-batch" class="measure-note"></p><details><summary>测量条件与延迟尖峰</summary><p id="gpu-conditions"></p><p id="gpu-spikes"></p><p>包含预处理、模型、后处理和 CPU 掩码转换；不含采图、网络和网页。</p></details></section>
+ <section id="fpga-benchmark" class="panel benchmark" hidden><p class="eyebrow">PYNQ-Z2 / FPGA</p><h3>板端 RGB 与六区统计</h3><div class="benchmark-value"><strong id="fpga-ratio">—</strong><span>相对板端 ARM 参考</span></div><div class="time-comparison"><div><span>板端 ARM / NumPy</span><strong id="fpga-cpu-time">—</strong></div><span>→</span><div><span>FPGA 完整处理</span><strong id="fpga-pl-time">—</strong></div></div><p id="fpga-reduction" class="measure-note"></p><p id="fpga-pc-reference" class="caption"></p><details><summary>测量范围与正确性</summary><p id="fpga-conditions"></p><p>包含输入整理、缓存同步和结果读回；不含采图、JPEG与网络。合成输入启动实测，不代表整机分拣加速或相对 HX370 的优势。</p></details></section></div><p id="benchmark-empty" class="empty-small" hidden>暂无与现役资产匹配的实测记录。</p>
+ <section class="panel roles-panel"><div class="section-heading"><h3>现役链路分工</h3><span id="workflow-threshold" class="subtle"></span></div><div class="role-grid"><div><span class="role-number">01</span><strong>GPU</strong><p>YOLOv8s 三类实例分割</p></div><div><span class="role-number">02</span><strong>电脑 CPU</strong><p>抓点、几何与语义掩码统计</p></div><div><span class="role-number">03</span><strong>FPGA</strong><p>原图 RGB 差分、六区统计、三帧持续变化</p></div><div><span class="role-number">04</span><strong>KM1 / ESP32</strong><p>按保存计划执行抓放指令</p></div></div><details><summary>模型与板端身份</summary><div id="runtime-identity" class="identity"></div></details></section>
+</section>
+
+<section id="view-upload" role="tabpanel" aria-labelledby="tab-upload" hidden><div class="view-heading"><div><h2>单张图片识别</h2><p>使用现役三类模型；图片试用不会发送机械命令。</p></div></div><div class="upload-grid"><section class="panel"><div class="upload-controls"><input id="upload-file" type="file" accept="image/jpeg,image/png,image/webp,image/bmp" aria-label="选择识别图片"><button id="upload-run" class="primary">识别图片</button></div><p id="upload-status" class="caption" role="status">请选择 6 MB 以内的图片。</p><div class="image-box upload-image-box"><img id="upload-image" alt="上传图片的识别结果" hidden><p id="upload-empty" class="image-empty">选择图片查看分割轮廓与类别</p></div><details id="example-details" hidden><summary>使用现有工位样图</summary><div id="examples" class="examples"></div></details></section><section class="panel"><div class="section-heading"><h3>识别结果</h3><button id="download-upload" class="text-button" disabled>保存结果</button></div><div id="upload-results" class="upload-results empty-small">等待图片</div><p class="caption">塑料、金属、纸质固定三类。陌生物品、透明塑料与遮挡仍需实测。</p></section></div></section>
+<footer><span id="page-message">操控限已核验单件范围；暂停识别不等于停止分拣。</span><span id="lease-state"></span></footer>
+</main></body></html>

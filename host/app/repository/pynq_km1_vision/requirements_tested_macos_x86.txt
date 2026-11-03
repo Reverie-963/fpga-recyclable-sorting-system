@@ -1,0 +1,8 @@
+# Optional reproduction of this session's local x86 Python 3.9 test environment.
+# Not the recommended Windows CUDA or AMD NPU environment.
+numpy==1.26.4
+opencv-python-headless==4.10.0.84
+pyserial==3.5
+onnxruntime==1.19.2
+onnx==1.19.1
+torch==2.2.2

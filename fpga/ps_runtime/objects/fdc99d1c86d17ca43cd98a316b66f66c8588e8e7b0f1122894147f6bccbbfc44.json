@@ -1,0 +1,27 @@
+{
+  "kind": "reviewed-prewrite-neutral-return-start-v1",
+  "task_id": "adff7ec04fb244de82b93f13e72edf71",
+  "report_sha256": "aa456cd36bfad3d82c02a24e76b7d949396a406b302e1e8f5d8e8ab62304b6cf",
+  "report": {
+    "path": "..\\..\\sorting-known-ledger\\adff7ec04fb244de82b93f13e72edf71.json",
+    "sha256": "aa456cd36bfad3d82c02a24e76b7d949396a406b302e1e8f5d8e8ab62304b6cf"
+  },
+  "unwritten_step": "source_high",
+  "reason": "ValueError:motion_requires_three_fixed_markers",
+  "motion_command_written": false,
+  "review_source": "direct_transport_guard_before_port_write_source_and_receipt_audit",
+  "last_command_receipt": {
+    "sent_hex": "7b2330303050313530305431303030212330303150313633325431303030212330303250313938375431303030212330303350303932385431303030212330303450313530305431303030212330303550313030305431303030217d",
+    "received_hex": "7b2330303050313530305431303030212330303150313633325431303030212330303250313938375431303030212330303350303932385431303030212330303450313530305431303030212330303550313030305431303030217d",
+    "echo_matched": true,
+    "completed_movement_wait": true,
+    "waited_s": 1.0,
+    "servo_ack_claimed": false
+  },
+  "operator_reset_confirmation": {
+    "path": "..\\..\\sorting-known-ledger\\resets\\reset-0f98007e7b244a97bfd6267104d838f0\\completed.json",
+    "sha256": "ee2ed73287dbcf1273753aa462f637c63961449ca6b442e26d06b8edd9d992bb"
+  },
+  "physical_pose_readback_claimed": false,
+  "qualification_changed": false
+}

@@ -1,0 +1,13 @@
+{
+  "created": "2026-11-02T22:00:22.002567+08:00",
+  "track": "amd_embodied_intelligence_3_2",
+  "source_branch": "feat/console-model-switch",
+  "source_head": "8b3654d9f02435671dcd72dbe842f6a6d0a7b08d",
+  "source_worktree_contains_uncommitted_files": true,
+  "board_runtime": "service-ready-20261101-v3",
+  "board_frozen_files_verified": 183,
+  "board_source_snapshot_files": 161,
+  "board_services_started": false,
+  "mechanical_actions": 0,
+  "clean_hardware_redeployment_validated": false
+}

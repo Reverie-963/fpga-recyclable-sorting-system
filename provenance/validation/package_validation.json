@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "files": 2117,
+  "python_syntax_files": 525,
+  "manifest_hashes_checked": 2115,
+  "metric_rows": 63,
+  "metric_evidence_links": 100,
+  "credential_patterns": 0,
+  "network_or_hardware_access": false
+}

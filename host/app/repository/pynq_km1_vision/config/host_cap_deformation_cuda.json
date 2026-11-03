@@ -1,0 +1,9 @@
+{
+  "model": "data/models/cap_deformation/best.pt",
+  "accelerator": "cuda",
+  "device": 0,
+  "imgsz": 640,
+  "confidence": 0.25,
+  "iou": 0.45,
+  "max_det": 30
+}

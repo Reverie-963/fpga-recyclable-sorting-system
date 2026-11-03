@@ -1,0 +1,14 @@
+{
+  "python": "3.10.4 (main, Apr  2 2022, 09:04:19) [GCC 11.2.0]",
+  "executable": "/usr/local/share/pynq-venv/bin/python3",
+  "kernel": "6.6.10-xilinx-v2024.1-g3c0eca68c652",
+  "machine": "armv7l",
+  "os_release": "NAME=\"PynqLinux\"\nVERSION=\"3.0 (Carlisle)\"\nID=pynqlinux\nID_LIKE=ubuntu\nPRETTY_NAME=\"PynqLinux, based on Ubuntu 22.04\"\nVERSION_ID=\"3.0\"\nHOME_URL=\"https://www.pynq.io/\"\nSUPPORT_URL=\"https://discuss.pynq.io/\"\nBUG_REPORT_URL=\"https://www.pynq.io\"\nPRIVACY_POLICY_URL=\"https://www.pynq.io\"\nVERSION_CODENAME=Carlisle\nUBUNTU_CODENAME=jammy\n",
+  "packages": {
+    "pynq": "3.1.1",
+    "numpy": "1.21.5",
+    "pyserial": "3.5",
+    "opencv-python": null
+  },
+  "driver_files": {}
+}

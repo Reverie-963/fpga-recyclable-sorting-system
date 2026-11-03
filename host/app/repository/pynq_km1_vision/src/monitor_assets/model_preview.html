@@ -1,0 +1,21 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>模型识别对比</title><style>body{background:#111c29;color:#e4eee9;font:16px system-ui;margin:20px}img{max-width:100%;max-height:65vh;border-radius:12px}p{line-height:1.7}#model{font-weight:bold}li{margin:8px}button{padding:10px}</style>
+<h2>实时模型识别</h2><p id="model">正在读取当前模型…</p><p id="state" role="status"></p>
+<img id="image" alt="当前模型对应帧的识别结果" hidden><ul id="objects"></ul>
+<p>切换入口在中控台顶部。此页显示类别和轮廓；切换不修改机械臂标定、投放区和历史记录。</p>
+<script>
+let busy=false,revision;
+async function refresh(){if(busy)return;busy=true;try{
+ const s=await fetch('/model-switch/status').then(r=>r.json());
+ document.getElementById('model').textContent=s.selected_name;
+ if(revision!==undefined&&s.revision!==revision){document.getElementById('image').hidden=true;document.getElementById('objects').replaceChildren();}
+ revision=s.revision;
+ const response=await fetch('/live-result');if(!response.ok)throw Error('等待新鲜识别结果');
+ const d=await response.json();
+ if(d.overlay_base64){document.getElementById('image').src='data:image/jpeg;base64,'+d.overlay_base64;document.getElementById('image').hidden=false;}
+ const ul=document.getElementById('objects');ul.replaceChildren();
+ for(const obj of d.instances||[]){const li=document.createElement('li');li.textContent=(obj.official_label||obj.label)+' · '+(obj.confidence*100).toFixed(1)+'%'+(obj.reference_assisted?' · 模型材质 '+obj.model_material+' → 参考辅助 '+obj.reference_material+' · '+obj.reference_object_id+' · 距离 '+obj.reference_distance.toFixed(3):'');ul.append(li);}
+ document.getElementById('state').textContent=(d.execution?.device==='cpu'?'CPU':'GPU')+' · '+Math.round(d.inference_ms)+' ms · '+(d.instances||[]).length+' 个目标';
+}catch(e){document.getElementById('state').textContent=e.message;document.getElementById('image').hidden=true;}finally{busy=false}}
+refresh();setInterval(refresh,750);
+</script></html>

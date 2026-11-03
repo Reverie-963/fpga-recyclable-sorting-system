@@ -1,0 +1,10 @@
+{
+  "kind": "board-control-attempt-failure-v1",
+  "request_id": "18588bb67a304d4aa6a72104371d60bd",
+  "compute_location": "pynq_ps",
+  "reason": "HTTPError:HTTP Error 409: Conflict",
+  "board_port_open_attempted": false,
+  "board_uart_write_attempted": false,
+  "original_reports_unchanged": true,
+  "automatic_retry": false
+}

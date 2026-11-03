@@ -1,0 +1,12 @@
+# Separate portable Python 3.7 runtime; never install into .venv-rocm.
+tensorflow==1.15.0
+keras==2.1.6
+numpy==1.18.5
+scipy==1.4.1
+scikit-image==0.16.2
+h5py==2.10.0
+protobuf==3.20.3
+pillow==8.4.0
+pycocotools==2.0.7
+matplotlib==3.2.2
+opencv-python-headless==4.5.5.64

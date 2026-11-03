@@ -1,0 +1,117 @@
+{
+  "status": "batch_visual_evidence_pass",
+  "mode": "bin_occupied",
+  "scope": "visited_bin_occupancy_only",
+  "attempted_count": 1,
+  "frames": [
+    {
+      "frame_id": "13424"
+    }
+  ],
+  "bins": [
+    {
+      "status": "bin_occupied_pass",
+      "mode": "bin_occupied",
+      "scope": "target_bin_occupancy_only",
+      "bin_id": "bin_paper",
+      "frames": [
+        {
+          "frame_id": "13424",
+          "occupied": true,
+          "bin_roi": [
+            422,
+            298,
+            629,
+            436
+          ],
+          "changed_px": 10393,
+          "largest_component_px": 9378,
+          "mode": "bin_occupied",
+          "rgb_difference_threshold": 45,
+          "min_component_px": 64,
+          "min_detection_confidence": 0.2
+        }
+      ],
+      "detection_matches": [
+        {
+          "label": "paper",
+          "confidence": 0.25
+        }
+      ],
+      "basis": "any_bin_detection",
+      "baseline_frame_id": "13161",
+      "exposure": {
+        "method": "bounded_global_rgb_affine_no_geometric_warp",
+        "gain": [
+          0.9714331496041794,
+          0.9714976029757209,
+          0.9784031257259918
+        ],
+        "bias": [
+          -1.9378902208938484,
+          -1.9922164577944699,
+          -2.44673980034284
+        ],
+        "motion_geometry": {
+          "kind": "fixed_static_marker_geometry_during_motion",
+          "markers": [
+            {
+              "correlation": 0.9992411732673645,
+              "shift_px": 0.0,
+              "peak_margin": 0.6010250449180603,
+              "corners": 13,
+              "patch_dynamic_range": 156.0,
+              "rgb_mean_difference_diagnostic": 5.879329004329004
+            },
+            {
+              "correlation": 0.9992714524269104,
+              "shift_px": 0.0,
+              "peak_margin": 0.7134163677692413,
+              "corners": 15,
+              "patch_dynamic_range": 158.0,
+              "rgb_mean_difference_diagnostic": 5.671768707482993
+            }
+          ],
+          "geometric_warp_applied": false,
+          "grasp_or_success_inferred": false
+        },
+        "adjusted_layout": [
+          {
+            "correlation": 0.9992386698722839,
+            "shift_px": 0.0,
+            "mean_abs_difference": 2.2983766233766234,
+            "corners": 13,
+            "corner_support_fraction": 0.4875,
+            "peak_margin": 0.6003619730472565
+          },
+          {
+            "correlation": 0.9992625117301941,
+            "shift_px": 0.0,
+            "mean_abs_difference": 2.265731292517007,
+            "corners": 15,
+            "corner_support_fraction": 0.49744897959183676,
+            "peak_margin": 0.7130086123943329
+          }
+        ],
+        "physical_alignment_verified": false
+      },
+      "independently_validated": false,
+      "physical_success_verified": false,
+      "class_verified": false,
+      "new_item_verified": false,
+      "source_removal_verified": false
+    }
+  ],
+  "evidence": [
+    {
+      "image": "87b91e5570204b65863bd64acec2397a.final-0.png",
+      "observation": "87b91e5570204b65863bd64acec2397a.final-0.observation.json",
+      "png_sha256": "0757eceaf0b4ce6f7aae096b76a5711a5fdabc7bd6a4528d10747d5397da2666"
+    }
+  ],
+  "physical_success_verified": false,
+  "class_verified": false,
+  "new_item_verified": false,
+  "source_removal_verified": false,
+  "automatic_motion_retry": false
+}

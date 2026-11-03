@@ -1,0 +1,5 @@
+# Windows x64, Python 3.11; CUDA 12 / cuDNN 9 deployment lane.
+-r requirements.txt
+onnxruntime-gpu[cuda,cudnn]==1.21.1
+onnx>=1.15,<2
+# torch is installed separately; do not install requirements_pc/train in this env.

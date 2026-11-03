@@ -1,0 +1,1243 @@
+{
+  "task_id": "position-ba3f2e7199974f239d9be43294bd0336",
+  "operation_scope": "supervised-single-position-calibration-v1",
+  "steps": [
+    {
+      "name": "prepare_front_high",
+      "command": "{#000P1500T5000!#001P1632T5000!#002P1987T5000!#003P0928T5000!#004P1500T5000!#005P1000T5000!}",
+      "duration_ms": 5000,
+      "status": "sent_and_waited_unverified",
+      "transport_receipt": {
+        "sent_hex": "7b2330303050313530305435303030212330303150313633325435303030212330303250313938375435303030212330303350303932385435303030212330303450313530305435303030212330303550313030305435303030217d",
+        "received_hex": "7b2330303050313530305435303030212330303150313633325435303030212330303250313938375435303030212330303350303932385435303030212330303450313530305435303030212330303550313030305435303030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 5.5,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "name": "source_high",
+      "command": "{#000P1374T5000!#001P1497T5000!#002P1993T5000!#003P0995T5000!}",
+      "duration_ms": 5000,
+      "xyz_nominal": [
+        53.97762485714502,
+        183.22984237276987,
+        130
+      ],
+      "alpha_deg": -45,
+      "status": "sent_and_waited_unverified",
+      "transport_receipt": {
+        "sent_hex": "7b2330303050313337345435303030212330303150313439375435303030212330303250313939335435303030212330303350303939355435303030217d",
+        "received_hex": "7b2330303050313337345435303030212330303150313439375435303030212330303250313939335435303030212330303350303939355435303030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 5.5,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "name": "align_wrist",
+      "command": "{#004P1400T5000!}",
+      "duration_ms": 5000,
+      "status": "sent_and_waited_unverified",
+      "transport_receipt": {
+        "sent_hex": "7b2330303450313430305435303030217d",
+        "received_hex": "7b2330303450313430305435303030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 5.515999999974156,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "name": "source_hover",
+      "command": "{#000P1374T5000!#001P1382T5000!#002P1936T5000!#003P0942T5000!}",
+      "duration_ms": 5000,
+      "xyz_nominal": [
+        53.97762485714502,
+        183.22984237276987,
+        90
+      ],
+      "alpha_deg": -60,
+      "status": "sent_and_waited_unverified",
+      "transport_receipt": {
+        "sent_hex": "7b2330303050313337345435303030212330303150313338325435303030212330303250313933365435303030212330303350303934325435303030217d",
+        "received_hex": "7b2330303050313337345435303030212330303150313338325435303030212330303250313933365435303030212330303350303934325435303030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 5.5,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "name": "source_mid",
+      "command": "{#000P1374T5000!#001P1340T5000!#002P1945T5000!#003P0956T5000!}",
+      "duration_ms": 5000,
+      "xyz_nominal": [
+        53.97762485714502,
+        183.22984237276987,
+        70
+      ],
+      "alpha_deg": -65,
+      "status": "sent_and_waited_unverified",
+      "transport_receipt": {
+        "sent_hex": "7b2330303050313337345435303030212330303150313334305435303030212330303250313934355435303030212330303350303935365435303030217d",
+        "received_hex": "7b2330303050313337345435303030212330303150313334305435303030212330303250313934355435303030212330303350303935365435303030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 5.51500000001397,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "name": "source_grip",
+      "command": "{#000P1374T5000!#001P1343T5000!#002P2046T5000!#003P1054T5000!}",
+      "duration_ms": 5000,
+      "xyz_nominal": [
+        53.97762485714502,
+        183.22984237276987,
+        50
+      ],
+      "alpha_deg": -65,
+      "status": "sent_and_waited_unverified",
+      "transport_receipt": {
+        "sent_hex": "7b2330303050313337345435303030212330303150313334335435303030212330303250323034365435303030212330303350313035345435303030217d",
+        "received_hex": "7b2330303050313337345435303030212330303150313334335435303030212330303250323034365435303030212330303350313035345435303030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 5.514999999984866,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "name": "close",
+      "command": "{#005P1500T2000!}",
+      "duration_ms": 2000,
+      "status": "sent_and_waited_unverified",
+      "transport_receipt": {
+        "sent_hex": "7b2330303550313530305432303030217d",
+        "received_hex": "7b2330303550313530305432303030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 2.5,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "name": "source_lift_mid",
+      "command": "{#000P1374T5000!#001P1340T5000!#002P1945T5000!#003P0956T5000!}",
+      "duration_ms": 5000,
+      "xyz_nominal": [
+        53.97762485714502,
+        183.22984237276987,
+        70
+      ],
+      "alpha_deg": -65,
+      "status": "sent_and_waited_unverified",
+      "transport_receipt": {
+        "sent_hex": "7b2330303050313337345435303030212330303150313334305435303030212330303250313934355435303030212330303350303935365435303030217d",
+        "received_hex": "7b2330303050313337345435303030212330303150313334305435303030212330303250313934355435303030212330303350303935365435303030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 5.51500000001397,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "name": "source_lift_hover",
+      "command": "{#000P1374T5000!#001P1382T5000!#002P1936T5000!#003P0942T5000!}",
+      "duration_ms": 5000,
+      "xyz_nominal": [
+        53.97762485714502,
+        183.22984237276987,
+        90
+      ],
+      "alpha_deg": -60,
+      "status": "sent_and_waited_unverified",
+      "transport_receipt": {
+        "sent_hex": "7b2330303050313337345435303030212330303150313338325435303030212330303250313933365435303030212330303350303934325435303030217d",
+        "received_hex": "7b2330303050313337345435303030212330303150313338325435303030212330303250313933365435303030212330303350303934325435303030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 5.515999999974156,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "name": "source_lift_high",
+      "command": "{#000P1374T5000!#001P1497T5000!#002P1993T5000!#003P0995T5000!}",
+      "duration_ms": 5000,
+      "xyz_nominal": [
+        53.97762485714502,
+        183.22984237276987,
+        130
+      ],
+      "alpha_deg": -45,
+      "status": "sent_and_waited_unverified",
+      "transport_receipt": {
+        "sent_hex": "7b2330303050313337345435303030212330303150313439375435303030212330303250313939335435303030212330303350303939355435303030217d",
+        "received_hex": "7b2330303050313337345435303030212330303150313439375435303030212330303250313939335435303030212330303350303939355435303030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 5.530999999988126,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "name": "front_high",
+      "command": "{#000P1500T5000!#001P1685T5000!#002P2031T5000!#003P0993T5000!}",
+      "duration_ms": 5000,
+      "status": "sent_and_waited_unverified",
+      "transport_receipt": {
+        "sent_hex": "7b2330303050313530305435303030212330303150313638355435303030212330303250323033315435303030212330303350303939335435303030217d",
+        "received_hex": "7b2330303050313530305435303030212330303150313638355435303030212330303250323033315435303030212330303350303939335435303030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 5.51500000001397,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "name": "restore_wrist_high",
+      "command": "{#004P1500T5000!}",
+      "duration_ms": 5000,
+      "status": "sent_and_waited_unverified",
+      "transport_receipt": {
+        "sent_hex": "7b2330303450313530305435303030217d",
+        "received_hex": "7b2330303450313530305435303030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 5.5,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "name": "transfer_0",
+      "command": "{#000P1500T5000!#001P1632T5000!#002P1987T5000!#003P0928T5000!}",
+      "duration_ms": 5000,
+      "status": "sent_and_waited_unverified",
+      "transport_receipt": {
+        "sent_hex": "7b2330303050313530305435303030212330303150313633325435303030212330303250313938375435303030212330303350303932385435303030217d",
+        "received_hex": "7b2330303050313530305435303030212330303150313633325435303030212330303250313938375435303030212330303350303932385435303030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 5.51500000001397,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "name": "transfer_1",
+      "command": "{#000P0800T5000!#001P1632T5000!#002P1987T5000!#003P0928T5000!}",
+      "duration_ms": 5000,
+      "status": "sent_and_waited_unverified",
+      "transport_receipt": {
+        "sent_hex": "7b2330303050303830305435303030212330303150313633325435303030212330303250313938375435303030212330303350303932385435303030217d",
+        "received_hex": "7b2330303050303830305435303030212330303150313633325435303030212330303250313938375435303030212330303350303932385435303030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 5.51600000000326,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "name": "transfer_2",
+      "command": "{#000P0800T5000!#001P1615T5000!#002P1919T5000!#003P0848T5000!}",
+      "duration_ms": 5000,
+      "status": "sent_and_waited_unverified",
+      "transport_receipt": {
+        "sent_hex": "7b2330303050303830305435303030212330303150313631355435303030212330303250313931395435303030212330303350303834385435303030217d",
+        "received_hex": "7b2330303050303830305435303030212330303150313631355435303030212330303250313931395435303030212330303350303834385435303030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 5.51500000001397,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "name": "transfer_3",
+      "command": "{#000P0800T5000!#001P1512T5000!#002P1976T5000!#003P0844T5000!}",
+      "duration_ms": 5000,
+      "status": "sent_and_waited_unverified",
+      "transport_receipt": {
+        "sent_hex": "7b2330303050303830305435303030212330303150313531325435303030212330303250313937365435303030212330303350303834345435303030217d",
+        "received_hex": "7b2330303050303830305435303030212330303150313531325435303030212330303250313937365435303030212330303350303834345435303030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 5.5,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "name": "release",
+      "command": "{#005P1000T2000!}",
+      "duration_ms": 2000,
+      "settle_s": 1,
+      "status": "sent_and_waited_unverified",
+      "transport_receipt": {
+        "sent_hex": "7b2330303550313030305432303030217d",
+        "received_hex": "7b2330303550313030305432303030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 3.0160000000032596,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "name": "retreat_0",
+      "command": "{#000P0800T5000!#001P1615T5000!#002P1919T5000!#003P0848T5000!}",
+      "duration_ms": 5000,
+      "status": "sent_and_waited_unverified",
+      "transport_receipt": {
+        "sent_hex": "7b2330303050303830305435303030212330303150313631355435303030212330303250313931395435303030212330303350303834385435303030217d",
+        "received_hex": "7b2330303050303830305435303030212330303150313631355435303030212330303250313931395435303030212330303350303834385435303030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 5.51600000000326,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "name": "retreat_1",
+      "command": "{#000P0800T5000!#001P1568T5000!#002P1875T5000!#003P0843T5000!}",
+      "duration_ms": 5000,
+      "status": "sent_and_waited_unverified",
+      "transport_receipt": {
+        "sent_hex": "7b2330303050303830305435303030212330303150313536385435303030212330303250313837355435303030212330303350303834335435303030217d",
+        "received_hex": "7b2330303050303830305435303030212330303150313536385435303030212330303250313837355435303030212330303350303834335435303030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 5.5,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "name": "retreat_2",
+      "command": "{#000P1500T5000!#001P1568T5000!#002P1875T5000!#003P0843T5000!}",
+      "duration_ms": 5000,
+      "status": "sent_and_waited_unverified",
+      "transport_receipt": {
+        "sent_hex": "7b2330303050313530305435303030212330303150313536385435303030212330303250313837355435303030212330303350303834335435303030217d",
+        "received_hex": "7b2330303050313530305435303030212330303150313536385435303030212330303250313837355435303030212330303350303834335435303030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 5.5,
+        "servo_ack_claimed": false
+      }
+    },
+    {
+      "name": "retreat_3",
+      "command": "{#000P1500T5000!#001P1500T5000!#002P1500T5000!#003P1500T5000!}",
+      "duration_ms": 5000,
+      "status": "sent_and_waited_unverified",
+      "transport_receipt": {
+        "sent_hex": "7b2330303050313530305435303030212330303150313530305435303030212330303250313530305435303030212330303350313530305435303030217d",
+        "received_hex": "7b2330303050313530305435303030212330303150313530305435303030212330303250313530305435303030212330303350313530305435303030217d",
+        "echo_matched": true,
+        "completed_movement_wait": true,
+        "waited_s": 5.51600000000326,
+        "servo_ack_claimed": false
+      }
+    }
+  ],
+  "status": "supervised_precomputed_position_cycle_visual_pass",
+  "context_path": "C:\\FPGA\\local-only\\position-grasp-20261030\\position-ffc532027c884c61a170a009a8c97e1a\\context.json",
+  "context_sha256": "c8028969cc73c5beca790b10427a9f712ecacbe5e64b82678f4690fc3ee8e62c",
+  "region_activation": {
+    "kind": "station-region-binding-v1",
+    "stream_id": "c4cbbce0c8664bb8825471c5f6b412a4",
+    "previous_config_sha256": "4b8aaf93e45b9960e1d63b0d39c30dc0659698ed332d11d0b587c62ac321f0ad",
+    "config_sha256": "e370fc1fe6b5fe982179d084aba31a2f5d0041850c75aee6f1a5466a515f5d29",
+    "regions": {
+      "source": [
+        244,
+        64,
+        398,
+        230
+      ],
+      "static_a": [
+        108,
+        38,
+        163,
+        93
+      ],
+      "static_b": [
+        107,
+        201,
+        162,
+        256
+      ],
+      "bin_plastic": [
+        25,
+        285,
+        231,
+        419
+      ],
+      "bin_metal": [
+        420,
+        86,
+        633,
+        254
+      ],
+      "bin_paper": [
+        405,
+        275,
+        610,
+        413
+      ]
+    },
+    "calibration_sha256": "171c320551c0a3a04bed3217e21d451762aa4420cf2f1a0fb8b0a7654b556730",
+    "baseline_invalidated": true,
+    "automatic_motion_allowed": false
+  },
+  "config_sha256": "94f14a82fbe0a55882ba7b18accff547141e8471db0d2cd713c2258e24b76e64",
+  "physical_success_verified": false,
+  "production_domain_changed": false,
+  "evidence": [
+    {
+      "image": "position-ba3f2e7199974f239d9be43294bd0336.before-0.png",
+      "observation": "position-ba3f2e7199974f239d9be43294bd0336.before-0.observation.json",
+      "png_sha256": "56eca3df7d795326c63ab31d9fe0fd8985dda012b60b5fb7bc9ff26b75a79ab4"
+    },
+    {
+      "image": "position-ba3f2e7199974f239d9be43294bd0336.before-1.png",
+      "observation": "position-ba3f2e7199974f239d9be43294bd0336.before-1.observation.json",
+      "png_sha256": "5b3d99adb923a64b355e5b867b6e05a9efe224d4d657938737ccb38162176168"
+    },
+    {
+      "image": "position-ba3f2e7199974f239d9be43294bd0336.before-2.png",
+      "observation": "position-ba3f2e7199974f239d9be43294bd0336.before-2.observation.json",
+      "png_sha256": "da61185f6bfbd946914661c8dfb7aec77aa01397e172f12dd641cf5db0beb86b"
+    }
+  ],
+  "pregrasp_baseline": {
+    "result": {
+      "baseline_frame_id": 63899,
+      "baseline_bgr_sha256": "8a6c3e3d68ea67ee46b55d247672dc11eb2f4cc811b0d26db62e082b8f4b97ba",
+      "stream_id": "c4cbbce0c8664bb8825471c5f6b412a4",
+      "config_sha256": "e370fc1fe6b5fe982179d084aba31a2f5d0041850c75aee6f1a5466a515f5d29",
+      "automatic_motion_allowed": false
+    },
+    "evidence": {
+      "image": "position-ba3f2e7199974f239d9be43294bd0336.exact-pregrasp-pl-baseline.png",
+      "observation": "position-ba3f2e7199974f239d9be43294bd0336.exact-pregrasp-pl-baseline.observation.json",
+      "png_sha256": "218f7c5c4f0923a9caf95fee9bff3378a26eb26ddca140641ffe3aab010f7bb2"
+    },
+    "config": {
+      "schema_version": "sorting-loop-v1",
+      "synthetic_fixture": false,
+      "station_id": "km1-three-bin-current-20261029",
+      "camera_id": "pynq-c270",
+      "image_size": [
+        640,
+        480
+      ],
+      "model_version": "9288e697042d14813d7d47abbe2e413f314be59c3069c2302f2dffee5912dd0e",
+      "runtime_id": "997bb093f49aea2a0196e95767415b024cf5964421a417913965667712772de5",
+      "calibration_id": "current-three-height-known-items-20261029",
+      "prompt_mode": "supervised",
+      "stable_frames": 3,
+      "max_objects": 1,
+      "max_age_ms": 2000,
+      "frame_timeout_s": 2,
+      "min_frame_gap_ms": 100,
+      "min_separation_px": 5,
+      "min_interior_px": 3,
+      "max_cycle_s": 180,
+      "observe_timeout_s": 15,
+      "min_confidence": 0.7,
+      "min_scene_iou": 0.95,
+      "min_erased_fraction": 0.9,
+      "min_persistent_fraction": 0.7,
+      "max_scene_changed_fraction": 0.02,
+      "max_other_bin_changed_fraction": 0.02,
+      "rgb_difference_threshold": 90,
+      "min_bin_gain_px": 500,
+      "retreat_settle_s": 0.1,
+      "require_distinct_jpeg": true,
+      "quality_gate_passed": false,
+      "station_commissioned": false,
+      "initial_pose_confirmed": false,
+      "source_roi": [
+        244,
+        64,
+        398,
+        230
+      ],
+      "statistics": {
+        "backend": "pl_board_local",
+        "assets": {
+          "station_vision.bit": "b03281dbd650465402cf711d230605a72712318915129814b0dc808dc261d2af",
+          "station_vision.hwh": "e7adf114088f17fe4af130d394190e75ff3cca19f95bcf81124ad85c6469de5b"
+        },
+        "regions": {
+          "source": [
+            244,
+            64,
+            398,
+            230
+          ],
+          "static_a": [
+            108,
+            38,
+            163,
+            93
+          ],
+          "static_b": [
+            107,
+            201,
+            162,
+            256
+          ],
+          "bin_plastic": [
+            25,
+            285,
+            231,
+            419
+          ],
+          "bin_metal": [
+            420,
+            86,
+            633,
+            254
+          ],
+          "bin_paper": [
+            405,
+            275,
+            610,
+            413
+          ]
+        },
+        "image_size": [
+          640,
+          480
+        ],
+        "threshold": 45,
+        "max_gap_s": 0.6,
+        "window_frames": 3,
+        "url": "http://127.0.0.1:8780",
+        "timeout_s": 3
+      },
+      "layout": {
+        "static_rois": [
+          [
+            108,
+            38,
+            163,
+            93
+          ],
+          [
+            107,
+            201,
+            162,
+            256
+          ]
+        ],
+        "search_margin_px": 5,
+        "max_layout_shift_px": 5,
+        "min_patch_std": 8,
+        "min_patch_corners": 4,
+        "min_patch_peak_margin": 0.01,
+        "min_patch_correlation": 0.98,
+        "max_patch_mean_difference": 12,
+        "min_motion_patch_dynamic_range": 80
+      },
+      "arm": {
+        "transport": "direct",
+        "commissioned": false,
+        "port": "COM9",
+        "move_ms": 5000,
+        "settle_s": 0.5,
+        "home": null,
+        "home_alpha_deg": null,
+        "pick_bounds_mm": [
+          -20,
+          20,
+          145,
+          165
+        ],
+        "joint_limits_pwm": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "usb_identity": {
+          "vid": 6790,
+          "pid": 29987,
+          "serial_number": null
+        },
+        "step_settle_s": {
+          "close": 0.5,
+          "release": 1
+        }
+      },
+      "profiles": {
+        "plastic": {
+          "bin_id": "bin_plastic",
+          "bin_roi": [
+            25,
+            285,
+            231,
+            419
+          ],
+          "commissioned": false,
+          "swept_path_verified": false,
+          "acceptance_record": null,
+          "qualification_record": {
+            "path": "..\\..\\local-only\\yoloe-physical-loop\\physical-20261029-131343\\unified\\qualification\\plastic.json",
+            "sha256": "bdccb327425da72664dc1e5a9268348bb934291f7d398df6a6e51aea4cb19945"
+          },
+          "object_profile_id": "same-empty-plastic-20261029",
+          "object_height_mm": 53,
+          "object_length_mm": 120,
+          "image_to_card_mm": [
+            [
+              0.9956554795310298,
+              -0.0051103260385510964,
+              -311.28968286929273
+            ],
+            [
+              0.019804560151092415,
+              -1.006289328222268,
+              150.21650388474092
+            ],
+            [
+              -0.00018539181455513607,
+              0.00017388538797495629,
+              1.0
+            ]
+          ],
+          "card_to_grip_mm": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1.25,
+              145
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "card_to_hover_mm": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.09523809523809633,
+              0.761904761904765,
+              151.6190476190476
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "pick_hulls_card_mm": [
+            [
+              [
+                -20,
+                0
+              ],
+              [
+                20,
+                0
+              ],
+              [
+                0,
+                12
+              ]
+            ],
+            [
+              [
+                -20,
+                0
+              ],
+              [
+                20,
+                0
+              ],
+              [
+                0,
+                10
+              ]
+            ]
+          ],
+          "grasp_z_mm": 10,
+          "source_mid_z_mm": 40,
+          "hover_z_mm": 70,
+          "alpha_deg": -75,
+          "wrist_pwm": 1500,
+          "open_pwm": 1000,
+          "close_pwm": 1300,
+          "axis_tolerance_deg": 15,
+          "max_grasp_offset_mm": 10,
+          "min_area_px": 3570,
+          "max_area_px": 8671,
+          "width_bounds_mm": [
+            43,
+            64
+          ],
+          "length_bounds_mm": [
+            95,
+            145
+          ],
+          "transfer_pwm": [
+            [
+              1500,
+              1632,
+              1987,
+              928
+            ],
+            [
+              2200,
+              1632,
+              1987,
+              928
+            ],
+            [
+              2200,
+              1485,
+              1872,
+              960
+            ],
+            [
+              2200,
+              1477,
+              1917,
+              977
+            ],
+            [
+              2200,
+              1438,
+              1873,
+              934
+            ]
+          ],
+          "retreat_pwm": [
+            [
+              2200,
+              1485,
+              1872,
+              960
+            ],
+            [
+              2200,
+              1632,
+              1987,
+              928
+            ],
+            [
+              1500,
+              1632,
+              1987,
+              928
+            ],
+            [
+              1500,
+              1500,
+              1500,
+              1500
+            ]
+          ],
+          "geometry_precision_claimed": false,
+          "dimension_provenance": "Same operator-specified specimen; paper in-plane bounds are broad image-derived checks, not independent physical length measurement",
+          "relocated_pixel_area_scale": 1.020115968100806
+        },
+        "metal": {
+          "bin_id": "bin_metal",
+          "bin_roi": [
+            420,
+            86,
+            633,
+            254
+          ],
+          "commissioned": false,
+          "swept_path_verified": false,
+          "acceptance_record": null,
+          "qualification_record": {
+            "path": "..\\..\\local-only\\yoloe-physical-loop\\physical-20261029-131343\\unified\\qualification\\metal.json",
+            "sha256": "8931a81b021fcfb042b63b8b343eb8c7a808f8f3a78d76ad3606f20311881331"
+          },
+          "object_profile_id": "same-empty-metal-20261029",
+          "object_height_mm": 56,
+          "object_length_mm": 150,
+          "image_to_card_mm": [
+            [
+              1.0434912646329688,
+              -0.020070957238984787,
+              -324.15003363036504
+            ],
+            [
+              -0.029516579685351357,
+              -1.0543779318265292,
+              173.08707922962188
+            ],
+            [
+              5.4243650412774e-05,
+              8.548305919648603e-05,
+              0.9999999999999999
+            ]
+          ],
+          "card_to_grip_mm": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1.25,
+              145
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "card_to_hover_mm": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.09523809523809633,
+              0.761904761904765,
+              151.6190476190476
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "pick_hulls_card_mm": [
+            [
+              [
+                -20,
+                0
+              ],
+              [
+                20,
+                0
+              ],
+              [
+                0,
+                12
+              ]
+            ],
+            [
+              [
+                -20,
+                0
+              ],
+              [
+                20,
+                0
+              ],
+              [
+                0,
+                10
+              ]
+            ]
+          ],
+          "grasp_z_mm": 10,
+          "source_mid_z_mm": 40,
+          "hover_z_mm": 70,
+          "alpha_deg": -75,
+          "wrist_pwm": 1500,
+          "open_pwm": 1000,
+          "close_pwm": 1300,
+          "axis_tolerance_deg": 15,
+          "max_grasp_offset_mm": 10,
+          "min_area_px": 4493,
+          "max_area_px": 9488,
+          "width_bounds_mm": [
+            45,
+            65
+          ],
+          "length_bounds_mm": [
+            125,
+            170
+          ],
+          "transfer_pwm": [
+            [
+              1500,
+              1632,
+              1987,
+              928
+            ],
+            [
+              1500,
+              1685,
+              2031,
+              993
+            ],
+            [
+              1088,
+              1685,
+              2031,
+              993
+            ],
+            [
+              1088,
+              1548,
+              1951,
+              1051
+            ],
+            [
+              1088,
+              1372,
+              1751,
+              1027
+            ]
+          ],
+          "retreat_pwm": [
+            [
+              1088,
+              1548,
+              1951,
+              1051
+            ],
+            [
+              1088,
+              1685,
+              2031,
+              993
+            ],
+            [
+              1500,
+              1685,
+              2031,
+              993
+            ],
+            [
+              1500,
+              1632,
+              1987,
+              928
+            ],
+            [
+              1500,
+              1500,
+              1500,
+              1500
+            ]
+          ],
+          "geometry_precision_claimed": false,
+          "dimension_provenance": "Same operator-specified specimen; paper in-plane bounds are broad image-derived checks, not independent physical length measurement",
+          "relocated_pixel_area_scale": 0.9986622132874861
+        },
+        "paper": {
+          "bin_id": "bin_paper",
+          "bin_roi": [
+            405,
+            275,
+            610,
+            413
+          ],
+          "commissioned": false,
+          "swept_path_verified": false,
+          "acceptance_record": null,
+          "qualification_record": {
+            "path": "..\\..\\local-only\\yoloe-physical-loop\\physical-20261029-131343\\unified\\qualification\\paper.json",
+            "sha256": "b65b81580f792cd21454396218396e5080d1f858b58cd750db184a773570f709"
+          },
+          "object_profile_id": "same-empty-paper-20261029",
+          "object_height_mm": 65,
+          "object_length_mm": null,
+          "image_to_card_mm": [
+            [
+              1.0262860328873413,
+              0.00487044117017079,
+              -320.90295073106535
+            ],
+            [
+              0.004076712611089695,
+              -1.0445348375160446,
+              157.39380135603966
+            ],
+            [
+              -7.341252457680614e-06,
+              0.00017144719551960018,
+              1.0
+            ]
+          ],
+          "card_to_grip_mm": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0.75,
+              145
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "card_to_hover_mm": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.09523809523809633,
+              0.761904761904765,
+              152.38095238095235
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "pick_hulls_card_mm": [
+            [
+              [
+                -20,
+                0
+              ],
+              [
+                20,
+                0
+              ],
+              [
+                0,
+                10
+              ]
+            ],
+            [
+              [
+                -20,
+                0
+              ],
+              [
+                20,
+                0
+              ],
+              [
+                0,
+                20
+              ]
+            ]
+          ],
+          "grasp_z_mm": 50,
+          "source_mid_z_mm": 60,
+          "hover_z_mm": 70,
+          "alpha_deg": -75,
+          "wrist_pwm": 1500,
+          "open_pwm": 1000,
+          "close_pwm": 1500,
+          "axis_tolerance_deg": 15,
+          "max_grasp_offset_mm": 10,
+          "min_area_px": 2528,
+          "max_area_px": 8598,
+          "width_bounds_mm": [
+            30,
+            75
+          ],
+          "length_bounds_mm": [
+            75,
+            155
+          ],
+          "transfer_pwm": [
+            [
+              1500,
+              1632,
+              1987,
+              928
+            ],
+            [
+              800,
+              1632,
+              1987,
+              928
+            ],
+            [
+              800,
+              1615,
+              1919,
+              848
+            ],
+            [
+              800,
+              1512,
+              1976,
+              844
+            ]
+          ],
+          "retreat_pwm": [
+            [
+              800,
+              1615,
+              1919,
+              848
+            ],
+            [
+              800,
+              1568,
+              1875,
+              843
+            ],
+            [
+              1500,
+              1568,
+              1875,
+              843
+            ],
+            [
+              1500,
+              1500,
+              1500,
+              1500
+            ]
+          ],
+          "geometry_precision_claimed": false,
+          "dimension_provenance": "Same operator-specified specimen; paper in-plane bounds are broad image-derived checks, not independent physical length measurement",
+          "relocated_pixel_area_scale": 1.0114896915472669
+        }
+      },
+      "camera_url": "http://127.0.0.1:8780/frame.jpg",
+      "device": "cuda:0",
+      "half": true,
+      "yoloe_config": "yoloe_materials.json",
+      "journal_dir": "../../local-only/sorting-known-ledger",
+      "stop_file": "../../local-only/STOP_SORTING",
+      "layout_reference": {
+        "path": "..\\..\\local-only\\sorting-known-ledger\\vision-bind-b5721a1586ef409ba6c525e1bde9b0ff.frame_2.png",
+        "sha256": "3c5b5363758ec108bd555752dd58a6f16fa1f1645888d105df68db63449eab54"
+      },
+      "inference_backend": "http",
+      "detector_url": "http://127.0.0.1:8778",
+      "model_family": "yolov8s",
+      "empty_reference": {
+        "path": "..\\..\\local-only\\sorting-known-ledger\\empty-1642731431054c289ab2cce1a93107f1.empty_2.png",
+        "sha256": "26d59f3e6c0fa2f1413f18c3eec639866dd6903d8c2b23fc3df5c8a46ea064fe"
+      },
+      "known": {
+        "scope": "supervised-known-item-v1",
+        "experiment_authorized": true,
+        "authorization_note": "Captain authorized current three-class low-speed physical commissioning and complete automatic known-item cycles in this task; not unattended long runs",
+        "initial_pwm": [
+          1500,
+          1500,
+          1500,
+          1500,
+          1500,
+          1000
+        ],
+        "prepare_pwm": [
+          1500,
+          1632,
+          1987,
+          928
+        ],
+        "grip_move_ms": 2000,
+        "device_lease": "../../local-only/arm-device-COM9.lock",
+        "stop_files": [
+          "../../local-only/STOP_SORTING",
+          "..\\..\\local-only\\yoloe-physical-loop\\physical-20261029-131343\\STOP"
+        ],
+        "expected_camera_stream_id": "c4cbbce0c8664bb8825471c5f6b412a4",
+        "measured_hard_limits_claimed": false,
+        "implementation_sources": [
+          {
+            "path": "..\\src\\sorting_known.py",
+            "sha256": "d2ff223a44870cd23b3ecc35fbcfc11842529bae097a4c411e19a5924c24e08e"
+          },
+          {
+            "path": "..\\src\\sorting_known_run.py",
+            "sha256": "0fd6c621f378a00e3e358b1a9367aba6cdef6e6dba42e12a4e14661577f24ff9"
+          },
+          {
+            "path": "..\\src\\sorting_loop.py",
+            "sha256": "f6cac1787f10a1ca219ad4ea73c0fe9d9c1b1bcb76924887bd773122ec4bbfd9"
+          },
+          {
+            "path": "..\\src\\sorting_io.py",
+            "sha256": "5ea6cfab7159fdbe575772ed1f49afec604c413174c07a3a6a9af5abcde1bfcd"
+          },
+          {
+            "path": "..\\src\\sorting_scene.py",
+            "sha256": "970973befce61d33b8b293e54936826b864e15c8ab56af5e381617d6f1f8d3ba"
+          },
+          {
+            "path": "..\\src\\arm.py",
+            "sha256": "106c861d242497ebd4e506af0f4efca4b47c9ec5d6e05de0400b4ad1ebd9af79"
+          },
+          {
+            "path": "..\\src\\arm_transport.py",
+            "sha256": "4445a0baa274317207efe5617da3c3cb26d26b26f8680fa477e0e31f15288f69"
+          },
+          {
+            "path": "..\\src\\arm_timing.py",
+            "sha256": "a90e45ec80ef2d5b9b410818f1671aa15e3ab14a932a9cd34eb3eb6e685f8f74"
+          },
+          {
+            "path": "../src/sorting_motion.py",
+            "sha256": "7e4dba8830ff485a5a4d28dd0a9d0ec15bff9eb8aa609f7f7166cee0f4c4be1a"
+          },
+          {
+            "path": "../src/arm_route_preview.py",
+            "sha256": "70d5c958aa8e19750a5feb2528306dc62dc2fb7e58438df83d7eeb5a2d5657c9"
+          },
+          {
+            "path": "../src/sorting_station_io.py",
+            "sha256": "05be4fc465e20dcf55563d1c30d61b11a1abea0b2d0043552f6dc66c2fad3ebc"
+          },
+          {
+            "path": "../src/station_vision.py",
+            "sha256": "48f852ceac025e49d172674c4c97b30b34d7d4b76a833ba9630cdb8560be477c"
+          }
+        ],
+        "motion_profile": "compact",
+        "vision_binding": {
+          "path": "..\\..\\local-only\\sorting-known-ledger\\vision-bind-b5721a1586ef409ba6c525e1bde9b0ff.json",
+          "sha256": "e9a2d431bd95ceceb0a3377a496ac7f4ef72ac63fdb8e22ad688b85b6f4898af"
+        }
+      }
+    },
+    "scope": "neutral_before_any_motion_full_cycle"
+  },
+  "stages": [
+    {
+      "plan": "C:\\FPGA\\local-only\\position-grasp-20261030\\position-ffc532027c884c61a170a009a8c97e1a\\high-calibration.json",
+      "sha256": "a19fde4d95333a7ead2c1d2aa2d69f15c3d1ac9c7ff3bad6554ba4ccb84648ea",
+      "operator_observation": null
+    },
+    {
+      "plan": "C:\\FPGA\\local-only\\position-grasp-20261030\\position-ffc532027c884c61a170a009a8c97e1a\\right-align-and-hover.json",
+      "sha256": "194883b7bd1ce1b3c93728ae90af8ae9029a8c5775249bf22df3d5f1f33e5f07",
+      "operator_observation": "队长授权直接计算执行；以下为助理对原图的检查，不冒充操作者测量：63997高位无损图中空爪接近右侧奶盒，夹持量仍1000，四枚标记及5像素守卫通过；源区与金属箱之间可见间隔。继续原完整候选路线的腕1400、模型90/70张爪接近段，没有重新手填坐标或扩大正式点域。"
+    },
+    {
+      "plan": "C:\\FPGA\\local-only\\position-grasp-20261030\\position-ffc532027c884c61a170a009a8c97e1a\\right-precomputed-grasp-through-return.json",
+      "sha256": "bdeb4610290c92276c2a023ae6cd6a55eec7e5bf0469f71625567bbaaecc4278",
+      "operator_observation": "队长授权直接计算执行；以下为助理对原图的检查，不冒充操作者测量：64691新鲜原图中两指约横向分列奶盒两侧，中点约370,130接近原目标374,124，四枚完整固定标记可见，5像素守卫通过，金属箱与张开夹爪之间可见净空。右点模型70处未重新手改底座、腕或伸出量。仅本轮受监督单点试验按原完整21条候选的第6至21条连续执行；使用同一奶盒闭爪1500、已测纸类转运/释放/退回，不声明工作区模型已验收或实测间隙。"
+    }
+  ],
+  "serial_closed": true,
+  "precomputed_visual_evidence": {
+    "path": "position-ba3f2e7199974f239d9be43294bd0336.precomputed-visual.json",
+    "sha256": "33dce5b119829f1040a096aaef8deb89bbbee59f3087bb339da633431b278848"
+  }
+}

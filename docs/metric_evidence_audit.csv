@@ -1,0 +1,64 @@
+﻿指标名称,数值,证据文件,证据链接存在,相关脚本或入口,范围与缺项
+30次目标箱接纳（允许已记录罐口搭边；测试后补充）,25/30（83.33%）,logs/pilot30/results.csv; logs/pilot30/dual_criteria.csv; ../docs/pilot30_update.md,是,metrics/scripts/recompute_pilot30.py,已收录逐次结果、关键帧和复算脚本；完整录像序列/中间文件及实测采集脚本未完整收录。总体指标仍待验收。
+30次原严格完整入箱（无搭边）,17/30（56.67%）,logs/pilot30/results.csv; logs/pilot30/dual_criteria.csv; ../docs/pilot30_update.md,是,metrics/scripts/recompute_pilot30.py,已收录逐次结果、关键帧和复算脚本；完整录像序列/中间文件及实测采集脚本未完整收录。总体指标仍待验收。
+30次组预演拒绝且无实际动作,2/30,logs/pilot30/results.csv; logs/pilot30/dual_criteria.csv; ../docs/pilot30_update.md,是,metrics/scripts/recompute_pilot30.py,已收录逐次结果、关键帧和复算脚本；完整录像序列/中间文件及实测采集脚本未完整收录。总体指标仍待验收。
+实际动作条件可见首动 P50,26900.155957,logs/pilot30/results.csv; logs/pilot30/dual_criteria.csv; ../docs/pilot30_update.md,是,metrics/scripts/recompute_pilot30.py,已收录逐次结果、关键帧和复算脚本；完整录像序列/中间文件及实测采集脚本未完整收录。总体指标仍待验收。
+实际动作条件可见首动 P95,29952.174190,logs/pilot30/results.csv; logs/pilot30/dual_criteria.csv; ../docs/pilot30_update.md,是,metrics/scripts/recompute_pilot30.py,已收录逐次结果、关键帧和复算脚本；完整录像序列/中间文件及实测采集脚本未完整收录。总体指标仍待验收。
+实际动作条件可见首动 P99,29987.053921,logs/pilot30/results.csv; logs/pilot30/dual_criteria.csv; ../docs/pilot30_update.md,是,metrics/scripts/recompute_pilot30.py,已收录逐次结果、关键帧和复算脚本；完整录像序列/中间文件及实测采集脚本未完整收录。总体指标仍待验收。
+实际动作条件可见首动 最大值,29987.053921,logs/pilot30/results.csv; logs/pilot30/dual_criteria.csv; ../docs/pilot30_update.md,是,metrics/scripts/recompute_pilot30.py,已收录逐次结果、关键帧和复算脚本；完整录像序列/中间文件及实测采集脚本未完整收录。总体指标仍待验收。
+总体任务闭环成功率,总体仍待验收；限定30次另列,logs/pilot30/results.csv; ../docs/pilot30_update.md,是,metrics/scripts/recompute_pilot30.py,已收录逐次结果、关键帧和复算脚本；完整录像序列/中间文件及实测采集脚本未完整收录。总体指标仍待验收。
+同版本重复探索组严格完整入箱,8/11,logs/task_trials.csv,是,metrics/scripts/recompute_metrics.py,有11次探索组记录与选取证据；没有完整独立实测采集入口。
+三类代表样件独立单件组,3/3,stage_metrics.json,是,,有历史代表样件汇总；未找到此组三次独立配套采集/复算脚本。
+总体实际运动响应延迟 P50,总体仍待验收；28次条件样本另列,logs/pilot30/statistics.json; ../docs/pilot30_update.md,是,metrics/scripts/recompute_pilot30.py,已收录逐次结果、关键帧和复算脚本；完整录像序列/中间文件及实测采集脚本未完整收录。总体指标仍待验收。
+总体实际运动响应延迟 P95,总体仍待验收；28次条件样本另列,logs/pilot30/statistics.json; ../docs/pilot30_update.md,是,metrics/scripts/recompute_pilot30.py,已收录逐次结果、关键帧和复算脚本；完整录像序列/中间文件及实测采集脚本未完整收录。总体指标仍待验收。
+总体实际运动响应延迟 P99,总体仍待验收；28次条件样本另列,logs/pilot30/statistics.json; ../docs/pilot30_update.md,是,metrics/scripts/recompute_pilot30.py,已收录逐次结果、关键帧和复算脚本；完整录像序列/中间文件及实测采集脚本未完整收录。总体指标仍待验收。
+总体实际运动响应延迟 最大值,总体仍待验收；28次条件样本另列,logs/pilot30/statistics.json; ../docs/pilot30_update.md,是,metrics/scripts/recompute_pilot30.py,已收录逐次结果、关键帧和复算脚本；完整录像序列/中间文件及实测采集脚本未完整收录。总体指标仍待验收。
+探索组决策帧至可见首动范围,28075.871-34034.401,logs/task_trials.csv,是,metrics/scripts/recompute_metrics.py,有11次探索组记录与选取证据；没有完整独立实测采集入口。
+三材质Macro-F1,93.68046,logs/quality_gpu_derived.json; logs/ai_first_pass_predictions.json; test_data/manifest.json,是,metrics/scripts/original_analyze_metrics.py; metrics/scripts/recompute_metrics.py,有逐图预测、TP/FP/FN、131张测试图标签；原分析依赖本机路径，复算不等于重新推理。
+前景三材质mIoU,82.25439,logs/quality_gpu_derived.json; logs/ai_first_pass_predictions.json; test_data/manifest.json,是,metrics/scripts/original_analyze_metrics.py; metrics/scripts/recompute_metrics.py,有逐图预测、TP/FP/FN、131张测试图标签；原分析依赖本机路径，复算不等于重新推理。
+AI预处理 p50_ms,0.9956499998224899,logs/ai_batch1.json,是,metrics/scripts/original_measure_ai.py; metrics/scripts/recompute_metrics.py,有162次逐次数据；原采集脚本依赖本机模型目录、服务与环境，不可直接跨机运行。
+AI预处理 p95_ms,1.4746600005310027,logs/ai_batch1.json,是,metrics/scripts/original_measure_ai.py; metrics/scripts/recompute_metrics.py,有162次逐次数据；原采集脚本依赖本机模型目录、服务与环境，不可直接跨机运行。
+AI预处理 p99_ms,1901.3247809946167,logs/ai_batch1.json,是,metrics/scripts/original_measure_ai.py; metrics/scripts/recompute_metrics.py,有162次逐次数据；原采集脚本依赖本机模型目录、服务与环境，不可直接跨机运行。
+AI预处理 max_ms,2127.4558000150137,logs/ai_batch1.json,是,metrics/scripts/original_measure_ai.py; metrics/scripts/recompute_metrics.py,有162次逐次数据；原采集脚本依赖本机模型目录、服务与环境，不可直接跨机运行。
+纯模型推理 p50_ms,75.23244999174494,logs/ai_batch1.json,是,metrics/scripts/original_measure_ai.py; metrics/scripts/recompute_metrics.py,有162次逐次数据；原采集脚本依赖本机模型目录、服务与环境，不可直接跨机运行。
+纯模型推理 p95_ms,2230.6494899778045,logs/ai_batch1.json,是,metrics/scripts/original_measure_ai.py; metrics/scripts/recompute_metrics.py,有162次逐次数据；原采集脚本依赖本机模型目录、服务与环境，不可直接跨机运行。
+纯模型推理 p99_ms,2269.9061279906887,logs/ai_batch1.json,是,metrics/scripts/original_measure_ai.py; metrics/scripts/recompute_metrics.py,有162次逐次数据；原采集脚本依赖本机模型目录、服务与环境，不可直接跨机运行。
+纯模型推理 max_ms,2372.0215000212193,logs/ai_batch1.json,是,metrics/scripts/original_measure_ai.py; metrics/scripts/recompute_metrics.py,有162次逐次数据；原采集脚本依赖本机模型目录、服务与环境，不可直接跨机运行。
+模型后处理 p50_ms,3.0513500096276402,logs/ai_batch1.json,是,metrics/scripts/original_measure_ai.py; metrics/scripts/recompute_metrics.py,有162次逐次数据；原采集脚本依赖本机模型目录、服务与环境，不可直接跨机运行。
+模型后处理 p95_ms,4.215745006513314,logs/ai_batch1.json,是,metrics/scripts/original_measure_ai.py; metrics/scripts/recompute_metrics.py,有162次逐次数据；原采集脚本依赖本机模型目录、服务与环境，不可直接跨机运行。
+模型后处理 p99_ms,5.141594005399383,logs/ai_batch1.json,是,metrics/scripts/original_measure_ai.py; metrics/scripts/recompute_metrics.py,有162次逐次数据；原采集脚本依赖本机模型目录、服务与环境，不可直接跨机运行。
+模型后处理 max_ms,14.146699977573007,logs/ai_batch1.json,是,metrics/scripts/original_measure_ai.py; metrics/scripts/recompute_metrics.py,有162次逐次数据；原采集脚本依赖本机模型目录、服务与环境，不可直接跨机运行。
+参考/RLE等附加处理 p50_ms,9.563349987729453,logs/ai_batch1.json,是,metrics/scripts/original_measure_ai.py; metrics/scripts/recompute_metrics.py,有162次逐次数据；原采集脚本依赖本机模型目录、服务与环境，不可直接跨机运行。
+参考/RLE等附加处理 p95_ms,12.638884998159476,logs/ai_batch1.json,是,metrics/scripts/original_measure_ai.py; metrics/scripts/recompute_metrics.py,有162次逐次数据；原采集脚本依赖本机模型目录、服务与环境，不可直接跨机运行。
+参考/RLE等附加处理 p99_ms,17.10236398794222,logs/ai_batch1.json,是,metrics/scripts/original_measure_ai.py; metrics/scripts/recompute_metrics.py,有162次逐次数据；原采集脚本依赖本机模型目录、服务与环境，不可直接跨机运行。
+参考/RLE等附加处理 max_ms,2143.2134000060614,logs/ai_batch1.json,是,metrics/scripts/original_measure_ai.py; metrics/scripts/recompute_metrics.py,有162次逐次数据；原采集脚本依赖本机模型目录、服务与环境，不可直接跨机运行。
+总感知 p50_ms,88.83414999581873,logs/ai_batch1.json,是,metrics/scripts/original_measure_ai.py; metrics/scripts/recompute_metrics.py,有162次逐次数据；原采集脚本依赖本机模型目录、服务与环境，不可直接跨机运行。
+总感知 p95_ms,2243.512604989519,logs/ai_batch1.json,是,metrics/scripts/original_measure_ai.py; metrics/scripts/recompute_metrics.py,有162次逐次数据；原采集脚本依赖本机模型目录、服务与环境，不可直接跨机运行。
+总感知 p99_ms,2280.72506798926,logs/ai_batch1.json,是,metrics/scripts/original_measure_ai.py; metrics/scripts/recompute_metrics.py,有162次逐次数据；原采集脚本依赖本机模型目录、服务与环境，不可直接跨机运行。
+总感知 max_ms,2385.9889000013936,logs/ai_batch1.json,是,metrics/scripts/original_measure_ai.py; metrics/scripts/recompute_metrics.py,有162次逐次数据；原采集脚本依赖本机模型目录、服务与环境，不可直接跨机运行。
+顺序图像调用循环吞吐,2.6602458796951436,logs/ai_batch1.json,是,metrics/scripts/original_measure_ai.py; metrics/scripts/recompute_metrics.py,有162次逐次数据；原采集脚本依赖本机模型目录、服务与环境，不可直接跨机运行。
+路径编译中位数 优化ARM/PS-PL,197.025/177.838,logs/route_samples.json; logs/route_summary.json,是,,需要逐项核对。
+控制状态GET RTT p50,141.63689999259077,logs/online_raw.jsonl; logs/online_summary.json,是,metrics/scripts/original_online_benchmark.py; metrics/scripts/recompute_metrics.py,有800次逐请求日志；原采集依赖原服务地址/版本，部分派生量在原脚本中计算。
+控制状态GET RTT p95,269.7966199993968,logs/online_raw.jsonl; logs/online_summary.json,是,metrics/scripts/original_online_benchmark.py; metrics/scripts/recompute_metrics.py,有800次逐请求日志；原采集依赖原服务地址/版本，部分派生量在原脚本中计算。
+控制状态GET RTT p99,366.24563901394123,logs/online_raw.jsonl; logs/online_summary.json,是,metrics/scripts/original_online_benchmark.py; metrics/scripts/recompute_metrics.py,有800次逐请求日志；原采集依赖原服务地址/版本，部分派生量在原脚本中计算。
+控制状态GET RTT max,418.654900015099,logs/online_raw.jsonl; logs/online_summary.json,是,metrics/scripts/original_online_benchmark.py; metrics/scripts/recompute_metrics.py,有800次逐请求日志；原采集依赖原服务地址/版本，部分派生量在原脚本中计算。
+无损PNG GET RTT p50,558.7294499855489,logs/online_raw.jsonl; logs/online_summary.json,是,metrics/scripts/original_online_benchmark.py; metrics/scripts/recompute_metrics.py,有800次逐请求日志；原采集依赖原服务地址/版本，部分派生量在原脚本中计算。
+无损PNG GET RTT p95,835.8231149948551,logs/online_raw.jsonl; logs/online_summary.json,是,metrics/scripts/original_online_benchmark.py; metrics/scripts/recompute_metrics.py,有800次逐请求日志；原采集依赖原服务地址/版本，部分派生量在原脚本中计算。
+无损PNG GET RTT p99,988.4865770133911,logs/online_raw.jsonl; logs/online_summary.json,是,metrics/scripts/original_online_benchmark.py; metrics/scripts/recompute_metrics.py,有800次逐请求日志；原采集依赖原服务地址/版本，部分派生量在原脚本中计算。
+无损PNG GET RTT max,1012.7178000111599,logs/online_raw.jsonl; logs/online_summary.json,是,metrics/scripts/original_online_benchmark.py; metrics/scripts/recompute_metrics.py,有800次逐请求日志；原采集依赖原服务地址/版本，部分派生量在原脚本中计算。
+上传图像识别应用RTT p50,672.7296999888495,logs/online_raw.jsonl; logs/online_summary.json,是,metrics/scripts/original_online_benchmark.py; metrics/scripts/recompute_metrics.py,有800次逐请求日志；原采集依赖原服务地址/版本，部分派生量在原脚本中计算。
+上传图像识别应用RTT p95,1255.971635010792,logs/online_raw.jsonl; logs/online_summary.json,是,metrics/scripts/original_online_benchmark.py; metrics/scripts/recompute_metrics.py,有800次逐请求日志；原采集依赖原服务地址/版本，部分派生量在原脚本中计算。
+上传图像识别应用RTT p99,1298.2717809962924,logs/online_raw.jsonl; logs/online_summary.json,是,metrics/scripts/original_online_benchmark.py; metrics/scripts/recompute_metrics.py,有800次逐请求日志；原采集依赖原服务地址/版本，部分派生量在原脚本中计算。
+上传图像识别应用RTT max,1356.017599988263,logs/online_raw.jsonl; logs/online_summary.json,是,metrics/scripts/original_online_benchmark.py; metrics/scripts/recompute_metrics.py,有800次逐请求日志；原采集依赖原服务地址/版本，部分派生量在原脚本中计算。
+PNG应用有效载荷吞吐,4.8701045826299385,logs/online_raw.jsonl; logs/online_summary.json,是,metrics/scripts/original_online_benchmark.py; metrics/scripts/recompute_metrics.py,有800次逐请求日志；原采集依赖原服务地址/版本，部分派生量在原脚本中计算。
+四组无动作请求应用失败,0/800,logs/online_raw.jsonl,是,metrics/scripts/original_online_benchmark.py; metrics/scripts/recompute_metrics.py,有800次逐请求日志；原采集依赖原服务地址/版本，部分派生量在原脚本中计算。
+PS/PL完整统计调用 p50,74.91733450000001,logs/online_raw.jsonl,是,metrics/scripts/original_online_benchmark.py; metrics/scripts/recompute_metrics.py,有800次逐请求日志；原采集依赖原服务地址/版本，部分派生量在原脚本中计算。
+PS/PL完整统计调用 p95,102.85681475,logs/online_raw.jsonl,是,metrics/scripts/original_online_benchmark.py; metrics/scripts/recompute_metrics.py,有800次逐请求日志；原采集依赖原服务地址/版本，部分派生量在原脚本中计算。
+PS/PL完整统计调用 p99,123.69217005000004,logs/online_raw.jsonl,是,metrics/scripts/original_online_benchmark.py; metrics/scripts/recompute_metrics.py,有800次逐请求日志；原采集依赖原服务地址/版本，部分派生量在原脚本中计算。
+PS/PL完整统计调用 max,133.614818,logs/online_raw.jsonl,是,metrics/scripts/original_online_benchmark.py; metrics/scripts/recompute_metrics.py,有800次逐请求日志；原采集依赖原服务地址/版本，部分派生量在原脚本中计算。
+目标时钟/WNS/WHS,100/+0.423/+0.051,../fpga/report/verified_timing.rpt,是,fpga/build/build_hls.ps1; fpga/build/build_joint.ps1; fpga/build/finish_joint.tcl,有工具报告、源码、重建入口；本轮未重建。功耗为工具估计，非整机实测。
+LUT,18228,../fpga/report/verified_utilization.rpt,是,fpga/build/build_hls.ps1; fpga/build/build_joint.ps1; fpga/build/finish_joint.tcl,有工具报告、源码、重建入口；本轮未重建。功耗为工具估计，非整机实测。
+FF,25169,../fpga/report/verified_utilization.rpt,是,fpga/build/build_hls.ps1; fpga/build/build_joint.ps1; fpga/build/finish_joint.tcl,有工具报告、源码、重建入口；本轮未重建。功耗为工具估计，非整机实测。
+BRAM Tile,6,../fpga/report/verified_utilization.rpt,是,fpga/build/build_hls.ps1; fpga/build/build_joint.ps1; fpga/build/finish_joint.tcl,有工具报告、源码、重建入口；本轮未重建。功耗为工具估计，非整机实测。
+DSP,49,../fpga/report/verified_utilization.rpt,是,fpga/build/build_hls.ps1; fpga/build/build_joint.ps1; fpga/build/finish_joint.tcl,有工具报告、源码、重建入口；本轮未重建。功耗为工具估计，非整机实测。
+片上功耗工具估计,1.591,../fpga/report/estimated_device_power.rpt,是,fpga/build/build_hls.ps1; fpga/build/build_joint.ps1; fpga/build/finish_joint.tcl,有工具报告、源码、重建入口；本轮未重建。功耗为工具估计，非整机实测。

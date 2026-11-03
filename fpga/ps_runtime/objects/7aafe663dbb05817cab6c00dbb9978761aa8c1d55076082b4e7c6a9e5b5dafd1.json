@@ -1,0 +1,60 @@
+{
+  "task_id": "physical-20261029-131343-known-plastic-over-bin",
+  "stage": "plastic_over_bin",
+  "plan_sha256": "3eb6bad4e2fcafe12a060043a8ee9b02983c20330e7077657442d226951cddf2",
+  "started_at": "2026-10-29T17:39:25.318594+08:00",
+  "status": "sent_pending_observation",
+  "wait_policy": "motion_plus_echo_grace",
+  "physical_result": "pending_operator_observation",
+  "retry": false,
+  "serial_opened": true,
+  "steps": [
+    {
+      "step": "turn_left_high",
+      "command": "{#000P2200T5000!}",
+      "duration_ms": 5000,
+      "attempted": true,
+      "echo_matched": true,
+      "bytes_written": 17,
+      "received_hex": "7b2330303050323230305435303030217d"
+    },
+    {
+      "step": "left_bin_170",
+      "command": "{#000P2200T5000!#001P1485T5000!#002P1872T5000!#003P0960T5000!}",
+      "duration_ms": 5000,
+      "nominal_radius_mm": 200,
+      "nominal_model_z_mm": 170,
+      "alpha_deg": -35,
+      "attempted": true,
+      "echo_matched": true,
+      "bytes_written": 62,
+      "received_hex": "7b2330303050323230305435303030212330303150313438355435303030212330303250313837325435303030212330303350303936305435303030217d"
+    },
+    {
+      "step": "left_bin_150",
+      "command": "{#000P2200T5000!#001P1477T5000!#002P1917T5000!#003P0977T5000!}",
+      "duration_ms": 5000,
+      "nominal_radius_mm": 200,
+      "nominal_model_z_mm": 150,
+      "alpha_deg": -40,
+      "attempted": true,
+      "echo_matched": true,
+      "bytes_written": 62,
+      "received_hex": "7b2330303050323230305435303030212330303150313437375435303030212330303250313931375435303030212330303350303937375435303030217d"
+    },
+    {
+      "step": "left_bin_140",
+      "command": "{#000P2200T5000!#001P1438T5000!#002P1873T5000!#003P0934T5000!}",
+      "duration_ms": 5000,
+      "nominal_radius_mm": 200,
+      "nominal_model_z_mm": 140,
+      "alpha_deg": -45,
+      "attempted": true,
+      "echo_matched": true,
+      "bytes_written": 62,
+      "received_hex": "7b2330303050323230305435303030212330303150313433385435303030212330303250313837335435303030212330303350303933345435303030217d"
+    }
+  ],
+  "serial_closed": true,
+  "finished_at": "2026-10-29T17:39:49.772908+08:00"
+}

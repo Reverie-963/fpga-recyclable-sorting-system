@@ -1,0 +1,9 @@
+{
+  "model": "data/models/best.pt",
+  "accelerator": "rocm",
+  "device": 0,
+  "imgsz": 640,
+  "confidence": 0.25,
+  "iou": 0.45,
+  "max_det": 30
+}

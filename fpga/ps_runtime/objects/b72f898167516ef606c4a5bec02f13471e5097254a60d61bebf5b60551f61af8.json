@@ -1,0 +1,49 @@
+{
+  "kind": "known-item-geometry-observation-v1",
+  "scope": "supervised-known-item-v1",
+  "label": "metal",
+  "station_id": "km1-three-bin-current-20261029",
+  "operator_confirmed": true,
+  "completed_supervised_trial": true,
+  "profile_sha256": "25cf8cadc26a178fb0fb2676531d3d2d161378993ff1cc32166cf54fafbe1efc",
+  "model_quality_accepted": false,
+  "unattended_accepted": false,
+  "current_image_plane_remeasured": true,
+  "robot_precision_claimed": false,
+  "route_derivation": "Fixed joint poses extracted from complete echoed executions. Dynamic source uses checked local two-height mapping. Initial wrist/open consolidated into same high-pose packet; first small hold-test lift omitted after qualification. Unified cycle not yet separately field-tested.",
+  "historical_detector_family": "yolov8s",
+  "evidence": [
+    {
+      "path": "3d4e7201e7718f1d57f2c191cfdabb48655fa012185bc4d6082e7cbaa1e15ba9.json",
+      "sha256": "3d4e7201e7718f1d57f2c191cfdabb48655fa012185bc4d6082e7cbaa1e15ba9"
+    },
+    {
+      "path": "75de5eecae6421f2c87fa1bd946c3461ea7eab293b9bd01f8a6ccb378413bf9b.json",
+      "sha256": "75de5eecae6421f2c87fa1bd946c3461ea7eab293b9bd01f8a6ccb378413bf9b"
+    },
+    {
+      "path": "109eecad18b463491210dc534832b7c852eef92bc8781f973e784380daf9a2b3.json",
+      "sha256": "109eecad18b463491210dc534832b7c852eef92bc8781f973e784380daf9a2b3"
+    },
+    {
+      "path": "9dbcde8eb9597a6631d2b274bf74efee033aacb8a6400d6655f7e4931696fa2d.json",
+      "sha256": "9dbcde8eb9597a6631d2b274bf74efee033aacb8a6400d6655f7e4931696fa2d"
+    },
+    {
+      "path": "ae71dd027ac62e934ebd4226a59aebe68cf017a6f110acf53a0cc0177ab716cf.json",
+      "sha256": "ae71dd027ac62e934ebd4226a59aebe68cf017a6f110acf53a0cc0177ab716cf"
+    },
+    {
+      "path": "410160871e9393b9e19af327859722f02dadff1bef6cb74cfbfa497b9bc0267a.json",
+      "sha256": "410160871e9393b9e19af327859722f02dadff1bef6cb74cfbfa497b9bc0267a"
+    },
+    {
+      "path": "d6c45ceb4cae402db9aaf61657ecb54e98af6066fc408184d5a80d169f87e160.json",
+      "sha256": "d6c45ceb4cae402db9aaf61657ecb54e98af6066fc408184d5a80d169f87e160"
+    },
+    {
+      "path": "57f26c5db304fd51c36135b869d4d1b841c0868fe831c9c54b4bf58926f3a1fb.json",
+      "sha256": "57f26c5db304fd51c36135b869d4d1b841c0868fe831c9c54b4bf58926f3a1fb"
+    }
+  ]
+}

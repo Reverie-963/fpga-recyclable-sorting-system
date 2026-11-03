@@ -1,0 +1,1881 @@
+{
+  "kind": "same_input_live_plastic_route_speedup_v2",
+  "date": "2026-10-31",
+  "runtime": "/opt/km1/runtime/dataflow-batch-20261031-v2",
+  "scope": "complete_selected_route_compilation_not_whole_system_or_recognition",
+  "same_input_sha256": "318b933bb6efd223c2c212e4ea2e3ff2472636609f7dfa069a9957ffb2f0c88b",
+  "model": {
+    "model_sha256": "9d5734b34871aa81412b2fa47176d8f926283bb5adfe3a3f80cc58c5b7332534",
+    "configuration_sha256": "cb288271841ff81c2dcd44ea6fc9742231e658d0a68f44caa0a970aee15b792e"
+  },
+  "source_scope_sha256": "eab1b90ef0b15c070986a1ef229b25673b67c45fe6c1073fead2b0384e50def4",
+  "source_scope_entries_verified": 181,
+  "choice": {
+    "label": "plastic",
+    "official_label": "Plastic straw",
+    "object_height_mm": 10.0,
+    "pick_card_xy_mm": [
+      -81.90185959438728,
+      -0.7542041694297685
+    ],
+    "axis_deg": 56.313083430751675,
+    "grasp_width_mm": 17.293268814516367,
+    "slot_id": "plastic-original"
+  },
+  "grasp_z_mm": 8,
+  "warmup_rounds_excluded_per_method": 2,
+  "balanced_order_permutations": 6,
+  "summary": {
+    "scalar": {
+      "samples": 30,
+      "median_ms": 659.8051005,
+      "p95_ms": 900.8712697499999,
+      "max_ms": 943.091937
+    },
+    "numpy": {
+      "samples": 30,
+      "median_ms": 197.02540249999998,
+      "p95_ms": 344.8918897,
+      "max_ms": 356.813993
+    },
+    "pl": {
+      "samples": 30,
+      "median_ms": 177.837504,
+      "p95_ms": 308.87819014999997,
+      "max_ms": 349.991119
+    }
+  },
+  "speedup_over_original_scalar": 3.7101572258908897,
+  "speedup_over_optimized_cpu": 1.1078956804297029,
+  "median_difference_optimized_minus_pl_ms": 19.18789849999999,
+  "paired_difference_median_ms": 18.64998150000001,
+  "local_median_time_reduction_percent": 9.738794214619096,
+  "command_sequences_equal": true,
+  "reference_errors_max_mm": 2.842170943040401e-14,
+  "selected_route_boundary_cpu_segments": 0,
+  "all_candidates_cpu_fallback_count": null,
+  "fallback_scope": "Selected route boundary fallback count is zero; unselected candidate calls were not all instrumented.",
+  "failures_in_30_groups": 0,
+  "rows": [
+    {
+      "trial": 0,
+      "order": [
+        "scalar",
+        "numpy",
+        "pl"
+      ],
+      "input_sha256": "318b933bb6efd223c2c212e4ea2e3ff2472636609f7dfa069a9957ffb2f0c88b",
+      "times_ms": {
+        "scalar": 617.131168,
+        "numpy": 182.28544,
+        "pl": 174.648584
+      },
+      "max_cpu_height_error_mm": 2.842170943040401e-14,
+      "pl_last_candidate": {
+        "backend": "pl_motion_path_v1",
+        "segments": 22,
+        "boundary_cpu_segments": [],
+        "timing": {
+          "cache_sync_ms": 0.419736,
+          "excludes": "one-time allocation, overlay loading, network, route generation and mechanical motion",
+          "readback_decode_ms": 3.53557,
+          "submit_wait_ms": 0.32059,
+          "total_ms": 7.254339,
+          "validation_pack_ms": 2.978443,
+          "client_total_ms": 25.491834
+        },
+        "audit_elapsed_ms": 27.873822,
+        "floor_mm": 7.25,
+        "segment_pass": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "physical_motion": false
+      },
+      "selected_route_boundary_cpu_segments": 0,
+      "command_sha256": "92f124334b0cedafae84f23fe8b57afcda3ac77e6ef71eece5495dcde4711ddc"
+    },
+    {
+      "trial": 1,
+      "order": [
+        "scalar",
+        "pl",
+        "numpy"
+      ],
+      "input_sha256": "318b933bb6efd223c2c212e4ea2e3ff2472636609f7dfa069a9957ffb2f0c88b",
+      "times_ms": {
+        "scalar": 691.337101,
+        "pl": 174.220412,
+        "numpy": 232.027446
+      },
+      "max_cpu_height_error_mm": 2.842170943040401e-14,
+      "pl_last_candidate": {
+        "backend": "pl_motion_path_v1",
+        "segments": 22,
+        "boundary_cpu_segments": [],
+        "timing": {
+          "cache_sync_ms": 0.428492,
+          "excludes": "one-time allocation, overlay loading, network, route generation and mechanical motion",
+          "readback_decode_ms": 3.963422,
+          "submit_wait_ms": 0.321286,
+          "total_ms": 7.299225,
+          "validation_pack_ms": 2.586025,
+          "client_total_ms": 27.833643
+        },
+        "audit_elapsed_ms": 30.304942,
+        "floor_mm": 7.25,
+        "segment_pass": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "physical_motion": false
+      },
+      "selected_route_boundary_cpu_segments": 0,
+      "command_sha256": "92f124334b0cedafae84f23fe8b57afcda3ac77e6ef71eece5495dcde4711ddc"
+    },
+    {
+      "trial": 2,
+      "order": [
+        "numpy",
+        "scalar",
+        "pl"
+      ],
+      "input_sha256": "318b933bb6efd223c2c212e4ea2e3ff2472636609f7dfa069a9957ffb2f0c88b",
+      "times_ms": {
+        "numpy": 179.780664,
+        "scalar": 608.500793,
+        "pl": 167.599126
+      },
+      "max_cpu_height_error_mm": 2.842170943040401e-14,
+      "pl_last_candidate": {
+        "backend": "pl_motion_path_v1",
+        "segments": 22,
+        "boundary_cpu_segments": [],
+        "timing": {
+          "cache_sync_ms": 0.601963,
+          "excludes": "one-time allocation, overlay loading, network, route generation and mechanical motion",
+          "readback_decode_ms": 3.693335,
+          "submit_wait_ms": 0.320597,
+          "total_ms": 8.694566,
+          "validation_pack_ms": 4.078671,
+          "client_total_ms": 34.062573
+        },
+        "audit_elapsed_ms": 37.587883,
+        "floor_mm": 7.25,
+        "segment_pass": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "physical_motion": false
+      },
+      "selected_route_boundary_cpu_segments": 0,
+      "command_sha256": "92f124334b0cedafae84f23fe8b57afcda3ac77e6ef71eece5495dcde4711ddc"
+    },
+    {
+      "trial": 3,
+      "order": [
+        "numpy",
+        "pl",
+        "scalar"
+      ],
+      "input_sha256": "318b933bb6efd223c2c212e4ea2e3ff2472636609f7dfa069a9957ffb2f0c88b",
+      "times_ms": {
+        "numpy": 356.813993,
+        "pl": 349.991119,
+        "scalar": 916.192872
+      },
+      "max_cpu_height_error_mm": 2.842170943040401e-14,
+      "pl_last_candidate": {
+        "backend": "pl_motion_path_v1",
+        "segments": 22,
+        "boundary_cpu_segments": [],
+        "timing": {
+          "cache_sync_ms": 0.416665,
+          "excludes": "one-time allocation, overlay loading, network, route generation and mechanical motion",
+          "readback_decode_ms": 14.070074,
+          "submit_wait_ms": 0.315446,
+          "total_ms": 17.226818,
+          "validation_pack_ms": 2.424633,
+          "client_total_ms": 47.849963
+        },
+        "audit_elapsed_ms": 60.792542,
+        "floor_mm": 7.25,
+        "segment_pass": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "physical_motion": false
+      },
+      "selected_route_boundary_cpu_segments": 0,
+      "command_sha256": "92f124334b0cedafae84f23fe8b57afcda3ac77e6ef71eece5495dcde4711ddc"
+    },
+    {
+      "trial": 4,
+      "order": [
+        "pl",
+        "scalar",
+        "numpy"
+      ],
+      "input_sha256": "318b933bb6efd223c2c212e4ea2e3ff2472636609f7dfa069a9957ffb2f0c88b",
+      "times_ms": {
+        "pl": 225.545163,
+        "scalar": 626.636786,
+        "numpy": 214.548812
+      },
+      "max_cpu_height_error_mm": 2.842170943040401e-14,
+      "pl_last_candidate": {
+        "backend": "pl_motion_path_v1",
+        "segments": 22,
+        "boundary_cpu_segments": [],
+        "timing": {
+          "cache_sync_ms": 0.473452,
+          "excludes": "one-time allocation, overlay loading, network, route generation and mechanical motion",
+          "readback_decode_ms": 3.913299,
+          "submit_wait_ms": 0.33088,
+          "total_ms": 7.595397,
+          "validation_pack_ms": 2.877766,
+          "client_total_ms": 24.537009
+        },
+        "audit_elapsed_ms": 26.972936,
+        "floor_mm": 7.25,
+        "segment_pass": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "physical_motion": false
+      },
+      "selected_route_boundary_cpu_segments": 0,
+      "command_sha256": "92f124334b0cedafae84f23fe8b57afcda3ac77e6ef71eece5495dcde4711ddc"
+    },
+    {
+      "trial": 5,
+      "order": [
+        "pl",
+        "numpy",
+        "scalar"
+      ],
+      "input_sha256": "318b933bb6efd223c2c212e4ea2e3ff2472636609f7dfa069a9957ffb2f0c88b",
+      "times_ms": {
+        "pl": 169.257391,
+        "numpy": 197.487224,
+        "scalar": 635.365095
+      },
+      "max_cpu_height_error_mm": 2.842170943040401e-14,
+      "pl_last_candidate": {
+        "backend": "pl_motion_path_v1",
+        "segments": 22,
+        "boundary_cpu_segments": [],
+        "timing": {
+          "cache_sync_ms": 3.938671,
+          "excludes": "one-time allocation, overlay loading, network, route generation and mechanical motion",
+          "readback_decode_ms": 4.546412,
+          "submit_wait_ms": 1.151834,
+          "total_ms": 12.328449,
+          "validation_pack_ms": 2.691532,
+          "client_total_ms": 29.616449
+        },
+        "audit_elapsed_ms": 32.047717,
+        "floor_mm": 7.25,
+        "segment_pass": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "physical_motion": false
+      },
+      "selected_route_boundary_cpu_segments": 0,
+      "command_sha256": "92f124334b0cedafae84f23fe8b57afcda3ac77e6ef71eece5495dcde4711ddc"
+    },
+    {
+      "trial": 6,
+      "order": [
+        "scalar",
+        "numpy",
+        "pl"
+      ],
+      "input_sha256": "318b933bb6efd223c2c212e4ea2e3ff2472636609f7dfa069a9957ffb2f0c88b",
+      "times_ms": {
+        "scalar": 611.233697,
+        "numpy": 177.469803,
+        "pl": 201.043963
+      },
+      "max_cpu_height_error_mm": 2.842170943040401e-14,
+      "pl_last_candidate": {
+        "backend": "pl_motion_path_v1",
+        "segments": 22,
+        "boundary_cpu_segments": [],
+        "timing": {
+          "cache_sync_ms": 0.415846,
+          "excludes": "one-time allocation, overlay loading, network, route generation and mechanical motion",
+          "readback_decode_ms": 3.558911,
+          "submit_wait_ms": 0.312941,
+          "total_ms": 7.665058,
+          "validation_pack_ms": 3.37736,
+          "client_total_ms": 26.717434
+        },
+        "audit_elapsed_ms": 29.099661,
+        "floor_mm": 7.25,
+        "segment_pass": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "physical_motion": false
+      },
+      "selected_route_boundary_cpu_segments": 0,
+      "command_sha256": "92f124334b0cedafae84f23fe8b57afcda3ac77e6ef71eece5495dcde4711ddc"
+    },
+    {
+      "trial": 7,
+      "order": [
+        "scalar",
+        "pl",
+        "numpy"
+      ],
+      "input_sha256": "318b933bb6efd223c2c212e4ea2e3ff2472636609f7dfa069a9957ffb2f0c88b",
+      "times_ms": {
+        "scalar": 830.428036,
+        "pl": 300.900862,
+        "numpy": 344.865581
+      },
+      "max_cpu_height_error_mm": 2.842170943040401e-14,
+      "pl_last_candidate": {
+        "backend": "pl_motion_path_v1",
+        "segments": 22,
+        "boundary_cpu_segments": [],
+        "timing": {
+          "cache_sync_ms": 0.464665,
+          "excludes": "one-time allocation, overlay loading, network, route generation and mechanical motion",
+          "readback_decode_ms": 13.308179,
+          "submit_wait_ms": 0.330467,
+          "total_ms": 17.479459,
+          "validation_pack_ms": 3.376148,
+          "client_total_ms": 44.919846
+        },
+        "audit_elapsed_ms": 53.869527,
+        "floor_mm": 7.25,
+        "segment_pass": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "physical_motion": false
+      },
+      "selected_route_boundary_cpu_segments": 0,
+      "command_sha256": "92f124334b0cedafae84f23fe8b57afcda3ac77e6ef71eece5495dcde4711ddc"
+    },
+    {
+      "trial": 8,
+      "order": [
+        "numpy",
+        "scalar",
+        "pl"
+      ],
+      "input_sha256": "318b933bb6efd223c2c212e4ea2e3ff2472636609f7dfa069a9957ffb2f0c88b",
+      "times_ms": {
+        "numpy": 248.406849,
+        "scalar": 943.091937,
+        "pl": 315.405095
+      },
+      "max_cpu_height_error_mm": 2.842170943040401e-14,
+      "pl_last_candidate": {
+        "backend": "pl_motion_path_v1",
+        "segments": 22,
+        "boundary_cpu_segments": [],
+        "timing": {
+          "cache_sync_ms": 0.440929,
+          "excludes": "one-time allocation, overlay loading, network, route generation and mechanical motion",
+          "readback_decode_ms": 9.621618,
+          "submit_wait_ms": 0.311428,
+          "total_ms": 26.909199,
+          "validation_pack_ms": 16.535224,
+          "client_total_ms": 61.44376
+        },
+        "audit_elapsed_ms": 64.830997,
+        "floor_mm": 7.25,
+        "segment_pass": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "physical_motion": false
+      },
+      "selected_route_boundary_cpu_segments": 0,
+      "command_sha256": "92f124334b0cedafae84f23fe8b57afcda3ac77e6ef71eece5495dcde4711ddc"
+    },
+    {
+      "trial": 9,
+      "order": [
+        "numpy",
+        "pl",
+        "scalar"
+      ],
+      "input_sha256": "318b933bb6efd223c2c212e4ea2e3ff2472636609f7dfa069a9957ffb2f0c88b",
+      "times_ms": {
+        "numpy": 183.747119,
+        "pl": 139.894036,
+        "scalar": 680.397181
+      },
+      "max_cpu_height_error_mm": 2.842170943040401e-14,
+      "pl_last_candidate": {
+        "backend": "pl_motion_path_v1",
+        "segments": 22,
+        "boundary_cpu_segments": [],
+        "timing": {
+          "cache_sync_ms": 0.564062,
+          "excludes": "one-time allocation, overlay loading, network, route generation and mechanical motion",
+          "readback_decode_ms": 3.689877,
+          "submit_wait_ms": 0.417821,
+          "total_ms": 7.103181,
+          "validation_pack_ms": 2.431421,
+          "client_total_ms": 22.242647
+        },
+        "audit_elapsed_ms": 24.885662,
+        "floor_mm": 7.25,
+        "segment_pass": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "physical_motion": false
+      },
+      "selected_route_boundary_cpu_segments": 0,
+      "command_sha256": "92f124334b0cedafae84f23fe8b57afcda3ac77e6ef71eece5495dcde4711ddc"
+    },
+    {
+      "trial": 10,
+      "order": [
+        "pl",
+        "scalar",
+        "numpy"
+      ],
+      "input_sha256": "318b933bb6efd223c2c212e4ea2e3ff2472636609f7dfa069a9957ffb2f0c88b",
+      "times_ms": {
+        "pl": 191.866553,
+        "scalar": 730.03907,
+        "numpy": 201.844775
+      },
+      "max_cpu_height_error_mm": 2.842170943040401e-14,
+      "pl_last_candidate": {
+        "backend": "pl_motion_path_v1",
+        "segments": 22,
+        "boundary_cpu_segments": [],
+        "timing": {
+          "cache_sync_ms": 0.50043,
+          "excludes": "one-time allocation, overlay loading, network, route generation and mechanical motion",
+          "readback_decode_ms": 4.852566,
+          "submit_wait_ms": 0.335108,
+          "total_ms": 8.361981,
+          "validation_pack_ms": 2.673877,
+          "client_total_ms": 29.708873
+        },
+        "audit_elapsed_ms": 33.050492,
+        "floor_mm": 7.25,
+        "segment_pass": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "physical_motion": false
+      },
+      "selected_route_boundary_cpu_segments": 0,
+      "command_sha256": "92f124334b0cedafae84f23fe8b57afcda3ac77e6ef71eece5495dcde4711ddc"
+    },
+    {
+      "trial": 11,
+      "order": [
+        "pl",
+        "numpy",
+        "scalar"
+      ],
+      "input_sha256": "318b933bb6efd223c2c212e4ea2e3ff2472636609f7dfa069a9957ffb2f0c88b",
+      "times_ms": {
+        "pl": 163.965557,
+        "numpy": 177.833107,
+        "scalar": 647.505623
+      },
+      "max_cpu_height_error_mm": 2.842170943040401e-14,
+      "pl_last_candidate": {
+        "backend": "pl_motion_path_v1",
+        "segments": 22,
+        "boundary_cpu_segments": [],
+        "timing": {
+          "cache_sync_ms": 0.446093,
+          "excludes": "one-time allocation, overlay loading, network, route generation and mechanical motion",
+          "readback_decode_ms": 4.453847,
+          "submit_wait_ms": 0.308196,
+          "total_ms": 8.738013,
+          "validation_pack_ms": 3.529877,
+          "client_total_ms": 25.409274
+        },
+        "audit_elapsed_ms": 28.96032,
+        "floor_mm": 7.25,
+        "segment_pass": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "physical_motion": false
+      },
+      "selected_route_boundary_cpu_segments": 0,
+      "command_sha256": "92f124334b0cedafae84f23fe8b57afcda3ac77e6ef71eece5495dcde4711ddc"
+    },
+    {
+      "trial": 12,
+      "order": [
+        "scalar",
+        "numpy",
+        "pl"
+      ],
+      "input_sha256": "318b933bb6efd223c2c212e4ea2e3ff2472636609f7dfa069a9957ffb2f0c88b",
+      "times_ms": {
+        "scalar": 633.394923,
+        "numpy": 264.957662,
+        "pl": 246.139415
+      },
+      "max_cpu_height_error_mm": 2.842170943040401e-14,
+      "pl_last_candidate": {
+        "backend": "pl_motion_path_v1",
+        "segments": 22,
+        "boundary_cpu_segments": [],
+        "timing": {
+          "cache_sync_ms": 0.409754,
+          "excludes": "one-time allocation, overlay loading, network, route generation and mechanical motion",
+          "readback_decode_ms": 4.013766,
+          "submit_wait_ms": 13.717514,
+          "total_ms": 21.320548,
+          "validation_pack_ms": 3.179514,
+          "client_total_ms": 69.033311
+        },
+        "audit_elapsed_ms": 75.957175,
+        "floor_mm": 7.25,
+        "segment_pass": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "physical_motion": false
+      },
+      "selected_route_boundary_cpu_segments": 0,
+      "command_sha256": "92f124334b0cedafae84f23fe8b57afcda3ac77e6ef71eece5495dcde4711ddc"
+    },
+    {
+      "trial": 13,
+      "order": [
+        "scalar",
+        "pl",
+        "numpy"
+      ],
+      "input_sha256": "318b933bb6efd223c2c212e4ea2e3ff2472636609f7dfa069a9957ffb2f0c88b",
+      "times_ms": {
+        "scalar": 724.776547,
+        "pl": 264.851003,
+        "numpy": 283.332719
+      },
+      "max_cpu_height_error_mm": 2.842170943040401e-14,
+      "pl_last_candidate": {
+        "backend": "pl_motion_path_v1",
+        "segments": 22,
+        "boundary_cpu_segments": [],
+        "timing": {
+          "cache_sync_ms": 0.473705,
+          "excludes": "one-time allocation, overlay loading, network, route generation and mechanical motion",
+          "readback_decode_ms": 4.01704,
+          "submit_wait_ms": 3.877163,
+          "total_ms": 10.870425,
+          "validation_pack_ms": 2.502517,
+          "client_total_ms": 44.192363
+        },
+        "audit_elapsed_ms": 47.415895,
+        "floor_mm": 7.25,
+        "segment_pass": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "physical_motion": false
+      },
+      "selected_route_boundary_cpu_segments": 0,
+      "command_sha256": "92f124334b0cedafae84f23fe8b57afcda3ac77e6ef71eece5495dcde4711ddc"
+    },
+    {
+      "trial": 14,
+      "order": [
+        "numpy",
+        "scalar",
+        "pl"
+      ],
+      "input_sha256": "318b933bb6efd223c2c212e4ea2e3ff2472636609f7dfa069a9957ffb2f0c88b",
+      "times_ms": {
+        "numpy": 160.73307,
+        "scalar": 646.908885,
+        "pl": 139.007144
+      },
+      "max_cpu_height_error_mm": 2.842170943040401e-14,
+      "pl_last_candidate": {
+        "backend": "pl_motion_path_v1",
+        "segments": 22,
+        "boundary_cpu_segments": [],
+        "timing": {
+          "cache_sync_ms": 0.43208,
+          "excludes": "one-time allocation, overlay loading, network, route generation and mechanical motion",
+          "readback_decode_ms": 4.18008,
+          "submit_wait_ms": 0.322388,
+          "total_ms": 7.423532,
+          "validation_pack_ms": 2.488984,
+          "client_total_ms": 25.062443
+        },
+        "audit_elapsed_ms": 27.603311,
+        "floor_mm": 7.25,
+        "segment_pass": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "physical_motion": false
+      },
+      "selected_route_boundary_cpu_segments": 0,
+      "command_sha256": "92f124334b0cedafae84f23fe8b57afcda3ac77e6ef71eece5495dcde4711ddc"
+    },
+    {
+      "trial": 15,
+      "order": [
+        "numpy",
+        "pl",
+        "scalar"
+      ],
+      "input_sha256": "318b933bb6efd223c2c212e4ea2e3ff2472636609f7dfa069a9957ffb2f0c88b",
+      "times_ms": {
+        "numpy": 166.091279,
+        "pl": 181.026424,
+        "scalar": 600.548559
+      },
+      "max_cpu_height_error_mm": 2.842170943040401e-14,
+      "pl_last_candidate": {
+        "backend": "pl_motion_path_v1",
+        "segments": 22,
+        "boundary_cpu_segments": [],
+        "timing": {
+          "cache_sync_ms": 0.514172,
+          "excludes": "one-time allocation, overlay loading, network, route generation and mechanical motion",
+          "readback_decode_ms": 4.327071,
+          "submit_wait_ms": 0.358431,
+          "total_ms": 8.132154,
+          "validation_pack_ms": 2.93248,
+          "client_total_ms": 26.105588
+        },
+        "audit_elapsed_ms": 28.797107,
+        "floor_mm": 7.25,
+        "segment_pass": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "physical_motion": false
+      },
+      "selected_route_boundary_cpu_segments": 0,
+      "command_sha256": "92f124334b0cedafae84f23fe8b57afcda3ac77e6ef71eece5495dcde4711ddc"
+    },
+    {
+      "trial": 16,
+      "order": [
+        "pl",
+        "scalar",
+        "numpy"
+      ],
+      "input_sha256": "318b933bb6efd223c2c212e4ea2e3ff2472636609f7dfa069a9957ffb2f0c88b",
+      "times_ms": {
+        "pl": 165.566116,
+        "scalar": 642.994017,
+        "numpy": 185.33552
+      },
+      "max_cpu_height_error_mm": 2.842170943040401e-14,
+      "pl_last_candidate": {
+        "backend": "pl_motion_path_v1",
+        "segments": 22,
+        "boundary_cpu_segments": [],
+        "timing": {
+          "cache_sync_ms": 0.504689,
+          "excludes": "one-time allocation, overlay loading, network, route generation and mechanical motion",
+          "readback_decode_ms": 5.774055,
+          "submit_wait_ms": 0.325237,
+          "total_ms": 9.160117,
+          "validation_pack_ms": 2.556136,
+          "client_total_ms": 30.175083
+        },
+        "audit_elapsed_ms": 32.634862,
+        "floor_mm": 7.25,
+        "segment_pass": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "physical_motion": false
+      },
+      "selected_route_boundary_cpu_segments": 0,
+      "command_sha256": "92f124334b0cedafae84f23fe8b57afcda3ac77e6ef71eece5495dcde4711ddc"
+    },
+    {
+      "trial": 17,
+      "order": [
+        "pl",
+        "numpy",
+        "scalar"
+      ],
+      "input_sha256": "318b933bb6efd223c2c212e4ea2e3ff2472636609f7dfa069a9957ffb2f0c88b",
+      "times_ms": {
+        "pl": 154.09464,
+        "numpy": 259.089649,
+        "scalar": 878.154682
+      },
+      "max_cpu_height_error_mm": 2.842170943040401e-14,
+      "pl_last_candidate": {
+        "backend": "pl_motion_path_v1",
+        "segments": 22,
+        "boundary_cpu_segments": [],
+        "timing": {
+          "cache_sync_ms": 0.435711,
+          "excludes": "one-time allocation, overlay loading, network, route generation and mechanical motion",
+          "readback_decode_ms": 3.601188,
+          "submit_wait_ms": 0.326184,
+          "total_ms": 7.159563,
+          "validation_pack_ms": 2.79648,
+          "client_total_ms": 33.490979
+        },
+        "audit_elapsed_ms": 35.943699,
+        "floor_mm": 7.25,
+        "segment_pass": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "physical_motion": false
+      },
+      "selected_route_boundary_cpu_segments": 0,
+      "command_sha256": "92f124334b0cedafae84f23fe8b57afcda3ac77e6ef71eece5495dcde4711ddc"
+    },
+    {
+      "trial": 18,
+      "order": [
+        "scalar",
+        "numpy",
+        "pl"
+      ],
+      "input_sha256": "318b933bb6efd223c2c212e4ea2e3ff2472636609f7dfa069a9957ffb2f0c88b",
+      "times_ms": {
+        "scalar": 882.144867,
+        "numpy": 344.913415,
+        "pl": 233.061766
+      },
+      "max_cpu_height_error_mm": 2.842170943040401e-14,
+      "pl_last_candidate": {
+        "backend": "pl_motion_path_v1",
+        "segments": 22,
+        "boundary_cpu_segments": [],
+        "timing": {
+          "cache_sync_ms": 0.380024,
+          "excludes": "one-time allocation, overlay loading, network, route generation and mechanical motion",
+          "readback_decode_ms": 4.32328,
+          "submit_wait_ms": 0.312542,
+          "total_ms": 7.782062,
+          "validation_pack_ms": 2.766216,
+          "client_total_ms": 29.909089
+        },
+        "audit_elapsed_ms": 37.22648,
+        "floor_mm": 7.25,
+        "segment_pass": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "physical_motion": false
+      },
+      "selected_route_boundary_cpu_segments": 0,
+      "command_sha256": "92f124334b0cedafae84f23fe8b57afcda3ac77e6ef71eece5495dcde4711ddc"
+    },
+    {
+      "trial": 19,
+      "order": [
+        "scalar",
+        "pl",
+        "numpy"
+      ],
+      "input_sha256": "318b933bb6efd223c2c212e4ea2e3ff2472636609f7dfa069a9957ffb2f0c88b",
+      "times_ms": {
+        "scalar": 609.803889,
+        "pl": 149.126406,
+        "numpy": 179.821372
+      },
+      "max_cpu_height_error_mm": 2.842170943040401e-14,
+      "pl_last_candidate": {
+        "backend": "pl_motion_path_v1",
+        "segments": 22,
+        "boundary_cpu_segments": [],
+        "timing": {
+          "cache_sync_ms": 0.419753,
+          "excludes": "one-time allocation, overlay loading, network, route generation and mechanical motion",
+          "readback_decode_ms": 3.797181,
+          "submit_wait_ms": 0.321662,
+          "total_ms": 7.263581,
+          "validation_pack_ms": 2.724985,
+          "client_total_ms": 23.566086
+        },
+        "audit_elapsed_ms": 32.469636,
+        "floor_mm": 7.25,
+        "segment_pass": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "physical_motion": false
+      },
+      "selected_route_boundary_cpu_segments": 0,
+      "command_sha256": "92f124334b0cedafae84f23fe8b57afcda3ac77e6ef71eece5495dcde4711ddc"
+    },
+    {
+      "trial": 20,
+      "order": [
+        "numpy",
+        "scalar",
+        "pl"
+      ],
+      "input_sha256": "318b933bb6efd223c2c212e4ea2e3ff2472636609f7dfa069a9957ffb2f0c88b",
+      "times_ms": {
+        "numpy": 194.478234,
+        "scalar": 620.256577,
+        "pl": 155.647182
+      },
+      "max_cpu_height_error_mm": 2.842170943040401e-14,
+      "pl_last_candidate": {
+        "backend": "pl_motion_path_v1",
+        "segments": 22,
+        "boundary_cpu_segments": [],
+        "timing": {
+          "cache_sync_ms": 0.420548,
+          "excludes": "one-time allocation, overlay loading, network, route generation and mechanical motion",
+          "readback_decode_ms": 4.37312,
+          "submit_wait_ms": 0.329963,
+          "total_ms": 7.664351,
+          "validation_pack_ms": 2.54072,
+          "client_total_ms": 26.14544
+        },
+        "audit_elapsed_ms": 28.716086,
+        "floor_mm": 7.25,
+        "segment_pass": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "physical_motion": false
+      },
+      "selected_route_boundary_cpu_segments": 0,
+      "command_sha256": "92f124334b0cedafae84f23fe8b57afcda3ac77e6ef71eece5495dcde4711ddc"
+    },
+    {
+      "trial": 21,
+      "order": [
+        "numpy",
+        "pl",
+        "scalar"
+      ],
+      "input_sha256": "318b933bb6efd223c2c212e4ea2e3ff2472636609f7dfa069a9957ffb2f0c88b",
+      "times_ms": {
+        "numpy": 185.838782,
+        "pl": 140.947852,
+        "scalar": 581.090091
+      },
+      "max_cpu_height_error_mm": 2.842170943040401e-14,
+      "pl_last_candidate": {
+        "backend": "pl_motion_path_v1",
+        "segments": 22,
+        "boundary_cpu_segments": [],
+        "timing": {
+          "cache_sync_ms": 0.412228,
+          "excludes": "one-time allocation, overlay loading, network, route generation and mechanical motion",
+          "readback_decode_ms": 3.822394,
+          "submit_wait_ms": 0.322178,
+          "total_ms": 7.258468,
+          "validation_pack_ms": 2.701668,
+          "client_total_ms": 24.485207
+        },
+        "audit_elapsed_ms": 27.185581,
+        "floor_mm": 7.25,
+        "segment_pass": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "physical_motion": false
+      },
+      "selected_route_boundary_cpu_segments": 0,
+      "command_sha256": "92f124334b0cedafae84f23fe8b57afcda3ac77e6ef71eece5495dcde4711ddc"
+    },
+    {
+      "trial": 22,
+      "order": [
+        "pl",
+        "scalar",
+        "numpy"
+      ],
+      "input_sha256": "318b933bb6efd223c2c212e4ea2e3ff2472636609f7dfa069a9957ffb2f0c88b",
+      "times_ms": {
+        "pl": 142.533907,
+        "scalar": 687.649605,
+        "numpy": 215.061513
+      },
+      "max_cpu_height_error_mm": 2.842170943040401e-14,
+      "pl_last_candidate": {
+        "backend": "pl_motion_path_v1",
+        "segments": 22,
+        "boundary_cpu_segments": [],
+        "timing": {
+          "cache_sync_ms": 0.640941,
+          "excludes": "one-time allocation, overlay loading, network, route generation and mechanical motion",
+          "readback_decode_ms": 4.873046,
+          "submit_wait_ms": 0.349262,
+          "total_ms": 8.664806,
+          "validation_pack_ms": 2.801557,
+          "client_total_ms": 24.895704
+        },
+        "audit_elapsed_ms": 27.843729,
+        "floor_mm": 7.25,
+        "segment_pass": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "physical_motion": false
+      },
+      "selected_route_boundary_cpu_segments": 0,
+      "command_sha256": "92f124334b0cedafae84f23fe8b57afcda3ac77e6ef71eece5495dcde4711ddc"
+    },
+    {
+      "trial": 23,
+      "order": [
+        "pl",
+        "numpy",
+        "scalar"
+      ],
+      "input_sha256": "318b933bb6efd223c2c212e4ea2e3ff2472636609f7dfa069a9957ffb2f0c88b",
+      "times_ms": {
+        "pl": 141.007532,
+        "numpy": 206.982,
+        "scalar": 672.104578
+      },
+      "max_cpu_height_error_mm": 2.842170943040401e-14,
+      "pl_last_candidate": {
+        "backend": "pl_motion_path_v1",
+        "segments": 22,
+        "boundary_cpu_segments": [],
+        "timing": {
+          "cache_sync_ms": 0.419126,
+          "excludes": "one-time allocation, overlay loading, network, route generation and mechanical motion",
+          "readback_decode_ms": 4.227292,
+          "submit_wait_ms": 0.31709,
+          "total_ms": 7.41208,
+          "validation_pack_ms": 2.448572,
+          "client_total_ms": 22.606326
+        },
+        "audit_elapsed_ms": 25.024172,
+        "floor_mm": 7.25,
+        "segment_pass": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "physical_motion": false
+      },
+      "selected_route_boundary_cpu_segments": 0,
+      "command_sha256": "92f124334b0cedafae84f23fe8b57afcda3ac77e6ef71eece5495dcde4711ddc"
+    },
+    {
+      "trial": 24,
+      "order": [
+        "scalar",
+        "numpy",
+        "pl"
+      ],
+      "input_sha256": "318b933bb6efd223c2c212e4ea2e3ff2472636609f7dfa069a9957ffb2f0c88b",
+      "times_ms": {
+        "scalar": 753.680189,
+        "numpy": 196.563581,
+        "pl": 229.331224
+      },
+      "max_cpu_height_error_mm": 2.842170943040401e-14,
+      "pl_last_candidate": {
+        "backend": "pl_motion_path_v1",
+        "segments": 22,
+        "boundary_cpu_segments": [],
+        "timing": {
+          "cache_sync_ms": 0.422591,
+          "excludes": "one-time allocation, overlay loading, network, route generation and mechanical motion",
+          "readback_decode_ms": 14.066296,
+          "submit_wait_ms": 0.317009,
+          "total_ms": 17.252388,
+          "validation_pack_ms": 2.446492,
+          "client_total_ms": 45.478843
+        },
+        "audit_elapsed_ms": 50.607114,
+        "floor_mm": 7.25,
+        "segment_pass": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "physical_motion": false
+      },
+      "selected_route_boundary_cpu_segments": 0,
+      "command_sha256": "92f124334b0cedafae84f23fe8b57afcda3ac77e6ef71eece5495dcde4711ddc"
+    },
+    {
+      "trial": 25,
+      "order": [
+        "scalar",
+        "pl",
+        "numpy"
+      ],
+      "input_sha256": "318b933bb6efd223c2c212e4ea2e3ff2472636609f7dfa069a9957ffb2f0c88b",
+      "times_ms": {
+        "scalar": 709.12262,
+        "pl": 156.284104,
+        "numpy": 195.610904
+      },
+      "max_cpu_height_error_mm": 2.842170943040401e-14,
+      "pl_last_candidate": {
+        "backend": "pl_motion_path_v1",
+        "segments": 22,
+        "boundary_cpu_segments": [],
+        "timing": {
+          "cache_sync_ms": 0.548449,
+          "excludes": "one-time allocation, overlay loading, network, route generation and mechanical motion",
+          "readback_decode_ms": 4.656554,
+          "submit_wait_ms": 0.347292,
+          "total_ms": 9.564092,
+          "validation_pack_ms": 4.011797,
+          "client_total_ms": 29.83248
+        },
+        "audit_elapsed_ms": 32.215175,
+        "floor_mm": 7.25,
+        "segment_pass": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "physical_motion": false
+      },
+      "selected_route_boundary_cpu_segments": 0,
+      "command_sha256": "92f124334b0cedafae84f23fe8b57afcda3ac77e6ef71eece5495dcde4711ddc"
+    },
+    {
+      "trial": 26,
+      "order": [
+        "numpy",
+        "scalar",
+        "pl"
+      ],
+      "input_sha256": "318b933bb6efd223c2c212e4ea2e3ff2472636609f7dfa069a9957ffb2f0c88b",
+      "times_ms": {
+        "numpy": 178.663163,
+        "scalar": 575.489525,
+        "pl": 181.887113
+      },
+      "max_cpu_height_error_mm": 2.842170943040401e-14,
+      "pl_last_candidate": {
+        "backend": "pl_motion_path_v1",
+        "segments": 22,
+        "boundary_cpu_segments": [],
+        "timing": {
+          "cache_sync_ms": 0.445107,
+          "excludes": "one-time allocation, overlay loading, network, route generation and mechanical motion",
+          "readback_decode_ms": 3.592967,
+          "submit_wait_ms": 0.328603,
+          "total_ms": 7.568634,
+          "validation_pack_ms": 3.201957,
+          "client_total_ms": 28.45704
+        },
+        "audit_elapsed_ms": 30.8896,
+        "floor_mm": 7.25,
+        "segment_pass": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "physical_motion": false
+      },
+      "selected_route_boundary_cpu_segments": 0,
+      "command_sha256": "92f124334b0cedafae84f23fe8b57afcda3ac77e6ef71eece5495dcde4711ddc"
+    },
+    {
+      "trial": 27,
+      "order": [
+        "numpy",
+        "pl",
+        "scalar"
+      ],
+      "input_sha256": "318b933bb6efd223c2c212e4ea2e3ff2472636609f7dfa069a9957ffb2f0c88b",
+      "times_ms": {
+        "numpy": 199.335895,
+        "pl": 197.113052,
+        "scalar": 730.810947
+      },
+      "max_cpu_height_error_mm": 2.842170943040401e-14,
+      "pl_last_candidate": {
+        "backend": "pl_motion_path_v1",
+        "segments": 22,
+        "boundary_cpu_segments": [],
+        "timing": {
+          "cache_sync_ms": 0.43432,
+          "excludes": "one-time allocation, overlay loading, network, route generation and mechanical motion",
+          "readback_decode_ms": 3.494677,
+          "submit_wait_ms": 0.308087,
+          "total_ms": 7.412536,
+          "validation_pack_ms": 3.175452,
+          "client_total_ms": 28.9236
+        },
+        "audit_elapsed_ms": 31.388092,
+        "floor_mm": 7.25,
+        "segment_pass": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "physical_motion": false
+      },
+      "selected_route_boundary_cpu_segments": 0,
+      "command_sha256": "92f124334b0cedafae84f23fe8b57afcda3ac77e6ef71eece5495dcde4711ddc"
+    },
+    {
+      "trial": 28,
+      "order": [
+        "pl",
+        "scalar",
+        "numpy"
+      ],
+      "input_sha256": "318b933bb6efd223c2c212e4ea2e3ff2472636609f7dfa069a9957ffb2f0c88b",
+      "times_ms": {
+        "pl": 219.380141,
+        "scalar": 779.599808,
+        "numpy": 187.348707
+      },
+      "max_cpu_height_error_mm": 2.842170943040401e-14,
+      "pl_last_candidate": {
+        "backend": "pl_motion_path_v1",
+        "segments": 22,
+        "boundary_cpu_segments": [],
+        "timing": {
+          "cache_sync_ms": 0.555705,
+          "excludes": "one-time allocation, overlay loading, network, route generation and mechanical motion",
+          "readback_decode_ms": 17.029778,
+          "submit_wait_ms": 0.327606,
+          "total_ms": 20.804584,
+          "validation_pack_ms": 2.891495,
+          "client_total_ms": 58.820763
+        },
+        "audit_elapsed_ms": 61.509526,
+        "floor_mm": 7.25,
+        "segment_pass": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "physical_motion": false
+      },
+      "selected_route_boundary_cpu_segments": 0,
+      "command_sha256": "92f124334b0cedafae84f23fe8b57afcda3ac77e6ef71eece5495dcde4711ddc"
+    },
+    {
+      "trial": 29,
+      "order": [
+        "pl",
+        "numpy",
+        "scalar"
+      ],
+      "input_sha256": "318b933bb6efd223c2c212e4ea2e3ff2472636609f7dfa069a9957ffb2f0c88b",
+      "times_ms": {
+        "pl": 260.917298,
+        "numpy": 221.306468,
+        "scalar": 623.140073
+      },
+      "max_cpu_height_error_mm": 2.842170943040401e-14,
+      "pl_last_candidate": {
+        "backend": "pl_motion_path_v1",
+        "segments": 22,
+        "boundary_cpu_segments": [],
+        "timing": {
+          "cache_sync_ms": 0.479729,
+          "excludes": "one-time allocation, overlay loading, network, route generation and mechanical motion",
+          "readback_decode_ms": 14.120196,
+          "submit_wait_ms": 0.338696,
+          "total_ms": 17.664646,
+          "validation_pack_ms": 2.726025,
+          "client_total_ms": 59.235747
+        },
+        "audit_elapsed_ms": 61.6984,
+        "floor_mm": 7.25,
+        "segment_pass": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "physical_motion": false
+      },
+      "selected_route_boundary_cpu_segments": 0,
+      "command_sha256": "92f124334b0cedafae84f23fe8b57afcda3ac77e6ef71eece5495dcde4711ddc"
+    }
+  ],
+  "pl_last_candidate_timing_summary": {
+    "submit_wait_ms": {
+      "samples": 30,
+      "median_ms": 0.3257105,
+      "p95_ms": 2.650764949999992,
+      "max_ms": 13.717514
+    },
+    "cache_sync_ms": {
+      "samples": 30,
+      "median_ms": 0.443018,
+      "p95_ms": 0.6234008999999999,
+      "max_ms": 3.938671
+    },
+    "validation_pack_ms": {
+      "samples": 30,
+      "median_ms": 2.781348,
+      "p95_ms": 4.048577699999999,
+      "max_ms": 16.535224
+    },
+    "readback_decode_ms": {
+      "samples": 30,
+      "median_ms": 4.2752859999999995,
+      "p95_ms": 14.0976411,
+      "max_ms": 17.029778
+    },
+    "total_ms": {
+      "samples": 30,
+      "median_ms": 8.2470675,
+      "p95_ms": 21.088364199999997,
+      "max_ms": 26.909199
+    },
+    "client_total_ms": {
+      "samples": 30,
+      "median_ms": 29.270024499999998,
+      "p95_ms": 60.450154149999996,
+      "max_ms": 69.033311
+    }
+  },
+  "report_recovery": {
+    "reason": "optional grasp_z_mm absent from shared-height preview choice; summary construction KeyError after all 30 groups",
+    "measurement_loop_rerun": false,
+    "raw_groups_preserved": 30,
+    "recovered_height_from_preview_top_level": true,
+    "preview_report_sha256": "5bcb4063cf7ce7edfc40cb5a456319b14d5d5e8906e9ecc9217f04e7a0822c3c"
+  },
+  "readback": {
+    "operation_identity_matches_start": true,
+    "state": "finished",
+    "busy": false,
+    "blockers": [],
+    "ownership": "idle",
+    "source_hashes_unchanged": true,
+    "full_production_state_snapshot_equality_not_collected": true
+  },
+  "physical_motion": false,
+  "serial_commands_sent": false,
+  "new_bitstream": false,
+  "production_configuration_changed": false,
+  "ui_changed": false,
+  "background_camera_and_UI_left_running": true,
+  "excludes": [
+    "camera",
+    "neural_inference",
+    "geometry_localization",
+    "precommit",
+    "UART",
+    "motion",
+    "post_motion_verification"
+  ],
+  "whole_system_speedup": null,
+  "fpga_share_of_total_system_saving": null,
+  "globally_best_cpu_claimed": false,
+  "artifacts_sha256": {
+    "measurement-partial.json": "387b6d19e598ddb4bb8d281843d7ff654cf660ba2cef7026095d73332f2d80e0",
+    "frozen-route-input.json": "318b933bb6efd223c2c212e4ea2e3ff2472636609f7dfa069a9957ffb2f0c88b",
+    "readback.json": "796e874c8698e89528be8c8e7fb867cdcd86c5ff287e283353c38e64f3faff0d",
+    "measure-executed.py": "344e5bdce88ce160e7e1bcebab60dd98e3452ea89dcef61f56033e64559b09ad",
+    "stdout.log": "6b2fbce6c7414fd8211d43f10e7600e799c1dbf5f04088a9af4609521816dc58",
+    "stderr.log": "4d49668ed28748cfac32fa959e21f78ec3236100dadde8b8c8367d8ba5beea2f"
+  }
+}

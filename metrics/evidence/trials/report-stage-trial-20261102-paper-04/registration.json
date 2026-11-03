@@ -1,0 +1,9 @@
+{
+  "material": "paper",
+  "object_height_mm": 63.0,
+  "official_label": "Drink carton",
+  "operator_confirmation": "Current user reply: 完整入箱，63mm纸盒已重新放好，现场确认. Confirms previous second carton fully inside without edge support; current same 63mm carton repositioned, empty paper bin, open empty gripper, stationary arm, hands/tools clear and on-site supervision.",
+  "registered_at": "2026-11-02T03:16:34.283682+08:00",
+  "automatic_retry": false,
+  "source_archive_unchanged": true
+}

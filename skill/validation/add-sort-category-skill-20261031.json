@@ -1,0 +1,42 @@
+{
+  "scope": "Same Windows host; copied source and actual prompt cache outside repository. Core tested with separate Python 3.12 -I -S; real cached inference reuses existing pinned CPU runtime.",
+  "portable_directory": "<user>\\AppData\\Local\\Temp\\add-sort-category-reuse-final-tr4z4kap\\independent-skill",
+  "checks": [
+    {
+      "name": "35-standard-library-tests",
+      "exit": 0,
+      "passed": true,
+      "output": "Completed; automatic_motion_allowed=false\nFAILED: input_runtime_or_io_failure\n----------------------------------------------------------------------\nRan 35 tests in 1.450s\n\nOK\n"
+    },
+    {
+      "name": "synthetic-demo",
+      "exit": 0,
+      "passed": true,
+      "output": "Completed; automatic_motion_allowed=false\n"
+    },
+    {
+      "name": "portable-package-integrity",
+      "exit": 0,
+      "passed": true,
+      "output": "{\"package_sha256\": \"6f3ee3448d9f9322d067f9670e607552da494d7279df17688cfa458898b20f4d\", \"provenance\": \"synthetic\", \"state\": \"preview\", \"automatic_motion_allowed\": false}\nCompleted; automatic_motion_allowed=false\n"
+    },
+    {
+      "name": "recording-replay",
+      "exit": 0,
+      "passed": true,
+      "output": "Completed; automatic_motion_allowed=false\n"
+    },
+    {
+      "name": "copied-real-package-integrity",
+      "exit": 0,
+      "passed": true,
+      "output": "{\"package_sha256\": \"686a3a0eb5589276ac590e6148ea7600aa7ebbf17d7cd1f70a78338db82d4e2c\", \"provenance\": \"real-yoloe\", \"state\": \"preview\", \"automatic_motion_allowed\": false}\nCompleted; automatic_motion_allowed=false\n"
+    },
+    {
+      "name": "copied-real-cache-preview",
+      "exit": 0,
+      "passed": true,
+      "output": "Creating new Ultralytics Settings v0.0.6 file  \nView Ultralytics Settings with 'yolo settings' or at '<user>\\AppData\\Local\\Temp\\category-yoloe-4x8nms_d\\Ultralytics\\settings.json'\nUpdate Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/quickstart/#ultralytics-settings.\nCompleted; automatic_motion_allowed=false\n"
+    }
+  ]
+}

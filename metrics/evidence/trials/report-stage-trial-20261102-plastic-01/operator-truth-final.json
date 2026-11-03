@@ -1,0 +1,8 @@
+{
+  "source": "current user reply",
+  "operator_reply": "完整入箱，尾部因弹起稍微搭在箱边",
+  "body_in_target_bin": true,
+  "tail_edge_supported_after_bounce": true,
+  "strict_full_containment": "not_passed_under_no_edge_support_criterion",
+  "automatic_result_kept_separate": true
+}

@@ -1,0 +1,665 @@
+{
+  "config": {
+    "model_version": "mock-seg-v1",
+    "image_size": [
+      8,
+      6
+    ],
+    "max_frame_age_ms": 500,
+    "min_confidence": 0.7,
+    "pick_bounds_mm": [
+      0,
+      80,
+      0,
+      60
+    ],
+    "path_available": true,
+    "calibration": {
+      "camera_id": "mock-camera",
+      "version": "mock-plane-v1",
+      "pixel_to_mm": [
+        [
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0
+        ]
+      ]
+    },
+    "bins": {
+      "can": {
+        "id": "can-bin",
+        "xy_mm": [
+          100,
+          60
+        ]
+      },
+      "plastic_bottle": {
+        "id": "plastic_bottle-bin",
+        "xy_mm": [
+          100,
+          90
+        ]
+      },
+      "cardboard": {
+        "id": "cardboard-bin",
+        "xy_mm": [
+          100,
+          120
+        ]
+      }
+    }
+  },
+  "requests": [
+    {
+      "name": "can success",
+      "now_ms": 1010,
+      "request": {
+        "schema_version": "static-sim-v1",
+        "request_id": "request-1",
+        "task_id": "task-1",
+        "camera_id": "mock-camera",
+        "frame_id": 1,
+        "model_version": "mock-seg-v1",
+        "image_size": [
+          8,
+          6
+        ],
+        "received_at_ms": 1000,
+        "received_age_ms": 10,
+        "instances": [
+          {
+            "instance_id": "object-1",
+            "label": "can",
+            "confidence": 0.95,
+            "bbox_xyxy": [
+              2,
+              2,
+              4,
+              4
+            ],
+            "mask_rle": [
+              18,
+              2,
+              6,
+              2,
+              20
+            ]
+          }
+        ]
+      },
+      "expected_status": "completed",
+      "expected_reason": null
+    },
+    {
+      "name": "plastic_bottle success",
+      "now_ms": 1010,
+      "request": {
+        "schema_version": "static-sim-v1",
+        "request_id": "request-2",
+        "task_id": "task-2",
+        "camera_id": "mock-camera",
+        "frame_id": 2,
+        "model_version": "mock-seg-v1",
+        "image_size": [
+          8,
+          6
+        ],
+        "received_at_ms": 1000,
+        "received_age_ms": 10,
+        "instances": [
+          {
+            "instance_id": "object-1",
+            "label": "plastic_bottle",
+            "confidence": 0.95,
+            "bbox_xyxy": [
+              2,
+              2,
+              4,
+              4
+            ],
+            "mask_rle": [
+              18,
+              2,
+              6,
+              2,
+              20
+            ]
+          }
+        ]
+      },
+      "expected_status": "completed",
+      "expected_reason": null
+    },
+    {
+      "name": "cardboard success",
+      "now_ms": 1010,
+      "request": {
+        "schema_version": "static-sim-v1",
+        "request_id": "request-3",
+        "task_id": "task-3",
+        "camera_id": "mock-camera",
+        "frame_id": 3,
+        "model_version": "mock-seg-v1",
+        "image_size": [
+          8,
+          6
+        ],
+        "received_at_ms": 1000,
+        "received_age_ms": 10,
+        "instances": [
+          {
+            "instance_id": "object-1",
+            "label": "cardboard",
+            "confidence": 0.95,
+            "bbox_xyxy": [
+              2,
+              2,
+              4,
+              4
+            ],
+            "mask_rle": [
+              18,
+              2,
+              6,
+              2,
+              20
+            ]
+          }
+        ]
+      },
+      "expected_status": "completed",
+      "expected_reason": null
+    },
+    {
+      "name": "empty scene",
+      "now_ms": 1010,
+      "request": {
+        "schema_version": "static-sim-v1",
+        "request_id": "request-4",
+        "task_id": "task-4",
+        "camera_id": "mock-camera",
+        "frame_id": 4,
+        "model_version": "mock-seg-v1",
+        "image_size": [
+          8,
+          6
+        ],
+        "received_at_ms": 1000,
+        "received_age_ms": 10,
+        "instances": []
+      },
+      "expected_status": "rejected",
+      "expected_reason": "empty_scene"
+    },
+    {
+      "name": "low confidence",
+      "now_ms": 1010,
+      "request": {
+        "schema_version": "static-sim-v1",
+        "request_id": "request-5",
+        "task_id": "task-5",
+        "camera_id": "mock-camera",
+        "frame_id": 5,
+        "model_version": "mock-seg-v1",
+        "image_size": [
+          8,
+          6
+        ],
+        "received_at_ms": 1000,
+        "received_age_ms": 10,
+        "instances": [
+          {
+            "instance_id": "object-1",
+            "label": "can",
+            "confidence": 0.1,
+            "bbox_xyxy": [
+              2,
+              2,
+              4,
+              4
+            ],
+            "mask_rle": [
+              18,
+              2,
+              6,
+              2,
+              20
+            ]
+          }
+        ]
+      },
+      "expected_status": "rejected",
+      "expected_reason": "low_confidence"
+    },
+    {
+      "name": "stale result",
+      "now_ms": 1010,
+      "request": {
+        "schema_version": "static-sim-v1",
+        "request_id": "request-6",
+        "task_id": "task-6",
+        "camera_id": "mock-camera",
+        "frame_id": 6,
+        "model_version": "mock-seg-v1",
+        "image_size": [
+          8,
+          6
+        ],
+        "received_at_ms": 1000,
+        "received_age_ms": 600,
+        "instances": [
+          {
+            "instance_id": "object-1",
+            "label": "can",
+            "confidence": 0.95,
+            "bbox_xyxy": [
+              2,
+              2,
+              4,
+              4
+            ],
+            "mask_rle": [
+              18,
+              2,
+              6,
+              2,
+              20
+            ]
+          }
+        ]
+      },
+      "expected_status": "rejected",
+      "expected_reason": "stale_frame"
+    },
+    {
+      "name": "old frame",
+      "now_ms": 1010,
+      "request": {
+        "schema_version": "static-sim-v1",
+        "request_id": "request-7",
+        "task_id": "task-7",
+        "camera_id": "mock-camera",
+        "frame_id": 1,
+        "model_version": "mock-seg-v1",
+        "image_size": [
+          8,
+          6
+        ],
+        "received_at_ms": 1000,
+        "received_age_ms": 10,
+        "instances": [
+          {
+            "instance_id": "object-1",
+            "label": "can",
+            "confidence": 0.95,
+            "bbox_xyxy": [
+              2,
+              2,
+              4,
+              4
+            ],
+            "mask_rle": [
+              18,
+              2,
+              6,
+              2,
+              20
+            ]
+          }
+        ]
+      },
+      "expected_status": "rejected",
+      "expected_reason": "old_frame"
+    },
+    {
+      "name": "timeout",
+      "now_ms": 1010,
+      "request": {
+        "schema_version": "static-sim-v1",
+        "request_id": "request-8",
+        "task_id": "task-8",
+        "camera_id": "mock-camera",
+        "frame_id": 8,
+        "model_version": "mock-seg-v1",
+        "image_size": [
+          8,
+          6
+        ],
+        "received_at_ms": 1000,
+        "received_age_ms": 10,
+        "instances": [
+          {
+            "instance_id": "object-1",
+            "label": "can",
+            "confidence": 0.95,
+            "bbox_xyxy": [
+              2,
+              2,
+              4,
+              4
+            ],
+            "mask_rle": [
+              18,
+              2,
+              6,
+              2,
+              20
+            ]
+          }
+        ],
+        "observation_error": "timeout"
+      },
+      "expected_status": "rejected",
+      "expected_reason": "observation_unavailable"
+    },
+    {
+      "name": "wrong size",
+      "now_ms": 1010,
+      "request": {
+        "schema_version": "static-sim-v1",
+        "request_id": "request-9",
+        "task_id": "task-9",
+        "camera_id": "mock-camera",
+        "frame_id": 9,
+        "model_version": "mock-seg-v1",
+        "image_size": [
+          640,
+          480
+        ],
+        "received_at_ms": 1000,
+        "received_age_ms": 10,
+        "instances": [
+          {
+            "instance_id": "object-1",
+            "label": "can",
+            "confidence": 0.95,
+            "bbox_xyxy": [
+              2,
+              2,
+              4,
+              4
+            ],
+            "mask_rle": [
+              18,
+              2,
+              6,
+              2,
+              20
+            ]
+          }
+        ]
+      },
+      "expected_status": "rejected",
+      "expected_reason": "image_size_mismatch"
+    },
+    {
+      "name": "changed model",
+      "now_ms": 1010,
+      "request": {
+        "schema_version": "static-sim-v1",
+        "request_id": "request-10",
+        "task_id": "task-10",
+        "camera_id": "mock-camera",
+        "frame_id": 10,
+        "model_version": "new",
+        "image_size": [
+          8,
+          6
+        ],
+        "received_at_ms": 1000,
+        "received_age_ms": 10,
+        "instances": [
+          {
+            "instance_id": "object-1",
+            "label": "can",
+            "confidence": 0.95,
+            "bbox_xyxy": [
+              2,
+              2,
+              4,
+              4
+            ],
+            "mask_rle": [
+              18,
+              2,
+              6,
+              2,
+              20
+            ]
+          }
+        ]
+      },
+      "expected_status": "rejected",
+      "expected_reason": "model_version_mismatch"
+    },
+    {
+      "name": "multiple objects",
+      "now_ms": 1010,
+      "request": {
+        "schema_version": "static-sim-v1",
+        "request_id": "request-11",
+        "task_id": "task-11",
+        "camera_id": "mock-camera",
+        "frame_id": 11,
+        "model_version": "mock-seg-v1",
+        "image_size": [
+          8,
+          6
+        ],
+        "received_at_ms": 1000,
+        "received_age_ms": 10,
+        "instances": [
+          {
+            "instance_id": "object-1",
+            "label": "can",
+            "confidence": 0.95,
+            "bbox_xyxy": [
+              2,
+              2,
+              4,
+              4
+            ],
+            "mask_rle": [
+              18,
+              2,
+              6,
+              2,
+              20
+            ]
+          },
+          {
+            "instance_id": "object-1",
+            "label": "can",
+            "confidence": 0.95,
+            "bbox_xyxy": [
+              2,
+              2,
+              4,
+              4
+            ],
+            "mask_rle": [
+              18,
+              2,
+              6,
+              2,
+              20
+            ]
+          }
+        ]
+      },
+      "expected_status": "rejected",
+      "expected_reason": "ambiguous_scene"
+    },
+    {
+      "name": "transfer unknown",
+      "now_ms": 1010,
+      "request": {
+        "schema_version": "static-sim-v1",
+        "request_id": "request-12",
+        "task_id": "task-12",
+        "camera_id": "mock-camera",
+        "frame_id": 12,
+        "model_version": "mock-seg-v1",
+        "image_size": [
+          8,
+          6
+        ],
+        "received_at_ms": 1000,
+        "received_age_ms": 10,
+        "instances": [
+          {
+            "instance_id": "object-1",
+            "label": "can",
+            "confidence": 0.95,
+            "bbox_xyxy": [
+              2,
+              2,
+              4,
+              4
+            ],
+            "mask_rle": [
+              18,
+              2,
+              6,
+              2,
+              20
+            ]
+          }
+        ],
+        "simulated_outcomes": {
+          "transfer": "unknown"
+        }
+      },
+      "expected_status": "needs_review",
+      "expected_reason": "execution_unknown"
+    },
+    {
+      "name": "same request retry",
+      "now_ms": 1010,
+      "request": {
+        "schema_version": "static-sim-v1",
+        "request_id": "request-12",
+        "task_id": "task-13",
+        "camera_id": "mock-camera",
+        "frame_id": 13,
+        "model_version": "mock-seg-v1",
+        "image_size": [
+          8,
+          6
+        ],
+        "received_at_ms": 1000,
+        "received_age_ms": 10,
+        "instances": [
+          {
+            "instance_id": "object-1",
+            "label": "can",
+            "confidence": 0.95,
+            "bbox_xyxy": [
+              2,
+              2,
+              4,
+              4
+            ],
+            "mask_rle": [
+              18,
+              2,
+              6,
+              2,
+              20
+            ]
+          }
+        ]
+      },
+      "expected_status": "rejected",
+      "expected_reason": "duplicate_request"
+    },
+    {
+      "name": "same task retry",
+      "now_ms": 1010,
+      "request": {
+        "schema_version": "static-sim-v1",
+        "request_id": "request-14",
+        "task_id": "task-12",
+        "camera_id": "mock-camera",
+        "frame_id": 14,
+        "model_version": "mock-seg-v1",
+        "image_size": [
+          8,
+          6
+        ],
+        "received_at_ms": 1000,
+        "received_age_ms": 10,
+        "instances": [
+          {
+            "instance_id": "object-1",
+            "label": "can",
+            "confidence": 0.95,
+            "bbox_xyxy": [
+              2,
+              2,
+              4,
+              4
+            ],
+            "mask_rle": [
+              18,
+              2,
+              6,
+              2,
+              20
+            ]
+          }
+        ]
+      },
+      "expected_status": "rejected",
+      "expected_reason": "duplicate_task"
+    },
+    {
+      "name": "retired automatic grip check",
+      "now_ms": 1010,
+      "request": {
+        "schema_version": "static-sim-v1",
+        "request_id": "request-15",
+        "task_id": "task-15",
+        "camera_id": "mock-camera",
+        "frame_id": 15,
+        "model_version": "mock-seg-v1",
+        "image_size": [
+          8,
+          6
+        ],
+        "received_at_ms": 1000,
+        "received_age_ms": 10,
+        "instances": [
+          {
+            "instance_id": "object-1",
+            "label": "can",
+            "confidence": 0.95,
+            "bbox_xyxy": [
+              2,
+              2,
+              4,
+              4
+            ],
+            "mask_rle": [
+              18,
+              2,
+              6,
+              2,
+              20
+            ]
+          }
+        ],
+        "simulated_outcomes": {
+          "check_grip": "failed"
+        }
+      },
+      "expected_status": "rejected",
+      "expected_reason": "unsupported_automatic_grip_check"
+    }
+  ]
+}

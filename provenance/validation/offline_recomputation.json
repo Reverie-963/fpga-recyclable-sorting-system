@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "online": {
+    "capture_infer": {
+      "samples": 200,
+      "rtt_ms": {
+        "p50": 672.7296999888495,
+        "p95": 1255.971635010792,
+        "p99": 1298.2717809962924,
+        "max": 1356.017599988263
+      }
+    },
+    "control": {
+      "samples": 200,
+      "rtt_ms": {
+        "p50": 141.63689999259077,
+        "p95": 269.7966199993968,
+        "p99": 366.24563901394123,
+        "max": 418.654900015099
+      }
+    },
+    "pl": {
+      "samples": 200,
+      "rtt_ms": {
+        "p50": 124.01705000957008,
+        "p95": 229.8590450154733,
+        "p99": 264.1952650135499,
+        "max": 279.8225999868009
+      }
+    },
+    "png": {
+      "samples": 200,
+      "rtt_ms": {
+        "p50": 558.7294499855489,
+        "p95": 835.8231149948551,
+        "p99": 988.4865770133911,
+        "max": 1012.7178000111599
+      }
+    }
+  },
+  "physical_exploratory": {
+    "attempts": 11,
+    "strict_pass": 8,
+    "groups": {
+      "metal": {
+        "attempts": 3,
+        "strict_pass": 1
+      },
+      "paper": {
+        "attempts": 5,
+        "strict_pass": 5
+      },
+      "plastic": {
+        "attempts": 3,
+        "strict_pass": 2
+      }
+    }
+  },
+  "ai_samples": 162,
+  "quality": {
+    "macro_f1": 0.9368046283934134,
+    "foreground_miou": 0.8225439368011919
+  },
+  "overall_success_rate": null,
+  "population_motion_p99": null,
+  "new_measurements": false
+}

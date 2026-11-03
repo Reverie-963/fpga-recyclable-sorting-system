@@ -1,0 +1,56 @@
+{
+  "schema_version": "station-vision-v1",
+  "synthetic_fixture": true,
+  "backend": "pl_board_local",
+  "bitfile": "../board/station_vision.bit",
+  "assets": {
+    "station_vision.bit": "REPLACE_WITH_MATCHED_BUILD_SHA256",
+    "station_vision.hwh": "REPLACE_WITH_MATCHED_BUILD_SHA256"
+  },
+  "token_env": "KM1_STATION_VISION_TOKEN",
+  "image_size": [
+    640,
+    480
+  ],
+  "threshold": 45,
+  "max_gap_s": 0.6,
+  "window_frames": 3,
+  "regions": {
+    "source": [
+      220,
+      50,
+      420,
+      250
+    ],
+    "bin_plastic": [
+      0,
+      280,
+      200,
+      480
+    ],
+    "bin_metal": [
+      440,
+      0,
+      640,
+      240
+    ],
+    "bin_paper": [
+      440,
+      280,
+      640,
+      480
+    ],
+    "static_a": [
+      0,
+      0,
+      50,
+      50
+    ],
+    "static_b": [
+      590,
+      240,
+      640,
+      280
+    ]
+  }
+}

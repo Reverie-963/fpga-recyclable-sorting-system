@@ -1,0 +1,47 @@
+{
+  "world_frame_id": "fixed-board-origin-center-v1",
+  "world_to_card_xy": [
+    [
+      0.9999894855881807,
+      0.004585707479299399,
+      -142.10686830867695
+    ],
+    [
+      -0.004585707479299401,
+      0.9999894855881807,
+      20.034574036090877
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "checked": true,
+  "fit_max_mm": 0.7858686539929463,
+  "check_max_mm": 0.49588948608760225,
+  "source_sha256": "38a6bfe18fa3237315825bb79f73a44a7a2a07dd3f3a74af4da83a138dcd228e",
+  "physical_accuracy_verified": false,
+  "automatic_motion_allowed": false,
+  "method": "simultaneous_markers_and_restored_legacy_chessboard",
+  "operator_restored_legacy_card": true,
+  "card_orientation_reversed": false,
+  "image_sha256": [
+    "519766bed17cdc43f7bb9c71f17ca59b7578322649a91717330ce147dc00ab61",
+    "413f80cf438df37eff2cc35927084cdfab89feca9fd75e9f7f15cb0b114897b8",
+    "ed1b703e58808e25e9baed4c783c8968c3c5085109710f5a4ee832f2df92edee"
+  ],
+  "pose_stability_quality": {
+    "mode": "fixed_marker_task_space",
+    "max_observed_marker_shift_px": 0.13524552002533272,
+    "max_height_plane_point_spread_mm": 0.19109207554189267,
+    "observed_camera_center_spread_mm": 1.0476943117666175,
+    "evaluated_height_range_mm": [
+      0,
+      120
+    ],
+    "fit": "mean_common_marker_corners"
+  },
+  "previous_registration_sha256": "546bb4901a37fae7aa78a2fed4cb78d570d26b4cec31089c05a2239edc79ba67",
+  "move_check_max_mm": 0.1936601468051554
+}

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>工位视觉监视 · FPGA</title>
+  <link rel="stylesheet" href="monitor.css">
+  <script src="monitor.js" defer></script>
+</head>
+<body>
+  <header><div><div class="eyebrow">FPGA / AI PC</div><h1>工位视觉监视</h1></div><span class="badge">观察模式</span></header>
+  <main>
+    <section class="view">
+      <div class="viewbar"><span>PYNQ 工位摄像头</span><span id="status" role="status">等待画面</span></div>
+      <div class="stage"><canvas id="frame" width="640" height="480" aria-label="工位画面及检测框"></canvas><div id="placeholder">等待 PYNQ 发送摄像头画面<span>启动板端 camera_observe 后，画面会自动出现</span></div></div>
+      <div class="toolbar"><label><input type="checkbox" id="boxes" checked> 显示检测框</label><span id="frameInfo">尚未收到帧</span></div>
+    </section>
+    <aside>
+      <section class="metrics"><div><span>结果刷新</span><strong id="rate">—</strong><small>帧 / 秒</small></div><div><span>推理耗时</span><strong id="latency">—</strong><small>毫秒 / 帧</small></div></section>
+      <section class="results"><div class="sectionhead"><h2>当前帧识别</h2><span id="count">0 个目标</span></div><p id="notice">等待识别结果</p><div id="objects"></div></section>
+      <section class="details"><h2>运行信息</h2><dl><dt>帧编号</dt><dd id="frameId">—</dd><dt>推理后端</dt><dd id="provider">—</dd><dt>模型指纹</dt><dd id="model">—</dd></dl></section>
+    </aside>
+  </main>
+  <footer>画面与检测框来自同一送检帧。框坐标为原图像素；显示刷新率取决于采图、网络与推理。监视窗口不发送机械动作。</footer>
+</body>
+</html>

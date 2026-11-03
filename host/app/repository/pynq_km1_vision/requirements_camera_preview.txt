@@ -1,0 +1,2 @@
+# Python 3.11 camera-only bridge; keep separate from the legacy TensorFlow runtime.
+paramiko==5.1.0

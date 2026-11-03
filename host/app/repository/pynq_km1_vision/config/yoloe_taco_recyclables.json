@@ -1,0 +1,174 @@
+{
+  "schema": "prompted-recyclables-policy-v1",
+  "source": {
+    "name": "TACO author map_10.csv original labels",
+    "commit": "70479ad9adc3da971a8ae75ac97eb1026910eec7",
+    "url": "https://raw.githubusercontent.com/pedropro/TACO/70479ad9adc3da971a8ae75ac97eb1026910eec7/detector/taco_config/map_10.csv",
+    "sha256": "0fc5994ea5ef69fa1f0d106a4989bb9998f78a92a42183b9d897827c528b2bdd"
+  },
+  "model": {
+    "name": "yoloe-11m-seg.pt",
+    "sha256": "785199b7cc75a5f4041dec15782a4b8a4105e5a34d7ffb287a0a10781724c5bd",
+    "prompt_mode": "text",
+    "trained_on_taco": false
+  },
+  "detection_floor": 0.6,
+  "display_confidence": 0.6,
+  "height_range_mm": [
+    1,
+    120
+  ],
+  "heights_mm": {
+    "paper": 65,
+    "plastic": 53,
+    "metal": 56
+  },
+  "materials": {
+    "paper": {
+      "bin_id": "bin_paper",
+      "source_confidence": 0.6,
+      "bin_confidence": 0.6
+    },
+    "plastic": {
+      "bin_id": "bin_plastic",
+      "source_confidence": 0.6,
+      "bin_confidence": 0.6
+    },
+    "metal": {
+      "bin_id": "bin_metal",
+      "source_confidence": 0.6,
+      "bin_confidence": 0.6
+    }
+  },
+  "classes": [
+    {
+      "official_label": "Aluminium foil",
+      "material": "metal",
+      "grasp_confidence": 0.6
+    },
+    {
+      "official_label": "Clear plastic bottle",
+      "material": "plastic",
+      "grasp_confidence": 0.6
+    },
+    {
+      "official_label": "Other plastic bottle",
+      "material": "plastic",
+      "grasp_confidence": 0.6
+    },
+    {
+      "official_label": "Plastic bottle cap",
+      "material": "plastic",
+      "grasp_confidence": 0.6
+    },
+    {
+      "official_label": "Metal bottle cap",
+      "material": "metal",
+      "grasp_confidence": 0.6
+    },
+    {
+      "official_label": "Drink can",
+      "material": "metal",
+      "grasp_confidence": 0.6
+    },
+    {
+      "official_label": "Food Can",
+      "material": "metal",
+      "grasp_confidence": 0.6
+    },
+    {
+      "official_label": "Corrugated carton",
+      "material": "paper",
+      "grasp_confidence": 0.6
+    },
+    {
+      "official_label": "Egg carton",
+      "material": "paper",
+      "grasp_confidence": 0.6
+    },
+    {
+      "official_label": "Other carton",
+      "material": "paper",
+      "grasp_confidence": 0.6
+    },
+    {
+      "official_label": "Disposable plastic cup",
+      "material": "plastic",
+      "grasp_confidence": 0.6
+    },
+    {
+      "official_label": "Other plastic cup",
+      "material": "plastic",
+      "grasp_confidence": 0.6
+    },
+    {
+      "official_label": "Plastic lid",
+      "material": "plastic",
+      "grasp_confidence": 0.6
+    },
+    {
+      "official_label": "Metal lid",
+      "material": "metal",
+      "grasp_confidence": 0.6
+    },
+    {
+      "official_label": "Magazine paper",
+      "material": "paper",
+      "grasp_confidence": 0.6
+    },
+    {
+      "official_label": "Wrapping paper",
+      "material": "paper",
+      "grasp_confidence": 0.6
+    },
+    {
+      "official_label": "Normal paper",
+      "material": "paper",
+      "grasp_confidence": 0.6
+    },
+    {
+      "official_label": "Paper bag",
+      "material": "paper",
+      "grasp_confidence": 0.6
+    },
+    {
+      "official_label": "Spread tub",
+      "material": "plastic",
+      "grasp_confidence": 0.6
+    },
+    {
+      "official_label": "Tupperware",
+      "material": "plastic",
+      "grasp_confidence": 0.6
+    },
+    {
+      "official_label": "Other plastic container",
+      "material": "plastic",
+      "grasp_confidence": 0.6
+    },
+    {
+      "official_label": "Pop tab",
+      "material": "metal",
+      "grasp_confidence": 0.6
+    },
+    {
+      "official_label": "Scrap metal",
+      "material": "metal",
+      "grasp_confidence": 0.6
+    },
+    {
+      "official_label": "Toilet tube",
+      "material": "paper",
+      "grasp_confidence": 0.6
+    }
+  ],
+  "qualification": {
+    "status": "initial_unvalidated_thresholds",
+    "physical_motion_enabled": false
+  },
+  "notes": [
+    "Material groups are a project policy, not TACO ground truth for material or recyclability.",
+    "Input heights are object height above table in mm, not robot grasp Z.",
+    "2026-10-30 operator requested removal of all 40 non-sorting prompts; only 24 material candidates are prompted. Unprompted objects can be missed or misclassified; empty-background records do not change this."
+  ]
+}

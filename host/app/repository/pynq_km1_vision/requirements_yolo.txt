@@ -1,0 +1,6 @@
+# Install target-specific torch/torchvision FIRST (CUDA / ROCm / CPU).
+# Ultralytics uses opencv-python; do not mix opencv-python-headless into this venv.
+ultralytics==8.3.230
+numpy>=1.26,<3
+pyserial>=3.5,<4
+onnx>=1.15,<2

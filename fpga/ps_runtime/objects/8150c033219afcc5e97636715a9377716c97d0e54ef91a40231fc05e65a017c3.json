@@ -1,0 +1,19 @@
+{
+  "kind": "operator_checked_empty_bin_release_pose",
+  "material": "plastic",
+  "object_diameter_mm": 53,
+  "object_length_mm": 120,
+  "base_pwm": 2200,
+  "nominal_radius_mm": 200,
+  "nominal_model_z_mm": 140,
+  "alpha_deg": -45,
+  "wrist_pwm": 1500,
+  "open_pwm": 1000,
+  "tip_above_rim_mm_approx": 90,
+  "projection_acceptable": true,
+  "provisional_payload_lower_extent_with_allowance_mm": 70.31088913245534,
+  "estimated_gap_margin_mm": 19.689110867544656,
+  "held_payload_verified": false,
+  "whole_path_collision_certified": false,
+  "observation": "plastic53-bin-lower140/journal/plastic_bin_lower.observation.json"
+}

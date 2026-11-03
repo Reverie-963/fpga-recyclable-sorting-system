@@ -1,0 +1,2 @@
+# Final YOLO host. Install target PyTorch + torchvision first.
+-r requirements_yolo.txt

@@ -1,0 +1,135 @@
+{
+  "status": "bounded_same_carton_supervised_trial_mapping",
+  "camera_id": "pynq-c270",
+  "image_size": [
+    640,
+    480
+  ],
+  "object_profile_id": "same-carton-user-confirmed-20261029",
+  "object_height_mm": 65,
+  "image_to_card_at_object_surface": [
+    [
+      1.0065989019675357,
+      -0.0022650065960997424,
+      -311.19912434419257
+    ],
+    [
+      -0.008505745993718642,
+      -1.0264905028411693,
+      165.18799217173
+    ],
+    [
+      -2.4691238301241385e-05,
+      7.049324720903286e-05,
+      1.0
+    ]
+  ],
+  "image_to_grip_mm": [
+    [
+      1.0065989019675357,
+      -0.0022650065960997424,
+      -311.19912434419257
+    ],
+    [
+      -0.009959539048968982,
+      -0.7596463562855671,
+      268.8909941287975
+    ],
+    [
+      -2.4691238301241385e-05,
+      7.049324720903286e-05,
+      1.0
+    ]
+  ],
+  "image_to_hover_mm": [
+    [
+      1.0065989019675357,
+      -0.0022650065960997424,
+      -311.19912434419257
+    ],
+    [
+      0.08562351930817254,
+      -0.7715618889324795,
+      248.60045838377607
+    ],
+    [
+      -2.4691238301241385e-05,
+      7.049324720903286e-05,
+      1.0
+    ]
+  ],
+  "card_to_grip": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0.75,
+      145
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "card_to_hover": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.09523809523809633,
+      0.761904761904765,
+      152.38095238095235
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "verified_pick_hulls_card_xy_mm": [
+    [
+      [
+        -20,
+        0
+      ],
+      [
+        20,
+        0
+      ],
+      [
+        0,
+        10
+      ]
+    ],
+    [
+      [
+        -20,
+        0
+      ],
+      [
+        20,
+        0
+      ],
+      [
+        0,
+        20
+      ]
+    ]
+  ],
+  "grip_model_z_mm": 50,
+  "hover_model_z_mm": 70,
+  "working_alpha_deg": -75,
+  "wrist_pwm": 1500,
+  "open_pwm": 1000,
+  "close_pwm": 1500,
+  "robot_precision_accepted": false,
+  "all_classes_accepted": false,
+  "unattended_execution_allowed": false,
+  "registration_note": "Operator kept card physical placement while moving from65mm support to tabletop; repositioning error not independently measured; first low anchor within about2mm ofC1 with direction unknown."
+}

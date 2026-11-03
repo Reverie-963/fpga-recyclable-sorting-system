@@ -1,0 +1,246 @@
+{
+  "config": {
+    "model_version": "mock-seg-v1",
+    "image_size": [
+      8,
+      6
+    ],
+    "max_frame_age_ms": 500,
+    "min_confidence": 0.7,
+    "pick_bounds_mm": [
+      0,
+      80,
+      0,
+      60
+    ],
+    "path_available": true,
+    "calibration": {
+      "camera_id": "mock-camera",
+      "version": "mock-plane-v1",
+      "pixel_to_mm": [
+        [
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0
+        ]
+      ]
+    },
+    "bins": {
+      "can": {
+        "id": "can-bin",
+        "xy_mm": [
+          100,
+          60
+        ]
+      },
+      "plastic_bottle": {
+        "id": "plastic_bottle-bin",
+        "xy_mm": [
+          100,
+          90
+        ]
+      },
+      "cardboard": {
+        "id": "cardboard-bin",
+        "xy_mm": [
+          100,
+          120
+        ]
+      }
+    },
+    "require_mask_evidence": true
+  },
+  "requests": [
+    {
+      "now_ms": 1010,
+      "request": {
+        "schema_version": "static-sim-v1",
+        "request_id": "request-1",
+        "task_id": "task-1",
+        "camera_id": "mock-camera",
+        "frame_id": 1,
+        "model_version": "mock-seg-v1",
+        "image_size": [
+          8,
+          6
+        ],
+        "received_at_ms": 1000,
+        "received_age_ms": 10,
+        "instances": [
+          {
+            "instance_id": "object-1",
+            "label": "can",
+            "confidence": 0.95,
+            "bbox_xyxy": [
+              2,
+              2,
+              4,
+              4
+            ],
+            "mask_rle": [
+              18,
+              2,
+              6,
+              2,
+              20
+            ]
+          }
+        ],
+        "verification_masks": {
+          "task_id": "task-1",
+          "request_id": "request-1",
+          "camera_id": "mock-camera",
+          "model_version": "mock-seg-v1",
+          "image_size": [
+            8,
+            6
+          ],
+          "before_frame_id": 1,
+          "after_frame_id": 2,
+          "bin_id": "can-bin",
+          "source": {
+            "job_id": 11,
+            "before_rle": [
+              18,
+              2,
+              6,
+              2,
+              20
+            ],
+            "after_rle": [
+              48
+            ]
+          },
+          "bin": {
+            "job_id": 12,
+            "before_rle": [
+              48
+            ],
+            "after_rle": [
+              36,
+              2,
+              10
+            ]
+          }
+        }
+      },
+      "captures": {
+        "geometry": {
+          "image_size": [
+            8,
+            6
+          ],
+          "job_id": 10,
+          "stats": {
+            "m00": 4,
+            "m10": 10,
+            "m01": 10,
+            "m20": 26,
+            "m02": 26,
+            "m11": 25,
+            "min_row": 2,
+            "max_row": 3,
+            "min_col": 2,
+            "max_col": 3,
+            "job_id": 10,
+            "status": 1,
+            "ctrl": 4
+          },
+          "output_rle": [
+            18,
+            2,
+            6,
+            2,
+            20
+          ],
+          "erode": 0,
+          "dilate": 0,
+          "role": "geometry",
+          "request_id": "request-1",
+          "task_id": "task-1",
+          "camera_id": "mock-camera",
+          "frame_id": 1,
+          "model_version": "mock-seg-v1"
+        },
+        "source": {
+          "image_size": [
+            8,
+            6
+          ],
+          "job_id": 11,
+          "stats": {
+            "inter": 0,
+            "erased": 4,
+            "beyond": 0,
+            "union": 4,
+            "min_row": 2,
+            "max_row": 3,
+            "min_col": 2,
+            "max_col": 3,
+            "job_id": 11,
+            "status": 1,
+            "ctrl": 4
+          },
+          "output_rle": [
+            18,
+            2,
+            6,
+            2,
+            20
+          ],
+          "mode": 1,
+          "role": "source",
+          "request_id": "request-1",
+          "task_id": "task-1",
+          "camera_id": "mock-camera",
+          "frame_id": 1,
+          "model_version": "mock-seg-v1"
+        },
+        "bin": {
+          "image_size": [
+            8,
+            6
+          ],
+          "job_id": 12,
+          "stats": {
+            "inter": 0,
+            "erased": 0,
+            "beyond": 2,
+            "union": 2,
+            "min_row": 4,
+            "max_row": 4,
+            "min_col": 4,
+            "max_col": 5,
+            "job_id": 12,
+            "status": 1,
+            "ctrl": 4
+          },
+          "output_rle": [
+            36,
+            2,
+            10
+          ],
+          "mode": 1,
+          "role": "bin",
+          "request_id": "request-1",
+          "task_id": "task-1",
+          "camera_id": "mock-camera",
+          "frame_id": 1,
+          "model_version": "mock-seg-v1"
+        }
+      }
+    }
+  ],
+  "schema_version": "static-driver-capture-v1",
+  "provenance": "synthetic_fixture",
+  "contract_version": "dual-core-v1.1",
+  "assets": {
+    "vision.bit": "0015a6eabf7d8490ffa4873385b39cfb77cee85d88782749d2a59eebf4bf2039",
+    "vision.hwh": "bcfe6c53e1bf3c4c85cebce993ab2831b70cf075503199e719bec12adba043ae"
+  }
+}

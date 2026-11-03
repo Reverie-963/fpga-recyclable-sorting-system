@@ -1,0 +1,418 @@
+{
+  "observation": {
+    "image_size": [
+      640,
+      480
+    ],
+    "instances": [
+      {
+        "instance_id": 0,
+        "label": "paper",
+        "category_name": "paper",
+        "official_label": "Drink carton",
+        "prompt_key": "Drink carton",
+        "confidence": 0.46875,
+        "model_material": "paper",
+        "reference_assisted": true,
+        "reference_material": "paper",
+        "reference_object_id": "cardboard-new-02",
+        "reference_image": "images/test/fixed16-test-20261028-0077-1793201450699843600.jpg",
+        "reference_distance": 0.25448306735375753,
+        "reference_distance_is_probability": false,
+        "class_id": 2,
+        "bbox_xyxy": [
+          322,
+          109,
+          432,
+          182
+        ],
+        "mask_rle": [
+          70090,
+          13,
+          627,
+          15,
+          624,
+          19,
+          621,
+          28,
+          612,
+          32,
+          607,
+          36,
+          604,
+          39,
+          601,
+          46,
+          593,
+          51,
+          589,
+          54,
+          586,
+          58,
+          582,
+          64,
+          575,
+          70,
+          570,
+          73,
+          567,
+          76,
+          563,
+          81,
+          559,
+          87,
+          553,
+          89,
+          550,
+          93,
+          547,
+          100,
+          539,
+          105,
+          535,
+          107,
+          533,
+          108,
+          531,
+          110,
+          530,
+          110,
+          530,
+          110,
+          530,
+          110,
+          530,
+          110,
+          530,
+          110,
+          530,
+          110,
+          530,
+          110,
+          530,
+          110,
+          530,
+          110,
+          530,
+          110,
+          530,
+          110,
+          530,
+          109,
+          531,
+          109,
+          531,
+          109,
+          531,
+          109,
+          531,
+          109,
+          531,
+          109,
+          531,
+          108,
+          532,
+          108,
+          532,
+          108,
+          533,
+          107,
+          533,
+          106,
+          535,
+          105,
+          535,
+          104,
+          537,
+          103,
+          538,
+          102,
+          539,
+          101,
+          540,
+          99,
+          542,
+          98,
+          544,
+          96,
+          546,
+          94,
+          550,
+          90,
+          552,
+          87,
+          556,
+          84,
+          561,
+          78,
+          569,
+          71,
+          572,
+          67,
+          576,
+          64,
+          581,
+          58,
+          587,
+          53,
+          592,
+          48,
+          595,
+          45,
+          600,
+          39,
+          606,
+          34,
+          610,
+          30,
+          613,
+          26,
+          618,
+          21,
+          624,
+          15,
+          629,
+          11,
+          190941
+        ],
+        "area_px": 5778,
+        "sorting_bin": "bin_paper",
+        "material": "paper",
+        "visible": true,
+        "zone": "source",
+        "obstacle": true,
+        "automatic_motion_allowed": false,
+        "decision_threshold": 0.1,
+        "semantic_gate_passed": true,
+        "decision_reasons": [],
+        "physical_gate": "待此类别与高度的实物验证"
+      }
+    ],
+    "inference_ms": 124.9892000341788,
+    "model_version": "9d5734b34871aa81412b2fa47176d8f926283bb5adfe3a3f80cc58c5b7332534",
+    "model_name": "YOLOE26 · 新版参考图辅助0.10 · ROCm GPU",
+    "runtime_id": "0878d8229aa91d41962eb6b7f0287ca46c882a2aef320436f3f037516b0de3f0",
+    "execution": {
+      "device": "cuda:0",
+      "device_name": "AMD Radeon(TM) 890M Graphics",
+      "precision": "fp16",
+      "torch": "2.12.0+rocm7.14.0",
+      "hip": "7.14.60850"
+    },
+    "configuration_sha256": "cb288271841ff81c2dcd44ea6fc9742231e658d0a68f44caa0a970aee15b792e",
+    "profile_id": "yoloe26_reference",
+    "confidence_threshold": 0.1,
+    "reference_assistance": true,
+    "source_bgr_sha256": "15b67aa43611b554b182cd735172b4f09f5a6ce39beee06047e21ba7ebd2f53d",
+    "automatic_motion_allowed": false,
+    "control_only": true,
+    "frame_id": 4,
+    "input_kind": "uploaded_image",
+    "image_sha256": "82a956beb5beca0f526713b0573fbb4b9bb12ed69a5eefead758cb9f8829e5ff",
+    "model_sha256": "9d5734b34871aa81412b2fa47176d8f926283bb5adfe3a3f80cc58c5b7332534",
+    "settings_sha256": "0878d8229aa91d41962eb6b7f0287ca46c882a2aef320436f3f037516b0de3f0",
+    "policy_sha256": "8fd92b76781b2fda6f8604a1636ad2c375898ff15c2cfd2dcaf6e70e2da31470",
+    "generation": "90c374572a7b17d2dbe89897997df1ab48c635b35cd8155f38e7a61a922c2ea6",
+    "execution_profile": {
+      "id": "yoloe26_reference",
+      "profile_sha256": "d88bdec849189d68ffa5e9b69796419f0ac340380e805a6056e0f955b418ec5d",
+      "configuration_sha256": "cb288271841ff81c2dcd44ea6fc9742231e658d0a68f44caa0a970aee15b792e"
+    },
+    "fixed_marker_observation": {
+      "location": "pc_vision",
+      "camera_sha256": "e27bbabaea9286ddcaaef49f07592fe6fb6c0dbea14650a511f15117a8300ee0",
+      "source_bgr_sha256": "15b67aa43611b554b182cd735172b4f09f5a6ce39beee06047e21ba7ebd2f53d",
+      "detections": [
+        {
+          "id": 13,
+          "corners_px": [
+            [
+              247.54074096679688,
+              226.27330017089844
+            ],
+            [
+              287.2579650878906,
+              224.93463134765625
+            ],
+            [
+              288.1950378417969,
+              265.37127685546875
+            ],
+            [
+              247.8597869873047,
+              266.32806396484375
+            ]
+          ]
+        },
+        {
+          "id": 11,
+          "corners_px": [
+            [
+              245.1996612548828,
+              66.59829711914062
+            ],
+            [
+              284.1489562988281,
+              64.66650390625
+            ],
+            [
+              285.1385192871094,
+              103.86260223388672
+            ],
+            [
+              245.97036743164062,
+              105.73167419433594
+            ]
+          ]
+        },
+        {
+          "id": 12,
+          "corners_px": [
+            [
+              136.79556274414062,
+              229.6944580078125
+            ],
+            [
+              175.64254760742188,
+              228.50416564941406
+            ],
+            [
+              175.0431671142578,
+              267.955810546875
+            ],
+            [
+              135.4482421875,
+              268.7779235839844
+            ]
+          ]
+        },
+        {
+          "id": 10,
+          "corners_px": [
+            [
+              135.8883819580078,
+              71.67884826660156
+            ],
+            [
+              174.19265747070312,
+              69.8609619140625
+            ],
+            [
+              174.94020080566406,
+              108.55400085449219
+            ],
+            [
+              136.6115264892578,
+              110.45625305175781
+            ]
+          ]
+        }
+      ]
+    },
+    "model_input_png_sha256": "82a956beb5beca0f526713b0573fbb4b9bb12ed69a5eefead758cb9f8829e5ff",
+    "prompt_mode": "text",
+    "model_input_image_sha256": "82a956beb5beca0f526713b0573fbb4b9bb12ed69a5eefead758cb9f8829e5ff",
+    "camera_id": "pynq-c270",
+    "capture_started_ms": 6534586.549168,
+    "source_stream_id": "b7b654afddfc4b5fa88daad4602680ff",
+    "source_frame_id": "37168",
+    "source_encoding": "png",
+    "station_vision": {
+      "schema_version": "station-vision-v1",
+      "backend": "pl_board_local",
+      "frame_id": 37168,
+      "baseline_frame_id": 37025,
+      "baseline_bgr_sha256": "61a29f1cad0cde3e038a733e193c806cdc2ff2b6537fbc87fc1f6bd2e4c53a52",
+      "frame_bgr_sha256": "15b67aa43611b554b182cd735172b4f09f5a6ce39beee06047e21ba7ebd2f53d",
+      "config_sha256": "65a408c0037f6cfbacdf999d73d5a467605730ebbf50bfd66d16471f26d366ff",
+      "consecutive_frames": 2,
+      "total_frames": 143,
+      "window_complete": false,
+      "processing_ms": 74.738714,
+      "regions": {
+        "source": {
+          "changed_px": 66,
+          "persistent_px": 27,
+          "delta_sum": 101549,
+          "bbox_inclusive_px": [
+            321,
+            116,
+            428,
+            171
+          ],
+          "area_px": 9960
+        },
+        "bin_plastic": {
+          "changed_px": 122,
+          "persistent_px": 53,
+          "delta_sum": 212524,
+          "bbox_inclusive_px": [
+            54,
+            309,
+            249,
+            433
+          ],
+          "area_px": 25480
+        },
+        "bin_metal": {
+          "changed_px": 68,
+          "persistent_px": 15,
+          "delta_sum": 263491,
+          "bbox_inclusive_px": [
+            454,
+            99,
+            628,
+            259
+          ],
+          "area_px": 29946
+        },
+        "bin_paper": {
+          "changed_px": 3,
+          "persistent_px": 0,
+          "delta_sum": 215715,
+          "bbox_inclusive_px": [
+            550,
+            297,
+            559,
+            306
+          ],
+          "area_px": 28495
+        },
+        "static_a": {
+          "changed_px": 4,
+          "persistent_px": 0,
+          "delta_sum": 32097,
+          "bbox_inclusive_px": [
+            137,
+            96,
+            145,
+            109
+          ],
+          "area_px": 2915
+        },
+        "static_b": {
+          "changed_px": 1,
+          "persistent_px": 0,
+          "delta_sum": 32281,
+          "bbox_inclusive_px": [
+            165,
+            248,
+            165,
+            248
+          ],
+          "area_px": 2968
+        }
+      },
+      "semantic_verified": false,
+      "automatic_motion_allowed": false,
+      "physical_success_verified": false
+    },
+    "marker_guard_only": false
+  },
+  "image_path": "f12836877c48476e86bbb15f2e397137.final-0.png",
+  "png_sha256": "82a956beb5beca0f526713b0573fbb4b9bb12ed69a5eefead758cb9f8829e5ff",
+  "decoded_bgr_sha256": "15b67aa43611b554b182cd735172b4f09f5a6ce39beee06047e21ba7ebd2f53d",
+  "source_jpeg_sha256": null,
+  "source_encoding": "png",
+  "source_bytes_sha256": "82a956beb5beca0f526713b0573fbb4b9bb12ed69a5eefead758cb9f8829e5ff"
+}

@@ -1,0 +1,71 @@
+{
+  "observation": {
+    "camera_id": "pynq-c270",
+    "source_stream_id": "80546d70a4234054a471c6e0f859b08a",
+    "source_frame_id": "14859",
+    "capture_started_ms": 13438599.139131999,
+    "image_sha256": "b9b569843ac2534f0a3388da68a984753678840538eda21a1ebdb6660866a7b0",
+    "photometry": {
+      "method": "bounded_global_rgb_affine_no_geometric_warp",
+      "gain": [
+        0.9984304904575294,
+        1.0002669731499112,
+        0.9998308920291031
+      ],
+      "bias": [
+        0.3444069377497385,
+        -0.041972178247448255,
+        0.10105369303710177
+      ],
+      "motion_geometry": {
+        "kind": "fixed_static_marker_geometry_during_motion",
+        "markers": [
+          {
+            "correlation": 0.9991417527198792,
+            "shift_px": 0.0,
+            "peak_margin": 0.600205808877945,
+            "corners": 12,
+            "patch_dynamic_range": 160.0,
+            "rgb_mean_difference_diagnostic": 2.344264069264069
+          },
+          {
+            "correlation": 0.9992359280586243,
+            "shift_px": 0.0,
+            "peak_margin": 0.7124818861484528,
+            "corners": 15,
+            "patch_dynamic_range": 161.0,
+            "rgb_mean_difference_diagnostic": 2.170174319727891
+          }
+        ],
+        "geometric_warp_applied": false,
+        "grasp_or_success_inferred": false
+      },
+      "adjusted_layout": [
+        {
+          "correlation": 0.9991437792778015,
+          "shift_px": 0.0,
+          "mean_abs_difference": 2.3507575757575756,
+          "corners": 12,
+          "corner_support_fraction": 0.49383116883116884,
+          "peak_margin": 0.6002001166343689
+        },
+        {
+          "correlation": 0.9992325305938721,
+          "shift_px": 0.0,
+          "mean_abs_difference": 2.205676020408163,
+          "corners": 15,
+          "corner_support_fraction": 0.48501275510204084,
+          "peak_margin": 0.7126077711582184
+        }
+      ],
+      "physical_alignment_verified": false
+    },
+    "evidence_type": "exact_board_motion_baseline"
+  },
+  "image_path": "e5af1c8d59d94ba983a0b16e0090eaef.board_baseline.png",
+  "png_sha256": "b9b569843ac2534f0a3388da68a984753678840538eda21a1ebdb6660866a7b0",
+  "decoded_bgr_sha256": "ac5af621410f772541d11ff1a0316899b5d0be5446aec408c786156b30d57779",
+  "source_jpeg_sha256": null,
+  "source_encoding": "png",
+  "source_bytes_sha256": "b9b569843ac2534f0a3388da68a984753678840538eda21a1ebdb6660866a7b0"
+}

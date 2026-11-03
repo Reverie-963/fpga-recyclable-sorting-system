@@ -1,0 +1,100 @@
+{
+  "schema_version": "recyclable-final-training-v1",
+  "class_names": [
+    "can",
+    "plastic",
+    "cardboard"
+  ],
+  "image_size": [
+    640,
+    480
+  ],
+  "dataset_scope": "User-frozen 16 physical objects: 7 can, 5 plastic, 4 cardboard; fixed workcell. Limited held-out object coverage, not arbitrary-material generalization.",
+  "dataset_minimums": {
+    "train": {
+      "objects_per_class": {
+        "can": 3,
+        "plastic": 3,
+        "cardboard": 2
+      },
+      "source_views_per_object": 12,
+      "bin_views_per_object": 12,
+      "empty_images": 1,
+      "wrong_bin_images": 36,
+      "multi_images": 36
+    },
+    "val": {
+      "objects_per_class": {
+        "can": 2,
+        "plastic": 1,
+        "cardboard": 1
+      },
+      "source_views_per_object": 12,
+      "bin_views_per_object": 12,
+      "empty_images": 1,
+      "wrong_bin_images": 12,
+      "multi_images": 12
+    },
+    "test": {
+      "objects_per_class": {
+        "can": 2,
+        "plastic": 1,
+        "cardboard": 1
+      },
+      "source_views_per_object": 12,
+      "bin_views_per_object": 12,
+      "empty_images": 1,
+      "wrong_bin_images": 12,
+      "multi_images": 12
+    }
+  },
+  "training": {
+    "epochs": 100,
+    "patience": 25,
+    "imgsz": 640,
+    "batch": 8,
+    "optimizer": "AdamW",
+    "lr0": 0.001,
+    "lrf": 0.01,
+    "cos_lr": true,
+    "weight_decay": 0.0005,
+    "warmup_epochs": 3.0,
+    "warmup_bias_lr": 0.0,
+    "amp": false,
+    "workers": 0,
+    "seed": 7,
+    "deterministic": true,
+    "cache": false,
+    "mosaic": 0.0,
+    "close_mosaic": 0,
+    "mixup": 0.0,
+    "copy_paste": 0.0,
+    "degrees": 15.0,
+    "translate": 0.1,
+    "scale": 0.25,
+    "fliplr": 0.5,
+    "flipud": 0.0,
+    "hsv_h": 0.015,
+    "hsv_s": 0.4,
+    "hsv_v": 0.3,
+    "mask_ratio": 2,
+    "overlap_mask": true,
+    "plots": true,
+    "save": true
+  },
+  "evaluation": {
+    "confidence": 0.8,
+    "mask_iou": 0.5,
+    "nms_iou": 0.7,
+    "max_det": 20,
+    "precision_min": 0.9,
+    "recall_min": 0.9,
+    "empty_false_positive_images_max": 0,
+    "required_scene_groups": [
+      "source",
+      "bin",
+      "wrong_bin",
+      "multi"
+    ]
+  }
+}

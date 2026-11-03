@@ -1,0 +1,93 @@
+{
+  "kind": "prompted-motion-options-v1",
+  "placement_verification": {
+    "mode": "bin_occupied",
+    "min_detection_confidence": 0.2,
+    "rgb_difference_threshold": 45,
+    "min_component_px": 64
+  },
+  "stable_frames": 1,
+  "frame_max_age_ms": 12000,
+  "frame_timeout_s": 12,
+  "decision_thresholds": {
+    "min_scene_iou": 0.85,
+    "min_erased_fraction": 0.75,
+    "min_persistent_fraction": 0.6,
+    "max_scene_changed_fraction": 0.05,
+    "max_other_bin_changed_fraction": 0.05
+  },
+  "min_geometry_component_fraction": 0.99,
+  "motion_timing_overrides": {
+    "max_pwm_per_s": [
+      700,
+      900,
+      900,
+      900,
+      900,
+      900
+    ],
+    "min_move_ms": 400,
+    "home_min_ms": 1000,
+    "vertical_min_ms": 500,
+    "close_ms": 750,
+    "release_ms": 650,
+    "target_cycle_s": 20
+  },
+  "destination_empty_check_enabled": false,
+  "full_scene_instance_stability_check_enabled": false,
+  "minimum_silhouette_separation_check_enabled": false,
+  "projected_region_bounds_check_enabled": false,
+  "operator_statement": "2026-10-30: require one valid frame per observation and post-motion decision. Disable destination empty-bin checks, full-scene instance matching, minimum silhouette gap, and projected-region out-of-image rejection globally. Clip projected regions to the image; preserve image identity, gripper footprint checks, movement-stage guards and mechanical reachability. Carry this complete policy into PS migration. Later explicit operator instruction: relax the currently failing image time window by 100 percent, from 6000 ms / 6 s to 12000 ms / 12 s; record each further threshold change rather than changing mechanical limits, USB identity or exclusive ownership. 2026-10-30: operator explicitly requested restoring the current metal action to the previously deployed accelerated timing. Restore the 20-second-target timing values for the currently metal-only execution scope; this does not qualify or enable any additional material. Subsequent operator clarification: open all 26 current recognition classes for supervised single-item trials using their existing paper/plastic/metal mappings; preserve original validation evidence and remaining mechanics/scene guards. Operator explicitly requested admitting every new category on 2026-10-30: use current object geometry rather than the original sample area/aspect/dimension templates; preserve jaw opening, reachability, obstacle, image identity and stop guards. 2026-10-31: operator explicitly requested one complete scene check before the motion sequence and continuous execution of the frozen route, without per-command image or source-file rechecks; preserve live stop, ownership, packet limits, echo/wait checks and post-placement verification.",
+  "operator_trial_scope": {
+    "kind": "operator-supervised-trial-scope-v1",
+    "operator_statement": "2026-10-30: operator explicitly requested opening all 26 recognition classes for supervised single-item grasp trials.",
+    "model_sha256": "acb01cf368e320e63e5751be28c8370e558dcd83da8e5071e11783cfbf74d3bb",
+    "taxonomy_sha256": "ce9143f02afd2a5edcba49b70a34255294ea377aacab17b4536e08162de0f8f6",
+    "official_labels": [
+      "Aluminium foil",
+      "Clear plastic bottle",
+      "Other plastic bottle",
+      "Plastic bottle cap",
+      "Metal bottle cap",
+      "Drink can",
+      "Food Can",
+      "Corrugated carton",
+      "Egg carton",
+      "Other carton",
+      "Disposable plastic cup",
+      "Other plastic cup",
+      "Plastic lid",
+      "Metal lid",
+      "Magazine paper",
+      "Wrapping paper",
+      "Normal paper",
+      "Paper bag",
+      "Spread tub",
+      "Tupperware",
+      "Other plastic container",
+      "Pop tab",
+      "Scrap metal",
+      "Toilet tube",
+      "Drink carton",
+      "Plastic straw"
+    ],
+    "single_manual_attempt_only": true,
+    "physical_validation_completed": false
+  },
+  "live_object_admission": true,
+  "motion_scene_check_mode": "before_sequence",
+  "requested_grasp_z_mm": {
+    "plastic": 8
+  },
+  "grasp_override_operator_statement": "2026-10-31 operator explicitly requested plastic grasp plane 8mm and minimum jaw gap 8mm; proportional extrapolation authorized; supervised trials only, not physically validated.",
+  "requested_jaw_gap_extension": {
+    "kind": "operator-supervised-linear-extension-v1",
+    "min_gap_mm": 8,
+    "operator_statement": "2026-10-31 operator explicitly requested plastic grasp plane 8mm and minimum jaw gap 8mm; proportional extrapolation authorized; supervised trials only, not physically validated.",
+    "physical_validation_completed": false
+  },
+  "automatic_batch_enabled": true,
+  "batch_max_items": 6,
+  "batch_max_seconds": 1200,
+  "batch_final_operator_statement": "2026-10-31: operator explicitly requested one command for all currently registered objects, complete their routes and verify once at batch end; bounded supervised batch, no retry, no newly arriving objects."
+}

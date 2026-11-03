@@ -1,0 +1,55 @@
+{
+  "kind": "known-station-vision-binding-v1",
+  "physical_motion": false,
+  "stream_id": "097c6e6dd3144c9ba831664646d966ad",
+  "config_sha256": "c82609be8a761beb5dbdb49d080395a1308ce0a8912f872f06428a360b8ba670",
+  "assets": {
+    "station_vision.bit": "b03281dbd650465402cf711d230605a72712318915129814b0dc808dc261d2af",
+    "station_vision.hwh": "e7adf114088f17fe4af130d394190e75ff3cca19f95bcf81124ad85c6469de5b"
+  },
+  "geometry_profile_sha256": {
+    "plastic": "0f58eb7436b8d3aeac893b9c892d8ea67d32ed951be0862a05f3890ec407e694",
+    "metal": "25cf8cadc26a178fb0fb2676531d3d2d161378993ff1cc32166cf54fafbe1efc",
+    "paper": "62ef0c02abb499609e00cb79747487affc0c56e1e7daa2e6360c99576c8ccb3b"
+  },
+  "previous_camera_stream_id": "1613ea209d0c4ee7a27293b9aa1eb2de",
+  "fixed_marker_validation": {
+    "kind": "fixed_static_marker_geometry_during_motion",
+    "markers": [
+      {
+        "correlation": 0.9938511848449707,
+        "shift_px": 0.0,
+        "peak_margin": 0.10200905799865723,
+        "corners": 26,
+        "patch_dynamic_range": 149.29999999999998,
+        "rgb_mean_difference_diagnostic": 3.8186875271621035
+      },
+      {
+        "correlation": 0.9980226159095764,
+        "shift_px": 0.0,
+        "peak_margin": 0.1126754879951477,
+        "corners": 19,
+        "patch_dynamic_range": 137.0,
+        "rgb_mean_difference_diagnostic": 2.5494017094017094
+      }
+    ],
+    "geometric_warp_applied": false,
+    "grasp_or_success_inferred": false
+  },
+  "frames": [
+    {
+      "path": "ede1b85739bf2ffa494ceb2bbdfddd5cc831053969a5591cd9e33f7d3f976ed7.png",
+      "sha256": "ede1b85739bf2ffa494ceb2bbdfddd5cc831053969a5591cd9e33f7d3f976ed7"
+    },
+    {
+      "path": "4a08678cecf7ed8cdf8990f5b3aa9a589379f5a5bb9288ad250b460b6ea0f82e.png",
+      "sha256": "4a08678cecf7ed8cdf8990f5b3aa9a589379f5a5bb9288ad250b460b6ea0f82e"
+    },
+    {
+      "path": "3c5b5363758ec108bd555752dd58a6f16fa1f1645888d105df68db63449eab54.png",
+      "sha256": "3c5b5363758ec108bd555752dd58a6f16fa1f1645888d105df68db63449eab54"
+    }
+  ],
+  "physical_acceptance_claimed": false,
+  "geometry_calibration_changed": false
+}

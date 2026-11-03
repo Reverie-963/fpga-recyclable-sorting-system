@@ -1,0 +1,9 @@
+{
+  "powershell_ast": "passed",
+  "checked": [
+    "build_joint.ps1",
+    "build_hls.ps1"
+  ],
+  "full_synthesis_run": false,
+  "board_programming": false
+}

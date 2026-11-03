@@ -1,0 +1,12 @@
+{
+  "schema": "yoloe-category-runtime-v1",
+  "weights": "assets/yoloe-11m-seg.pt",
+  "weights_sha256": "785199b7cc75a5f4041dec15782a4b8a4105e5a34d7ffb287a0a10781724c5bd",
+  "text_encoder": "assets/mobileclip_blt.ts",
+  "text_encoder_sha256": "a67804d1b0f07b8b9a20c1761ec0847f34660f5fa338ec70e8f3fce68ed95e54",
+  "device": "cpu",
+  "precision": "fp32",
+  "threads": 2,
+  "ultralytics_version": "8.3.230",
+  "torch_version": "2.6.0+cpu"
+}

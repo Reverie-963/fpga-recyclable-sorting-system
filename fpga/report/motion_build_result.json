@@ -1,0 +1,18 @@
+{
+  "csim": "pass",
+  "sources": {
+    "motion_path_accel.hpp": "240c511f651c8af6912e0fc4da31f1c75128a46a8ef26a64c71470a58ddbfaeb",
+    "motion_path_accel_tb.cpp": "df5f71dafbed8b505852658b7af53cfd2a8a12ecfd847b23b5c3fd776552a1f7",
+    "motion_sine_q24.hpp": "bb0c57195011f8e18c8c388c160974ebf3f15279873807444c889f9b04963dc6",
+    "motion_path_bd.tcl": "03b62be2950564a0e8033604a0de7ee19f8973e0bcd4c0056883a94a41c0b084",
+    "motion_path_accel.cpp": "78a65eed0b76b3bef34b2b5ac3acfcfbd67d8bee29d0c65ce71650260a7dc6e1"
+  },
+  "mechanical_motion": false,
+  "assets": {
+    "motion_path.bit": "3c507d5244a1e12ee8febc12615f709f34ff6869a3bcd220883f4a8025c98225",
+    "motion_path.hwh": "0b348590ef7234ac3139920ed93d8cb9ec6ebe8a808f482abe96ef122b11cd41"
+  },
+  "board_programmed": false,
+  "cosim": "pass",
+  "toolchain": "2026.1"
+}

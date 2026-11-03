@@ -1,0 +1,134 @@
+{
+  "kind": "station-markers-v1",
+  "world_frame_id": "fixed-board-origin-center-v1",
+  "dictionary": "DICT_4X4_50",
+  "units": "mm",
+  "axes": "+X paper right; +Y paper top; +Z above paper",
+  "physical_board_installed": false,
+  "world_registration_checked": false,
+  "height_range_mm": [
+    0,
+    120
+  ],
+  "work_polygon_world_xy_mm": [
+    [
+      -35,
+      -50
+    ],
+    [
+      35,
+      -50
+    ],
+    [
+      35,
+      65
+    ],
+    [
+      -35,
+      65
+    ]
+  ],
+  "markers": [
+    {
+      "id": 10,
+      "corners_world_mm": [
+        [
+          -85,
+          118.5,
+          0
+        ],
+        [
+          -40,
+          118.5,
+          0
+        ],
+        [
+          -40,
+          73.5,
+          0
+        ],
+        [
+          -85,
+          73.5,
+          0
+        ]
+      ]
+    },
+    {
+      "id": 11,
+      "corners_world_mm": [
+        [
+          40,
+          118.5,
+          0
+        ],
+        [
+          85,
+          118.5,
+          0
+        ],
+        [
+          85,
+          73.5,
+          0
+        ],
+        [
+          40,
+          73.5,
+          0
+        ]
+      ]
+    },
+    {
+      "id": 12,
+      "corners_world_mm": [
+        [
+          -85,
+          -61.5,
+          0
+        ],
+        [
+          -40,
+          -61.5,
+          0
+        ],
+        [
+          -40,
+          -106.5,
+          0
+        ],
+        [
+          -85,
+          -106.5,
+          0
+        ]
+      ]
+    },
+    {
+      "id": 13,
+      "corners_world_mm": [
+        [
+          40,
+          -61.5,
+          0
+        ],
+        [
+          85,
+          -61.5,
+          0
+        ],
+        [
+          85,
+          -106.5,
+          0
+        ],
+        [
+          40,
+          -106.5,
+          0
+        ]
+      ]
+    }
+  ],
+  "note": "Design geometry only. Rigidly mount the whole sheet; verify actual printed scale before use."
+}

@@ -1,0 +1,59 @@
+{
+  "arm": {
+    "commissioned": false,
+    "port": "COM_REPLACE_ME",
+    "move_ms": 1500,
+    "settle_s": 0.3,
+    "alpha": null,
+    "home": [
+      0,
+      100,
+      120
+    ],
+    "pick_bounds_mm": [
+      -70,
+      70,
+      100,
+      210
+    ],
+    "grab_z": 30,
+    "lift_z": 120,
+    "open_pwm": 1000,
+    "close_pwm": 1600,
+    "wrist_pwm": 1500,
+    "bins": {
+      "cap_deformed": [
+        -100,
+        60,
+        35
+      ]
+    },
+    "step_move_ms": {
+      "wrist": 800,
+      "open": 800,
+      "above_target": 1200,
+      "descend": 1000,
+      "close": 1200,
+      "lift": 1200,
+      "above_bin": 1500,
+      "lower_bin": 1000,
+      "release": 1000,
+      "leave_bin": 1200,
+      "return": 1500
+    },
+    "step_settle_s": {
+      "home": 0,
+      "wrist": 0,
+      "open": 0,
+      "above_target": 0,
+      "descend": 0.1,
+      "close": 0.2,
+      "lift": 0,
+      "above_bin": 0,
+      "lower_bin": 0,
+      "release": 0.2,
+      "leave_bin": 0,
+      "return": 0
+    }
+  }
+}

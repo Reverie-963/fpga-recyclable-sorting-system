@@ -1,0 +1,201 @@
+{
+  "schema_version": "sorting-loop-v1",
+  "synthetic_fixture": true,
+  "station_id": "REPLACE_WITH_MEASURED_STATION",
+  "camera_id": "pynq-c270",
+  "image_size": [
+    640,
+    480
+  ],
+  "model_version": "REPLACE_WITH_YOLOE_MODEL_SHA256",
+  "runtime_id": "REPLACE_WITH_YOLOE_RUNTIME_ID",
+  "calibration_id": "REPLACE_WITH_CALIBRATION_ID",
+  "prompt_mode": "visual",
+  "stable_frames": 3,
+  "max_objects": 3,
+  "max_age_ms": 2000,
+  "frame_timeout_s": 2,
+  "min_frame_gap_ms": 100,
+  "min_separation_px": 5,
+  "min_interior_px": 2,
+  "max_cycle_s": 120,
+  "observe_timeout_s": 15,
+  "min_confidence": 0.8,
+  "min_scene_iou": 0.9,
+  "min_erased_fraction": 0.9,
+  "min_persistent_fraction": 0.8,
+  "max_scene_changed_fraction": 0.02,
+  "max_other_bin_changed_fraction": 0.02,
+  "rgb_difference_threshold": 90,
+  "min_bin_gain_px": 80,
+  "retreat_settle_s": 0.1,
+  "require_distinct_jpeg": true,
+  "quality_gate_passed": false,
+  "station_commissioned": false,
+  "initial_pose_confirmed": false,
+  "source_roi": [
+    20,
+    80,
+    320,
+    400
+  ],
+  "statistics": {
+    "backend": "cpu_reference",
+    "url": "http://192.168.2.99:8782",
+    "timeout_s": 5,
+    "token_env": "KM1_STATS_TOKEN",
+    "assets": {
+      "vision.bit": null,
+      "vision.hwh": null
+    }
+  },
+  "layout": {
+    "static_rois": [
+      [
+        20,
+        20,
+        70,
+        65
+      ],
+      [
+        560,
+        410,
+        620,
+        465
+      ]
+    ],
+    "search_margin_px": 3,
+    "max_layout_shift_px": 1,
+    "min_patch_std": 8,
+    "min_patch_corners": 4,
+    "min_patch_peak_margin": 0.01,
+    "min_patch_correlation": 0.9,
+    "max_patch_mean_difference": 12
+  },
+  "arm": {
+    "transport": "direct",
+    "commissioned": false,
+    "port": "COM_REPLACE_ME",
+    "move_ms": 1500,
+    "settle_s": 0.1,
+    "home": null,
+    "home_alpha_deg": null,
+    "pick_bounds_mm": [
+      -70,
+      70,
+      100,
+      210
+    ],
+    "joint_limits_pwm": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "usb_identity": null
+  },
+  "profiles": {
+    "plastic": {
+      "bin_id": "bin_plastic",
+      "bin_roi": [
+        360,
+        40,
+        600,
+        140
+      ],
+      "commissioned": false,
+      "swept_path_verified": false,
+      "acceptance_record": null,
+      "image_to_grip_mm": null,
+      "image_to_hover_mm": null,
+      "verified_polygon_px": null,
+      "grasp_z_mm": null,
+      "hover_z_mm": null,
+      "bin_xyz_mm": null,
+      "alpha_deg": null,
+      "wrist_pwm": null,
+      "open_pwm": null,
+      "close_pwm": null,
+      "axis_deg": null,
+      "axis_tolerance_deg": null,
+      "min_area_px": null,
+      "max_area_px": null,
+      "min_width_mm": null,
+      "max_width_mm": null,
+      "object_profile_id": null,
+      "object_height_mm": null
+    },
+    "metal": {
+      "bin_id": "bin_metal",
+      "bin_roi": [
+        360,
+        160,
+        600,
+        260
+      ],
+      "commissioned": false,
+      "swept_path_verified": false,
+      "acceptance_record": null,
+      "image_to_grip_mm": null,
+      "image_to_hover_mm": null,
+      "verified_polygon_px": null,
+      "grasp_z_mm": null,
+      "hover_z_mm": null,
+      "bin_xyz_mm": null,
+      "alpha_deg": null,
+      "wrist_pwm": null,
+      "open_pwm": null,
+      "close_pwm": null,
+      "axis_deg": null,
+      "axis_tolerance_deg": null,
+      "min_area_px": null,
+      "max_area_px": null,
+      "min_width_mm": null,
+      "max_width_mm": null,
+      "object_profile_id": null,
+      "object_height_mm": null
+    },
+    "paper": {
+      "bin_id": "bin_paper",
+      "bin_roi": [
+        360,
+        280,
+        600,
+        380
+      ],
+      "commissioned": false,
+      "swept_path_verified": false,
+      "acceptance_record": null,
+      "image_to_grip_mm": null,
+      "image_to_hover_mm": null,
+      "verified_polygon_px": null,
+      "grasp_z_mm": null,
+      "hover_z_mm": null,
+      "bin_xyz_mm": null,
+      "alpha_deg": null,
+      "wrist_pwm": null,
+      "open_pwm": null,
+      "close_pwm": null,
+      "axis_deg": null,
+      "axis_tolerance_deg": null,
+      "min_area_px": null,
+      "max_area_px": null,
+      "min_width_mm": null,
+      "max_width_mm": null,
+      "object_profile_id": null,
+      "object_height_mm": null
+    }
+  },
+  "camera_url": "http://127.0.0.1:8780/frame.jpg",
+  "device": "cuda:0",
+  "half": true,
+  "yoloe_config": "yoloe_materials.json",
+  "journal_dir": "../../local-only/sorting-station-ledger",
+  "stop_file": "../../local-only/STOP_SORTING",
+  "layout_reference": {
+    "path": "../../local-only/sorting-calibration/reference.png",
+    "sha256": null
+  }
+}

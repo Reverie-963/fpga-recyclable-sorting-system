@@ -1,0 +1,9 @@
+{
+  "material": "plastic",
+  "object_height_mm": 53.0,
+  "official_label": "Disposable plastic cup",
+  "operator_confirmation": "Current placement confirmation: 53mm塑料瓶已重新放好，现场确认. Intervening plastic-02 was rejected before serial open or write, verified from board failure report. Same stationary sample will be freshly imaged and previewed in this new manually reviewed request; original request is not replayed.",
+  "registered_at": "2026-11-02T03:55:58.145542+08:00",
+  "automatic_retry": false,
+  "source_archive_unchanged": true
+}

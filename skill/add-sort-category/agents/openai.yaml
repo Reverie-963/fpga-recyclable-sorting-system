@@ -1,0 +1,4 @@
+interface:
+  display_name: "免重训新物品接入"
+  short_description: "用文字或参考图创建分拣类别候选，预览轮廓、评估并导出配置"
+  default_prompt: "使用 $add-sort-category 为新物品创建提示类别包，先预览与评估，再导出候选配置。"

@@ -1,0 +1,7 @@
+{
+  "kind": "archive_provenance_erratum",
+  "original_review_sha256": "75de5eecae6421f2c87fa1bd946c3461ea7eab293b9bd01f8a6ccb378413bf9b",
+  "correction": "Original can baseline JSON preserves original decoded BGR hash and camera JPEG hash. The detector PNG input hash was verified transiently by the HTTP adapter, but was overwritten by camera JPEG hash in the old observation field and not separately persisted there. The archived baseline_rgb_provenance sentence claiming that PNG hash is preserved in baseline JSON is inaccurate. Mask/RGB/PL numerical results and operator feedback are unchanged. New shared CameraYoloe preserves model_input_image_sha256 separately.",
+  "numerical_evidence_changed": false,
+  "original_review_preserved": true
+}

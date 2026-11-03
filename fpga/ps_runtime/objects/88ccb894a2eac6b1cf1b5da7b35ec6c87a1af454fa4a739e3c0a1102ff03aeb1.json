@@ -1,0 +1,999 @@
+{
+  "kind": "known-relocated-integration-v1",
+  "files": {
+    "camera": {
+      "path": "e27bbabaea9286ddcaaef49f07592fe6fb6c0dbea14650a511f15117a8300ee0.json",
+      "sha256": "e27bbabaea9286ddcaaef49f07592fe6fb6c0dbea14650a511f15117a8300ee0"
+    },
+    "registration": {
+      "path": "9db5ec59174c3d25fe476460bdf4c800098f5ba1ae5acd8258c350795c53e68e.json",
+      "sha256": "9db5ec59174c3d25fe476460bdf4c800098f5ba1ae5acd8258c350795c53e68e"
+    },
+    "station": {
+      "path": "8cdfe25f0d357f3403471c6ce2706d345111b9665c6bef76c33c83cb1c6ba8fe.json",
+      "sha256": "8cdfe25f0d357f3403471c6ce2706d345111b9665c6bef76c33c83cb1c6ba8fe"
+    },
+    "verification": {
+      "path": "e3718ae7fdc977659cf478ae625593e2a71dcc466c9ea0d15bdbffa0ca54ac39.json",
+      "sha256": "e3718ae7fdc977659cf478ae625593e2a71dcc466c9ea0d15bdbffa0ca54ac39"
+    },
+    "config": {
+      "path": "a5ef397092005e7d0c301f88569ed2f2ecb0e667235934636ae45ebb0ccbbf07.json",
+      "sha256": "a5ef397092005e7d0c301f88569ed2f2ecb0e667235934636ae45ebb0ccbbf07"
+    },
+    "scene": {
+      "path": "e734087e1e306692c5b31688012f30d3487a65eaa0f85800320808a35ae7bf47.json",
+      "sha256": "e734087e1e306692c5b31688012f30d3487a65eaa0f85800320808a35ae7bf47"
+    },
+    "empty_image": {
+      "path": "e18f93ff57a54cc609a9cdebdc63b397a4538dc629e10bfabb38513210c87902.png",
+      "sha256": "e18f93ff57a54cc609a9cdebdc63b397a4538dc629e10bfabb38513210c87902"
+    },
+    "position_policy": {
+      "path": "4c81a3d7e6ca214fff9af59e3d71eef27c8659b858e682693eb9a205755abb95.json",
+      "sha256": "4c81a3d7e6ca214fff9af59e3d71eef27c8659b858e682693eb9a205755abb95"
+    },
+    "position_trial": {
+      "path": "47ae455655c8ed4e9ee9f0acb26ba8ae68914d169e58b26f6877e2da46f12158.json",
+      "sha256": "47ae455655c8ed4e9ee9f0acb26ba8ae68914d169e58b26f6877e2da46f12158"
+    },
+    "position_visual": {
+      "path": "33dce5b119829f1040a096aaef8deb89bbbee59f3087bb339da633431b278848.json",
+      "sha256": "33dce5b119829f1040a096aaef8deb89bbbee59f3087bb339da633431b278848"
+    },
+    "position_route": {
+      "path": "efc096bfbaf5687301ec17b7d43563fbf4e953184d474b9f476442234378c05b.json",
+      "sha256": "efc096bfbaf5687301ec17b7d43563fbf4e953184d474b9f476442234378c05b"
+    },
+    "unified_policy": {
+      "path": "99a129f9deb1e3208b68ea97889c1912eaf5c634cbe807cd6e9723e37556a730.json",
+      "sha256": "99a129f9deb1e3208b68ea97889c1912eaf5c634cbe807cd6e9723e37556a730"
+    },
+    "empty_record_metal": {
+      "path": "80588dacd6b38418a13782866c660d031668b15b3b04327a8ed438889331bd82.json",
+      "sha256": "80588dacd6b38418a13782866c660d031668b15b3b04327a8ed438889331bd82"
+    },
+    "empty_image_metal": {
+      "path": "a9ad89da3af5180c2b61f0f8a77845b28e60e0707a32a34bcba0e6c9280c1ca2.png",
+      "sha256": "a9ad89da3af5180c2b61f0f8a77845b28e60e0707a32a34bcba0e6c9280c1ca2"
+    },
+    "neutral_return_start_proof": {
+      "path": "fdc99d1c86d17ca43cd98a316b66f66c8588e8e7b0f1122894147f6bccbbfc44.json",
+      "sha256": "fdc99d1c86d17ca43cd98a316b66f66c8588e8e7b0f1122894147f6bccbbfc44"
+    }
+  },
+  "implementation_sources": [
+    {
+      "path": "../pynq_km1_vision/openmv_gripper/km1_arm_bridge.py",
+      "sha256": "600fd518d6849bebf1dc07c47302f1917d8327a179947cfef7cbf38f0cc66218"
+    },
+    {
+      "path": "../pynq_km1_vision/src/arm.py",
+      "sha256": "106c861d242497ebd4e506af0f4efca4b47c9ec5d6e05de0400b4ad1ebd9af79"
+    },
+    {
+      "path": "../pynq_km1_vision/src/arm_route_preview.py",
+      "sha256": "70d5c958aa8e19750a5feb2528306dc62dc2fb7e58438df83d7eeb5a2d5657c9"
+    },
+    {
+      "path": "../pynq_km1_vision/src/sorting_instances.py",
+      "sha256": "88bd9bba0f03b4c4c0e366ee6d8809999ec59011cb4ca62833387a3d4c5c692a"
+    },
+    {
+      "path": "../pynq_km1_vision/src/sorting_io.py",
+      "sha256": "20d39277be966a9be1f7c764ceb5422b0c1238eff6dbda4641a5c3d7dce5aabb"
+    },
+    {
+      "path": "../pynq_km1_vision/src/sorting_known.py",
+      "sha256": "27a618c55c158a485ee301c8566e525737f9e126fdd4f8160f062b54f495f00b"
+    },
+    {
+      "path": "../pynq_km1_vision/src/sorting_loop.py",
+      "sha256": "2f68038a397b2533754fbf321e513a4e89e4f92de30cd11859e2230c983165a9"
+    },
+    {
+      "path": "../pynq_km1_vision/src/sorting_motion.py",
+      "sha256": "7e4dba8830ff485a5a4d28dd0a9d0ec15bff9eb8aa609f7f7166cee0f4c4be1a"
+    },
+    {
+      "path": "../pynq_km1_vision/src/sorting_position_controller.py",
+      "sha256": "e5b9b7921cc4216cc734fda7d4e76c8739576644060c14bcf7f67bc76f864eea"
+    },
+    {
+      "path": "../pynq_km1_vision/src/sorting_position_plan.py",
+      "sha256": "db6bfa7ae118bf10826af960aa0200e004d4543af16235cd63e266496c68abc0"
+    },
+    {
+      "path": "../pynq_km1_vision/src/sorting_relocated.py",
+      "sha256": "f6c561d839c8828930da89d055bdb935d616e489e43e026b5eefc22beb3ac705"
+    },
+    {
+      "path": "../pynq_km1_vision/src/sorting_relocated_camera.py",
+      "sha256": "3c3882ff15213e2050293638cf41fcf646be2b70ef71ba8626e0ceb62fbbd115"
+    },
+    {
+      "path": "../pynq_km1_vision/src/sorting_relocated_geometry.py",
+      "sha256": "57e348748baaa2a1952c172f2b5fb6b780c01991ce11431dcd9f1f6b8d81dbe8"
+    },
+    {
+      "path": "../pynq_km1_vision/src/sorting_relocated_plan.py",
+      "sha256": "cfe541530364c065b96cd531f7d98f440f85db12b4646442744fe782a106e07e"
+    },
+    {
+      "path": "../pynq_km1_vision/src/sorting_relocated_run.py",
+      "sha256": "a7b1bcc7d8524affeeabb7b430dd7dbcb0b0b9f84adc906fa04615d74a402a92"
+    },
+    {
+      "path": "../pynq_km1_vision/src/sorting_scene.py",
+      "sha256": "0422f9aec2c977a2c412b4e63e54cfed10ef457d73c9107c60d07c324ebb643c"
+    },
+    {
+      "path": "../pynq_km1_vision/src/sorting_station_io.py",
+      "sha256": "05be4fc465e20dcf55563d1c30d61b11a1abea0b2d0043552f6dc66c2fad3ebc"
+    },
+    {
+      "path": "../pynq_km1_vision/src/sorting_unified.py",
+      "sha256": "ec5a341be260728abd8a7f68e0d26ccda716892ff558f3cb8bf7b03afeb985e1"
+    },
+    {
+      "path": "../pynq_km1_vision/src/sorting_unified_plan.py",
+      "sha256": "9d08ea552ec52ebd3ecdd10f9bbb75aed16fc9df8bbefb7b3b6f564fd6f6a640"
+    },
+    {
+      "path": "../pynq_km1_vision/src/sorting_unified_run.py",
+      "sha256": "7daa98e662fdead8ba6e0732c602710d9c2145aae585d0c605e54b8c347b9101"
+    },
+    {
+      "path": "../pynq_km1_vision/src/static_visual_verification.py",
+      "sha256": "20fd1403ed4a85935761addcce8d26064dc75b12da0db4a736ee894546ab5323"
+    },
+    {
+      "path": "../pynq_km1_vision/src/station_geometry.py",
+      "sha256": "e2f38273f64d9dd7348cecc71b5abdaa30adaeccbd9801d65b438a39aa17f751"
+    },
+    {
+      "path": "../pynq_km1_vision/src/station_relocalization.py",
+      "sha256": "0a48635d46297779b7b5e307c9c49d382c34cbe56ad8f221807c0205142d4639"
+    },
+    {
+      "path": "../pynq_km1_vision/src/station_vision.py",
+      "sha256": "48f852ceac025e49d172674c4c97b30b34d7d4b76a833ba9630cdb8560be477c"
+    },
+    {
+      "path": "../pynq_km1_vision/src/monitor_operation.py",
+      "sha256": "eebbed391d9c7ef71016a46d62d8ae730c9d98b491c989fe45daf683c79415d6"
+    },
+    {
+      "path": "../pynq_km1_vision/src/sorting_monitor_server.py",
+      "sha256": "6f362b165b5dcef47370342858438b394fb0035fdef4619cc75ae18d7785db58"
+    },
+    {
+      "path": "../pynq_km1_vision/src/sorting_unified_motion.py",
+      "sha256": "5736e590fa454499217f8bd7625a39a918aa890a64bfa2fa6b6cee2764e779ea"
+    },
+    {
+      "path": "../pynq_km1_vision/src/sorting_unified_motion.py",
+      "sha256": "5736e590fa454499217f8bd7625a39a918aa890a64bfa2fa6b6cee2764e779ea"
+    },
+    {
+      "path": "../pynq_km1_vision/src/km1_voice_resident.py",
+      "sha256": "3dacc001a0274bbbaeb390c258dfce66ab43171b12906b412cabf8a98493fed9"
+    },
+    {
+      "path": "../pynq_km1_vision/src/sorting_batch_verification.py",
+      "sha256": "caa1fdc191ec0f941d7e23d3e0879797cbc2bc2a258beca31d79a200fdf2dfca"
+    },
+    {
+      "path": "../pynq_km1_vision/src/sorting_state_reset.py",
+      "sha256": "33e58208e79e090ce2d860fd82f6b12deb31877f6389d594f847e9ecb49b5d25"
+    },
+    {
+      "path": "../pynq_km1_vision/src/sorting_neutral_return.py",
+      "sha256": "93dff8e527602d889a26d445bc40b5b7e26eff67c6bc36899f2f96c2eb0fbc2f"
+    },
+    {
+      "path": "../pynq_km1_vision/src/monitor_tasks.py",
+      "sha256": "173b24adf0b7c2f397cb190a8510edc87fcd31beaa0e6c9eb654bfc2e52074c9"
+    },
+    {
+      "path": "../pynq_km1_vision/src/arm_transport.py",
+      "sha256": "f72d97cbe36b9e2a35b33e9e4a09005969debce0ce7d676e13db862ff8e931c7"
+    },
+    {
+      "path": "../pynq_km1_vision/src/sorting_review_policy.py",
+      "sha256": "9f7198c534039cee210fbfa09f36466b15131b55fd6672b69384aa5de8de3072"
+    }
+  ],
+  "scene_geometry_confirmed": true,
+  "empty_bins_confirmed": true,
+  "physical_cycle_verified": false,
+  "reference_stream_id": "097c6e6dd3144c9ba831664646d966ad",
+  "explicit_bin_floor_heights_mm": {
+    "bin_plastic": 0.0,
+    "bin_metal": 0.0,
+    "bin_paper": 0.0
+  },
+  "mechanical_profiles_changed": false,
+  "unattended_accepted": false,
+  "scene_confirmation_source": "direct_operator_review_of_scene-review.png_and_empty_bins",
+  "motion_guard_policy": {
+    "kind": "operator-approved-station-motion-margin-v1",
+    "max_displacement_px": 15,
+    "operator_statement": "放宽200%",
+    "interpreted_scope": "all_active_pixel_motion_displacement_guards",
+    "production_point_domains_changed": false,
+    "min_patch_correlation_changed": true,
+    "frame_age_guard_changed": false,
+    "review_date": "2026-10-30",
+    "max_static_patch_shift_px": 15,
+    "search_margin_px": 15,
+    "calibration_recovery_displacement_px": 15,
+    "min_fixed_markers": 2,
+    "marker_count_operator_statement": "不要识别3个，识别2个就行了，降低门槛",
+    "initial_max_displacement_px": 15,
+    "initial_localization_operator_statement": "所有审核门槛放宽200%",
+    "initial_task_point_spread_mm": 1,
+    "initial_window_max_age_ms": 3000,
+    "initial_window_operator_statement": "怎么又卡住了，什么限制，直接放宽50%，然后恢复页面，快"
+  },
+  "operator_amendment": {
+    "previous_binding": {
+      "path": "binding-motion-margin-5px-1793292117611838700.json",
+      "sha256": "b798d2fbb0d55160b38d0586fa116f13f20b17bab26e5b90a46132c2f59eaa67"
+    },
+    "previous_config": {
+      "path": "..\\..\\position-grasp-20261030\\sorting-known-before-all-five-pixel-limits.local.json",
+      "sha256": "5a218d179a0827fd2d6438c290f5a3400e8d14de131048604a642178a12f2cc3"
+    },
+    "implementation_changes": [
+      {
+        "path": "C:\\FPGA\\pynq_km1_vision\\src\\sorting_known.py",
+        "previous_sha256": "53974543421be45fa4d6be59d596e5ea996e794f8d30e9a25d6c40335722e523",
+        "current_sha256": "d2ff223a44870cd23b3ecc35fbcfc11842529bae097a4c411e19a5924c24e08e"
+      },
+      {
+        "path": "C:\\FPGA\\pynq_km1_vision\\src\\sorting_relocated_geometry.py",
+        "previous_sha256": "67e084bf24caf8eed3dcd39dadff66198c7722f1274473ed370fe8fd02f217f2",
+        "current_sha256": "75629f3e2d03b983a44414dd246eebec339a48d28525666385e2d9d02a1a7c1a"
+      },
+      {
+        "path": "C:\\FPGA\\pynq_km1_vision\\src\\sorting_known.py",
+        "previous_sha256": "53974543421be45fa4d6be59d596e5ea996e794f8d30e9a25d6c40335722e523",
+        "current_sha256": "d2ff223a44870cd23b3ecc35fbcfc11842529bae097a4c411e19a5924c24e08e"
+      }
+    ],
+    "robot_profile_fingerprints_unchanged": true,
+    "previous_qualification_records_rewritten": false,
+    "physical_motion_during_activation": false,
+    "unattended_accepted": false
+  },
+  "operator_position_integration": {
+    "previous_binding": {
+      "path": "binding-all-motion-limits-5px-1793292430587488100.json",
+      "sha256": "949bb2b1be9edb94f6b14fea3dce74e3895aefb2f4e5dde3e6e9a73baab99d64"
+    },
+    "operator_statement": "那就怎么做，来，干！",
+    "no_new_camera_calibration": true,
+    "supervised_model_trial_only": true,
+    "physical_motion_during_install": false
+  },
+  "small_angle_trial_amendment": {
+    "previous_binding": {
+      "path": "binding-unified-position-mode-1793294029615031500.json",
+      "sha256": "d3bc904e9bea68e41367685fbf11945dbffe9fc020e0a9c28f4fce2bce5d3005"
+    },
+    "user_request": "可以稍微不同的朝向吗",
+    "trial_tolerance_deg": 30,
+    "physical_qualification_rewritten": false
+  },
+  "position_compatibility_amendment": {
+    "previous_binding": {
+      "path": "binding-unified-position-small-angle-1793294125387418500.json",
+      "sha256": "fdab3e982c09be9633643a4e49a307fe33f186f3dd7d2de76253b3cb0b72ec2b"
+    },
+    "changes": [
+      {
+        "path": "C:\\FPGA\\pynq_km1_vision\\src\\sorting_position_controller.py",
+        "previous_sha256": "29d4e50e66fd59a3c02fd0cc97cf27da8c19b71ee84ce8df598dcdd380921f30",
+        "current_sha256": "e5b9b7921cc4216cc734fda7d4e76c8739576644060c14bcf7f67bc76f864eea"
+      }
+    ],
+    "reason": "Other materials retain original checked route and timing; paper model path unchanged",
+    "latest_actual_trial": {
+      "path": "..\\..\\sorting-known-ledger\\458df1a7fcca4e4792e6fe7e5e1aeb26.json",
+      "sha256": "d027502da30e6d7b8ef302e05499189940cff5e64694132185e92c17a16c8932"
+    },
+    "hardware_run_used_previous_binding": true,
+    "physical_motion_during_amendment": false,
+    "physical_workspace_qualification_changed": false
+  },
+  "unified_supervised_entry_installed": true,
+  "unified_workspace_physically_qualified": false,
+  "unified_angular_execution_model": "all_planar_angles_with_complete_route_checks",
+  "unified_bin_capacity_note": "one_original_verified_release_slot_per_class; additional_slots_need_own_records",
+  "previous_binding": {
+    "path": "binding-waits-restored-1793334106910391000.json",
+    "sha256": "d0af9d60d67b6aa1066b0c16a5318219e5283850906fe11c44683b8cd5f51f23"
+  },
+  "unified_implementation_revision": "source_geometry_per_bin_reference_post5s_preserving_speed_policy",
+  "material_interface_revision": "four_scopes_full_frame_fixed_release_routes",
+  "fixed_release_routes_unchanged": true,
+  "supervised_batch_speed": "operator_requested_distance_timing_target_20s_per_complete_cycle",
+  "speed_trial_installation": {
+    "previous_binding": {
+      "path": "binding-source-mask-review-1793323011491592600.json",
+      "sha256": "4c949b9437e0ac857004482d5e0cfbff892800ef9edb77d8481b9b2cc62ef5e9"
+    },
+    "operator_statement": "现在的4个抓取，全动作加速，尽可能压缩到20s；每次完整抓放约20秒",
+    "source_revisions": [
+      {
+        "path": "C:\\FPGA\\pynq_km1_vision\\src\\sorting_unified.py",
+        "old_binding_sha256": "08fb596b0ef6a8fe357ad938035c9894d8ea5625582537a55b27ad1243af246d",
+        "task_start_sha256": "dde6008ec56293bc661f85389522d60e55551ebeb197ecb95e773d2b33190aeb",
+        "current_sha256": "08fb596b0ef6a8fe357ad938035c9894d8ea5625582537a55b27ad1243af246d"
+      },
+      {
+        "path": "C:\\FPGA\\pynq_km1_vision\\src\\sorting_unified_plan.py",
+        "old_binding_sha256": "2803a04418e2d52264ffe1fa581070dfce89dcc5bb9fe1266dfb77d14e20d220",
+        "task_start_sha256": "e78b7ee5c6f5a3d4131c4866d27aa83f91e3217e4941a2328551bfc51e078ed8",
+        "current_sha256": "2803a04418e2d52264ffe1fa581070dfce89dcc5bb9fe1266dfb77d14e20d220"
+      },
+      {
+        "path": "C:\\FPGA\\pynq_km1_vision\\src\\sorting_unified_run.py",
+        "old_binding_sha256": "bcc8441c478d03ab62e105104d192034affc2ac8ef3b50338c85b2f0584030c2",
+        "task_start_sha256": "46ccfbec9bf020b59ee5050aac97c6c0d6c49907927292d80e4b8e6e2bf79366",
+        "current_sha256": "bcc8441c478d03ab62e105104d192034affc2ac8ef3b50338c85b2f0584030c2"
+      }
+    ],
+    "all_joint_targets_and_waypoints_preserved": true,
+    "calibration_changed": false,
+    "all_four_material_interfaces": true,
+    "physical_speed_verified": false,
+    "tests": {
+      "full_regression_passed": 678,
+      "route_grid_passed": 1080
+    },
+    "preexisting_unbound_unified_source_retained": true
+  },
+  "post_verification_amendment": {
+    "previous_binding": {
+      "path": "binding-speed-1793323052411344600.json",
+      "sha256": "e461f925089583b076e6537e5e2e7a6d4d5cdc8814902918f1fbacdf3dab9420"
+    },
+    "operator_statement": "把复合的检验的窗口放宽",
+    "verification_timeout_s": 5,
+    "verification_max_age_ms": 5000,
+    "motion_max_age_ms": 2000,
+    "speed_policy_preserved": true,
+    "speed_physically_tested_in_this_trial": false,
+    "source_revisions": [
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\sorting_unified.py",
+        "old_sha256": "08fb596b0ef6a8fe357ad938035c9894d8ea5625582537a55b27ad1243af246d",
+        "current_sha256": "6865d8b9d8be514b38d9cf06d61aae55552edc91fdbf8dd4a7ec386020713963"
+      },
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\sorting_unified_plan.py",
+        "old_sha256": "2803a04418e2d52264ffe1fa581070dfce89dcc5bb9fe1266dfb77d14e20d220",
+        "current_sha256": "ffa892e768cce1c2d0f41823c6441d351ef5b73d4f1d86f895868c3fa0940a1b"
+      },
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\sorting_unified_run.py",
+        "old_sha256": "bcc8441c478d03ab62e105104d192034affc2ac8ef3b50338c85b2f0584030c2",
+        "current_sha256": "934bc0fa55fd489e068281011022c62de6d11a595a8c5dc0c757aba09181f931"
+      }
+    ],
+    "manual_trial_review": "local-only/unified-monitor/full-sort-final-summary-1793324905061863700.json",
+    "physical_motion_during_amendment": false
+  },
+  "resident_voice_entry": {
+    "installed": true,
+    "control_mode": "explicit_spoken_command",
+    "requires_fresh_page_ready_each_batch": false,
+    "requires_new_spoken_request_each_batch": true,
+    "auto_start_next_batch": false,
+    "physical_cycle_verified": false,
+    "robot_profiles_changed": false,
+    "operator_instruction": "常驻应像常态指令一样随时识别并进行指令，无需网页按钮"
+  },
+  "feedback_cleanup_revision": {
+    "previous_binding": {
+      "path": "candidate-20261029\\binding-resident-voice-1793325708348401600.json",
+      "sha256": "deeb900a66e619f958d457158d4c1f5fed6a8c3ecba4242e5d3c61ca6d98303f"
+    },
+    "changes": [
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\sorting_unified_run.py",
+        "previous_sha256": "934bc0fa55fd489e068281011022c62de6d11a595a8c5dc0c757aba09181f931",
+        "current_sha256": "1531b9aa44ec3f108e342b5e8e1af542c238a4156314f26009f02bff2a0ed3d0"
+      },
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\monitor_operation.py",
+        "previous_sha256": "ee934248838f59d8cfd75101a9baec292581b67ef56c0198523541452723f0fe",
+        "current_sha256": "aad85c787c528950c5329ebfc2b165b1e71380800e993b9b72dee8060b6fa2c8"
+      }
+    ],
+    "reason": "Bounded retry only for Windows sharing violations during batch-marker removal; expose failed operation reason to UI. No motion retry or thresholds changed.",
+    "tests": "76 targeted Python and 11 browser logic tests passed",
+    "physical_motion": false,
+    "original_failure_reports_rewritten": false
+  },
+  "end_batch_installation": {
+    "previous_binding": {
+      "path": "candidate-20261029\\binding-feedback-cleanup-1793326028741696500.json",
+      "sha256": "5d7bce79c9d2dcea4f1c2a4e6425310ee7789360796aadb4faa7ed153aa42ae4"
+    },
+    "operator_confidence_reply": "40%",
+    "implementation_changes": [
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\sorting_instances.py",
+        "previous_sha256": "e0520cb70ebdaeb860bfb11a49f02c8f42b7861ef0a0674a24296ed0fca9c93e",
+        "current_sha256": "88bd9bba0f03b4c4c0e366ee6d8809999ec59011cb4ca62833387a3d4c5c692a"
+      },
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\sorting_unified.py",
+        "previous_sha256": "6865d8b9d8be514b38d9cf06d61aae55552edc91fdbf8dd4a7ec386020713963",
+        "current_sha256": "575ce248e36ca3469f8eb0cfb9e5c97f6a147e2093009cec7c526f7b33c9190f"
+      },
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\sorting_unified_plan.py",
+        "previous_sha256": "ffa892e768cce1c2d0f41823c6441d351ef5b73d4f1d86f895868c3fa0940a1b",
+        "current_sha256": "ea6110096edb3d0cd699ea5035207f0de79c74515a1e10afa3289acdeff43b23"
+      },
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\sorting_unified_run.py",
+        "previous_sha256": "1531b9aa44ec3f108e342b5e8e1af542c238a4156314f26009f02bff2a0ed3d0",
+        "current_sha256": "ff4644245b3208b2ab929ed56bf0abd6da6e82fab14a99d1e4c5782319384490"
+      },
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\monitor_operation.py",
+        "previous_sha256": "aad85c787c528950c5329ebfc2b165b1e71380800e993b9b72dee8060b6fa2c8",
+        "current_sha256": "1b121316fee2b3de4351bf4b90ae685bd89cec1f0d0bbe4b38a3dfe677d98be3"
+      }
+    ],
+    "mechanical_limits_and_routes_changed": false,
+    "qualification_changed": false,
+    "motion_during_installation": false,
+    "verification": "724 full regression passed; later 54 targeted unified tests passed, including two added scenarios; 12 JS checks passed"
+  },
+  "reset_empty20_installation": {
+    "previous_binding": {
+      "path": "candidate-20261029\\binding-end-batch-40-1793326680713026800.json",
+      "sha256": "23ca2c57a7b392cfd92d71ea1c732a2b5aab03819b8e8b99aca01fe4a464f6ce"
+    },
+    "source_changes": [
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\sorting_unified.py",
+        "previous_sha256": "575ce248e36ca3469f8eb0cfb9e5c97f6a147e2093009cec7c526f7b33c9190f",
+        "current_sha256": "f7db58dea8d1d27a7f58944220a89a07006f3ce4c0e5f73f783711812bb1b8f4"
+      },
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\sorting_unified_plan.py",
+        "previous_sha256": "ea6110096edb3d0cd699ea5035207f0de79c74515a1e10afa3289acdeff43b23",
+        "current_sha256": "85749fafcbe4b591e465a95788040dee9e9a6ab1ae54bf7dc8519f3b30aee187"
+      },
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\sorting_unified_run.py",
+        "previous_sha256": "ff4644245b3208b2ab929ed56bf0abd6da6e82fab14a99d1e4c5782319384490",
+        "current_sha256": "553a66dc058c93622f8e5f312621dc3d13f394ae88ba6ae5cd4d55e3cdb78715"
+      },
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\monitor_operation.py",
+        "previous_sha256": "1b121316fee2b3de4351bf4b90ae685bd89cec1f0d0bbe4b38a3dfe677d98be3",
+        "current_sha256": "5db549d166958a87d793b5f55f1d8d76903e139b4e93cb11500c2d60dcd7064e"
+      },
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\sorting_monitor_server.py",
+        "previous_sha256": "81ce9baa3a3c7aa2b1931d321e62e63e8528eef521b03bc6f53bc68f399900a2",
+        "current_sha256": "7491d5324b909c551a7dfc6d8296776c347ea4181991b0836747bea0767bf555"
+      }
+    ],
+    "operator_empty_bin_limit": 0.2,
+    "other_scene_limit": 0.05,
+    "original_qualification_changed": false,
+    "mechanical_motion": false,
+    "tests": "737 full tests in 53.326 seconds; 12 JS tests passed",
+    "diagnostic_empty_metal_fraction": 0.07036996073660344,
+    "actual_bin_object_pixels": 0
+  },
+  "two_marker_installation": {
+    "previous_binding": {
+      "path": "candidate-20261029\\binding-reset-empty20-1793327396423919100.json",
+      "sha256": "a1f1e4093f4224b99ac67fb8ff3dd97fece3563e7dde2af5895f789bc340fa6d"
+    },
+    "source_changes": [
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\sorting_relocated.py",
+        "previous_sha256": "8498e8881ad3e53e21311128e9195be4d151861166b0528dd17a4ca5a02f6548",
+        "current_sha256": "826e23a98c44c056e58ad322252c7813b5dfd80bfa6688ad97bda0ccfe1cc415"
+      },
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\sorting_relocated_geometry.py",
+        "previous_sha256": "75629f3e2d03b983a44414dd246eebec339a48d28525666385e2d9d02a1a7c1a",
+        "current_sha256": "114e6e97f86bf503273271dd784be593de95ba4044a5bf9e557a52353346d0d0"
+      },
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\sorting_relocated_run.py",
+        "previous_sha256": "b3abffef6de5232398afaa43da715f520bd165616561218ec95ab18529fabc22",
+        "current_sha256": "32b1ca0a4ec00d6d78292c04b8e46ded121becfe55e81953c4a51595201298f0"
+      },
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\sorting_unified_run.py",
+        "previous_sha256": "553a66dc058c93622f8e5f312621dc3d13f394ae88ba6ae5cd4d55e3cdb78715",
+        "current_sha256": "a0b1c0e170fe9c3fdfa96bee9527d961fb705a3f78e5cc046b0760737c177a0f"
+      },
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\station_geometry.py",
+        "previous_sha256": "d939742ace7704dd2cbecfbd6df5451bddd3935b41b494eabde17fb60b94b287",
+        "current_sha256": "8c80a5cc79f3276469a2998f73b9cac4c1e3d78ff88050ac4e32c8249ae1d495"
+      },
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\monitor_operation.py",
+        "previous_sha256": "5db549d166958a87d793b5f55f1d8d76903e139b4e93cb11500c2d60dcd7064e",
+        "current_sha256": "ab8976c8190834010bf67472c675b8d80bcecfe2049f491b262b25d99589613b"
+      }
+    ],
+    "workspace_qualification_changed": false,
+    "camera_world_registration_changed": false,
+    "pending_resolved": false,
+    "physical_motion": false,
+    "startup_wait_changed": false
+  },
+  "neutral_return_installation": {
+    "previous_binding": {
+      "path": "candidate-20261029\\binding-two-markers-1793328059513149000.json",
+      "sha256": "7f97c7d388c9b0e3cf92c3a048fe52bb78e39666ffc4d4801e86709e6d6cf78d"
+    },
+    "operator_issue": "重置了状态之后机械臂没有回到中位",
+    "operator_followup": "开始识别前，需要回到中位吗",
+    "source_changes": [
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\monitor_operation.py",
+        "previous_sha256": "ab8976c8190834010bf67472c675b8d80bcecfe2049f491b262b25d99589613b",
+        "current_sha256": "0b49d43a38535ff800ec5b1a4ecab25d42e903d2c7171ba890de3e41d6e7b83c"
+      }
+    ],
+    "preview_and_reset_move_arm": false,
+    "explicit_home_button_only": true,
+    "low_speed_ms": 5000,
+    "original_retreat_segment_reused": true,
+    "physical_motion_during_install": false,
+    "validation": "763 full tests passed in 65.683s; later active_action metadata check 27 targeted tests passed; 12 JS checks passed"
+  },
+  "neutral_return_confirmation_clarification": {
+    "previous_binding": {
+      "path": "candidate-20261029\\binding-neutral-return-1793329024294906200.json",
+      "sha256": "b3653216ca14f487a5242b734d6ee7d4852e9f4653a3894eb81530ab99dab11e"
+    },
+    "changes": [
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\monitor_operation.py",
+        "previous_sha256": "6df4f089dbe58668c78960fafc683c3f8ece038a044249f32d0aa65ca793ce05",
+        "current_sha256": "425a2bcb5fe5421e251cd39f1ef485767bc9513d5b2e61cc2c8bc98739b662c3"
+      }
+    ],
+    "reset_confirms_neutral_pose": false,
+    "reset_moves_arm": false,
+    "home_is_separate_explicit_action": true,
+    "validation": "763 full tests; follow-up32 related tests; 12 JS checks passed",
+    "physical_motion": false
+  },
+  "initial_localization_update": {
+    "previous_binding": {
+      "path": "candidate-20261029\\binding-neutral-return-clear-state-1793329150145395600.json",
+      "sha256": "841a607f0703631bccefb2ce889e042786c9e211019b08577bae52cd93273adf"
+    },
+    "changes": [
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\sorting_relocated_run.py",
+        "old": "32b1ca0a4ec00d6d78292c04b8e46ded121becfe55e81953c4a51595201298f0",
+        "new": "d37f9aa04bed09d25dc02974822f7245dfb6df9f9bcff5721d94aa45406be596"
+      },
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\sorting_unified_run.py",
+        "old": "a0b1c0e170fe9c3fdfa96bee9527d961fb705a3f78e5cc046b0760737c177a0f",
+        "new": "98090ca7d379ea5c1d191ba2568707da3c7cf9d5fe5ccecef8b22d6bc12ee6ca"
+      },
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\station_geometry.py",
+        "old": "8c80a5cc79f3276469a2998f73b9cac4c1e3d78ff88050ac4e32c8249ae1d495",
+        "new": "4d4e4d8b3e7c3876406091aa8829b21806582a0c580a98f8bbec9d96349ec3a2"
+      },
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\monitor_operation.py",
+        "old": "425a2bcb5fe5421e251cd39f1ef485767bc9513d5b2e61cc2c8bc98739b662c3",
+        "new": "8988980b6ac5e636e6ae51a5d6caad87affb9b830610e0543170960cbb2f8dcf"
+      }
+    ],
+    "capture_frames": 3,
+    "min_markers": 2,
+    "max_marker_shift_px": 5,
+    "max_task_point_spread_mm": 1,
+    "physical_motion": false,
+    "mechanical_routes_changed": false
+  },
+  "journal_retry_installation": {
+    "previous_binding": {
+      "path": "candidate-20261029\\binding-initial5-1793330848819188000.json",
+      "sha256": "f5a6d5230d8e66f3672f21a83cca663eadb07cf0516c8de02a239ba38bacb187"
+    },
+    "changes": [
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\sorting_loop.py",
+        "previous_sha256": "f6cac1787f10a1ca219ad4ea73c0fe9d9c1b1bcb76924887bd773122ec4bbfd9",
+        "sha256": "2f68038a397b2533754fbf321e513a4e89e4f92de30cd11859e2230c983165a9"
+      }
+    ],
+    "winerrors": [
+      5,
+      32,
+      33
+    ],
+    "max_replace_attempts": 10,
+    "delay_s": 0.05,
+    "mechanical_retry": false,
+    "thresholds_changed": false,
+    "pending_cleared": false,
+    "operator_request": "怎么又卡住了，什么限制，直接放宽50%，然后恢复页面，快",
+    "diagnosis": "Windows refused pending file replacement; no numerical threshold triggered"
+  },
+  "initial_window_extension": {
+    "previous_binding": {
+      "path": "candidate-20261029\\binding-journal-retry-1793331129044368800.json",
+      "sha256": "feb1bd07251b3e4b61d4019fda67434dfa5e50aa3b27dcfc8b9bf5cc46c42c89"
+    },
+    "source_changes": [
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\sorting_relocated_run.py",
+        "previous_sha256": "d37f9aa04bed09d25dc02974822f7245dfb6df9f9bcff5721d94aa45406be596",
+        "sha256": "8e5c11ab5105fa89e04318a29ef87cad682fac35918afd0d54bf40798246797a"
+      },
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\sorting_unified_run.py",
+        "previous_sha256": "98090ca7d379ea5c1d191ba2568707da3c7cf9d5fe5ccecef8b22d6bc12ee6ca",
+        "sha256": "0aada2e382482bc4e5fa4dd92afb325a6a74cac1f8997c2349e1fd197dd939ca"
+      }
+    ],
+    "initial_window_ms": 3000,
+    "motion_max_age_ms": 2000,
+    "semantic_frames_max_age_ms": 2000,
+    "minimum_markers": 2,
+    "task_coordinate_spread_mm": 1,
+    "physical_motion": false
+  },
+  "half_waits_installation": {
+    "previous_binding": {
+      "path": "candidate-20261029\\binding-initial-window3-1793332238660258700.json",
+      "sha256": "9341734f050e23ef00f1b8ced2608e9f7ea1d6abf426406adc31716f16ff28e0"
+    },
+    "source_changes": [
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\sorting_io.py",
+        "previous_sha256": "5ea6cfab7159fdbe575772ed1f49afec604c413174c07a3a6a9af5abcde1bfcd",
+        "sha256": "20d39277be966a9be1f7c764ceb5422b0c1238eff6dbda4641a5c3d7dce5aabb"
+      },
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\sorting_unified.py",
+        "previous_sha256": "f7db58dea8d1d27a7f58944220a89a07006f3ce4c0e5f73f783711812bb1b8f4",
+        "sha256": "3c61db6764a2096abfb5ec6c315333f5009e0f0bee8349598c9ff085c6392c24"
+      },
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\sorting_unified_plan.py",
+        "previous_sha256": "85749fafcbe4b591e465a95788040dee9e9a6ab1ae54bf7dc8519f3b30aee187",
+        "sha256": "c4a0e7600c0a033dfdca20ef4ca1d051151cf7c1a9cf141689e525e466e68b11"
+      },
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\sorting_unified_run.py",
+        "previous_sha256": "0aada2e382482bc4e5fa4dd92afb325a6a74cac1f8997c2349e1fd197dd939ca",
+        "sha256": "17720a55495b3ee5ea523589b4ffb2481043cae2ef386b32e1345d88c5e1b27b"
+      },
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\monitor_operation.py",
+        "previous_sha256": "8988980b6ac5e636e6ae51a5d6caad87affb9b830610e0543170960cbb2f8dcf",
+        "sha256": "cd40067acbb6b7aeb0f87f0d0e90b0034b9875cc12549b2383b087c6b68df35d"
+      },
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\sorting_monitor_server.py",
+        "previous_sha256": "7491d5324b909c551a7dfc6d8296776c347ea4181991b0836747bea0767bf555",
+        "sha256": "b7dfaa6dfa268caabce3c6c56791132ac624114e4540fae6a9448fa4abdfad50"
+      }
+    ],
+    "operator_statement": "全部的窗口，等待时间都降低50%；采图、通信超时上限也减半",
+    "host_times": {
+      "max_age_ms": {
+        "before": 2000,
+        "after": 1000.0
+      },
+      "frame_timeout_s": {
+        "before": 2,
+        "after": 1.0
+      },
+      "observe_timeout_s": {
+        "before": 15,
+        "after": 7.5
+      },
+      "max_cycle_s": {
+        "before": 180,
+        "after": 90.0
+      },
+      "min_frame_gap_ms": {
+        "before": 100,
+        "after": 50.0
+      },
+      "retreat_settle_s": {
+        "before": 0.1,
+        "after": 0.05
+      }
+    },
+    "statistics_timeout_s": 1.5,
+    "verification_timeout_s": 2.5,
+    "verification_max_age_ms": 2500,
+    "initial_window_max_age_ms": 1500,
+    "serial_read_timeout_s": 0.125,
+    "serial_write_timeout_s": 0.5,
+    "echo_poll_timeout_s": 0.025,
+    "close_settle_s": 0.1,
+    "release_settle_s": 0.15,
+    "standby_s": 60,
+    "page_lease_s": 6,
+    "poll_s": 1,
+    "batch_deadline_s": 600,
+    "firmware_boot_wait_s": 2,
+    "movement_duration_changed": false,
+    "full_motion_wait_preserved": true,
+    "three_frame_count_preserved": true,
+    "pl_max_gap_s_preserved": 0.6,
+    "skip_item_visual_wait": true,
+    "physical_motion": false,
+    "original_profiles_unchanged": true
+  },
+  "half_waits_dashboard_finalization": {
+    "previous_binding": {
+      "path": "candidate-20261029\\binding-half-waits-1793333706233304300.json",
+      "sha256": "66fdb8758e952752e8381560714e9afe201fbc8e46742dcb2074af7542e9b966"
+    },
+    "changes": [
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\sorting_monitor_server.py",
+        "previous_sha256": "b7dfaa6dfa268caabce3c6c56791132ac624114e4540fae6a9448fa4abdfad50",
+        "sha256": "6f184acf302544b1b8b12a5d4ec2c6702c9fdd118de9ea0bf2cf0385c9879a09"
+      }
+    ],
+    "default_backend_wait_scale_used": true,
+    "timeout_scale": 0.5,
+    "physical_motion": false
+  },
+  "wait_times_rollback": {
+    "previous_binding": {
+      "path": "candidate-20261029\\binding-half-waits-final-1793333793854765500.json",
+      "sha256": "105c9fe0f1d7b51cbe8cfcbe5b74b44e127fc35806e15308d5ea85ecd4406a87"
+    },
+    "restore_timing_reference": "C:\\FPGA\\local-only\\station-grasp-integration\\candidate-20261029\\binding-initial-window3-1793332238660258700.json",
+    "operator_statement": "正在接入你确认的50%时间设置...这里；这里说错了先回调",
+    "original_timing_restored": true,
+    "skip_per_item_visual_verification_preserved": true,
+    "mechanical_routes_changed": false,
+    "physical_motion": false
+  },
+  "visual_review_policy": {
+    "kind": "operator-vision-review-margin-v1",
+    "operator_statement": "所有的审核窗口的要求都放宽；放宽200%",
+    "tolerance_factor": 3,
+    "preserve_timings": true,
+    "interpretation": "maximum_error_times_three_minimum_score_divided_by_three",
+    "minimum_registered_markers": 2,
+    "stable_frame_count": 3,
+    "physical_ranges_changed": false
+  },
+  "review_threefold_installation": {
+    "previous_binding": {
+      "path": "candidate-20261029\\binding-direct-voice-1793334420488917800.json",
+      "sha256": "c1b0e660d88ed77e35ca650f41a5821acb95869299a43b6a5513f88aab382a33"
+    },
+    "source_changes": [
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\sorting_known.py",
+        "previous_sha256": "d2ff223a44870cd23b3ecc35fbcfc11842529bae097a4c411e19a5924c24e08e",
+        "sha256": "27a618c55c158a485ee301c8566e525737f9e126fdd4f8160f062b54f495f00b",
+        "inherited_existing_change": false
+      },
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\sorting_relocated_geometry.py",
+        "previous_sha256": "114e6e97f86bf503273271dd784be593de95ba4044a5bf9e557a52353346d0d0",
+        "sha256": "ab63a8c580a977de861ea29af7d25c7f4132929176995b066b1da9cf5678c0a7",
+        "inherited_existing_change": false
+      },
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\sorting_relocated_run.py",
+        "previous_sha256": "8e5c11ab5105fa89e04318a29ef87cad682fac35918afd0d54bf40798246797a",
+        "sha256": "a7b1bcc7d8524affeeabb7b430dd7dbcb0b0b9f84adc906fa04615d74a402a92",
+        "inherited_existing_change": false
+      },
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\sorting_scene.py",
+        "previous_sha256": "970973befce61d33b8b293e54936826b864e15c8ab56af5e381617d6f1f8d3ba",
+        "sha256": "0422f9aec2c977a2c412b4e63e54cfed10ef457d73c9107c60d07c324ebb643c",
+        "inherited_existing_change": false
+      },
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\sorting_unified_plan.py",
+        "previous_sha256": "c4a0e7600c0a033dfdca20ef4ca1d051151cf7c1a9cf141689e525e466e68b11",
+        "sha256": "60547d971154ed212d22cfda693cf8490dcff6c1138126a648e67c58c36df68b",
+        "inherited_existing_change": false
+      },
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\sorting_unified_run.py",
+        "previous_sha256": "17720a55495b3ee5ea523589b4ffb2481043cae2ef386b32e1345d88c5e1b27b",
+        "sha256": "7daa98e662fdead8ba6e0732c602710d9c2145aae585d0c605e54b8c347b9101",
+        "inherited_existing_change": false
+      },
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\station_geometry.py",
+        "previous_sha256": "4d4e4d8b3e7c3876406091aa8829b21806582a0c580a98f8bbec9d96349ec3a2",
+        "sha256": "e2f38273f64d9dd7348cecc71b5abdaa30adaeccbd9801d65b438a39aa17f751",
+        "inherited_existing_change": false
+      },
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\monitor_operation.py",
+        "previous_sha256": "cd40067acbb6b7aeb0f87f0d0e90b0034b9875cc12549b2383b087c6b68df35d",
+        "sha256": "0ffb05c941845497000471a7099bad2ecae319c30bcc4d9e406f7b8f5f7c6482",
+        "inherited_existing_change": false
+      }
+    ],
+    "previous_layout": {
+      "static_rois": [
+        [
+          84,
+          25,
+          143,
+          90
+        ],
+        [
+          490,
+          20,
+          550,
+          85
+        ]
+      ],
+      "search_margin_px": 5,
+      "max_layout_shift_px": 5,
+      "min_patch_std": 8,
+      "min_patch_corners": 4,
+      "min_patch_peak_margin": 0.01,
+      "min_patch_correlation": 0.98,
+      "max_patch_mean_difference": 12,
+      "min_motion_patch_dynamic_range": 80
+    },
+    "current_layout": {
+      "static_rois": [
+        [
+          84,
+          25,
+          143,
+          90
+        ],
+        [
+          490,
+          20,
+          550,
+          85
+        ]
+      ],
+      "search_margin_px": 15,
+      "max_layout_shift_px": 15,
+      "min_patch_std": 2.6666666666666665,
+      "min_patch_corners": 2,
+      "min_patch_peak_margin": 0.0033333333333333335,
+      "min_patch_correlation": 0.32666666666666666,
+      "max_patch_mean_difference": 36,
+      "min_motion_patch_dynamic_range": 26.666666666666668,
+      "review_relaxation_factor": 3
+    },
+    "previous_thresholds": {
+      "min_confidence": 0.4,
+      "min_scene_iou": 0.9,
+      "min_erased_fraction": 0.8,
+      "min_persistent_fraction": 0.6,
+      "max_scene_changed_fraction": 0.05,
+      "max_other_bin_changed_fraction": 0.05
+    },
+    "current_thresholds": {
+      "min_confidence": 0.13333333333333333,
+      "min_scene_iou": 0.3,
+      "min_erased_fraction": 0.26666666666666666,
+      "min_persistent_fraction": 0.19999999999999998,
+      "max_scene_changed_fraction": 0.15000000000000002,
+      "max_other_bin_changed_fraction": 0.15000000000000002
+    },
+    "task_point_spread_mm": 3,
+    "reprojection_rms_px": 2.4,
+    "reprojection_max_px": 4.5,
+    "camera_angle_spread_degrees": 1.5,
+    "original_timing_preserved": true,
+    "original_profiles_unchanged": true,
+    "raw_model_threshold_unchanged": true,
+    "bin_occupancy_and_containment_unchanged": true,
+    "identity_checks_and_full_motion_receipts_preserved": true,
+    "physical_motion": false,
+    "inherited_voice_changes_not_enabled_by_this_manual_server": true
+  },
+  "bin_edge_review_installation": {
+    "previous_binding": {
+      "path": "candidate-20261029\\binding-review-threefold-1793334654500459100.json",
+      "sha256": "274b8881a33b6d7a458e0f2e22d61f7e2a8de93603a3c07f0d2851d22acade50"
+    },
+    "changes": [
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\sorting_unified.py",
+        "previous_sha256": "3c61db6764a2096abfb5ec6c315333f5009e0f0bee8349598c9ff085c6392c24",
+        "sha256": "e65a803ad8dddfc73ed7d180a21c6fdb69da78e30863188286ab44ff021a2075"
+      },
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\sorting_unified_plan.py",
+        "previous_sha256": "60547d971154ed212d22cfda693cf8490dcff6c1138126a648e67c58c36df68b",
+        "sha256": "9d08ea552ec52ebd3ecdd10f9bbb75aed16fc9df8bbefb7b3b6f564fd6f6a640"
+      },
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\monitor_operation.py",
+        "previous_sha256": "0ffb05c941845497000471a7099bad2ecae319c30bcc4d9e406f7b8f5f7c6482",
+        "sha256": "d9acfab898e1d2413bf9ac5ef7a2e4873e1bf272c928e595c6fea591a3a98dce"
+      }
+    ],
+    "operator_statement": "为什么，放宽200%；箱框外边缘重叠审核",
+    "baseline_edge_review_fraction": 0.05,
+    "edge_review_factor": 3,
+    "max_padded_slot_overlap_fraction": 0.15,
+    "outside_centroid_required": true,
+    "inner_region_empty_required": true,
+    "original_masks_retained_for_obstacle_checks": true,
+    "real_in_bin_occupancy_preserved": true,
+    "joint_targets_release_point_and_timing_unchanged": true,
+    "physical_motion": false
+  },
+  "visible_marker_fix": {
+    "previous_binding": {
+      "path": "candidate-20261029\\binding-bin-edge-review-1793335296058374100.json",
+      "sha256": "346409bc078e16ce5340f18085e3324c6337f952c9aca854b729491b05b0477f"
+    },
+    "source_changes": [
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\sorting_relocated.py",
+        "previous_sha256": "826e23a98c44c056e58ad322252c7813b5dfd80bfa6688ad97bda0ccfe1cc415",
+        "sha256": "f6c561d839c8828930da89d055bdb935d616e489e43e026b5eefc22beb3ac705"
+      },
+      {
+        "path": "..\\..\\..\\pynq_km1_vision\\src\\sorting_relocated_geometry.py",
+        "previous_sha256": "ab63a8c580a977de861ea29af7d25c7f4132929176995b066b1da9cf5678c0a7",
+        "sha256": "57e348748baaa2a1952c172f2b5fb6b780c01991ce11431dcd9f1f6b8d81dbe8"
+      }
+    ],
+    "root_cause": "fixed left patch occluded by expected arm transfer; cached frame may precede motion end",
+    "registered_corner_shift_limit_preserved": true,
+    "minimum_registered_marks_preserved": true,
+    "photometric_quality_limits_preserved": true,
+    "reference_and_pose_frozen": true,
+    "pair_selection": "highest_minimum_correlation_then_maximum_separation",
+    "next_guard_frame_after_completed_motion_required": true,
+    "automatic_command_retry": false,
+    "pending_resolved": false,
+    "physical_motion": false
+  },
+  "runtime_repair_amendment": {
+    "operator_statement": "Admit new categories from live geometry and keep runtime checks outside the control lock.",
+    "previous_binding_sha256": "c5fcd45e4e5ee966fbcaade0149a43b409685bf21d05836035d19a37ec998008",
+    "implementation_changes": [
+      {
+        "path": "../pynq_km1_vision/src/sorting_unified.py",
+        "before": "e65a803ad8dddfc73ed7d180a21c6fdb69da78e30863188286ab44ff021a2075",
+        "after": "ec5a341be260728abd8a7f68e0d26ccda716892ff558f3cb8bf7b03afeb985e1"
+      },
+      {
+        "path": "../pynq_km1_vision/src/monitor_operation.py",
+        "before": "d9acfab898e1d2413bf9ac5ef7a2e4873e1bf272c928e595c6fea591a3a98dce",
+        "after": "eebbed391d9c7ef71016a46d62d8ae730c9d98b491c989fe45daf683c79415d6"
+      }
+    ],
+    "qualification_flags_changed": false,
+    "physical_validation_completed": false
+  }
+}

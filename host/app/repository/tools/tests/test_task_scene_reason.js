@@ -1,0 +1,15 @@
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const path = require('node:path');
+const vm = require('node:vm');
+const source = fs.readFileSync(path.join(__dirname, '../../pynq_km1_vision/cloud_console/ui/app.js'), 'utf8');
+const match = source.match(/  function taskReason\(reason\)\{[\s\S]*?\n  \}/);
+assert.ok(match, 'task reason formatter exists');
+const reason = vm.runInNewContext('(' + match[0].trim() + ')');
+const message = reason('ValueError:prompt_scene_rgb_changed');
+assert.ok(message.includes('本件已在发令前暂停'));
+assert.ok(message.includes('稳定后重新预演'));
+assert.ok(!message.includes('已完成'));
+assert.equal(reason(''), '');
+assert.ok(reason('ValueError:unified_target_crosses_bin_boundary').includes('分区边界'));
+console.log('PASS: scene-change rejection is actionable and never reports motion success');

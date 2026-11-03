@@ -1,0 +1,7 @@
+{
+  "operator_reply": "罐口有部分搭边，整体上看在箱内。 已重新放好，现场确认",
+  "strict_full_containment": "fail",
+  "task_internal_intervention": false,
+  "automatic_result_kept_separate": true,
+  "reason": "can_rim_resting_on_bin_edge"
+}

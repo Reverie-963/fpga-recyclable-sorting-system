@@ -1,0 +1,1138 @@
+{
+  "cases": [
+    {
+      "axis_deg": 0,
+      "card_xy": [
+        0,
+        5
+      ],
+      "expected_sha256": "0d30303736498498ac15262127c1d2ae49b8fbec9aee09b53b132dc2cd228334",
+      "id": "paper-0-0-5",
+      "label": "paper",
+      "slot_index": 0
+    },
+    {
+      "axis_deg": 270,
+      "card_xy": [
+        30,
+        20
+      ],
+      "expected_sha256": "e82d882533921f0df5a21344b94ec6b3fb6c3cd3c31c7df8c1cc4faf9985ea9c",
+      "id": "plastic-270-30-20",
+      "label": "plastic",
+      "slot_index": 0
+    }
+  ],
+  "config": {
+    "arm": {
+      "commissioned": false,
+      "home": null,
+      "home_alpha_deg": null,
+      "joint_limits_pwm": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "move_ms": 5000,
+      "pick_bounds_mm": [
+        -20,
+        20,
+        145,
+        165
+      ],
+      "port": "COM9",
+      "settle_s": 0.5,
+      "step_settle_s": {
+        "close": 0.5,
+        "release": 1
+      },
+      "transport": "direct",
+      "usb_identity": {
+        "pid": 29987,
+        "serial_number": null,
+        "vid": 6790
+      }
+    },
+    "board_transport": {
+      "arm_device": "/dev/ttyUSB0",
+      "qualified_port": "COM9",
+      "usb_identity": {
+        "pid": 29987,
+        "serial_number": null,
+        "vid": 6790
+      }
+    },
+    "calibration_id": "current-three-height-known-items-20261029",
+    "camera_id": "pynq-c270",
+    "camera_url": "http://127.0.0.1:8783/frame.jpg",
+    "detector_url": "http://127.0.0.1:1",
+    "device": "cuda:0",
+    "empty_reference": {
+      "path": "26d59f3e6c0fa2f1413f18c3eec639866dd6903d8c2b23fc3df5c8a46ea064fe.png",
+      "sha256": "26d59f3e6c0fa2f1413f18c3eec639866dd6903d8c2b23fc3df5c8a46ea064fe"
+    },
+    "frame_timeout_s": 2,
+    "half": true,
+    "image_size": [
+      640,
+      480
+    ],
+    "inference_backend": "http",
+    "initial_pose_confirmed": false,
+    "journal_dir": "/home/xilinx/km1-board-control-20261030-native1/state/ledger",
+    "known": {
+      "authorization_note": "Captain authorized current three-class low-speed physical commissioning and complete automatic known-item cycles in this task; not unattended long runs",
+      "device_lease": "/home/xilinx/km1-board-control-20261030-native1/state/device.lock",
+      "expected_camera_stream_id": "097c6e6dd3144c9ba831664646d966ad",
+      "experiment_authorized": true,
+      "grip_move_ms": 2000,
+      "implementation_sources": [
+        {
+          "path": "../pynq_km1_vision/src/sorting_known.py",
+          "sha256": "27a618c55c158a485ee301c8566e525737f9e126fdd4f8160f062b54f495f00b"
+        },
+        {
+          "path": "../pynq_km1_vision/src/sorting_known_run.py",
+          "sha256": "0fd6c621f378a00e3e358b1a9367aba6cdef6e6dba42e12a4e14661577f24ff9"
+        },
+        {
+          "path": "../pynq_km1_vision/src/sorting_loop.py",
+          "sha256": "2f68038a397b2533754fbf321e513a4e89e4f92de30cd11859e2230c983165a9"
+        },
+        {
+          "path": "../pynq_km1_vision/src/sorting_io.py",
+          "sha256": "20d39277be966a9be1f7c764ceb5422b0c1238eff6dbda4641a5c3d7dce5aabb"
+        },
+        {
+          "path": "../pynq_km1_vision/src/sorting_scene.py",
+          "sha256": "0422f9aec2c977a2c412b4e63e54cfed10ef457d73c9107c60d07c324ebb643c"
+        },
+        {
+          "path": "../pynq_km1_vision/src/arm.py",
+          "sha256": "106c861d242497ebd4e506af0f4efca4b47c9ec5d6e05de0400b4ad1ebd9af79"
+        },
+        {
+          "path": "../pynq_km1_vision/src/arm_transport.py",
+          "sha256": "f72d97cbe36b9e2a35b33e9e4a09005969debce0ce7d676e13db862ff8e931c7"
+        },
+        {
+          "path": "../pynq_km1_vision/src/arm_timing.py",
+          "sha256": "a90e45ec80ef2d5b9b410818f1671aa15e3ab14a932a9cd34eb3eb6e685f8f74"
+        },
+        {
+          "path": "../pynq_km1_vision/src/sorting_motion.py",
+          "sha256": "7e4dba8830ff485a5a4d28dd0a9d0ec15bff9eb8aa609f7f7166cee0f4c4be1a"
+        },
+        {
+          "path": "../pynq_km1_vision/src/arm_route_preview.py",
+          "sha256": "70d5c958aa8e19750a5feb2528306dc62dc2fb7e58438df83d7eeb5a2d5657c9"
+        },
+        {
+          "path": "../pynq_km1_vision/src/sorting_station_io.py",
+          "sha256": "05be4fc465e20dcf55563d1c30d61b11a1abea0b2d0043552f6dc66c2fad3ebc"
+        },
+        {
+          "path": "../pynq_km1_vision/src/station_vision.py",
+          "sha256": "48f852ceac025e49d172674c4c97b30b34d7d4b76a833ba9630cdb8560be477c"
+        }
+      ],
+      "initial_pwm": [
+        1500,
+        1500,
+        1500,
+        1500,
+        1500,
+        1000
+      ],
+      "measured_hard_limits_claimed": false,
+      "motion_profile": "compact",
+      "prepare_pwm": [
+        1500,
+        1632,
+        1987,
+        928
+      ],
+      "scope": "supervised-known-item-v1",
+      "stop_files": [
+        "/home/xilinx/km1-board-control-20261030-native1/state/STOP"
+      ],
+      "vision_binding": {
+        "path": "fb4e05ecd0061496229cb972202c5d5bba4074b428c4272eb4e3a33eaa0d00f0.json",
+        "sha256": "fb4e05ecd0061496229cb972202c5d5bba4074b428c4272eb4e3a33eaa0d00f0"
+      }
+    },
+    "layout": {
+      "max_layout_shift_px": 15,
+      "max_patch_mean_difference": 36,
+      "min_motion_patch_dynamic_range": 26.666666666666668,
+      "min_patch_corners": 2,
+      "min_patch_correlation": 0.32666666666666666,
+      "min_patch_peak_margin": 0.0033333333333333335,
+      "min_patch_std": 2.6666666666666665,
+      "review_relaxation_factor": 3,
+      "search_margin_px": 15,
+      "static_rois": [
+        [
+          84,
+          25,
+          143,
+          90
+        ],
+        [
+          490,
+          20,
+          550,
+          85
+        ]
+      ]
+    },
+    "layout_reference": {
+      "path": "3c5b5363758ec108bd555752dd58a6f16fa1f1645888d105df68db63449eab54.png",
+      "sha256": "3c5b5363758ec108bd555752dd58a6f16fa1f1645888d105df68db63449eab54"
+    },
+    "max_age_ms": 2000,
+    "max_cycle_s": 180,
+    "max_objects": 1,
+    "max_other_bin_changed_fraction": 0.02,
+    "max_scene_changed_fraction": 0.02,
+    "migration_execution_disabled": false,
+    "min_bin_gain_px": 167,
+    "min_confidence": 0.7,
+    "min_erased_fraction": 0.9,
+    "min_frame_gap_ms": 100,
+    "min_interior_px": 3,
+    "min_persistent_fraction": 0.7,
+    "min_scene_iou": 0.95,
+    "min_separation_px": 5,
+    "model_family": "yolov8s",
+    "model_version": "9288e697042d14813d7d47abbe2e413f314be59c3069c2302f2dffee5912dd0e",
+    "observe_timeout_s": 15,
+    "profiles": {
+      "metal": {
+        "acceptance_record": null,
+        "alpha_deg": -75,
+        "axis_tolerance_deg": 15,
+        "bin_id": "bin_metal",
+        "bin_roi": [
+          420,
+          85,
+          635,
+          255
+        ],
+        "card_to_grip_mm": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1.25,
+            145
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "card_to_hover_mm": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.09523809523809633,
+            0.761904761904765,
+            151.6190476190476
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "close_pwm": 1300,
+        "commissioned": false,
+        "dimension_provenance": "Same operator-specified specimen; paper in-plane bounds are broad image-derived checks, not independent physical length measurement",
+        "geometry_precision_claimed": false,
+        "grasp_z_mm": 10,
+        "hover_z_mm": 70,
+        "image_to_card_mm": [
+          [
+            1.0434912646329688,
+            -0.020070957238984787,
+            -324.15003363036504
+          ],
+          [
+            -0.029516579685351357,
+            -1.0543779318265292,
+            173.08707922962188
+          ],
+          [
+            5.4243650412774e-05,
+            8.548305919648603e-05,
+            0.9999999999999999
+          ]
+        ],
+        "length_bounds_mm": [
+          125,
+          170
+        ],
+        "max_area_px": 9500,
+        "max_grasp_offset_mm": 10,
+        "min_area_px": 4500,
+        "object_height_mm": 56,
+        "object_length_mm": 150,
+        "object_profile_id": "same-empty-metal-20261029",
+        "open_pwm": 1000,
+        "pick_hulls_card_mm": [
+          [
+            [
+              -20,
+              0
+            ],
+            [
+              20,
+              0
+            ],
+            [
+              0,
+              12
+            ]
+          ],
+          [
+            [
+              -20,
+              0
+            ],
+            [
+              20,
+              0
+            ],
+            [
+              0,
+              10
+            ]
+          ]
+        ],
+        "qualification_record": {
+          "path": "b72f898167516ef606c4a5bec02f13471e5097254a60d61bebf5b60551f61af8.json",
+          "sha256": "b72f898167516ef606c4a5bec02f13471e5097254a60d61bebf5b60551f61af8"
+        },
+        "retreat_pwm": [
+          [
+            1088,
+            1548,
+            1951,
+            1051
+          ],
+          [
+            1088,
+            1685,
+            2031,
+            993
+          ],
+          [
+            1500,
+            1685,
+            2031,
+            993
+          ],
+          [
+            1500,
+            1632,
+            1987,
+            928
+          ],
+          [
+            1500,
+            1500,
+            1500,
+            1500
+          ]
+        ],
+        "source_mid_z_mm": 40,
+        "swept_path_verified": false,
+        "transfer_pwm": [
+          [
+            1500,
+            1632,
+            1987,
+            928
+          ],
+          [
+            1500,
+            1685,
+            2031,
+            993
+          ],
+          [
+            1088,
+            1685,
+            2031,
+            993
+          ],
+          [
+            1088,
+            1548,
+            1951,
+            1051
+          ],
+          [
+            1088,
+            1372,
+            1751,
+            1027
+          ]
+        ],
+        "width_bounds_mm": [
+          45,
+          65
+        ],
+        "wrist_pwm": 1500
+      },
+      "paper": {
+        "acceptance_record": null,
+        "alpha_deg": -75,
+        "axis_tolerance_deg": 15,
+        "bin_id": "bin_paper",
+        "bin_roi": [
+          405,
+          275,
+          612,
+          414
+        ],
+        "card_to_grip_mm": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0.75,
+            145
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "card_to_hover_mm": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.09523809523809633,
+            0.761904761904765,
+            152.38095238095235
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "close_pwm": 1500,
+        "commissioned": false,
+        "dimension_provenance": "Same operator-specified specimen; paper in-plane bounds are broad image-derived checks, not independent physical length measurement",
+        "geometry_precision_claimed": false,
+        "grasp_z_mm": 50,
+        "hover_z_mm": 70,
+        "image_to_card_mm": [
+          [
+            1.0262860328873413,
+            0.00487044117017079,
+            -320.90295073106535
+          ],
+          [
+            0.004076712611089695,
+            -1.0445348375160446,
+            157.39380135603966
+          ],
+          [
+            -7.341252457680614e-06,
+            0.00017144719551960018,
+            1.0
+          ]
+        ],
+        "length_bounds_mm": [
+          75,
+          155
+        ],
+        "max_area_px": 8500,
+        "max_grasp_offset_mm": 10,
+        "min_area_px": 2500,
+        "object_height_mm": 65,
+        "object_length_mm": null,
+        "object_profile_id": "same-empty-paper-20261029",
+        "open_pwm": 1000,
+        "pick_hulls_card_mm": [
+          [
+            [
+              -20,
+              0
+            ],
+            [
+              20,
+              0
+            ],
+            [
+              0,
+              10
+            ]
+          ],
+          [
+            [
+              -20,
+              0
+            ],
+            [
+              20,
+              0
+            ],
+            [
+              0,
+              20
+            ]
+          ]
+        ],
+        "qualification_record": {
+          "path": "e71e38a54af8519e318e3be08b81fb0e72e7053e4ed99f88683d8e9a46f34cc4.json",
+          "sha256": "e71e38a54af8519e318e3be08b81fb0e72e7053e4ed99f88683d8e9a46f34cc4"
+        },
+        "retreat_pwm": [
+          [
+            800,
+            1615,
+            1919,
+            848
+          ],
+          [
+            800,
+            1568,
+            1875,
+            843
+          ],
+          [
+            1500,
+            1568,
+            1875,
+            843
+          ],
+          [
+            1500,
+            1500,
+            1500,
+            1500
+          ]
+        ],
+        "source_mid_z_mm": 60,
+        "swept_path_verified": false,
+        "transfer_pwm": [
+          [
+            1500,
+            1632,
+            1987,
+            928
+          ],
+          [
+            800,
+            1632,
+            1987,
+            928
+          ],
+          [
+            800,
+            1615,
+            1919,
+            848
+          ],
+          [
+            800,
+            1512,
+            1976,
+            844
+          ]
+        ],
+        "width_bounds_mm": [
+          30,
+          75
+        ],
+        "wrist_pwm": 1500
+      },
+      "plastic": {
+        "acceptance_record": null,
+        "alpha_deg": -75,
+        "axis_tolerance_deg": 15,
+        "bin_id": "bin_plastic",
+        "bin_roi": [
+          25,
+          285,
+          232,
+          420
+        ],
+        "card_to_grip_mm": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1.25,
+            145
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "card_to_hover_mm": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.09523809523809633,
+            0.761904761904765,
+            151.6190476190476
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "close_pwm": 1300,
+        "commissioned": false,
+        "dimension_provenance": "Same operator-specified specimen; paper in-plane bounds are broad image-derived checks, not independent physical length measurement",
+        "geometry_precision_claimed": false,
+        "grasp_z_mm": 10,
+        "hover_z_mm": 70,
+        "image_to_card_mm": [
+          [
+            0.9956554795310298,
+            -0.0051103260385510964,
+            -311.28968286929273
+          ],
+          [
+            0.019804560151092415,
+            -1.006289328222268,
+            150.21650388474092
+          ],
+          [
+            -0.00018539181455513607,
+            0.00017388538797495629,
+            1.0
+          ]
+        ],
+        "length_bounds_mm": [
+          95,
+          145
+        ],
+        "max_area_px": 8500,
+        "max_grasp_offset_mm": 10,
+        "min_area_px": 3500,
+        "object_height_mm": 53,
+        "object_length_mm": 120,
+        "object_profile_id": "same-empty-plastic-20261029",
+        "open_pwm": 1000,
+        "pick_hulls_card_mm": [
+          [
+            [
+              -20,
+              0
+            ],
+            [
+              20,
+              0
+            ],
+            [
+              0,
+              12
+            ]
+          ],
+          [
+            [
+              -20,
+              0
+            ],
+            [
+              20,
+              0
+            ],
+            [
+              0,
+              10
+            ]
+          ]
+        ],
+        "qualification_record": {
+          "path": "a1874d019832b10c6a0b1935860de4afaad60037c2bf849e3fcc84d88c29e007.json",
+          "sha256": "a1874d019832b10c6a0b1935860de4afaad60037c2bf849e3fcc84d88c29e007"
+        },
+        "retreat_pwm": [
+          [
+            2200,
+            1485,
+            1872,
+            960
+          ],
+          [
+            2200,
+            1632,
+            1987,
+            928
+          ],
+          [
+            1500,
+            1632,
+            1987,
+            928
+          ],
+          [
+            1500,
+            1500,
+            1500,
+            1500
+          ]
+        ],
+        "source_mid_z_mm": 40,
+        "swept_path_verified": false,
+        "transfer_pwm": [
+          [
+            1500,
+            1632,
+            1987,
+            928
+          ],
+          [
+            2200,
+            1632,
+            1987,
+            928
+          ],
+          [
+            2200,
+            1485,
+            1872,
+            960
+          ],
+          [
+            2200,
+            1477,
+            1917,
+            977
+          ],
+          [
+            2200,
+            1438,
+            1873,
+            934
+          ]
+        ],
+        "width_bounds_mm": [
+          43,
+          64
+        ],
+        "wrist_pwm": 1500
+      }
+    },
+    "prompt_mode": "supervised",
+    "quality_gate_passed": false,
+    "require_distinct_jpeg": true,
+    "retreat_settle_s": 0.1,
+    "rgb_difference_threshold": 90,
+    "runtime_id": "997bb093f49aea2a0196e95767415b024cf5964421a417913965667712772de5",
+    "schema_version": "sorting-loop-v1",
+    "source_roi": [
+      250,
+      80,
+      390,
+      230
+    ],
+    "stable_frames": 3,
+    "station_commissioned": false,
+    "station_id": "km1-three-bin-current-20261029",
+    "statistics": {
+      "assets": {
+        "station_vision.bit": "054a766d3468282cbfb355dc803b8b9e960749ffde0e80bf0d43e17adebab779",
+        "station_vision.hwh": "b40312875bb53fadec4563109a8508176c75bcf582ce42150f13692e375a5213"
+      },
+      "backend": "pl_board_local",
+      "image_size": [
+        640,
+        480
+      ],
+      "max_gap_s": 0.6,
+      "regions": {
+        "bin_metal": [
+          420,
+          85,
+          635,
+          255
+        ],
+        "bin_paper": [
+          405,
+          275,
+          612,
+          414
+        ],
+        "bin_plastic": [
+          25,
+          285,
+          232,
+          420
+        ],
+        "source": [
+          250,
+          80,
+          390,
+          230
+        ],
+        "static_a": [
+          84,
+          25,
+          143,
+          90
+        ],
+        "static_b": [
+          490,
+          20,
+          550,
+          85
+        ]
+      },
+      "threshold": 45,
+      "timeout_s": 3,
+      "url": "http://127.0.0.1:8783",
+      "window_frames": 3
+    },
+    "stop_file": "../../local-only/STOP_SORTING",
+    "synthetic_fixture": false,
+    "visual_review_policy": {
+      "interpretation": "maximum_error_times_three_minimum_score_divided_by_three",
+      "kind": "operator-vision-review-margin-v1",
+      "minimum_registered_markers": 2,
+      "operator_statement": "所有的审核窗口的要求都放宽；放宽200%",
+      "physical_ranges_changed": false,
+      "preserve_timings": true,
+      "stable_frame_count": 3,
+      "tolerance_factor": 3
+    },
+    "yoloe_config": "yoloe_materials.json"
+  },
+  "grants_execution": false,
+  "kind": "board-control-shadow-fixture-v1",
+  "policy": {
+    "arrival_scope": "initial_simultaneous_batch_reobserve_after_each_item_no_unattended_new_arrivals",
+    "batch_continuation_operator_statement": "不管上一次动作最后的检验有没有通过，都跑下一个动作，最后统一检验",
+    "batch_continuation_scope": "visual verdicts after complete echoed waited route; fresh scene and all mechanical guards before next motion; never repeat attempted track; final failure remains review",
+    "batch_verification_mode": "end_of_batch",
+    "bin_edge_operator_statement": "为什么，放宽200%；箱框外边缘重叠审核",
+    "bin_padding_px": 5,
+    "bin_slots": {
+      "metal": [
+        {
+          "origin": "legacy_qualified_profile",
+          "roi_fraction": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "slot_id": "metal-original"
+        }
+      ],
+      "paper": [
+        {
+          "origin": "legacy_qualified_profile",
+          "roi_fraction": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "slot_id": "paper-original"
+        }
+      ],
+      "plastic": [
+        {
+          "origin": "legacy_qualified_profile",
+          "roi_fraction": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "slot_id": "plastic-original"
+        }
+      ]
+    },
+    "camera_and_world_registration_reused": true,
+    "decision_thresholds": {
+      "max_other_bin_changed_fraction": 0.15000000000000002,
+      "max_scene_changed_fraction": 0.15000000000000002,
+      "min_confidence": 0.13333333333333333,
+      "min_erased_fraction": 0.26666666666666666,
+      "min_persistent_fraction": 0.19999999999999998,
+      "min_scene_iou": 0.3
+    },
+    "detection_scope": "full_frame_except_protected_bins_and_fixed_markers",
+    "detection_window_px": [
+      0,
+      0,
+      640,
+      480
+    ],
+    "empty_bin_max_changed_fraction": 0.6000000000000001,
+    "empty_bin_threshold_operator_statement": "降低门槛，空箱子检查放到20%",
+    "final_verification_scope": "whole batch semantic and RGB snapshots; PL frame identity checked against last item baseline, not claimed as global PL difference",
+    "jaw_depth_mm": 30,
+    "jaw_open_span_mm": 110,
+    "kind": "supervised-unified-sorting-v1",
+    "material_interfaces": [
+      "AUTO",
+      "PAPER",
+      "METAL",
+      "PLASTIC"
+    ],
+    "max_objects": 6,
+    "max_scene_instances": 32,
+    "min_geometry_component_fraction": 0.31666666666666665,
+    "models": {
+      "metal": {
+        "base_center_pwm": 1500,
+        "base_pwm_per_degree": 7.66,
+        "grasp_z_mm": 10,
+        "kind": "unified-position-model-v1",
+        "object_height_mm": 56,
+        "object_profile_id": "same-empty-metal-20261029",
+        "provenance": "existing_class_height_and_two_robot_maps; base_and_wrist_scalar_prior_from_station_paper_trials; expanded_class_workspace_and_angles_require_supervised_physical_trials",
+        "radial_bias_mm": 0,
+        "source_chains": [
+          [
+            [
+              130,
+              -45
+            ],
+            [
+              70,
+              -75
+            ],
+            [
+              40,
+              -75
+            ],
+            [
+              10,
+              -75
+            ]
+          ],
+          [
+            [
+              130,
+              -45
+            ],
+            [
+              90,
+              -60
+            ],
+            [
+              40,
+              -65
+            ],
+            [
+              10,
+              -65
+            ]
+          ]
+        ],
+        "wrist_pwm_per_degree": 6.666666666666667,
+        "xy_mode": "two_height_maps"
+      },
+      "paper": {
+        "base_center_pwm": 1500,
+        "base_pwm_per_degree": 7.66,
+        "grasp_z_mm": 50,
+        "kind": "unified-position-model-v1",
+        "object_height_mm": 65,
+        "object_profile_id": "same-empty-paper-20261029",
+        "provenance": "paper_model_from_existing_supervised_center_left_right_trials; full_angular_workspace_not_physically_qualified",
+        "radial_bias_mm": 10,
+        "source_chains": [
+          [
+            [
+              130,
+              -45
+            ],
+            [
+              90,
+              -60
+            ],
+            [
+              70,
+              -65
+            ],
+            [
+              50,
+              -65
+            ]
+          ]
+        ],
+        "wrist_pwm_per_degree": 6.666666666666667,
+        "xy_mode": "constant_grip"
+      },
+      "plastic": {
+        "base_center_pwm": 1500,
+        "base_pwm_per_degree": 7.66,
+        "grasp_z_mm": 10,
+        "kind": "unified-position-model-v1",
+        "object_height_mm": 53,
+        "object_profile_id": "same-empty-plastic-20261029",
+        "provenance": "existing_class_height_and_two_robot_maps; base_and_wrist_scalar_prior_from_station_paper_trials; expanded_class_workspace_and_angles_require_supervised_physical_trials",
+        "radial_bias_mm": 0,
+        "source_chains": [
+          [
+            [
+              130,
+              -45
+            ],
+            [
+              70,
+              -75
+            ],
+            [
+              40,
+              -75
+            ],
+            [
+              10,
+              -75
+            ]
+          ],
+          [
+            [
+              130,
+              -45
+            ],
+            [
+              90,
+              -60
+            ],
+            [
+              40,
+              -65
+            ],
+            [
+              10,
+              -65
+            ]
+          ]
+        ],
+        "wrist_pwm_per_degree": 6.666666666666667,
+        "xy_mode": "two_height_maps"
+      }
+    },
+    "motion_timing": {
+      "close_ms": 750,
+      "close_settle_s": 0.2,
+      "home_min_ms": 1000,
+      "kind": "supervised-distance-timing-v1",
+      "max_pwm_per_s": [
+        700,
+        900,
+        900,
+        900,
+        900,
+        900
+      ],
+      "min_move_ms": 400,
+      "operator_statement": "现在的4个抓取，全动作加速，尽可能压缩到20s；每次完整抓放约20秒",
+      "physical_speed_verified": false,
+      "release_ms": 650,
+      "release_settle_s": 0.3,
+      "target_cycle_s": 20,
+      "vertical_min_ms": 500
+    },
+    "obstacle_margin_mm": 5,
+    "operator_authorized": true,
+    "operator_statement": "Captain explicitly requests one entry for all workspace positions, planar angles, all three material classes, and sequential classification of simultaneous objects. Captain now explicitly requests separate paper/metal/plastic interfaces, retaining the combined interface, widening detection, and keeping all release points unchanged.",
+    "pick_center_card_polygon_mm": [
+      [
+        -110,
+        -65
+      ],
+      [
+        90,
+        -65
+      ],
+      [
+        90,
+        115
+      ],
+      [
+        -110,
+        115
+      ]
+    ],
+    "relax_bin_edge_overlap": true,
+    "robot_legacy_qualification_rewritten": false,
+    "skip_per_item_visual_verification": true,
+    "source_card_polygon_mm": [
+      [
+        -110,
+        -65
+      ],
+      [
+        90,
+        -65
+      ],
+      [
+        90,
+        115
+      ],
+      [
+        -110,
+        115
+      ]
+    ],
+    "source_rgb_scope": "per_selected_target_bound_before_exact_baseline",
+    "threshold_operator_statement": "所有的审核窗口的要求都放宽；放宽200%",
+    "tool_dimensions_source": "conservative_nominal_tool_envelope_not_full_link_collision_measurement",
+    "unattended_accepted": false,
+    "verification_max_age_ms": 5000,
+    "verification_timeout_s": 5,
+    "verification_window_operator_statement": "Captain explicitly asks to widen post-grasp verification; both post-cycle collection and post-cycle evidence expiry are five seconds. Every pre-motion and in-motion frame remains at the original two seconds.",
+    "visual_review_policy": {
+      "interpretation": "maximum_error_times_three_minimum_score_divided_by_three",
+      "kind": "operator-vision-review-margin-v1",
+      "minimum_registered_markers": 2,
+      "operator_statement": "所有的审核窗口的要求都放宽；放宽200%",
+      "physical_ranges_changed": false,
+      "preserve_timings": true,
+      "stable_frame_count": 3,
+      "tolerance_factor": 3
+    },
+    "wait_operator_statement": "这里说错了先回调；只撤回50%时间设置",
+    "wait_time_scale": 1,
+    "workspace_physically_qualified": false
+  },
+  "source": {
+    "binding_sha256": "b1a192491f9fa72e2e0f7e2c2f42e554336ce3581b955c21d7578ec1818ebec0",
+    "config_sha256": "4e2a72f871a83eff7e812bd73bd67e4781b54d396641f3e955cd54ce3507cb4e",
+    "pointer_sha256": "9610fa26e5034637795c35067fe3f130607575048db47c92807a093048995d91",
+    "policy_sha256": "23299c8da48545fcead07a636d53832f6614b6958283dc9102140f75520c9760"
+  }
+}

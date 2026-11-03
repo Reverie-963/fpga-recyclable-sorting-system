@@ -1,0 +1,7 @@
+{
+  "source": "current conversation, user scene and outcome reply",
+  "question_call": "call_90390713896d45bc9d9534ebbaf69a04",
+  "operator_reply": "完整入箱，63mm纸盒已重新放好，现场确认",
+  "strict_full_containment": "pass",
+  "automatic_result_kept_separate": true
+}

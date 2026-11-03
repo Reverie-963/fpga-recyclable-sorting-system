@@ -1,0 +1,36 @@
+{
+  "complete_release": "https://github.com/Reverie-963/fpga-recyclable-sorting-system/releases/tag/code-20261103-v1",
+  "archive_sha256": "c4220bcd87771cf6ba2900b10e0132d98ff5647c4868749adafd9eabe2037fed",
+  "files_available_in_complete_release": [
+    {
+      "path": "fpga/build/ip/xilinx_com_hls_motion_path_accel_1_0.zip",
+      "bytes": 271674,
+      "sha256": "c5f6bf47e437b745f200df70c74c5069127a5bd3e8e6a7042920883057b28bd7"
+    },
+    {
+      "path": "fpga/build/ip/xilinx_com_hls_station_vision_accel_1_0.zip",
+      "bytes": 325813,
+      "sha256": "6e28bcdb83847deea732e4dbe9d4906ac1b93ef08131ddf7e75b4fb7b51134df"
+    },
+    {
+      "path": "fpga/build/paired/vision_motion.bit",
+      "bytes": 4045771,
+      "sha256": "054a766d3468282cbfb355dc803b8b9e960749ffde0e80bf0d43e17adebab779"
+    },
+    {
+      "path": "fpga/build/reference_checkpoint/joint_physopt.dcp",
+      "bytes": 17277123,
+      "sha256": "ba99db735a3b1d37ee8f98b769fc811c06cd2691c9584106c0515a355ef5a2f0"
+    },
+    {
+      "path": "host/model/yoloe26_reference.pt",
+      "bytes": 56358422,
+      "sha256": "9d5734b34871aa81412b2fa47176d8f926283bb5adfe3a3f80cc58c5b7332534"
+    },
+    {
+      "path": "host/runtime/ultralytics_runtime_8_4_193.zip",
+      "bytes": 875806,
+      "sha256": "94c01e9236472097ae57134b4d2bc1e6ea5b31de8dba8a9624db6c0c8e04c78d"
+    }
+  ]
+}

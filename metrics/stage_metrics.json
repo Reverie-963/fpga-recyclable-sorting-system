@@ -1,0 +1,363 @@
+{
+  "schema": "project-stage-metrics-v1",
+  "as_of": "2026-11-02",
+  "scope": "Historical recorded measurements; not a new experiment or overall acceptance.",
+  "recognition": {
+    "material_macro_f1_percent": 93.68046,
+    "foreground_material_miou_percent": 82.25439,
+    "object_images": 128,
+    "empty_images": 3,
+    "known_specimens": 16,
+    "reference_images": 64,
+    "qualified_candidates": 113,
+    "confidence": 0.1,
+    "backend": "ROCm GPU FP16",
+    "independent_new_scene_validation": false
+  },
+  "physical_singleton_cohort": {
+    "attempts": 3,
+    "strict_full_containment": 3,
+    "object_height_mm": {
+      "metal": 56,
+      "paper": 61,
+      "plastic": 55
+    },
+    "visible_response_s": {
+      "metal": 30.429661,
+      "paper": 29.431355,
+      "plastic": 30.735657
+    },
+    "cycle_s": {
+      "metal": 63.254847,
+      "paper": 62.847945,
+      "plastic": 65.288456
+    },
+    "source": "../reviews/2026-11-02-report-online-review.md"
+  },
+  "physical_repeated_cohort": {
+    "actual_mechanical_attempts": 11,
+    "strict_pass": 8,
+    "strict_not_pass": 3,
+    "pending": 0,
+    "preview_refusals": 2,
+    "start_admission_refusals": 2,
+    "manual_review_holds": 1,
+    "automatic_occupancy_pass": 11,
+    "whole_system_success_rate": null,
+    "population_motion_p99": null,
+    "groups": {
+      "metal": {
+        "attempts": 3,
+        "independently_adjudicated": 3,
+        "strict_pass": 1,
+        "strict_not_pass": 2,
+        "pending": 0,
+        "observed_pass_fraction": 0.3333333333333333,
+        "visible_motion_range_s": [
+          30.421339314499164,
+          34.03440105250138
+        ],
+        "visible_motion_median_s": 33.706610555501356,
+        "cycle_range_s": [
+          64.5951558300003,
+          72.18235720300072
+        ]
+      },
+      "paper": {
+        "attempts": 5,
+        "independently_adjudicated": 5,
+        "strict_pass": 5,
+        "strict_not_pass": 0,
+        "pending": 0,
+        "observed_pass_fraction": 1.0,
+        "visible_motion_range_s": [
+          29.09225348000109,
+          31.43480504249783
+        ],
+        "visible_motion_median_s": 30.41472884799896,
+        "cycle_range_s": [
+          62.10379712000031,
+          65.0860825560012
+        ]
+      },
+      "plastic": {
+        "attempts": 3,
+        "independently_adjudicated": 3,
+        "strict_pass": 2,
+        "strict_not_pass": 1,
+        "pending": 0,
+        "observed_pass_fraction": 0.6666666666666666,
+        "visible_motion_range_s": [
+          28.075871123499383,
+          31.149612762998913
+        ],
+        "visible_motion_median_s": 28.95281302750118,
+        "cycle_range_s": [
+          62.931060368000544,
+          63.699928704998456
+        ]
+      }
+    },
+    "trials": [
+      {
+        "material": "metal",
+        "object_height_mm": 55.0,
+        "operation_id": "06a254dbc74d4de0aa0ed88db0be0e81",
+        "task_id": "edc07451e82147329d84d509208e9f5c",
+        "strict_physical_truth": "pass",
+        "visible_motion_s": 34.03440105250138,
+        "sampling_lower_s": 33.824791068002014,
+        "sampling_upper_s": 34.244011037000746,
+        "cycle_s": 72.18235720300072,
+        "serial_commands": 23
+      },
+      {
+        "material": "metal",
+        "object_height_mm": 55.0,
+        "operation_id": "f8be7147ce5849f7ae8c08afb70bb141",
+        "task_id": "c393af84533e42959a499e6b521ff9e8",
+        "strict_physical_truth": "fail",
+        "visible_motion_s": 30.421339314499164,
+        "sampling_lower_s": 30.162985985998603,
+        "sampling_upper_s": 30.679692642999726,
+        "cycle_s": 64.5951558300003,
+        "serial_commands": 23
+      },
+      {
+        "material": "metal",
+        "object_height_mm": 55.0,
+        "operation_id": "0e1d6f9239cc40e89b092d00f9c1b9c8",
+        "task_id": "6a61dc641c6b409ca0399413313cd0ee",
+        "strict_physical_truth": "fail",
+        "visible_motion_s": 33.706610555501356,
+        "sampling_lower_s": 33.38848626300205,
+        "sampling_upper_s": 34.02473484800066,
+        "cycle_s": 69.05620053799976,
+        "serial_commands": 23
+      },
+      {
+        "material": "paper",
+        "object_height_mm": 63.0,
+        "operation_id": "46a7308b3b5443e0b0fdc43eaa9cf509",
+        "task_id": "109dbae358e342ca98a320485059c5da",
+        "strict_physical_truth": "pass",
+        "visible_motion_s": 31.43480504249783,
+        "sampling_lower_s": 31.11752624899782,
+        "sampling_upper_s": 31.752083835997837,
+        "cycle_s": 64.92133142300008,
+        "serial_commands": 21
+      },
+      {
+        "material": "paper",
+        "object_height_mm": 63.0,
+        "operation_id": "6949208b45524eb68e569f28560dbc5e",
+        "task_id": "567601310ab7479d9fa289ade5b62a0e",
+        "strict_physical_truth": "pass",
+        "visible_motion_s": 29.09225348000109,
+        "sampling_lower_s": 28.848786530001234,
+        "sampling_upper_s": 29.335720430000947,
+        "cycle_s": 62.80062235600053,
+        "serial_commands": 21
+      },
+      {
+        "material": "paper",
+        "object_height_mm": 63.0,
+        "operation_id": "d97253b5082340c6a3b91cbc98eae198",
+        "task_id": "e5af1c8d59d94ba983a0b16e0090eaef",
+        "strict_physical_truth": "pass",
+        "visible_motion_s": 29.356578527998863,
+        "sampling_lower_s": 29.051841980000972,
+        "sampling_upper_s": 29.661315075996754,
+        "cycle_s": 62.10379712000031,
+        "serial_commands": 21
+      },
+      {
+        "material": "paper",
+        "object_height_mm": 63.0,
+        "operation_id": "3050b1b82ee84fb6b71d7b88c6fa3160",
+        "task_id": "1f2bb71f40ac42959e20246b784f6d9a",
+        "strict_physical_truth": "pass",
+        "visible_motion_s": 31.019547392998902,
+        "sampling_lower_s": 30.677132359998723,
+        "sampling_upper_s": 31.36196242599908,
+        "cycle_s": 64.39810698099973,
+        "serial_commands": 21
+      },
+      {
+        "material": "paper",
+        "object_height_mm": 63.0,
+        "operation_id": "dad7512b5fb9431cb17a77cf49d133e1",
+        "task_id": "2512f69f3f70434eb9218edd62da2b61",
+        "strict_physical_truth": "pass",
+        "visible_motion_s": 30.41472884799896,
+        "sampling_lower_s": 30.117042121999475,
+        "sampling_upper_s": 30.71241557399844,
+        "cycle_s": 65.0860825560012,
+        "serial_commands": 21
+      },
+      {
+        "material": "plastic",
+        "object_height_mm": 53.0,
+        "operation_id": "75930d1aa90b4efca48de88d6978cdce",
+        "task_id": "282abe8874504aefa4f54798c191c6b1",
+        "strict_physical_truth": "fail",
+        "visible_motion_s": 31.149612762998913,
+        "sampling_lower_s": 30.899396014998274,
+        "sampling_upper_s": 31.399829510999552,
+        "cycle_s": 63.244757407999714,
+        "serial_commands": 22
+      },
+      {
+        "material": "plastic",
+        "object_height_mm": 53.0,
+        "operation_id": "7fefdb8ffec84c67b8b55c693b3fc13d",
+        "task_id": "510c5669ae3d40f284e10d77576e88a6",
+        "strict_physical_truth": "pass",
+        "visible_motion_s": 28.95281302750118,
+        "sampling_lower_s": 28.745001637002133,
+        "sampling_upper_s": 29.160624418000225,
+        "cycle_s": 62.931060368000544,
+        "serial_commands": 22
+      },
+      {
+        "material": "plastic",
+        "object_height_mm": 53.0,
+        "operation_id": "f4a0af4d534742178b90b8e246569c06",
+        "task_id": "dcd58d51ee1e4cf4afb98c55d0d3cc6a",
+        "strict_physical_truth": "pass",
+        "visible_motion_s": 28.075871123499383,
+        "sampling_lower_s": 27.82711354500134,
+        "sampling_upper_s": 28.324628701997426,
+        "cycle_s": 63.699928704998456,
+        "serial_commands": 22
+      }
+    ],
+    "serial_commands": 240
+  },
+  "same_input_route_compile": {
+    "warmup_each": 2,
+    "samples_each": 30,
+    "scalar_arm_median_ms": 659.805,
+    "optimized_arm_median_ms": 197.025,
+    "ps_pl_median_ms": 177.838,
+    "speedup_vs_optimized_arm": 1.1078903271516773,
+    "whole_system_speedup": null
+  },
+  "online_no_motion": {
+    "timestamp": "2026-11-02T04:19:55.488869+08:00",
+    "scope": "Historical 2026-11-02 bounded sequential samples with existing background services; no actuator requests; not current live status.",
+    "automatic_retries": 0,
+    "control": {
+      "samples": 200,
+      "success": 200,
+      "failures": 0,
+      "duration_s": 31.382081999996444,
+      "rtt_ms": {
+        "p50": 141.63689999259077,
+        "p95": 269.7966199993968,
+        "p99": 366.24563901394123,
+        "max": 418.654900015099
+      }
+    },
+    "png": {
+      "samples": 200,
+      "success": 200,
+      "failures": 0,
+      "duration_s": 116.6461011999927,
+      "rtt_ms": {
+        "p50": 558.7294499855489,
+        "p95": 835.8231149948551,
+        "p99": 988.4865770133911,
+        "max": 1012.7178000111599
+      },
+      "payload_bytes": 71009839,
+      "payload_mbps": 4.8701045826299385
+    },
+    "pl": {
+      "samples": 200,
+      "success": 200,
+      "failures": 0,
+      "duration_s": 50.15141279998352,
+      "rtt_ms": {
+        "p50": 124.01705000957008,
+        "p95": 229.8590450154733,
+        "p99": 264.1952650135499,
+        "max": 279.8225999868009
+      },
+      "unique_frames": 196,
+      "processing_ms": {
+        "p50": 74.91733450000001,
+        "p95": 102.85681475,
+        "p99": 123.69217005000004,
+        "max": 133.614818
+      },
+      "observed_frame_id_advance_per_s": 4.909735032442433
+    },
+    "capture_infer": {
+      "samples": 200,
+      "success": 200,
+      "failures": 0,
+      "duration_s": 234.5570568999974,
+      "rtt_ms": {
+        "p50": 672.7296999888495,
+        "p95": 1255.971635010792,
+        "p99": 1298.2717809962924,
+        "max": 1356.017599988263
+      },
+      "service_predict_ms": {
+        "p50": 95.13254999183118,
+        "p95": 1198.186539998278,
+        "p99": 1224.6439649979582,
+        "max": 1262.9156000039075
+      },
+      "capture_upload_response_ms": {
+        "p50": 1351.1531000112882,
+        "p95": 2001.9356049830094,
+        "p99": 2125.1289309887215,
+        "max": 2129.893700010143
+      }
+    }
+  },
+  "online_independent_verification": {
+    "samples": 800,
+    "per_group": 200,
+    "application_failures": 0,
+    "pure_python_quantile_recalculation": "passed",
+    "png_header_bgr_hashes_verified": 200,
+    "unique_pl_frames": 196,
+    "one_stream_per_image_group": true,
+    "matching_model_configuration": true,
+    "actuator_requests": 0,
+    "automatic_retries": 0,
+    "not_a_recognition_accuracy_or_mechanical_reliability_test": true,
+    "quantile_method": "linear interpolation at (n-1)*q",
+    "raw_sha256": "c07d10ba7c81abd775b4d95c042c3ce3c4de3e7553197fd41470b3a81d6eca22",
+    "summary_sha256": "ff38da09780d7c2fff3b2b4e59a6698d16ea7029d846fcbf191dd8bb6cfbff16",
+    "input_archive_scope": "Request timing, identities and BGR hashes retained; this performance-only cohort does not archive every uploaded PNG."
+  },
+  "hardware": {
+    "clock_mhz": 100,
+    "wns_ns": 0.423,
+    "whs_ns": 0.051,
+    "lut": 18228,
+    "ff": 25169,
+    "bram_tiles": 6,
+    "dsp": 49,
+    "drc_errors": 0,
+    "drc_warnings": 57,
+    "separate_fifo_methodology_warnings": 11,
+    "estimated_on_chip_power_w": 1.591,
+    "power_confidence": "Medium",
+    "measured_system_power_w": null,
+    "current_activity_file_used": false
+  },
+  "not_accepted": [
+    "overall_loop_success_rate",
+    "population_physical_motion_p99",
+    "uninterrupted_three_item_batch",
+    "independent_mm_accuracy",
+    "measured_system_power",
+    "unattended_operation",
+    "clean_environment_deployment"
+  ]
+}

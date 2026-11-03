@@ -1,0 +1,511 @@
+{
+  "control_version": 3,
+  "batch_mode": true,
+  "material_selection": "METAL",
+  "operation_routes": {
+    "/operation/all": "AUTO",
+    "/operation/paper": "PAPER",
+    "/operation/metal": "METAL",
+    "/operation/plastic": "PLASTIC"
+  },
+  "max_objects": 6,
+  "state": "finished",
+  "busy": false,
+  "preflight_checks_deferred": true,
+  "configured": true,
+  "blockers": [],
+  "decision_thresholds": {
+    "min_scene_iou": 0.85,
+    "min_erased_fraction": 0.75,
+    "min_persistent_fraction": 0.6,
+    "max_scene_changed_fraction": 0.05,
+    "max_other_bin_changed_fraction": 0.05,
+    "min_confidence": 0.1
+  },
+  "batch_verification_mode": "end_of_batch",
+  "skip_per_item_visual_verification": true,
+  "wait_time_scale": 1,
+  "review_tolerance_factor": 1,
+  "bin_edge_overlap_limit": 0,
+  "reset_supported": true,
+  "home_supported": true,
+  "empty_bin_max_changed_fraction": null,
+  "min_fixed_markers": 2,
+  "initial_marker_shift_px": 15,
+  "reset_requires_confirmation": false,
+  "operation_id": "d277b3cb0d2749218005085a485c6841",
+  "owner": "pilot-P003-9a9f0395de054c08b6b56e7738fc03e2",
+  "result": {
+    "task_id": "36503bf54732495297ce8c5927cf01a4",
+    "batch_id": "36503bf54732495297ce8c5927cf01a4",
+    "status": "completed_visual_evidence",
+    "reason": null,
+    "physical_motion_attempted": true,
+    "board_port_open_attempted": true,
+    "board_uart_write_attempted": true,
+    "completed_count": 1,
+    "motion_completed_count": 1,
+    "per_item_visual_failures": [],
+    "slot_checks": [
+      {
+        "label": "metal",
+        "slot_id": "metal-original",
+        "roi": [
+          444,
+          98,
+          632,
+          260
+        ],
+        "destination_empty_check_enabled": false,
+        "semantic_occupancy_checked": false,
+        "rgb_empty_reference_checked": false,
+        "reason": "operator_disabled_destination_empty_check"
+      }
+    ],
+    "jaw_calibration": null,
+    "start_pwm": null,
+    "target_pwm": null,
+    "final_verification": {
+      "status": "batch_visual_evidence_pass",
+      "reason": null
+    },
+    "remaining_count": 0,
+    "material_selection": "METAL",
+    "preview": false,
+    "label": "METAL",
+    "candidate_order": [
+      {
+        "track_id": 1,
+        "label": "metal",
+        "official_label": "Drink can",
+        "height_item_id": 1,
+        "object_height_mm": 55,
+        "grasp_z_mm": 10,
+        "height_source": "operator_per_instance",
+        "selection": {
+          "policy": "clearance_then_route_v1",
+          "clearance_preference_mm": 50.0,
+          "complete_route_wait_s": 12.214000000000002,
+          "confidence": 0.8369140625,
+          "stable_track_id": 1,
+          "reason": "verified_route_then_clearance_then_duration_then_confidence",
+          "rank": 1
+        }
+      }
+    ]
+  },
+  "active_action": "start",
+  "reason": null,
+  "standby_seconds": 120,
+  "voice_service": {
+    "supported": false,
+    "connected": false,
+    "armed": false,
+    "resident": false
+  },
+  "manual_review": {
+    "supported": true,
+    "required": false,
+    "available": false,
+    "owner_epoch": "334903b703f94f0d9fcbaa03447ac0ef",
+    "request_id": null,
+    "recovery_required": false,
+    "scope": "finished_needs_review_only"
+  },
+  "remaining_s": null,
+  "single_attempt": true,
+  "hardware_emergency_stop": false,
+  "progress": {
+    "schema": "operation-progress-v1",
+    "operation_id": "d277b3cb0d2749218005085a485c6841",
+    "action": "start",
+    "events": [
+      {
+        "phase": "submitted",
+        "elapsed_s": 6.897200000821613e-05
+      },
+      {
+        "phase": "checking",
+        "elapsed_s": 0.0015548920000583166
+      },
+      {
+        "phase": "connecting",
+        "elapsed_s": 19.884464776000186
+      },
+      {
+        "phase": "ready",
+        "elapsed_s": 22.045408956999836
+      },
+      {
+        "phase": "moving",
+        "elapsed_s": 27.299627350000264
+      },
+      {
+        "phase": "verifying",
+        "elapsed_s": 53.095207957000184
+      },
+      {
+        "phase": "ended",
+        "elapsed_s": 59.05109327800028
+      }
+    ],
+    "completed_commands": 23,
+    "total_commands": 23,
+    "sound_confirmed": false,
+    "phase": "ended",
+    "command_index": 23,
+    "command_name": "retreat_4",
+    "outcome": "completed_visual_evidence",
+    "elapsed_s": 59.051141499000096,
+    "terminal": true
+  },
+  "object_height_mm": null,
+  "mechanical_heights_mm": {
+    "metal": 56,
+    "paper": 65,
+    "plastic": 53
+  },
+  "object_height_range_mm": [
+    1,
+    120
+  ],
+  "height_applies_to_next_grasp": true,
+  "per_instance_heights_supported": true,
+  "per_instance_widths_supported": true,
+  "voice_height_registration_supported": true,
+  "voice_height_registration_session": "8988e2d4c6f8450b9417642e7f634b9e",
+  "voice_height_registration_version": 0,
+  "voice_height_registration": null,
+  "selection_policy": "clearance_then_route_v1",
+  "height_changes_grasp_z": false,
+  "motion_scene_check_mode": "before_sequence",
+  "per_command_visual_checks": false,
+  "destination_empty_check_enabled": false,
+  "full_scene_instance_stability_check_enabled": false,
+  "minimum_silhouette_separation_check_enabled": false,
+  "projected_region_bounds_check_enabled": false,
+  "prompted_stable_frames": 1,
+  "prompted_trial_materials": [
+    "metal",
+    "paper",
+    "plastic"
+  ],
+  "prompted_trial_labels": [
+    "Aluminium foil",
+    "Clear plastic bottle",
+    "Other plastic bottle",
+    "Plastic bottle cap",
+    "Metal bottle cap",
+    "Drink can",
+    "Food Can",
+    "Corrugated carton",
+    "Egg carton",
+    "Other carton",
+    "Disposable plastic cup",
+    "Other plastic cup",
+    "Plastic lid",
+    "Metal lid",
+    "Magazine paper",
+    "Wrapping paper",
+    "Normal paper",
+    "Paper bag",
+    "Spread tub",
+    "Tupperware",
+    "Other plastic container",
+    "Pop tab",
+    "Scrap metal",
+    "Toilet tube",
+    "Drink carton",
+    "Plastic straw"
+  ],
+  "prompted_scope_basis": "operator_supervised_trial",
+  "prompted_validated_scope": {
+    "materials": [],
+    "official_labels": []
+  },
+  "prompted_physical_validation_completed": false,
+  "prompted_motion_timing_overrides": {
+    "max_pwm_per_s": [
+      700,
+      900,
+      900,
+      900,
+      900,
+      900
+    ],
+    "min_move_ms": 400,
+    "home_min_ms": 1000,
+    "vertical_min_ms": 500,
+    "close_ms": 750,
+    "release_ms": 650,
+    "target_cycle_s": 20
+  },
+  "prompted_single_manual_attempt_only": true,
+  "prompted_global_confidence": 0.1,
+  "prompted_max_frame_age_ms": 12000,
+  "prompted_frame_timeout_s": 12,
+  "prompted_thresholds": {
+    "paper": {
+      "source_confidence": 0.1,
+      "bin_confidence": 0.1
+    },
+    "plastic": {
+      "source_confidence": 0.1,
+      "bin_confidence": 0.1
+    },
+    "metal": {
+      "source_confidence": 0.1,
+      "bin_confidence": 0.1
+    }
+  },
+  "empty_reference_backend": "pc_background_math_v1",
+  "empty_reference_projector": "pc_opencv_cached_rays",
+  "startup_native_library_sha256": null,
+  "last_startup_timing": {
+    "request_id": "d277b3cb0d2749218005085a485c6841",
+    "first_uart_command_ms": 27301.423615000203,
+    "first_uart_command_confirmed_written": true,
+    "timing_origin": "board_command_received",
+    "physical_motion_measured": false,
+    "preparation_ms": 8517.839255000126,
+    "worker_elapsed_ms": 59050.37098899993
+  },
+  "motion_path_backend": "pl_motion_path_v1",
+  "motion_path_faulted": false,
+  "last_motion_path_audit": {
+    "backend": "pl_motion_path_v1",
+    "segments": 23,
+    "boundary_cpu_segments": [],
+    "timing": {
+      "cache_sync_ms": 7.780941,
+      "excludes": "one-time allocation, overlay loading, network, route generation and mechanical motion",
+      "readback_decode_ms": 6.336345,
+      "submit_wait_ms": 0.488277,
+      "total_ms": 17.377607,
+      "validation_pack_ms": 2.772044,
+      "client_total_ms": 59.993083
+    },
+    "audit_elapsed_ms": 62.537372,
+    "floor_mm": 9.25,
+    "segment_pass": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "physical_motion": false
+  },
+  "motion_path_assets": {
+    "vision_motion.bit": "054a766d3468282cbfb355dc803b8b9e960749ffde0e80bf0d43e17adebab779",
+    "vision_motion.hwh": "b40312875bb53fadec4563109a8508176c75bcf582ce42150f13692e375a5213"
+  },
+  "motion_path_startup_selftest": {
+    "passed": true,
+    "cases": [
+      {
+        "case": "paper-0-0-5",
+        "segments": 21,
+        "command_sha256": "d17a7dd2d61c894e517fef664ea75861b0d0bf1ee67a2cd634d819bf604a1c7d"
+      },
+      {
+        "case": "plastic-270-30-20",
+        "segments": 22,
+        "command_sha256": "d8fb7ffc2ec76f257caad2fa7741bafa5d192cc51ce8bbe147045af4b3fec978"
+      }
+    ],
+    "fixture_sha256": "aad2b1331e9f840d344060b10e1658b4e863b07ee73056feedd7111613ae5c8c",
+    "original_vs_actual_host_compiler": true,
+    "consumer": "src.sorting_unified.compile_route",
+    "bound_aliases": [
+      "src.sorting_unified",
+      "src.sorting_unified_plan"
+    ],
+    "physical_motion": false
+  },
+  "startup_baseline_native_library_sha256": "affee2f5b63c2c8769a4ad4d38de93daf4f30d7251b3da4b43cac5bada796b2b",
+  "startup_acceleration": {
+    "backend": "sealed_same_frame_cached_rays_v1",
+    "sealed_files": 305,
+    "snapshot_faulted": false,
+    "ray_table_ready": true,
+    "position_policy_pl_selftest": {
+      "passed": true,
+      "consumer": "configuration_position_policy_validation",
+      "bound_aliases": [
+        "src.sorting_position_controller",
+        "src.sorting_position_plan"
+      ],
+      "segments": 21,
+      "command_sha256": "09d5de921b26295c7a84b6ec50551d1fee385770a80e4d545b6edf6ca7cb5abe",
+      "physical_motion": false
+    },
+    "background_backend": "pc_background_math_v1",
+    "background_faulted": false,
+    "registered_policy_selftest": {
+      "passed": true,
+      "cases": [
+        {
+          "id": "yoloe26",
+          "confidence": 0.3
+        },
+        {
+          "id": "v8_3",
+          "confidence": 0.3
+        },
+        {
+          "id": "11s_3",
+          "confidence": 0.3
+        },
+        {
+          "id": "v8_26",
+          "confidence": 0.3
+        },
+        {
+          "id": "11s_26",
+          "confidence": 0.3
+        },
+        {
+          "id": "yoloe24",
+          "confidence": 0.6
+        },
+        {
+          "id": "yoloe26_tuned",
+          "confidence": 0.1
+        },
+        {
+          "id": "yoloe26_reference",
+          "confidence": 0.1
+        }
+      ],
+      "unregistered_low_rejected": true,
+      "physical_motion": false
+    },
+    "timeline": {
+      "request_id": "d277b3cb0d2749218005085a485c6841",
+      "origin": "board_request_received",
+      "stages": {
+        "source_integrity": {
+          "calls": 4,
+          "inclusive_ms": 201.489212,
+          "exclusive_ms": 201.489212
+        },
+        "unified_load": {
+          "calls": 2,
+          "inclusive_ms": 233.266782,
+          "exclusive_ms": 233.266782
+        },
+        "live_readiness": {
+          "calls": 2,
+          "inclusive_ms": 166.299569,
+          "exclusive_ms": 166.299569
+        },
+        "visual_rpc": {
+          "calls": 9,
+          "inclusive_ms": 3169.332968,
+          "exclusive_ms": 3169.332968
+        },
+        "initial_capture_pose": {
+          "calls": 1,
+          "inclusive_ms": 1846.229924,
+          "exclusive_ms": 1383.712638
+        },
+        "geometry": {
+          "calls": 1,
+          "inclusive_ms": 1517.317099,
+          "exclusive_ms": 1517.317099
+        },
+        "controller_acquire": {
+          "calls": 4,
+          "inclusive_ms": 11156.410575,
+          "exclusive_ms": 8920.035957
+        },
+        "controller_observe": {
+          "calls": 1,
+          "inclusive_ms": 696.09726,
+          "exclusive_ms": 1.1335619999999835
+        },
+        "controller_select": {
+          "calls": 1,
+          "inclusive_ms": 1127.755284,
+          "exclusive_ms": 1127.755284
+        },
+        "target_region_setup": {
+          "calls": 1,
+          "inclusive_ms": 453.360258,
+          "exclusive_ms": 453.360258
+        },
+        "controller_unchanged": {
+          "calls": 2,
+          "inclusive_ms": 3268.46677,
+          "exclusive_ms": 3268.46677
+        },
+        "controller_prepare_motion": {
+          "calls": 1,
+          "inclusive_ms": 4345.947902,
+          "exclusive_ms": 4051.324585
+        },
+        "serial_open": {
+          "calls": 1,
+          "inclusive_ms": 2114.213591,
+          "exclusive_ms": 2028.3515670000002
+        },
+        "uart_first_guard_and_send": {
+          "calls": 23,
+          "inclusive_ms": 2562.666981,
+          "exclusive_ms": 2530.9726859999996
+        }
+      },
+      "preparation_ms": 8516.883021000012,
+      "first_uart_written_ms": 27301.423615000203,
+      "first_uart_confirmed": true,
+      "physical_motion_measured": false,
+      "elapsed_ms": 59050.64825699992
+    }
+  },
+  "compute_location": "pynq_ps",
+  "state_and_ledger_location": "pynq_ps",
+  "actuator_location": "pynq_ps",
+  "perception_location": "pc",
+  "board_ownership": {
+    "epoch": "334903b703f94f0d9fcbaa03447ac0ef",
+    "status": "idle",
+    "reason": null,
+    "owner": null,
+    "request_id": null,
+    "remaining_s": 0,
+    "execution_enabled": false
+  },
+  "board_root": "/opt/km1/runtime/service-ready-20261101-v3",
+  "board_source_sha256": "2f76f2e7868d3d5ee2454ed7827a09ad02c5108d7be8870ecc43d631f5333dab",
+  "execution_model": {
+    "profile_id": "yoloe26_reference",
+    "name": "YOLOE26 · 新版参考图辅助0.10 · ROCm GPU",
+    "model_sha256": "9d5734b34871aa81412b2fa47176d8f926283bb5adfe3a3f80cc58c5b7332534",
+    "profile_sha256": "d88bdec849189d68ffa5e9b69796419f0ac340380e805a6056e0f955b418ec5d",
+    "configuration_sha256": "cb288271841ff81c2dcd44ea6fc9742231e658d0a68f44caa0a970aee15b792e",
+    "settings_sha256": "0878d8229aa91d41962eb6b7f0287ca46c882a2aef320436f3f037516b0de3f0",
+    "policy_sha256": "8fd92b76781b2fda6f8604a1636ad2c375898ff15c2cfd2dcaf6e70e2da31470",
+    "revision": 32,
+    "route_id": "ca23954312314a648a4a1a78051b8d99",
+    "physical_validation_completed": false
+  }
+}

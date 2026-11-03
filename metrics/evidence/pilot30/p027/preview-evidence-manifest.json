@@ -1,0 +1,14 @@
+{
+  "operation_id": "0767509f5cec47688fddd30c31e7797a",
+  "preview_task_id": null,
+  "status": "rejected",
+  "reason": "ValueError:unified_no_pickable_instance:[{'track_id': 1, 'label': 'plastic', 'reason': 'unified_no_route_to_free_slot:jaw_insufficient_opening'}]",
+  "real_start_submitted": false,
+  "physical_motion": false,
+  "ledger_fetch_attempted": false,
+  "files": {
+    "preview-intent.json": "2697926347dedf28f3690c54f342d169bb545d22bf2822b1b249f73efb6f0799",
+    "preview-result.json": "d8214077592898d7f7cc9e37ae6ffdbbb13170b2d73f6cd68fb3f755aae1e9c2",
+    "system-refusal.json": "d65762206412b394bc409930c19711073d829de9e3f7cc66611f49e1a99a9f25"
+  }
+}

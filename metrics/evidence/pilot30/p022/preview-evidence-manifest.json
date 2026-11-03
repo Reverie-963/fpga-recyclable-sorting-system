@@ -1,0 +1,18 @@
+{
+  "preview_task_id": "fd667fb8d8f8494ebc5ec9f334188180",
+  "operation_id": "e8f565f8032741a181cbf80b7b3135f0",
+  "status": "rejected",
+  "reason": "ValueError:instance_count_changed",
+  "real_start_submitted": false,
+  "physical_motion_attempted": false,
+  "board_port_open_attempted": false,
+  "board_uart_write_attempted": false,
+  "expected_ledger_task_json_found": false,
+  "note": "SFTP expected task-id.json path returned ENOENT; retain original API report; not proof that all board audit evidence is absent",
+  "files": {
+    "preview-intent.json": "9c976310cea6a6424241138db9a680428bcb304708731148984c781f73ca1fe7",
+    "preview-result.json": "f06b1b8f2de09c403d16397fc82d5eca6f9e4e626181938622d1a691c3e30490",
+    "system-refusal.json": "665cc8b774dd26fac48ec9e55df1e3d8c8e7c9589b17a1c1487aa935837a6299",
+    "after-preview.png": "89d85111c7b86cffec9e0862f3bc8a3ff41abfa45b1d5f124be90ac410b3ac30"
+  }
+}

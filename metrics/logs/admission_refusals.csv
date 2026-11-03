@@ -1,0 +1,31 @@
+directory,phase,operation_id,state,reason,actual_commands,first_uart_confirmed,no_automatic_retry
+report-stage-trial-20261102-metal-01,preview,3615713a7a354ac6a98b9ba1f748acb9,finished,,0,False,True
+report-stage-trial-20261102-metal-01,start,06a254dbc74d4de0aa0ed88db0be0e81,finished,,23,True,True
+report-stage-trial-20261102-metal-02,preview,b26e375215d54b5396efa3c04961918c,finished,,0,False,True
+report-stage-trial-20261102-metal-02,start,f8be7147ce5849f7ae8c08afb70bb141,finished,,23,True,True
+report-stage-trial-20261102-metal-03,preview,3768ba01b60d4ca0963596ee63063d52,finished,,0,False,True
+report-stage-trial-20261102-metal-03,start,0e1d6f9239cc40e89b092d00f9c1b9c8,finished,,23,True,True
+report-stage-trial-20261102-paper-01,preview,41f617303d0e47beacacd8221d308781,rejected,"ValueError:prompted_batch_initial_route_rejected:[{'track_id': 2, 'label': 'paper', 'reason': 'unified_no_route_to_free_slot:jaw_target_outside_requested_extension'}]",0,False,True
+report-stage-trial-20261102-paper-02,preview,2e15480c067c4508ae515b563f5226cd,finished,,0,False,True
+report-stage-trial-20261102-paper-02,start,46a7308b3b5443e0b0fdc43eaa9cf509,finished,,21,True,True
+report-stage-trial-20261102-paper-03,preview,b818a858dad446bbb71f32e39a5b8a14,finished,,0,False,True
+report-stage-trial-20261102-paper-03,start,6949208b45524eb68e569f28560dbc5e,finished,,21,True,True
+report-stage-trial-20261102-paper-04,preview,2530c85a79ba41d8bb1738ae0c4e23d5,finished,,0,False,True
+report-stage-trial-20261102-paper-04,start,d97253b5082340c6a3b91cbc98eae198,finished,,21,True,True
+report-stage-trial-20261102-paper-05,preview,a9ef4ae55259411daa0bdf65e288e589,finished,,0,False,True
+report-stage-trial-20261102-paper-05,start,18588bb67a304d4aa6a72104371d60bd,rejected,HTTPError:HTTP Error 409: Conflict,0,False,True
+report-stage-trial-20261102-paper-06,preview,6aab7fddfb544fe99ad86a08e79f1c1c,finished,,0,False,True
+report-stage-trial-20261102-paper-06,start,3050b1b82ee84fb6b71d7b88c6fa3160,finished,,21,True,True
+report-stage-trial-20261102-paper-07,preview,d32466b9aabb4e2db7cf958001750f08,finished,,0,False,True
+report-stage-trial-20261102-paper-07,start,dad7512b5fb9431cb17a77cf49d133e1,finished,,21,True,True
+report-stage-trial-20261102-plastic-01,preview,96ad843f35c14c4fa3e7539310501a87,finished,,0,False,True
+report-stage-trial-20261102-plastic-01,start,75930d1aa90b4efca48de88d6978cdce,finished,,22,True,True
+report-stage-trial-20261102-plastic-02,preview,f9dee6a278384015af37a8632d928a1a,finished,,0,False,True
+report-stage-trial-20261102-plastic-02,start,d439ed22dfdf45c7b5dc77e6fb3ee291,rejected,HTTPError:HTTP Error 409: Conflict,0,False,True
+report-stage-trial-20261102-plastic-03,preview,b1cf203d293f4d1fbd2a1d64a95761cd,finished,,0,False,True
+report-stage-trial-20261102-plastic-03,start,7fefdb8ffec84c67b8b55c693b3fc13d,finished,,22,True,True
+report-stage-trial-20261102-plastic-04,preview,fa1923065f7c417684f1e93a7220afa3,finished,,0,False,True
+report-stage-trial-20261102-plastic-04,review_hold,,held,"preview official_label Drink can, subsequent fresh live official_label Disposable plastic cup; fine-class identity inconsistent for the trial harness",0,False,True
+report-stage-trial-20261102-plastic-05,preview,c176190076984d56874cdb074569941e,rejected,"ValueError:unified_no_pickable_instance:[{'track_id': 1, 'label': 'plastic', 'reason': 'unified_no_route_to_free_slot:jaw_insufficient_opening'}]",0,False,True
+report-stage-trial-20261102-plastic-06,preview,a2952a0110a242108af00f01acaefff5,finished,,0,False,True
+report-stage-trial-20261102-plastic-06,start,f4a0af4d534742178b90b8e246569c06,finished,,22,True,True

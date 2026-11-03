@@ -1,0 +1,37 @@
+{
+  "kind": "known-item-geometry-observation-v1",
+  "scope": "supervised-known-item-v1",
+  "label": "paper",
+  "station_id": "km1-three-bin-current-20261029",
+  "operator_confirmed": true,
+  "completed_supervised_trial": true,
+  "profile_sha256": "62ef0c02abb499609e00cb79747487affc0c56e1e7daa2e6360c99576c8ccb3b",
+  "model_quality_accepted": false,
+  "unattended_accepted": false,
+  "current_image_plane_remeasured": true,
+  "robot_precision_claimed": false,
+  "route_derivation": "Fixed joint poses extracted from complete echoed executions. Dynamic source uses checked local two-height mapping. Initial wrist/open consolidated into same high-pose packet; first small hold-test lift omitted after qualification. Unified cycle not yet separately field-tested.",
+  "historical_detector_family": "yolo11s",
+  "evidence": [
+    {
+      "path": "c2b9d3f130f3b74fcf557e4618af20ce8926a2fb9fea780b22bed3dff9a528a7.json",
+      "sha256": "c2b9d3f130f3b74fcf557e4618af20ce8926a2fb9fea780b22bed3dff9a528a7"
+    },
+    {
+      "path": "aa57b48e59e30161cebb17040270f697ca5d503539456090b87e6a8af82a776a.json",
+      "sha256": "aa57b48e59e30161cebb17040270f697ca5d503539456090b87e6a8af82a776a"
+    },
+    {
+      "path": "ef128d008b615ccc38b34b04aa9b3b5fc8280c3e0ee1027fe14a3e0ba0591e41.json",
+      "sha256": "ef128d008b615ccc38b34b04aa9b3b5fc8280c3e0ee1027fe14a3e0ba0591e41"
+    },
+    {
+      "path": "26fc29070bf707ee939c3adea7b8697f4497a45d8c5b359930fa1e9327d13a21.json",
+      "sha256": "26fc29070bf707ee939c3adea7b8697f4497a45d8c5b359930fa1e9327d13a21"
+    },
+    {
+      "path": "bb4e790abc13629165943ee6979d8765963ca836507a179ad8209404c7124a6d.json",
+      "sha256": "bb4e790abc13629165943ee6979d8765963ca836507a179ad8209404c7124a6d"
+    }
+  ]
+}

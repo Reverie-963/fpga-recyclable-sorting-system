@@ -1,0 +1,398 @@
+{
+  "id": "yoloe26_reference",
+  "name": "YOLOE26 · 新版参考图辅助0.10 · ROCm GPU",
+  "model_sha256": "9d5734b34871aa81412b2fa47176d8f926283bb5adfe3a3f80cc58c5b7332534",
+  "upstream_configuration_sha256": "cb288271841ff81c2dcd44ea6fc9742231e658d0a68f44caa0a970aee15b792e",
+  "protocol": "candidate",
+  "family": "yoloe",
+  "policy": {
+    "schema": "prompted-recyclables-policy-v1",
+    "source": {
+      "name": "TACO author map_10.csv original labels",
+      "commit": "70479ad9adc3da971a8ae75ac97eb1026910eec7",
+      "url": "https://raw.githubusercontent.com/pedropro/TACO/70479ad9adc3da971a8ae75ac97eb1026910eec7/detector/taco_config/map_10.csv",
+      "sha256": "0fc5994ea5ef69fa1f0d106a4989bb9998f78a92a42183b9d897827c528b2bdd"
+    },
+    "model": {
+      "name": "yoloe26_reference.pt",
+      "sha256": "9d5734b34871aa81412b2fa47176d8f926283bb5adfe3a3f80cc58c5b7332534",
+      "fixed_classes": true,
+      "family": "yoloe",
+      "physical_validation_completed": false
+    },
+    "detection_floor": 0.1,
+    "display_confidence": 0.1,
+    "height_range_mm": [
+      1,
+      120
+    ],
+    "heights_mm": {
+      "paper": 65,
+      "plastic": 53,
+      "metal": 56
+    },
+    "materials": {
+      "paper": {
+        "bin_id": "bin_paper",
+        "source_confidence": 0.1,
+        "bin_confidence": 0.1
+      },
+      "plastic": {
+        "bin_id": "bin_plastic",
+        "source_confidence": 0.1,
+        "bin_confidence": 0.1
+      },
+      "metal": {
+        "bin_id": "bin_metal",
+        "source_confidence": 0.1,
+        "bin_confidence": 0.1
+      }
+    },
+    "classes": [
+      {
+        "official_label": "Aluminium foil",
+        "material": "metal",
+        "grasp_confidence": 0.1
+      },
+      {
+        "official_label": "Clear plastic bottle",
+        "material": "plastic",
+        "grasp_confidence": 0.1
+      },
+      {
+        "official_label": "Other plastic bottle",
+        "material": "plastic",
+        "grasp_confidence": 0.1
+      },
+      {
+        "official_label": "Plastic bottle cap",
+        "material": "plastic",
+        "grasp_confidence": 0.1
+      },
+      {
+        "official_label": "Metal bottle cap",
+        "material": "metal",
+        "grasp_confidence": 0.1
+      },
+      {
+        "official_label": "Drink can",
+        "material": "metal",
+        "grasp_confidence": 0.1
+      },
+      {
+        "official_label": "Food Can",
+        "material": "metal",
+        "grasp_confidence": 0.1
+      },
+      {
+        "official_label": "Corrugated carton",
+        "material": "paper",
+        "grasp_confidence": 0.1
+      },
+      {
+        "official_label": "Egg carton",
+        "material": "paper",
+        "grasp_confidence": 0.1
+      },
+      {
+        "official_label": "Other carton",
+        "material": "paper",
+        "grasp_confidence": 0.1
+      },
+      {
+        "official_label": "Disposable plastic cup",
+        "material": "plastic",
+        "grasp_confidence": 0.1
+      },
+      {
+        "official_label": "Other plastic cup",
+        "material": "plastic",
+        "grasp_confidence": 0.1
+      },
+      {
+        "official_label": "Plastic lid",
+        "material": "plastic",
+        "grasp_confidence": 0.1
+      },
+      {
+        "official_label": "Metal lid",
+        "material": "metal",
+        "grasp_confidence": 0.1
+      },
+      {
+        "official_label": "Magazine paper",
+        "material": "paper",
+        "grasp_confidence": 0.1
+      },
+      {
+        "official_label": "Wrapping paper",
+        "material": "paper",
+        "grasp_confidence": 0.1
+      },
+      {
+        "official_label": "Normal paper",
+        "material": "paper",
+        "grasp_confidence": 0.1
+      },
+      {
+        "official_label": "Paper bag",
+        "material": "paper",
+        "grasp_confidence": 0.1
+      },
+      {
+        "official_label": "Spread tub",
+        "material": "plastic",
+        "grasp_confidence": 0.1
+      },
+      {
+        "official_label": "Tupperware",
+        "material": "plastic",
+        "grasp_confidence": 0.1
+      },
+      {
+        "official_label": "Other plastic container",
+        "material": "plastic",
+        "grasp_confidence": 0.1
+      },
+      {
+        "official_label": "Pop tab",
+        "material": "metal",
+        "grasp_confidence": 0.1
+      },
+      {
+        "official_label": "Scrap metal",
+        "material": "metal",
+        "grasp_confidence": 0.1
+      },
+      {
+        "official_label": "Toilet tube",
+        "material": "paper",
+        "grasp_confidence": 0.1
+      },
+      {
+        "official_label": "Drink carton",
+        "material": "paper",
+        "grasp_confidence": 0.1
+      },
+      {
+        "official_label": "Plastic straw",
+        "material": "plastic",
+        "grasp_confidence": 0.1
+      }
+    ],
+    "qualification": {
+      "status": "limited_supervised_known_can_trial_only",
+      "physical_motion_enabled": false
+    },
+    "notes": [
+      "Fixed 26-class classifier adaptation; original 16 target positives were not trained.",
+      "Paper recall failed the fixed-threshold local comparison; no general 26-class qualification.",
+      "Known metal can only for this operator-confirmed single attempt; no unattended operation."
+    ],
+    "station_filter_sha256": "6aee965c5b572bd9a9804a4b067f8313a9d96ce2fc1311ed6f82854e27427f23",
+    "reference_bank_sha256": "9b6134e32d5c44b3398cdb08c74cdfd915cd46d013d43b9b1ea13920645f5fe8"
+  },
+  "settings": {
+    "mode": "text",
+    "confidence": 0.1,
+    "include_masks": true,
+    "classes": [
+      "Aluminium foil",
+      "Clear plastic bottle",
+      "Other plastic bottle",
+      "Plastic bottle cap",
+      "Metal bottle cap",
+      "Drink can",
+      "Food Can",
+      "Corrugated carton",
+      "Egg carton",
+      "Other carton",
+      "Disposable plastic cup",
+      "Other plastic cup",
+      "Plastic lid",
+      "Metal lid",
+      "Magazine paper",
+      "Wrapping paper",
+      "Normal paper",
+      "Paper bag",
+      "Spread tub",
+      "Tupperware",
+      "Other plastic container",
+      "Pop tab",
+      "Scrap metal",
+      "Toilet tube",
+      "Drink carton",
+      "Plastic straw"
+    ],
+    "vocabulary_count": 26,
+    "display_confidence": 0.1,
+    "heights_mm": {
+      "paper": 65.0,
+      "plastic": 53.0,
+      "metal": 56.0
+    },
+    "material_thresholds": {
+      "paper": {
+        "source_confidence": 0.1,
+        "bin_confidence": 0.1
+      },
+      "plastic": {
+        "source_confidence": 0.1,
+        "bin_confidence": 0.1
+      },
+      "metal": {
+        "source_confidence": 0.1,
+        "bin_confidence": 0.1
+      }
+    },
+    "class_thresholds": {
+      "Aluminium foil": 0.1,
+      "Clear plastic bottle": 0.1,
+      "Other plastic bottle": 0.1,
+      "Plastic bottle cap": 0.1,
+      "Metal bottle cap": 0.1,
+      "Drink can": 0.1,
+      "Food Can": 0.1,
+      "Corrugated carton": 0.1,
+      "Egg carton": 0.1,
+      "Other carton": 0.1,
+      "Disposable plastic cup": 0.1,
+      "Other plastic cup": 0.1,
+      "Plastic lid": 0.1,
+      "Metal lid": 0.1,
+      "Magazine paper": 0.1,
+      "Wrapping paper": 0.1,
+      "Normal paper": 0.1,
+      "Paper bag": 0.1,
+      "Spread tub": 0.1,
+      "Tupperware": 0.1,
+      "Other plastic container": 0.1,
+      "Pop tab": 0.1,
+      "Scrap metal": 0.1,
+      "Toilet tube": 0.1,
+      "Drink carton": 0.1,
+      "Plastic straw": 0.1
+    },
+    "policy_sha256": "8fd92b76781b2fda6f8604a1636ad2c375898ff15c2cfd2dcaf6e70e2da31470",
+    "settings_sha256": "0878d8229aa91d41962eb6b7f0287ca46c882a2aef320436f3f037516b0de3f0"
+  },
+  "receipt": {
+    "kind": "prompted-supervised-trial-deployment-v1",
+    "model_sha256": "9d5734b34871aa81412b2fa47176d8f926283bb5adfe3a3f80cc58c5b7332534",
+    "settings_sha256": "1e89d85a004ccc4a024dabb1d1e4f77df77026b6e2d90099c4e7991eeca357cb",
+    "evaluation_sha256": "de18f3518467d4cd524539a9db95aa38acdb0e71f117b1d05cc272ba612b0530",
+    "eligible_materials": [],
+    "eligible_official_labels": [],
+    "physical_qualification_claimed": false,
+    "unattended_accepted": false,
+    "manual_single_attempt_only": true,
+    "model_trained": true,
+    "confidence_threshold": 0.3,
+    "sealed_test_used": false,
+    "threshold_fit_split": "none; fixed candidate comparison threshold",
+    "validation_split": "existing val",
+    "original_fine_labels_annotated": false,
+    "evaluation_precision": "CPU FP32",
+    "authorization_source": "User requests deployment on grasp console and confirms neutral/open/empty gripper, known can placed and hands withdrawn.",
+    "limitation": "Limited supervised trial of the same measured can mechanics; val metal TP19 FP0 FN41 is not broad class qualification.",
+    "implementation_sha256": {
+      "pynq_km1_vision/src/yoloe_trained26_monitor.py": "5edf57ddc4d0c9b3833381d9d94cc679accd5371c26d132ca7d52f3166dafbf0",
+      "pynq_km1_vision/src/station_instance_filter.py": "9cccad195fa92eda2f6a405dca7e1ef646f9620bed452090710d7aff2cafbb89",
+      "pynq_km1_vision/src/prompted_recyclables.py": "13569ce5ffd773c8c4d600b2d60fc5c3266d3a99288b0addee72da62888858fc",
+      "pynq_km1_vision/src/sorting_prompted_motion.py": "29792a9ec7eee8b27dab64d136fb7213f6acbf4e9e5f18102e85af44387bc1fb",
+      "pynq_km1_vision/src/sorting_prompted_preview.py": "257f86d6e1103b558e49193150a68766afc643b11ffec637d4b9d8e8820873d8",
+      "pynq_km1_vision/config/prompted_motion_policy.json": "16923708e92236dc03e97dc8cc9177c29ed7cad2bb3bc768982520b60ba4b60c",
+      "pynq_km1_vision/src/prompted_motion_policy.py": "b7bff52a9f6b4120b65d0382994f97ab51b6afa324238ed876ade751912d4092",
+      "pynq_km1_vision/src/bin_occupancy.py": "47614f5ec0198c5edd62a605be1e5e5f098234bb74976f689bd0cb1ecf6d42de",
+      "pynq_km1_vision/src/sorting_unified.py": "ffa9b22c05843ba559217c5737c71a5de9bde9b97a3b3b4c6ee2bd580010c79a"
+    },
+    "implementation_amendment": {
+      "kind": "explicit-continuous-motion-sequence-v1",
+      "operator_statement": "Operator requested one fresh pre-sequence scene check, continuous frozen route execution, and no per-command image or source-file rechecks; retain live stop, ownership, transport checks and final bin verification.",
+      "previous_receipt_sha256": "1eb02b9e6c280f07dcb57a30b257f8109261606874870d163a05f09572f4b3fe",
+      "previous_amendment": {
+        "kind": "explicit-bin-occupancy-verification-v1",
+        "operator_statement": "2026-10-31 operator requests simple acceptance: a visible object in the destination bin is sufficient; no class, unique new instance or source removal verdict.",
+        "previous_receipt_sha256": "e56211bcdc02271c61f9bf4e31dd02e018e183d15ee0778945fe7750909de0aa",
+        "previous_amendment": {
+          "kind": "explicit-live-object-and-control-runtime-fix-v1",
+          "operator_statement": "Admit all new categories from live geometry; repair active-operation connectivity without skipping runtime guards.",
+          "previous_receipt_sha256": "6ba4655acbe47d1a1b3b593dee7b79db3056b71cddfa6f25424efe60e70f8aac",
+          "previous_amendment": {
+            "kind": "operator-requested-scope-source-change-v1",
+            "operator_statement": "2026-10-30: open all 26 current recognition classes for supervised single-item trials; restore accelerated timing.",
+            "previous_receipt_sha256": "18bfee65b21991a2bb59ac30d67ad827ec4912f503c7167ce6e7a7ce365255e8",
+            "previous_implementation_sha256": {
+              "pynq_km1_vision/src/yoloe_trained26_monitor.py": "5edf57ddc4d0c9b3833381d9d94cc679accd5371c26d132ca7d52f3166dafbf0",
+              "pynq_km1_vision/src/station_instance_filter.py": "9cccad195fa92eda2f6a405dca7e1ef646f9620bed452090710d7aff2cafbb89",
+              "pynq_km1_vision/src/prompted_recyclables.py": "b957d07b19353e3a484ff76aa51f8cbefd18b8d6531a2208a260c43a72311bb8",
+              "pynq_km1_vision/src/sorting_prompted_motion.py": "f96ae0fa8f37af9398d3ea1b67a2f3f0fde57d498ecc8363bd181c1d6cce50a0",
+              "pynq_km1_vision/src/sorting_prompted_preview.py": "257f86d6e1103b558e49193150a68766afc643b11ffec637d4b9d8e8820873d8"
+            },
+            "original_eligibility_preserved": true,
+            "additional_physical_validation_completed": false
+          },
+          "original_eligibility_preserved": true,
+          "additional_physical_validation_completed": false
+        },
+        "original_eligibility_preserved": true,
+        "additional_physical_validation_completed": false
+      },
+      "original_eligibility_preserved": true,
+      "additional_physical_validation_completed": false
+    },
+    "execution_model_follow_amendment": {
+      "original_receipt_sha256": "dc287fb892c2efec47798977e7acf3dcc65ba16b8d0351a2c62cb9be8bc36405",
+      "operator_statement": "2026-10-31: mechanical execution follows the selected registered model and configuration.",
+      "historical_validation_unchanged": true,
+      "new_model_physical_validation_completed": false
+    },
+    "original_validation_receipt_sha256": "a4ddb458c870345c7133636d9516c33d24460ad2884add2c04009c9b738fd692",
+    "evaluation_scope": "original_model_only; selected_profile_is_operator_supervised_trial",
+    "physical_validation_completed": false
+  },
+  "scope": {
+    "kind": "operator-supervised-trial-scope-v1",
+    "operator_statement": "2026-10-31: operator requested that execution follow the selected registered model and configuration.",
+    "physical_validation_completed": false,
+    "single_manual_attempt_only": true,
+    "model_sha256": "9d5734b34871aa81412b2fa47176d8f926283bb5adfe3a3f80cc58c5b7332534",
+    "taxonomy_sha256": "ce9143f02afd2a5edcba49b70a34255294ea377aacab17b4536e08162de0f8f6",
+    "official_labels": [
+      "Aluminium foil",
+      "Clear plastic bottle",
+      "Other plastic bottle",
+      "Plastic bottle cap",
+      "Metal bottle cap",
+      "Drink can",
+      "Food Can",
+      "Corrugated carton",
+      "Egg carton",
+      "Other carton",
+      "Disposable plastic cup",
+      "Other plastic cup",
+      "Plastic lid",
+      "Metal lid",
+      "Magazine paper",
+      "Wrapping paper",
+      "Normal paper",
+      "Paper bag",
+      "Spread tub",
+      "Tupperware",
+      "Other plastic container",
+      "Pop tab",
+      "Scrap metal",
+      "Toilet tube",
+      "Drink carton",
+      "Plastic straw"
+    ]
+  },
+  "device": "cuda:0",
+  "reference_bank_sha256": "9b6134e32d5c44b3398cdb08c74cdfd915cd46d013d43b9b1ea13920645f5fe8",
+  "service_url": null,
+  "allowed_worker_ports": [
+    8831,
+    8832
+  ],
+  "profile_sha256": "d88bdec849189d68ffa5e9b69796419f0ac340380e805a6056e0f955b418ec5d"
+}

@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "tasks": 30,
+  "strict": 17,
+  "allow_recorded_rim": 25,
+  "by_material": {
+    "metal": {
+      "tasks": 10,
+      "strict": 2,
+      "allow_rim": 10,
+      "motion": 10
+    },
+    "paper": {
+      "tasks": 10,
+      "strict": 7,
+      "allow_rim": 7,
+      "motion": 10
+    },
+    "plastic": {
+      "tasks": 10,
+      "strict": 8,
+      "allow_rim": 8,
+      "motion": 8
+    }
+  },
+  "valid_motion_timings": 28,
+  "refusals": [
+    "P022",
+    "P027"
+  ],
+  "nearest_rank_seconds": {
+    "P50": 26.900155956500384,
+    "P95": 29.952174189500283,
+    "P99": 29.987053921499637,
+    "max": 29.987053921499637
+  },
+  "serial_echoes_and_waits": 616,
+  "hashes_checked": 671,
+  "new_measurements": false,
+  "hardware_access": false
+}

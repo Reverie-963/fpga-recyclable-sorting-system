@@ -1,0 +1,7 @@
+{
+  "operator_reply": "抓起后掉回台面，65mm纸盒已重新放好，现场确认",
+  "strict_full_containment": "fail",
+  "task_internal_intervention": false,
+  "automatic_result_kept_separate": true,
+  "reason": "dropped_back_to_table_after_lift"
+}

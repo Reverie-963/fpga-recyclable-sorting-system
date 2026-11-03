@@ -1,0 +1,54 @@
+{
+  "schema": "vision-motion-joint-build-v1",
+  "toolchain": "2026.1",
+  "part": "xc7z020clg400-1",
+  "clock_mhz": 100,
+  "assets": {
+    "vision_motion.bit": "054a766d3468282cbfb355dc803b8b9e960749ffde0e80bf0d43e17adebab779",
+    "vision_motion.hwh": "b40312875bb53fadec4563109a8508176c75bcf582ce42150f13692e375a5213"
+  },
+  "timing": {
+    "wns_ns": 0.423,
+    "whs_ns": 0.051,
+    "original_wns_ns": -0.051,
+    "setup_failing_endpoints": 0,
+    "hold_failing_endpoints": 0
+  },
+  "resources": {
+    "Slice LUTs": 18228.0,
+    "Slice Registers": 25169.0,
+    "Block RAM Tile": 6.0,
+    "DSPs": 49.0
+  },
+  "methodology": {
+    "LUTAR-1": 11
+  },
+  "logical_constraints_identical": true,
+  "raw_constraint_text_identical": false,
+  "motion_registers": {
+    "CTRL": 0,
+    "GIER": 4,
+    "IP_IER": 8,
+    "IP_ISR": 12,
+    "input_words": 16,
+    "input_words_2": 20,
+    "output_words": 28,
+    "output_words_2": 32,
+    "segment_count": 40,
+    "request_tag": 48
+  },
+  "source_commit": "1e8acd7",
+  "logical_build": "jm1",
+  "physical_finish": "jm2",
+  "provenance_sha256": {
+    "original_bd_tcl": "62974e6877d1c8d393ed7293f177cb98a0838af520e754f3e863faa7e9505480",
+    "physical_tcl": "d3e97d539ece6335ed7eedb1b24deebfb34757b5c90757cb745d10fa83ef06dc",
+    "logical_checkpoint": "2d83d4d604e681366db887d659b2357f1cdb2f973821e4eaa7d54282d99349dc",
+    "physical_checkpoint": "ba99db735a3b1d37ee8f98b769fc811c06cd2691c9584106c0515a355ef5a2f0",
+    "ip_manifest": "d5731ac7f296ebc69d9360695a20dca96d29192f5a0ac6c78233394ba6a523e8",
+    "constraints_before": "3855801974ffb1d5d3889ed719bdc5e7a54987441bfefc4149e804fd7a182e7b",
+    "constraints_after": "5edd0e70397efbab6f24b621216c4bb5c68e5bf81deddc3837404a29a68a0ac7"
+  },
+  "board_programmed": false,
+  "physical_motion": false
+}

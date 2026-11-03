@@ -1,0 +1,13 @@
+{
+  "fpga/report/hls/motion/syn/report/compute_Pipeline_VITIS_LOOP_73_1_VITIS_LOOP_77_2_csynth.rpt": "fpga/report/hls/motion/syn/report/compute_pipeline_vitis_loop_73_1_vitis_loop_77_2_csynth.rpt",
+  "fpga/report/hls/motion/syn/report/load_input_Pipeline_VITIS_LOOP_20_2_csynth.rpt": "fpga/report/hls/motion/syn/report/load_input_pipeline_vitis_loop_20_2_csynth.rpt",
+  "fpga/report/hls/motion/syn/report/load_input_Pipeline_VITIS_LOOP_27_3_csynth.rpt": "fpga/report/hls/motion/syn/report/load_input_pipeline_vitis_loop_27_3_csynth.rpt",
+  "fpga/report/hls/motion/syn/report/load_input_Pipeline_VITIS_LOOP_37_4_csynth.rpt": "fpga/report/hls/motion/syn/report/load_input_pipeline_vitis_loop_37_4_csynth.rpt",
+  "fpga/report/hls/motion/syn/report/store_output_Pipeline_VITIS_LOOP_104_2_csynth.rpt": "fpga/report/hls/motion/syn/report/store_output_pipeline_vitis_loop_104_2_csynth.rpt",
+  "fpga/report/hls/vision/syn/report/station_vision_accel_Pipeline_VITIS_LOOP_36_1_csynth.rpt": "fpga/report/hls/vision/syn/report/station_vision_accel_pipeline_vitis_loop_36_1_csynth.rpt",
+  "fpga/report/hls/vision/syn/report/station_vision_accel_Pipeline_VITIS_LOOP_45_5_csynth.rpt": "fpga/report/hls/vision/syn/report/station_vision_accel_pipeline_vitis_loop_45_5_csynth.rpt",
+  "fpga/report/hls/vision/syn/report/station_vision_accel_Pipeline_VITIS_LOOP_73_8_csynth.rpt": "fpga/report/hls/vision/syn/report/station_vision_accel_pipeline_vitis_loop_73_8_csynth.rpt",
+  "host/app/repository/pynq_km1_vision/board/README_board_test.md": "host/app/repository/pynq_km1_vision/board/readme_board_test.md",
+  "host/app/repository/pynq_km1_vision/board/README_mask_deploy.txt": "host/app/repository/pynq_km1_vision/board/readme_mask_deploy.txt",
+  "host/app/repository/hardware/board_files/pynq-z2/A.0/": "host/app/repository/hardware/board_files/pynq-z2/a.0/"
+}

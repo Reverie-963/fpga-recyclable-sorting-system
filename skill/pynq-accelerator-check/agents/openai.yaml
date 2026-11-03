@@ -1,0 +1,4 @@
+interface:
+  display_name: "PYNQ 加速核诊断"
+  short_description: "检查 PYNQ 硬件文件、比对加速核结果并分析完整调用耗时"
+  default_prompt: "使用 $pynq-accelerator-check 检查我的加速核接口和结果，并根据证据分析调用耗时。"

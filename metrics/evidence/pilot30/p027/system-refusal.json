@@ -1,0 +1,11 @@
+{
+  "stage": "preview",
+  "original_result": {
+    "status": "rejected",
+    "reason": "ValueError:unified_no_pickable_instance:[{'track_id': 1, 'label': 'plastic', 'reason': 'unified_no_route_to_free_slot:jaw_insufficient_opening'}]",
+    "preview": true,
+    "material_selection": "PLASTIC"
+  },
+  "real_start_submitted": false,
+  "automatic_retry": false
+}

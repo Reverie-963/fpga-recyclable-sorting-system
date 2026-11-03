@@ -1,0 +1,9 @@
+# Dedicated YOLOE preview only; do not install into .venv or .venv-rocm.
+# Install the CPU torch pair from download.pytorch.org first (setup_yoloe.ps1).
+torch==2.6.0+cpu
+torchvision==0.21.0+cpu
+ultralytics==8.3.230
+numpy==2.2.6
+opencv-python==4.12.0.88
+pillow==11.3.0
+clip @ git+https://github.com/ultralytics/CLIP.git@7ffa84b3bfa40c42ecc1c77147a855e69cb2dd40

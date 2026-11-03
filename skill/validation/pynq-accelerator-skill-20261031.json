@@ -1,0 +1,42 @@
+{
+  "scope": "Copied package outside repository; Python isolated mode and no site-packages. Same Windows host, not a separate physical machine or board.",
+  "python": "<user>\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+  "portable_directory": "<user>\\AppData\\Local\\Temp\\pynq-skill-reuse-zwulcfok\\independent-tool",
+  "results": [
+    {
+      "name": "portable-standard-library-tests",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true,
+      "output": "FAIL - see report.md and report.json\nPASS - see report.md and report.json\nFAIL - see report.md and report.json\n----------------------------------------------------------------------\nRan 42 tests in 6.786s\n\nOK\n"
+    },
+    {
+      "name": "portable-demo",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true,
+      "output": "PASS - see report.md and report.json\n"
+    },
+    {
+      "name": "portable-replay",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true,
+      "output": "PASS - see report.md and report.json\n"
+    },
+    {
+      "name": "deliberate-stale-job",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "passed": true,
+      "output": "FAIL - see report.md and report.json\n"
+    },
+    {
+      "name": "real-local-artifact-check",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true,
+      "output": "PASS - see report.md and report.json\n"
+    }
+  ]
+}

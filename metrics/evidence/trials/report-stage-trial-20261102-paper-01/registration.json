@@ -1,0 +1,9 @@
+{
+  "material": "paper",
+  "object_height_mm": 63.0,
+  "official_label": "Drink carton",
+  "operator_confirmation": "Current user: 纸盒已放好，高度63mm，环境已确认. Pending question confirmed empty paper bin, open empty gripper, stationary arm, hands/tools clear and on-site supervision; blue can removed.",
+  "registered_at": "2026-11-02T03:04:47.810066+08:00",
+  "automatic_retry": false,
+  "source_archive_unchanged": true
+}

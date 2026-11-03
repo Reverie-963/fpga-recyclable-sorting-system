@@ -1,0 +1,1 @@
+此处为PS原生库的C源码，来源于相应性能优化工作区；CPU投影/射线优化不是PL加速成绩。empty_reference_projector.so封存库留在ps_runtime原子树，其ARM32 ABI与构建选项须按原脚本核对；本次未重新交叉编译。

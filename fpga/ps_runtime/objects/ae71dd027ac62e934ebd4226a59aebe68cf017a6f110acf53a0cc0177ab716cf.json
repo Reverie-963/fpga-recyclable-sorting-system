@@ -1,0 +1,48 @@
+{
+  "task_id": "physical-20261029-131343-known-can-over-bin",
+  "stage": "can_over_bin",
+  "plan_sha256": "20edb8ae111162e85c54fdf42ba929260faabe0feca89a6cd789bc50c2df9f61",
+  "started_at": "2026-10-29T17:08:45.148524+08:00",
+  "status": "sent_pending_observation",
+  "wait_policy": "motion_plus_echo_grace",
+  "physical_result": "pending_operator_observation",
+  "retry": false,
+  "serial_opened": true,
+  "steps": [
+    {
+      "step": "turn_to_metal_bin_high",
+      "command": "{#000P1088T5000!}",
+      "duration_ms": 5000,
+      "attempted": true,
+      "echo_matched": true,
+      "bytes_written": 17,
+      "received_hex": "7b2330303050313038385435303030217d"
+    },
+    {
+      "step": "extend_high_200",
+      "command": "{#000P1088T5000!#001P1548T5000!#002P1951T5000!#003P1051T5000!}",
+      "duration_ms": 5000,
+      "nominal_radius_mm": 200,
+      "nominal_model_z_mm": 190,
+      "alpha_deg": -25,
+      "attempted": true,
+      "echo_matched": true,
+      "bytes_written": 62,
+      "received_hex": "7b2330303050313038385435303030212330303150313534385435303030212330303250313935315435303030212330303350313035315435303030217d"
+    },
+    {
+      "step": "extend_high_240",
+      "command": "{#000P1088T5000!#001P1372T5000!#002P1751T5000!#003P1027T5000!}",
+      "duration_ms": 5000,
+      "nominal_radius_mm": 240,
+      "nominal_model_z_mm": 190,
+      "alpha_deg": -25,
+      "attempted": true,
+      "echo_matched": true,
+      "bytes_written": 62,
+      "received_hex": "7b2330303050313038385435303030212330303150313337325435303030212330303250313735315435303030212330303350313032375435303030217d"
+    }
+  ],
+  "serial_closed": true,
+  "finished_at": "2026-10-29T17:09:03.859276+08:00"
+}

@@ -1,0 +1,235 @@
+{
+  "observation": {
+    "image_size": [
+      640,
+      480
+    ],
+    "instances": [],
+    "inference_ms": 115.30339997261763,
+    "model_version": "9d5734b34871aa81412b2fa47176d8f926283bb5adfe3a3f80cc58c5b7332534",
+    "model_name": "YOLOE26 · 新版参考图辅助0.10 · ROCm GPU",
+    "runtime_id": "0878d8229aa91d41962eb6b7f0287ca46c882a2aef320436f3f037516b0de3f0",
+    "execution": {
+      "device": "cuda:0",
+      "device_name": "AMD Radeon(TM) 890M Graphics",
+      "precision": "fp16",
+      "torch": "2.12.0+rocm7.14.0",
+      "hip": "7.14.60850"
+    },
+    "configuration_sha256": "cb288271841ff81c2dcd44ea6fc9742231e658d0a68f44caa0a970aee15b792e",
+    "profile_id": "yoloe26_reference",
+    "confidence_threshold": 0.1,
+    "reference_assistance": true,
+    "source_bgr_sha256": "6a6ff1187e7a63152e87765c6445d4637852b4b910210ea64eda634270131861",
+    "automatic_motion_allowed": false,
+    "control_only": true,
+    "frame_id": 4,
+    "input_kind": "uploaded_image",
+    "image_sha256": "84044706233c855be84a9bc604cd269d6d3e93a1da847270ea9eae7a8063b3ce",
+    "model_sha256": "9d5734b34871aa81412b2fa47176d8f926283bb5adfe3a3f80cc58c5b7332534",
+    "settings_sha256": "0878d8229aa91d41962eb6b7f0287ca46c882a2aef320436f3f037516b0de3f0",
+    "policy_sha256": "8fd92b76781b2fda6f8604a1636ad2c375898ff15c2cfd2dcaf6e70e2da31470",
+    "generation": "90c374572a7b17d2dbe89897997df1ab48c635b35cd8155f38e7a61a922c2ea6",
+    "execution_profile": {
+      "id": "yoloe26_reference",
+      "profile_sha256": "d88bdec849189d68ffa5e9b69796419f0ac340380e805a6056e0f955b418ec5d",
+      "configuration_sha256": "cb288271841ff81c2dcd44ea6fc9742231e658d0a68f44caa0a970aee15b792e"
+    },
+    "fixed_marker_observation": {
+      "location": "pc_vision",
+      "camera_sha256": "e27bbabaea9286ddcaaef49f07592fe6fb6c0dbea14650a511f15117a8300ee0",
+      "source_bgr_sha256": "6a6ff1187e7a63152e87765c6445d4637852b4b910210ea64eda634270131861",
+      "detections": [
+        {
+          "id": 13,
+          "corners_px": [
+            [
+              247.6116180419922,
+              225.63345336914062
+            ],
+            [
+              287.3243103027344,
+              224.4978485107422
+            ],
+            [
+              288.19732666015625,
+              264.6736145019531
+            ],
+            [
+              247.8491973876953,
+              265.6235656738281
+            ]
+          ]
+        },
+        {
+          "id": 11,
+          "corners_px": [
+            [
+              245.18341064453125,
+              66.16443634033203
+            ],
+            [
+              284.1866149902344,
+              63.966243743896484
+            ],
+            [
+              285.2333984375,
+              103.36672973632812
+            ],
+            [
+              246.1454315185547,
+              105.3306655883789
+            ]
+          ]
+        },
+        {
+          "id": 12,
+          "corners_px": [
+            [
+              136.88343811035156,
+              228.92340087890625
+            ],
+            [
+              175.80970764160156,
+              227.81692504882812
+            ],
+            [
+              175.11856079101562,
+              267.3658752441406
+            ],
+            [
+              135.48316955566406,
+              268.31390380859375
+            ]
+          ]
+        },
+        {
+          "id": 10,
+          "corners_px": [
+            [
+              135.96978759765625,
+              71.06959533691406
+            ],
+            [
+              174.26803588867188,
+              69.48715209960938
+            ],
+            [
+              174.9954833984375,
+              108.22340393066406
+            ],
+            [
+              136.58233642578125,
+              109.58346557617188
+            ]
+          ]
+        }
+      ]
+    },
+    "model_input_png_sha256": "84044706233c855be84a9bc604cd269d6d3e93a1da847270ea9eae7a8063b3ce",
+    "prompt_mode": "text",
+    "model_input_image_sha256": "84044706233c855be84a9bc604cd269d6d3e93a1da847270ea9eae7a8063b3ce",
+    "camera_id": "pynq-c270",
+    "capture_started_ms": 6163809.35831,
+    "source_stream_id": "b7b654afddfc4b5fa88daad4602680ff",
+    "source_frame_id": "35328",
+    "source_encoding": "png",
+    "station_vision": {
+      "schema_version": "station-vision-v1",
+      "backend": "pl_board_local",
+      "frame_id": 35328,
+      "baseline_frame_id": 35178,
+      "baseline_bgr_sha256": "bbb8580397564a0113ec921de704e54987799c35a2040eed63903760d172b241",
+      "frame_bgr_sha256": "6a6ff1187e7a63152e87765c6445d4637852b4b910210ea64eda634270131861",
+      "config_sha256": "49ed728d8ec58b287b681107e3b4567eae8772e7a33fd1b4e8f3247b856b4b91",
+      "consecutive_frames": 2,
+      "total_frames": 149,
+      "window_complete": false,
+      "processing_ms": 70.859305,
+      "regions": {
+        "source": {
+          "changed_px": 7486,
+          "persistent_px": 7452,
+          "delta_sum": 1018330,
+          "bbox_inclusive_px": [
+            307,
+            105,
+            414,
+            212
+          ],
+          "area_px": 11988
+        },
+        "bin_plastic": {
+          "changed_px": 400,
+          "persistent_px": 355,
+          "delta_sum": 192838,
+          "bbox_inclusive_px": [
+            124,
+            342,
+            249,
+            436
+          ],
+          "area_px": 25676
+        },
+        "bin_metal": {
+          "changed_px": 221,
+          "persistent_px": 130,
+          "delta_sum": 243061,
+          "bbox_inclusive_px": [
+            444,
+            98,
+            623,
+            260
+          ],
+          "area_px": 30644
+        },
+        "bin_paper": {
+          "changed_px": 6869,
+          "persistent_px": 6689,
+          "delta_sum": 1442406,
+          "bbox_inclusive_px": [
+            431,
+            291,
+            578,
+            414
+          ],
+          "area_px": 28290
+        },
+        "static_a": {
+          "changed_px": 2,
+          "persistent_px": 1,
+          "delta_sum": 25635,
+          "bbox_inclusive_px": [
+            170,
+            69,
+            174,
+            74
+          ],
+          "area_px": 2970
+        },
+        "static_b": {
+          "changed_px": 8,
+          "persistent_px": 3,
+          "delta_sum": 24887,
+          "bbox_inclusive_px": [
+            139,
+            228,
+            175,
+            268
+          ],
+          "area_px": 2970
+        }
+      },
+      "semantic_verified": false,
+      "automatic_motion_allowed": false,
+      "physical_success_verified": false
+    },
+    "marker_guard_only": false
+  },
+  "image_path": "d887b39ba2d14310a1272fda609f68c6.final-0.png",
+  "png_sha256": "84044706233c855be84a9bc604cd269d6d3e93a1da847270ea9eae7a8063b3ce",
+  "decoded_bgr_sha256": "6a6ff1187e7a63152e87765c6445d4637852b4b910210ea64eda634270131861",
+  "source_jpeg_sha256": null,
+  "source_encoding": "png",
+  "source_bytes_sha256": "84044706233c855be84a9bc604cd269d6d3e93a1da847270ea9eae7a8063b3ce"
+}

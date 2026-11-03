@@ -1,0 +1,474 @@
+{
+  "observation": {
+    "image_size": [
+      640,
+      480
+    ],
+    "instances": [
+      {
+        "instance_id": 0,
+        "label": "paper",
+        "category_name": "paper",
+        "official_label": "Drink carton",
+        "prompt_key": "Drink carton",
+        "confidence": 0.51318359375,
+        "model_material": "paper",
+        "reference_assisted": true,
+        "reference_material": "paper",
+        "reference_object_id": "cardboard-new-02",
+        "reference_image": "images/test/fixed16-test-20261028-0077-1793201450699843600.jpg",
+        "reference_distance": 0.269643254298804,
+        "reference_distance_is_probability": false,
+        "class_id": 2,
+        "bbox_xyxy": [
+          320,
+          84,
+          425,
+          185
+        ],
+        "mask_rle": [
+          54157,
+          8,
+          631,
+          10,
+          629,
+          12,
+          627,
+          14,
+          624,
+          16,
+          623,
+          18,
+          620,
+          21,
+          618,
+          23,
+          616,
+          25,
+          613,
+          28,
+          611,
+          30,
+          609,
+          32,
+          606,
+          34,
+          605,
+          36,
+          603,
+          38,
+          600,
+          41,
+          597,
+          43,
+          596,
+          45,
+          594,
+          47,
+          592,
+          48,
+          590,
+          51,
+          588,
+          53,
+          586,
+          55,
+          583,
+          57,
+          581,
+          60,
+          579,
+          61,
+          578,
+          63,
+          575,
+          65,
+          574,
+          66,
+          572,
+          68,
+          571,
+          69,
+          570,
+          70,
+          568,
+          72,
+          567,
+          73,
+          566,
+          74,
+          564,
+          76,
+          562,
+          78,
+          561,
+          79,
+          560,
+          79,
+          559,
+          81,
+          558,
+          82,
+          556,
+          84,
+          555,
+          85,
+          553,
+          87,
+          551,
+          88,
+          551,
+          89,
+          550,
+          90,
+          548,
+          91,
+          548,
+          90,
+          549,
+          91,
+          548,
+          91,
+          548,
+          90,
+          548,
+          91,
+          548,
+          91,
+          548,
+          91,
+          548,
+          90,
+          548,
+          91,
+          549,
+          89,
+          551,
+          88,
+          552,
+          87,
+          553,
+          86,
+          554,
+          84,
+          556,
+          83,
+          557,
+          82,
+          558,
+          80,
+          560,
+          79,
+          561,
+          78,
+          562,
+          76,
+          564,
+          75,
+          565,
+          73,
+          568,
+          71,
+          570,
+          69,
+          572,
+          66,
+          574,
+          65,
+          576,
+          63,
+          577,
+          62,
+          579,
+          59,
+          582,
+          56,
+          585,
+          54,
+          586,
+          53,
+          588,
+          50,
+          591,
+          48,
+          592,
+          47,
+          594,
+          44,
+          597,
+          42,
+          599,
+          39,
+          601,
+          38,
+          603,
+          36,
+          605,
+          33,
+          607,
+          32,
+          609,
+          29,
+          612,
+          27,
+          614,
+          24,
+          616,
+          23,
+          618,
+          21,
+          620,
+          18,
+          623,
+          15,
+          625,
+          14,
+          627,
+          12,
+          629,
+          9,
+          634,
+          2,
+          189093
+        ],
+        "area_px": 5712,
+        "sorting_bin": "bin_paper",
+        "material": "paper",
+        "visible": true,
+        "zone": "source",
+        "obstacle": true,
+        "automatic_motion_allowed": false,
+        "decision_threshold": 0.1,
+        "semantic_gate_passed": true,
+        "decision_reasons": [],
+        "physical_gate": "待此类别与高度的实物验证"
+      }
+    ],
+    "inference_ms": 126.56240002252162,
+    "model_version": "9d5734b34871aa81412b2fa47176d8f926283bb5adfe3a3f80cc58c5b7332534",
+    "model_name": "YOLOE26 · 新版参考图辅助0.10 · ROCm GPU",
+    "runtime_id": "0878d8229aa91d41962eb6b7f0287ca46c882a2aef320436f3f037516b0de3f0",
+    "execution": {
+      "device": "cuda:0",
+      "device_name": "AMD Radeon(TM) 890M Graphics",
+      "precision": "fp16",
+      "torch": "2.12.0+rocm7.14.0",
+      "hip": "7.14.60850"
+    },
+    "configuration_sha256": "cb288271841ff81c2dcd44ea6fc9742231e658d0a68f44caa0a970aee15b792e",
+    "profile_id": "yoloe26_reference",
+    "confidence_threshold": 0.1,
+    "reference_assistance": true,
+    "source_bgr_sha256": "462c7d3f3543f8126e59a3cd4617370cc12d3fdff4bd729762553ac61af2b2b7",
+    "automatic_motion_allowed": false,
+    "control_only": true,
+    "frame_id": 1,
+    "input_kind": "uploaded_image",
+    "image_sha256": "d0a72ee8894233080baa266e3073d4f38475fbff8c0d684983a2f9aa4365f643",
+    "model_sha256": "9d5734b34871aa81412b2fa47176d8f926283bb5adfe3a3f80cc58c5b7332534",
+    "settings_sha256": "0878d8229aa91d41962eb6b7f0287ca46c882a2aef320436f3f037516b0de3f0",
+    "policy_sha256": "8fd92b76781b2fda6f8604a1636ad2c375898ff15c2cfd2dcaf6e70e2da31470",
+    "generation": "90c374572a7b17d2dbe89897997df1ab48c635b35cd8155f38e7a61a922c2ea6",
+    "execution_profile": {
+      "id": "yoloe26_reference",
+      "profile_sha256": "d88bdec849189d68ffa5e9b69796419f0ac340380e805a6056e0f955b418ec5d",
+      "configuration_sha256": "cb288271841ff81c2dcd44ea6fc9742231e658d0a68f44caa0a970aee15b792e"
+    },
+    "fixed_marker_observation": {
+      "location": "pc_vision",
+      "camera_sha256": "e27bbabaea9286ddcaaef49f07592fe6fb6c0dbea14650a511f15117a8300ee0",
+      "source_bgr_sha256": "462c7d3f3543f8126e59a3cd4617370cc12d3fdff4bd729762553ac61af2b2b7",
+      "detections": [
+        {
+          "id": 13,
+          "corners_px": [
+            [
+              247.53758239746094,
+              226.27548217773438
+            ],
+            [
+              287.30010986328125,
+              224.95993041992188
+            ],
+            [
+              288.2153625488281,
+              265.34564208984375
+            ],
+            [
+              247.87014770507812,
+              266.333251953125
+            ]
+          ]
+        },
+        {
+          "id": 12,
+          "corners_px": [
+            [
+              136.8217315673828,
+              229.67515563964844
+            ],
+            [
+              175.62054443359375,
+              228.49008178710938
+            ],
+            [
+              175.07467651367188,
+              267.9559631347656
+            ],
+            [
+              135.40518188476562,
+              268.8024597167969
+            ]
+          ]
+        },
+        {
+          "id": 11,
+          "corners_px": [
+            [
+              245.2183074951172,
+              66.65756225585938
+            ],
+            [
+              284.2569274902344,
+              64.70970153808594
+            ],
+            [
+              285.17138671875,
+              103.91099548339844
+            ],
+            [
+              245.8267364501953,
+              105.57047271728516
+            ]
+          ]
+        },
+        {
+          "id": 10,
+          "corners_px": [
+            [
+              135.84375,
+              71.70355987548828
+            ],
+            [
+              174.20108032226562,
+              69.83708953857422
+            ],
+            [
+              174.91171264648438,
+              108.5633773803711
+            ],
+            [
+              136.57354736328125,
+              110.46024322509766
+            ]
+          ]
+        }
+      ]
+    },
+    "model_input_png_sha256": "d0a72ee8894233080baa266e3073d4f38475fbff8c0d684983a2f9aa4365f643",
+    "prompt_mode": "text",
+    "model_input_image_sha256": "d0a72ee8894233080baa266e3073d4f38475fbff8c0d684983a2f9aa4365f643",
+    "camera_id": "pynq-c270",
+    "capture_started_ms": 6707762.600362,
+    "source_stream_id": "b7b654afddfc4b5fa88daad4602680ff",
+    "source_frame_id": "38004",
+    "source_encoding": "png",
+    "station_vision": {
+      "schema_version": "station-vision-v1",
+      "backend": "pl_board_local",
+      "frame_id": 38004,
+      "baseline_frame_id": 37025,
+      "baseline_bgr_sha256": "61a29f1cad0cde3e038a733e193c806cdc2ff2b6537fbc87fc1f6bd2e4c53a52",
+      "frame_bgr_sha256": "462c7d3f3543f8126e59a3cd4617370cc12d3fdff4bd729762553ac61af2b2b7",
+      "config_sha256": "65a408c0037f6cfbacdf999d73d5a467605730ebbf50bfd66d16471f26d366ff",
+      "consecutive_frames": 1,
+      "total_frames": 979,
+      "window_complete": false,
+      "processing_ms": 127.722769,
+      "regions": {
+        "source": {
+          "changed_px": 7063,
+          "persistent_px": 7063,
+          "delta_sum": 1086068,
+          "bbox_inclusive_px": [
+            317,
+            105,
+            434,
+            187
+          ],
+          "area_px": 9960
+        },
+        "bin_plastic": {
+          "changed_px": 126,
+          "persistent_px": 126,
+          "delta_sum": 209959,
+          "bbox_inclusive_px": [
+            54,
+            320,
+            239,
+            436
+          ],
+          "area_px": 25480
+        },
+        "bin_metal": {
+          "changed_px": 64,
+          "persistent_px": 64,
+          "delta_sum": 285570,
+          "bbox_inclusive_px": [
+            448,
+            102,
+            626,
+            259
+          ],
+          "area_px": 29946
+        },
+        "bin_paper": {
+          "changed_px": 3,
+          "persistent_px": 3,
+          "delta_sum": 217813,
+          "bbox_inclusive_px": [
+            495,
+            335,
+            559,
+            401
+          ],
+          "area_px": 28495
+        },
+        "static_a": {
+          "changed_px": 1,
+          "persistent_px": 1,
+          "delta_sum": 31898,
+          "bbox_inclusive_px": [
+            167,
+            98,
+            167,
+            98
+          ],
+          "area_px": 2915
+        },
+        "static_b": {
+          "changed_px": 0,
+          "persistent_px": 0,
+          "delta_sum": 30861,
+          "bbox_inclusive_px": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "area_px": 2968
+        }
+      },
+      "semantic_verified": false,
+      "automatic_motion_allowed": false,
+      "physical_success_verified": false
+    },
+    "marker_guard_only": false
+  },
+  "image_path": "fa67dbc0aa45436e94e90694fe36d98b.before.png",
+  "png_sha256": "d0a72ee8894233080baa266e3073d4f38475fbff8c0d684983a2f9aa4365f643",
+  "decoded_bgr_sha256": "462c7d3f3543f8126e59a3cd4617370cc12d3fdff4bd729762553ac61af2b2b7",
+  "source_jpeg_sha256": null,
+  "source_encoding": "png",
+  "source_bytes_sha256": "d0a72ee8894233080baa266e3073d4f38475fbff8c0d684983a2f9aa4365f643"
+}

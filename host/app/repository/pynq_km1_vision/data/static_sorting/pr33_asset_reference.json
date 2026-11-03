@@ -1,0 +1,9 @@
+{
+  "source_pr": 33,
+  "source_commit": "df36225067d2704e6abd438f0455b95cad2106a9",
+  "assets": {
+    "vision.bit": "0015a6eabf7d8490ffa4873385b39cfb77cee85d88782749d2a59eebf4bf2039",
+    "vision.hwh": "bcfe6c53e1bf3c4c85cebce993ab2831b70cf075503199e719bec12adba043ae"
+  },
+  "note": "Hashes copied from PR33 report; files and raw per-case board captures are not distributed here."
+}

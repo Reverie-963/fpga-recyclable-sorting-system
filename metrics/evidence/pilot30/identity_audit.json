@@ -1,0 +1,10 @@
+{
+  "completed_actual_tasks": 28,
+  "runtime_source_bit_hwh_model_identity_consistent": true,
+  "commands": 616,
+  "software_outcomes": {
+    "completed_visual_evidence": 25,
+    "needs_review": 3
+  },
+  "automatic_retry": false
+}

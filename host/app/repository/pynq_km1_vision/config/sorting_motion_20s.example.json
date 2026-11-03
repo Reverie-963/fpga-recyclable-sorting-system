@@ -1,0 +1,21 @@
+{
+  "kind": "supervised-distance-timing-v1",
+  "operator_statement": "Example only; replace with the operator's actual request before installation.",
+  "target_cycle_s": 20,
+  "max_pwm_per_s": [
+    700,
+    900,
+    900,
+    900,
+    900,
+    900
+  ],
+  "min_move_ms": 400,
+  "home_min_ms": 1000,
+  "vertical_min_ms": 500,
+  "close_ms": 750,
+  "release_ms": 650,
+  "close_settle_s": 0.2,
+  "release_settle_s": 0.3,
+  "physical_speed_verified": false
+}

@@ -1,0 +1,7 @@
+{
+  "operator_reply": "55mm塑料样件已重新放好，现场确认",
+  "strict_full_containment": "fail",
+  "task_internal_intervention": false,
+  "automatic_result_kept_separate": true,
+  "reason": "preview_refused_jaw_insufficient_opening_no_motion"
+}

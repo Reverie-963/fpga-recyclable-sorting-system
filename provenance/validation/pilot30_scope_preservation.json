@@ -1,0 +1,7 @@
+{
+  "old_package_files_unchanged": 1595,
+  "application_hardware_model_skill_third_party_files_unchanged": 894,
+  "original_sources_unchanged": true,
+  "new_training_synthesis_board_access_or_motion": false,
+  "inherited_tests_note": "The 33 source snapshot tests were run for v1; unchanged application source was hash checked in v2. They are not claimed as newly rerun."
+}

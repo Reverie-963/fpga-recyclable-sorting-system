@@ -1,0 +1,57 @@
+{
+  "assets": {
+    "station_vision.bit": "054a766d3468282cbfb355dc803b8b9e960749ffde0e80bf0d43e17adebab779",
+    "station_vision.hwh": "b40312875bb53fadec4563109a8508176c75bcf582ce42150f13692e375a5213"
+  },
+  "backend": "pl_board_local",
+  "bitfile": "/home/xilinx/km1-motion-resident-20261031-v2/board/vision_motion.bit",
+  "image_size": [
+    640,
+    480
+  ],
+  "max_gap_s": 0.6,
+  "purpose": "diagnostic_candidate_not_mechanical_acceptance",
+  "regions": {
+    "bin_metal": [
+      422,
+      92,
+      634,
+      260
+    ],
+    "bin_paper": [
+      407,
+      282,
+      612,
+      419
+    ],
+    "bin_plastic": [
+      27,
+      294,
+      232,
+      427
+    ],
+    "source": [
+      293,
+      92,
+      356,
+      242
+    ],
+    "static_a": [
+      108,
+      45,
+      164,
+      100
+    ],
+    "static_b": [
+      108,
+      208,
+      164,
+      264
+    ]
+  },
+  "schema_version": "station-vision-v1",
+  "synthetic_fixture": false,
+  "threshold": 45,
+  "token_env": "KM1_STATION_VISION_TOKEN",
+  "window_frames": 3
+}

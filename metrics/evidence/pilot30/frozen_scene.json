@@ -1,0 +1,22 @@
+{
+  "trial_id": "P001",
+  "kind": "prospective_supervised_single_item_pilot",
+  "material": "metal",
+  "sample_id": "existing_blue_metal_can",
+  "object_height_mm": 55,
+  "model": "yoloe26_reference",
+  "start_pending_physical_jaw_confirmation": true,
+  "automatic_retry": false,
+  "initial_setup_home_excluded": true,
+  "first_formal_preview_enrolls_trial": true,
+  "response_roi_xyxy": [
+    220,
+    280,
+    420,
+    480
+  ],
+  "response_roi_scope": "arm only; excludes blue can and bins; review onset frames independently",
+  "success": "one planned task with full containment in correct bin, no rim overhang, no task-internal intervention; failures and admission refusal retained",
+  "camera_observation_limit": "upper-right bin outermost wall touches image edge; independent on-site full-containment adjudication is required, never infer it from partial bin occupancy alone",
+  "power_note": "operator says board power was probably disconnected; actual joint position not inferred from old echo; current home command completed but physical confirmation still pending"
+}

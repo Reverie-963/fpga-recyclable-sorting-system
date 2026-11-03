@@ -1,0 +1,64 @@
+{
+  "kind": "sorting-commissioning-observation-v1",
+  "material": "metal",
+  "dimensions_mm": {
+    "diameter": 56,
+    "length": 150
+  },
+  "model_family": "yolov8s",
+  "model_version": "9288e697042d14813d7d47abbe2e413f314be59c3069c2302f2dffee5912dd0e",
+  "runtime_id": "997bb093f49aea2a0196e95767415b024cf5964421a417913965667712772de5",
+  "open_pwm": 1000,
+  "close_pwm": 1300,
+  "grip_nominal_z_mm": 10,
+  "grip_actual_tip_tabletop_mm_approx": 35,
+  "bin_id": "bin_metal",
+  "bin_release_empty_pose_file": "metal56/bin-release-empty-checked.json",
+  "calibration_sha256": "f18e1e9ec098acbd7184b14c62efbc95dc8635ea8302679e8618bec0a8a76677",
+  "supervised_known_item_cycle_completed": true,
+  "operator_confirmed_no_problem": true,
+  "phase_executions": [
+    {
+      "folder": "known-can-v8",
+      "plan_sha256": "9658866404df946e65d8c38df6c159db6fa25fd8de05c845cafe3a6e27dc5bfb",
+      "execution_sha256": "84d38859eb15ec7365770d6d786b59eea65f7139e6bc33930d83a4a558bf8aeb",
+      "sent": 5
+    },
+    {
+      "folder": "known-can-close1300",
+      "plan_sha256": "e55cd9b9e96bf7c8c0d0a3e9bb8673c1aa81275fdc82fd185261dfd3dd1d6785",
+      "execution_sha256": "a9ed57ce8709ac043fbbd9b56be047c88f2886ec9c4f2ba5f08e061dbc8e7591",
+      "sent": 1
+    },
+    {
+      "folder": "known-can-lift30",
+      "plan_sha256": "22702c5a2027a4d92ec14986e057fd7146c5c0d8baf6e0b5ba732bf7539f6020",
+      "execution_sha256": "cc873f4472ae090ac8b9398096876cf429c48a891e2bd44ab76890e573f8ecbb",
+      "sent": 1
+    },
+    {
+      "folder": "known-can-front-high",
+      "plan_sha256": "a63f208bd98717cd892d7b7df6e753a2e9ec236aa1da4eead8b93688d4069440",
+      "execution_sha256": "58659865aaced457d534aa1d6664066a4cf2044d3c0c0c03ff7b5eea14ad6565",
+      "sent": 4
+    },
+    {
+      "folder": "known-can-over-bin",
+      "plan_sha256": "20edb8ae111162e85c54fdf42ba929260faabe0feca89a6cd789bc50c2df9f61",
+      "execution_sha256": "ae71dd027ac62e934ebd4226a59aebe68cf017a6f110acf53a0cc0177ab716cf",
+      "sent": 3
+    },
+    {
+      "folder": "known-can-release-return",
+      "plan_sha256": "bdd6c2b3bea5b0124b6a2693f52fd7a7344fa5ddd02c0dd4f6426f32dd594164",
+      "execution_sha256": "410160871e9393b9e19af327859722f02dadff1bef6cb74cfbfa497b9bc0267a",
+      "sent": 6
+    }
+  ],
+  "total_cycle_commands": 20,
+  "final_review_sha256": "75de5eecae6421f2c87fa1bd946c3461ea7eab293b9bd01f8a6ccb378413bf9b",
+  "operator_feedback_sha256": "3d4e7201e7718f1d57f2c191cfdabb48655fa012185bc4d6082e7cbaa1e15ba9",
+  "quality_gate_passed": false,
+  "unattended_accepted": false,
+  "qualified_scope": "This same empty can at fixed station under supervision; not three-class quality acceptance"
+}
